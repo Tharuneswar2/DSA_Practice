@@ -15,5 +15,6 @@
     "compute-decimal-representation",
     "redistribute-characters-to-make-all-strings-equal",
     "count-special-quadruplets",
-    "distribute-candies-among-children-i"
+    "distribute-candies-among-children-i",
+    "rings-and-rods"
 ]
