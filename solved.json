@@ -12,5 +12,6 @@
     "count-partitions-with-even-sum-difference",
     "distance-between-bus-stops",
     "minimum-number-of-pushes-to-type-word-i",
-    "compute-decimal-representation"
+    "compute-decimal-representation",
+    "redistribute-characters-to-make-all-strings-equal"
 ]
