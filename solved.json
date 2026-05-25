@@ -7,5 +7,6 @@
     "check-distances-between-same-letters",
     "lucky-numbers-in-a-matrix",
     "count-the-digits-that-divide-a-number",
-    "design-parking-system"
+    "design-parking-system",
+    "sum-of-digits-of-string-after-convert"
 ]
