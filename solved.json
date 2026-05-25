@@ -14,5 +14,6 @@
     "minimum-number-of-pushes-to-type-word-i",
     "compute-decimal-representation",
     "redistribute-characters-to-make-all-strings-equal",
-    "count-special-quadruplets"
+    "count-special-quadruplets",
+    "distribute-candies-among-children-i"
 ]
