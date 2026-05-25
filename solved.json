@@ -13,5 +13,6 @@
     "distance-between-bus-stops",
     "minimum-number-of-pushes-to-type-word-i",
     "compute-decimal-representation",
-    "redistribute-characters-to-make-all-strings-equal"
+    "redistribute-characters-to-make-all-strings-equal",
+    "count-special-quadruplets"
 ]
