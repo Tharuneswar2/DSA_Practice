@@ -1,0 +1,43 @@
+name: Daily DSA Practice Bot
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  run-dsa-bot:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Configure Git
+        run: |
+          git config --global user.name "Tharuneswar"
+          git config --global user.email "dtharuneswar@aditya.ac.in"
+
+      - name: Run DSA Bot
+        env:
+          NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
+        run: python dsa_b.py
+
+      - name: Commit and Push Changes
+        run: |
+          git add .
+          git diff --cached --quiet || git commit -m "Daily DSA update"
+          git push

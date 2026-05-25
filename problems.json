@@ -1,0 +1,2502 @@
+[
+    {
+        "title": "Minimum Swaps to Move Zeros to End",
+        "slug": "minimum-swaps-to-move-zeros-to-end",
+        "difficulty": 1
+    },
+    {
+        "title": "Limit Occurrences in Sorted Array",
+        "slug": "limit-occurrences-in-sorted-array",
+        "difficulty": 1
+    },
+    {
+        "title": "Check Adjacent Digit Differences",
+        "slug": "check-adjacent-digit-differences",
+        "difficulty": 1
+    },
+    {
+        "title": "Concatenate Array With Reverse",
+        "slug": "concatenate-array-with-reverse",
+        "difficulty": 1
+    },
+    {
+        "title": "Count Indices With Opposite Parity",
+        "slug": "count-indices-with-opposite-parity",
+        "difficulty": 1
+    },
+    {
+        "title": "Valid Elements in an Array",
+        "slug": "valid-elements-in-an-array",
+        "difficulty": 1
+    },
+    {
+        "title": "Valid Digit Number",
+        "slug": "valid-digit-number",
+        "difficulty": 1
+    },
+    {
+        "title": "Smallest Stable Index I",
+        "slug": "smallest-stable-index-i",
+        "difficulty": 1
+    },
+    {
+        "title": "Score Validator",
+        "slug": "score-validator",
+        "difficulty": 1
+    },
+    {
+        "title": "Traffic Signal Color",
+        "slug": "traffic-signal-color",
+        "difficulty": 1
+    },
+    {
+        "title": "Find the Degree of Each Vertex",
+        "slug": "find-the-degree-of-each-vertex",
+        "difficulty": 1
+    },
+    {
+        "title": "First Matching Character From Both Ends",
+        "slug": "first-matching-character-from-both-ends",
+        "difficulty": 1
+    },
+    {
+        "title": "Construct Uniform Parity Array I",
+        "slug": "construct-uniform-parity-array-i",
+        "difficulty": 1
+    },
+    {
+        "title": "Minimum Absolute Difference Between Two Values",
+        "slug": "minimum-absolute-difference-between-two-values",
+        "difficulty": 1
+    },
+    {
+        "title": "First Unique Even Element",
+        "slug": "first-unique-even-element",
+        "difficulty": 1
+    },
+    {
+        "title": "Minimum Capacity Box",
+        "slug": "minimum-capacity-box",
+        "difficulty": 1
+    },
+    {
+        "title": "Count Commas in Range",
+        "slug": "count-commas-in-range",
+        "difficulty": 1
+    },
+    {
+        "title": "Smallest Pair With Different Frequencies",
+        "slug": "smallest-pair-with-different-frequencies",
+        "difficulty": 1
+    },
+    {
+        "title": "Trim Trailing Vowels",
+        "slug": "trim-trailing-vowels",
+        "difficulty": 1
+    },
+    {
+        "title": "Weighted Word Mapping",
+        "slug": "weighted-word-mapping",
+        "difficulty": 1
+    },
+    {
+        "title": "Count Dominant Indices",
+        "slug": "count-dominant-indices",
+        "difficulty": 1
+    },
+    {
+        "title": "Toggle Light Bulbs",
+        "slug": "toggle-light-bulbs",
+        "difficulty": 1
+    },
+    {
+        "title": "Reverse Letters Then Special Characters in a String",
+        "slug": "reverse-letters-then-special-characters-in-a-string",
+        "difficulty": 1
+    },
+    {
+        "title": "Count Monobit Integers",
+        "slug": "count-monobit-integers",
+        "difficulty": 1
+    },
+    {
+        "title": "Count Residue Prefixes",
+        "slug": "count-residue-prefixes",
+        "difficulty": 1
+    },
+    {
+        "title": "Largest Even Number",
+        "slug": "largest-even-number",
+        "difficulty": 1
+    },
+    {
+        "title": "Vowel-Consonant Score",
+        "slug": "vowel-consonant-score",
+        "difficulty": 1
+    },
+    {
+        "title": "Reverse String Prefix",
+        "slug": "reverse-string-prefix",
+        "difficulty": 1
+    },
+    {
+        "title": "Mirror Distance of an Integer",
+        "slug": "mirror-distance-of-an-integer",
+        "difficulty": 1
+    },
+    {
+        "title": "Absolute Difference Between Maximum and Minimum K Elements",
+        "slug": "absolute-difference-between-maximum-and-minimum-k-elements",
+        "difficulty": 1
+    },
+    {
+        "title": "Sort Integers by Binary Reflection",
+        "slug": "sort-integers-by-binary-reflection",
+        "difficulty": 1
+    },
+    {
+        "title": "Concatenate Non-Zero Digits and Multiply by Sum I",
+        "slug": "concatenate-non-zero-digits-and-multiply-by-sum-i",
+        "difficulty": 1
+    },
+    {
+        "title": "Minimum Number of Flips to Reverse Binary String",
+        "slug": "minimum-number-of-flips-to-reverse-binary-string",
+        "difficulty": 1
+    },
+    {
+        "title": "Minimum Moves to Equal Array Elements III",
+        "slug": "minimum-moves-to-equal-array-elements-iii",
+        "difficulty": 1
+    },
+    {
+        "title": "Minimum Distance Between Three Equal Elements I",
+        "slug": "minimum-distance-between-three-equal-elements-i",
+        "difficulty": 1
+    },
+    {
+        "title": "Maximize Expression of Three Elements",
+        "slug": "maximize-expression-of-three-elements",
+        "difficulty": 1
+    },
+    {
+        "title": "Find Missing Elements",
+        "slug": "find-missing-elements",
+        "difficulty": 1
+    },
+    {
+        "title": "Smallest Missing Multiple of K",
+        "slug": "smallest-missing-multiple-of-k",
+        "difficulty": 1
+    },
+    {
+        "title": "Sum of Elements With Frequency Divisible by K",
+        "slug": "sum-of-elements-with-frequency-divisible-by-k",
+        "difficulty": 1
+    },
+    {
+        "title": "Compute Alternating Sum",
+        "slug": "compute-alternating-sum",
+        "difficulty": 1
+    },
+    {
+        "title": "Majority Frequency Characters",
+        "slug": "majority-frequency-characters",
+        "difficulty": 1
+    },
+    {
+        "title": "Equal Score Substrings",
+        "slug": "equal-score-substrings",
+        "difficulty": 1
+    },
+    {
+        "title": "Remove Zeros in Decimal Representation",
+        "slug": "remove-zeros-in-decimal-representation",
+        "difficulty": 1
+    },
+    {
+        "title": "Compute Decimal Representation",
+        "slug": "compute-decimal-representation",
+        "difficulty": 1
+    },
+    {
+        "title": "Earliest Time to Finish One Task",
+        "slug": "earliest-time-to-finish-one-task",
+        "difficulty": 1
+    },
+    {
+        "title": "Smallest Absent Positive Greater Than Average",
+        "slug": "smallest-absent-positive-greater-than-average",
+        "difficulty": 1
+    },
+    {
+        "title": "Bitwise OR of Even Numbers in an Array",
+        "slug": "bitwise-or-of-even-numbers-in-an-array",
+        "difficulty": 1
+    },
+    {
+        "title": "Restore Finishing Order",
+        "slug": "restore-finishing-order",
+        "difficulty": 1
+    },
+    {
+        "title": "Minimum Operations to Equalize Array",
+        "slug": "minimum-operations-to-equalize-array",
+        "difficulty": 1
+    },
+    {
+        "title": "Maximize Sum of At Most K Distinct Elements",
+        "slug": "maximize-sum-of-at-most-k-distinct-elements",
+        "difficulty": 1
+    },
+    {
+        "title": "GCD of Odd and Even Sums",
+        "slug": "gcd-of-odd-and-even-sums",
+        "difficulty": 1
+    },
+    {
+        "title": "Find The Least Frequent Digit",
+        "slug": "find-the-least-frequent-digit",
+        "difficulty": 1
+    },
+    {
+        "title": "Flip Square Submatrix Vertically",
+        "slug": "flip-square-submatrix-vertically",
+        "difficulty": 1
+    },
+    {
+        "title": "Earliest Finish Time for Land and Water Rides I",
+        "slug": "earliest-finish-time-for-land-and-water-rides-i",
+        "difficulty": 1
+    },
+    {
+        "title": "Trionic Array I",
+        "slug": "trionic-array-i",
+        "difficulty": 1
+    },
+    {
+        "title": "Coupon Code Validator",
+        "slug": "coupon-code-validator",
+        "difficulty": 1
+    },
+    {
+        "title": "Check Divisibility by Digit Sum and Product",
+        "slug": "check-divisibility-by-digit-sum-and-product",
+        "difficulty": 1
+    },
+    {
+        "title": "Check if Any Element Has Prime Frequency",
+        "slug": "check-if-any-element-has-prime-frequency",
+        "difficulty": 1
+    },
+    {
+        "title": "Hexadecimal and Hexatrigesimal Conversion",
+        "slug": "hexadecimal-and-hexatrigesimal-conversion",
+        "difficulty": 1
+    },
+    {
+        "title": "Generate Tag for Video Caption",
+        "slug": "generate-tag-for-video-caption",
+        "difficulty": 1
+    },
+    {
+        "title": "Find Minimum Log Transportation Cost",
+        "slug": "find-minimum-log-transportation-cost",
+        "difficulty": 1
+    },
+    {
+        "title": "Find Most Frequent Vowel and Consonant",
+        "slug": "find-most-frequent-vowel-and-consonant",
+        "difficulty": 1
+    },
+    {
+        "title": "Minimum Deletions for At Most K Distinct Characters",
+        "slug": "minimum-deletions-for-at-most-k-distinct-characters",
+        "difficulty": 1
+    },
+    {
+        "title": "Smallest Index With Digit Sum Equal to Index",
+        "slug": "smallest-index-with-digit-sum-equal-to-index",
+        "difficulty": 1
+    },
+    {
+        "title": "Maximum Product of Two Digits",
+        "slug": "maximum-product-of-two-digits",
+        "difficulty": 1
+    },
+    {
+        "title": "Minimum Operations to Make Array Sum Divisible by K",
+        "slug": "minimum-operations-to-make-array-sum-divisible-by-k",
+        "difficulty": 1
+    },
+    {
+        "title": "Minimum Cost to Reach Every Position",
+        "slug": "minimum-cost-to-reach-every-position",
+        "difficulty": 1
+    },
+    {
+        "title": "Find Closest Person",
+        "slug": "find-closest-person",
+        "difficulty": 1
+    },
+    {
+        "title": "Maximum Containers on a Ship",
+        "slug": "maximum-containers-on-a-ship",
+        "difficulty": 1
+    },
+    {
+        "title": "Reverse Degree of a String",
+        "slug": "reverse-degree-of-a-string",
+        "difficulty": 1
+    },
+    {
+        "title": "Unique 3-Digit Even Numbers",
+        "slug": "unique-3-digit-even-numbers",
+        "difficulty": 1
+    },
+    {
+        "title": "Fruits Into Baskets II",
+        "slug": "fruits-into-baskets-ii",
+        "difficulty": 1
+    },
+    {
+        "title": "Maximum Unique Subarray Sum After Deletion",
+        "slug": "maximum-unique-subarray-sum-after-deletion",
+        "difficulty": 1
+    },
+    {
+        "title": "Transform Array by Parity",
+        "slug": "transform-array-by-parity",
+        "difficulty": 1
+    },
+    {
+        "title": "Minimum Pair Removal to Sort Array I",
+        "slug": "minimum-pair-removal-to-sort-array-i",
+        "difficulty": 1
+    },
+    {
+        "title": "Check If Digits Are Equal in String After Operations I",
+        "slug": "check-if-digits-are-equal-in-string-after-operations-i",
+        "difficulty": 1
+    },
+    {
+        "title": "Maximum Difference Between Even and Odd Frequency I",
+        "slug": "maximum-difference-between-even-and-odd-frequency-i",
+        "difficulty": 1
+    },
+    {
+        "title": "Maximum Difference Between Adjacent Elements in a Circular Array",
+        "slug": "maximum-difference-between-adjacent-elements-in-a-circular-array",
+        "difficulty": 1
+    },
+    {
+        "title": "Find Valid Pair of Adjacent Digits in String",
+        "slug": "find-valid-pair-of-adjacent-digits-in-string",
+        "difficulty": 1
+    },
+    {
+        "title": "Sum of Variable Length Subarrays",
+        "slug": "sum-of-variable-length-subarrays",
+        "difficulty": 1
+    },
+    {
+        "title": "Sum of Good Numbers",
+        "slug": "sum-of-good-numbers",
+        "difficulty": 1
+    },
+    {
+        "title": "Find Special Substring of Length K",
+        "slug": "find-special-substring-of-length-k",
+        "difficulty": 1
+    },
+    {
+        "title": "Zigzag Grid Traversal With Skip",
+        "slug": "zigzag-grid-traversal-with-skip",
+        "difficulty": 1
+    },
+    {
+        "title": "Find the Largest Almost Missing Integer",
+        "slug": "find-the-largest-almost-missing-integer",
+        "difficulty": 1
+    },
+    {
+        "title": "Count Partitions with Even Sum Difference",
+        "slug": "count-partitions-with-even-sum-difference",
+        "difficulty": 1
+    },
+    {
+        "title": "Maximum Subarray With Equal Products",
+        "slug": "maximum-subarray-with-equal-products",
+        "difficulty": 1
+    },
+    {
+        "title": "Minimum Operations to Make Columns Strictly Increasing",
+        "slug": "minimum-operations-to-make-columns-strictly-increasing",
+        "difficulty": 1
+    },
+    {
+        "title": "Count Subarrays of Length Three With a Condition",
+        "slug": "count-subarrays-of-length-three-with-a-condition",
+        "difficulty": 1
+    },
+    {
+        "title": "Substring Matching Pattern",
+        "slug": "substring-matching-pattern",
+        "difficulty": 1
+    },
+    {
+        "title": "Smallest Number With All Set Bits",
+        "slug": "smallest-number-with-all-set-bits",
+        "difficulty": 1
+    },
+    {
+        "title": "Minimum Number of Operations to Make Elements in Array Distinct",
+        "slug": "minimum-number-of-operations-to-make-elements-in-array-distinct",
+        "difficulty": 1
+    },
+    {
+        "title": "Transformed Array",
+        "slug": "transformed-array",
+        "difficulty": 1
+    },
+    {
+        "title": "Minimum Positive Sum Subarray ",
+        "slug": "minimum-positive-sum-subarray",
+        "difficulty": 1
+    },
+    {
+        "title": "Check Balanced String",
+        "slug": "check-balanced-string",
+        "difficulty": 1
+    },
+    {
+        "title": "Button with Longest Push Time",
+        "slug": "button-with-longest-push-time",
+        "difficulty": 1
+    },
+    {
+        "title": "Smallest Divisible Digit Product I",
+        "slug": "smallest-divisible-digit-product-i",
+        "difficulty": 1
+    },
+    {
+        "title": "Stone Removal Game",
+        "slug": "stone-removal-game",
+        "difficulty": 1
+    },
+    {
+        "title": "Minimum Operations to Make Array Values Equal to K",
+        "slug": "minimum-operations-to-make-array-values-equal-to-k",
+        "difficulty": 1
+    },
+    {
+        "title": "Find the Original Typed String I",
+        "slug": "find-the-original-typed-string-i",
+        "difficulty": 1
+    },
+    {
+        "title": "Make Array Elements Equal to Zero",
+        "slug": "make-array-elements-equal-to-zero",
+        "difficulty": 1
+    },
+    {
+        "title": "Adjacent Increasing Subarrays Detection I",
+        "slug": "adjacent-increasing-subarrays-detection-i",
+        "difficulty": 1
+    },
+    {
+        "title": "Find X-Sum of All K-Long Subarrays I",
+        "slug": "find-x-sum-of-all-k-long-subarrays-i",
+        "difficulty": 1
+    },
+    {
+        "title": "Minimum Element After Replacement With Digit Sum",
+        "slug": "minimum-element-after-replacement-with-digit-sum",
+        "difficulty": 1
+    },
+    {
+        "title": "Construct the Minimum Bitwise Array I",
+        "slug": "construct-the-minimum-bitwise-array-i",
+        "difficulty": 1
+    },
+    {
+        "title": "Find the K-th Character in String Game I",
+        "slug": "find-the-k-th-character-in-string-game-i",
+        "difficulty": 1
+    },
+    {
+        "title": "Find Indices of Stable Mountains",
+        "slug": "find-indices-of-stable-mountains",
+        "difficulty": 1
+    },
+    {
+        "title": "The Two Sneaky Numbers of Digitville",
+        "slug": "the-two-sneaky-numbers-of-digitville",
+        "difficulty": 1
+    },
+    {
+        "title": "Find the Key of the Numbers",
+        "slug": "find-the-key-of-the-numbers",
+        "difficulty": 1
+    },
+    {
+        "title": "Convert Date to Binary",
+        "slug": "convert-date-to-binary",
+        "difficulty": 1
+    },
+    {
+        "title": "Final Array State After K Multiplication Operations I",
+        "slug": "final-array-state-after-k-multiplication-operations-i",
+        "difficulty": 1
+    },
+    {
+        "title": "Check if Two Chessboard Squares Have the Same Color",
+        "slug": "check-if-two-chessboard-squares-have-the-same-color",
+        "difficulty": 1
+    },
+    {
+        "title": "Count Substrings That Satisfy K-Constraint I",
+        "slug": "count-substrings-that-satisfy-k-constraint-i",
+        "difficulty": 1
+    },
+    {
+        "title": "Snake in Matrix",
+        "slug": "snake-in-matrix",
+        "difficulty": 1
+    },
+    {
+        "title": "Find the Number of Winning Players",
+        "slug": "find-the-number-of-winning-players",
+        "difficulty": 1
+    },
+    {
+        "title": "Design Neighbor Sum Service",
+        "slug": "design-neighbor-sum-service",
+        "difficulty": 1
+    },
+    {
+        "title": "Find if Digit Game Can Be Won",
+        "slug": "find-if-digit-game-can-be-won",
+        "difficulty": 1
+    },
+    {
+        "title": "Find the Winning Player in Coin Game",
+        "slug": "find-the-winning-player-in-coin-game",
+        "difficulty": 1
+    },
+    {
+        "title": "Number of Bit Changes to Make Two Integers Equal",
+        "slug": "number-of-bit-changes-to-make-two-integers-equal",
+        "difficulty": 1
+    },
+    {
+        "title": "Lexicographically Smallest String After a Swap",
+        "slug": "lexicographically-smallest-string-after-a-swap",
+        "difficulty": 1
+    },
+    {
+        "title": "Find Minimum Operations to Make All Elements Divisible by Three",
+        "slug": "find-minimum-operations-to-make-all-elements-divisible-by-three",
+        "difficulty": 1
+    },
+    {
+        "title": "Minimum Average of Smallest and Largest Elements",
+        "slug": "minimum-average-of-smallest-and-largest-elements",
+        "difficulty": 1
+    },
+    {
+        "title": "Maximum Height of a Triangle",
+        "slug": "maximum-height-of-a-triangle",
+        "difficulty": 1
+    },
+    {
+        "title": "Find the Encrypted String",
+        "slug": "find-the-encrypted-string",
+        "difficulty": 1
+    },
+    {
+        "title": "Alternating Groups I",
+        "slug": "alternating-groups-i",
+        "difficulty": 1
+    },
+    {
+        "title": "Find the Child Who Has the Ball After K Seconds",
+        "slug": "find-the-child-who-has-the-ball-after-k-seconds",
+        "difficulty": 1
+    },
+    {
+        "title": "Clear Digits",
+        "slug": "clear-digits",
+        "difficulty": 1
+    },
+    {
+        "title": "Find the Number of Good Pairs I",
+        "slug": "find-the-number-of-good-pairs-i",
+        "difficulty": 1
+    },
+    {
+        "title": "Special Array I",
+        "slug": "special-array-i",
+        "difficulty": 1
+    },
+    {
+        "title": "Find the XOR of Numbers Which Appear Twice",
+        "slug": "find-the-xor-of-numbers-which-appear-twice",
+        "difficulty": 1
+    },
+    {
+        "title": "Minimum Number of Chairs in a Waiting Room",
+        "slug": "minimum-number-of-chairs-in-a-waiting-room",
+        "difficulty": 1
+    },
+    {
+        "title": "Count Pairs That Form a Complete Day I",
+        "slug": "count-pairs-that-form-a-complete-day-i",
+        "difficulty": 1
+    },
+    {
+        "title": "Check if Grid Satisfies Conditions",
+        "slug": "check-if-grid-satisfies-conditions",
+        "difficulty": 1
+    },
+    {
+        "title": "Permutation Difference between Two Strings",
+        "slug": "permutation-difference-between-two-strings",
+        "difficulty": 1
+    },
+    {
+        "title": "Count the Number of Special Characters I",
+        "slug": "count-the-number-of-special-characters-i",
+        "difficulty": 1
+    },
+    {
+        "title": "Make a Square with the Same Color",
+        "slug": "make-a-square-with-the-same-color",
+        "difficulty": 1
+    },
+    {
+        "title": "Find the Integer Added to Array I",
+        "slug": "find-the-integer-added-to-array-i",
+        "difficulty": 1
+    },
+    {
+        "title": "Valid Word",
+        "slug": "valid-word",
+        "difficulty": 1
+    },
+    {
+        "title": "Shortest Subarray With OR at Least K I",
+        "slug": "shortest-subarray-with-or-at-least-k-i",
+        "difficulty": 1
+    },
+    {
+        "title": "Score of a String",
+        "slug": "score-of-a-string",
+        "difficulty": 1
+    },
+    {
+        "title": "Longest Strictly Increasing or Strictly Decreasing Subarray",
+        "slug": "longest-strictly-increasing-or-strictly-decreasing-subarray",
+        "difficulty": 1
+    },
+    {
+        "title": "Harshad Number",
+        "slug": "harshad-number",
+        "difficulty": 1
+    },
+    {
+        "title": "Find the Sum of Encrypted Integers",
+        "slug": "find-the-sum-of-encrypted-integers",
+        "difficulty": 1
+    },
+    {
+        "title": "Latest Time You Can Obtain After Replacing Characters",
+        "slug": "latest-time-you-can-obtain-after-replacing-characters",
+        "difficulty": 1
+    },
+    {
+        "title": "Existence of a Substring in a String and Its Reverse",
+        "slug": "existence-of-a-substring-in-a-string-and-its-reverse",
+        "difficulty": 1
+    },
+    {
+        "title": "Maximum Length Substring With Two Occurrences",
+        "slug": "maximum-length-substring-with-two-occurrences",
+        "difficulty": 1
+    },
+    {
+        "title": "Distribute Elements Into Two Arrays I",
+        "slug": "distribute-elements-into-two-arrays-i",
+        "difficulty": 1
+    },
+    {
+        "title": "Apple Redistribution into Boxes",
+        "slug": "apple-redistribution-into-boxes",
+        "difficulty": 1
+    },
+    {
+        "title": "Minimum Operations to Exceed Threshold Value I",
+        "slug": "minimum-operations-to-exceed-threshold-value-i",
+        "difficulty": 1
+    },
+    {
+        "title": "Modify the Matrix",
+        "slug": "modify-the-matrix",
+        "difficulty": 1
+    },
+    {
+        "title": "Split the Array",
+        "slug": "split-the-array",
+        "difficulty": 1
+    },
+    {
+        "title": "Type of Triangle",
+        "slug": "type-of-triangle",
+        "difficulty": 1
+    },
+    {
+        "title": "Maximum Number of Operations With the Same Score I",
+        "slug": "maximum-number-of-operations-with-the-same-score-i",
+        "difficulty": 1
+    },
+    {
+        "title": "Number of Changing Keys",
+        "slug": "number-of-changing-keys",
+        "difficulty": 1
+    },
+    {
+        "title": "Ant on the Boundary",
+        "slug": "ant-on-the-boundary",
+        "difficulty": 1
+    },
+    {
+        "title": "Count Prefix and Suffix Pairs I",
+        "slug": "count-prefix-and-suffix-pairs-i",
+        "difficulty": 1
+    },
+    {
+        "title": "Minimum Number of Pushes to Type Word I",
+        "slug": "minimum-number-of-pushes-to-type-word-i",
+        "difficulty": 1
+    },
+    {
+        "title": "Divide an Array Into Subarrays With Minimum Cost I",
+        "slug": "divide-an-array-into-subarrays-with-minimum-cost-i",
+        "difficulty": 1
+    },
+    {
+        "title": "Count the Number of Incremovable Subarrays I",
+        "slug": "count-the-number-of-incremovable-subarrays-i",
+        "difficulty": 1
+    },
+    {
+        "title": "Maximum Area of Longest Diagonal Rectangle",
+        "slug": "maximum-area-of-longest-diagonal-rectangle",
+        "difficulty": 1
+    },
+    {
+        "title": "Check if Bitwise OR Has Trailing Zeros",
+        "slug": "check-if-bitwise-or-has-trailing-zeros",
+        "difficulty": 1
+    },
+    {
+        "title": "Count Elements With Maximum Frequency",
+        "slug": "count-elements-with-maximum-frequency",
+        "difficulty": 1
+    },
+    {
+        "title": "Smallest Missing Integer Greater Than Sequential Prefix Sum",
+        "slug": "smallest-missing-integer-greater-than-sequential-prefix-sum",
+        "difficulty": 1
+    },
+    {
+        "title": "Find Missing and Repeated Values",
+        "slug": "find-missing-and-repeated-values",
+        "difficulty": 1
+    },
+    {
+        "title": "Minimum Number Game",
+        "slug": "minimum-number-game",
+        "difficulty": 1
+    },
+    {
+        "title": "Find the Peaks",
+        "slug": "find-the-peaks",
+        "difficulty": 1
+    },
+    {
+        "title": "Count Tested Devices After Test Operations",
+        "slug": "count-tested-devices-after-test-operations",
+        "difficulty": 1
+    },
+    {
+        "title": "Matrix Similarity After Cyclic Shifts",
+        "slug": "matrix-similarity-after-cyclic-shifts",
+        "difficulty": 1
+    },
+    {
+        "title": "Make Three Strings Equal",
+        "slug": "make-three-strings-equal",
+        "difficulty": 1
+    },
+    {
+        "title": "Find Common Elements Between Two Arrays",
+        "slug": "find-common-elements-between-two-arrays",
+        "difficulty": 1
+    },
+    {
+        "title": "Distribute Candies Among Children I",
+        "slug": "distribute-candies-among-children-i",
+        "difficulty": 1
+    },
+    {
+        "title": "Find Words Containing Character",
+        "slug": "find-words-containing-character",
+        "difficulty": 1
+    },
+    {
+        "title": "Maximum Strong Pair XOR I",
+        "slug": "maximum-strong-pair-xor-i",
+        "difficulty": 1
+    },
+    {
+        "title": "Find Champion I",
+        "slug": "find-champion-i",
+        "difficulty": 1
+    },
+    {
+        "title": "Find the K-or of an Array",
+        "slug": "find-the-k-or-of-an-array",
+        "difficulty": 1
+    },
+    {
+        "title": "Minimum Sum of Mountain Triplets I",
+        "slug": "minimum-sum-of-mountain-triplets-i",
+        "difficulty": 1
+    },
+    {
+        "title": "Divisible and Non-divisible Sums Difference",
+        "slug": "divisible-and-non-divisible-sums-difference",
+        "difficulty": 1
+    },
+    {
+        "title": "Find Indices With Index and Value Difference I",
+        "slug": "find-indices-with-index-and-value-difference-i",
+        "difficulty": 1
+    },
+    {
+        "title": "Last Visited Integers",
+        "slug": "last-visited-integers",
+        "difficulty": 1
+    },
+    {
+        "title": "Subarrays Distinct Element Sum of Squares I",
+        "slug": "subarrays-distinct-element-sum-of-squares-i",
+        "difficulty": 1
+    },
+    {
+        "title": "Maximum Value of an Ordered Triplet I",
+        "slug": "maximum-value-of-an-ordered-triplet-i",
+        "difficulty": 1
+    },
+    {
+        "title": "Longest Unequal Adjacent Groups Subsequence I",
+        "slug": "longest-unequal-adjacent-groups-subsequence-i",
+        "difficulty": 1
+    },
+    {
+        "title": "Sum of Values at Indices With K Set Bits",
+        "slug": "sum-of-values-at-indices-with-k-set-bits",
+        "difficulty": 1
+    },
+    {
+        "title": "Maximum Odd Binary Number",
+        "slug": "maximum-odd-binary-number",
+        "difficulty": 1
+    },
+    {
+        "title": "Minimum Right Shifts to Sort the Array",
+        "slug": "minimum-right-shifts-to-sort-the-array",
+        "difficulty": 1
+    },
+    {
+        "title": "Minimum Operations to Collect Elements",
+        "slug": "minimum-operations-to-collect-elements",
+        "difficulty": 1
+    },
+    {
+        "title": "Points That Intersect With Cars",
+        "slug": "points-that-intersect-with-cars",
+        "difficulty": 1
+    },
+    {
+        "title": "Furthest Point From Origin",
+        "slug": "furthest-point-from-origin",
+        "difficulty": 1
+    },
+    {
+        "title": "Check if Strings Can be Made Equal With Operations I",
+        "slug": "check-if-strings-can-be-made-equal-with-operations-i",
+        "difficulty": 1
+    },
+    {
+        "title": "  Count Symmetric Integers",
+        "slug": "count-symmetric-integers",
+        "difficulty": 1
+    },
+    {
+        "title": "Check if a String Is an Acronym of Words",
+        "slug": "check-if-a-string-is-an-acronym-of-words",
+        "difficulty": 1
+    },
+    {
+        "title": "Account Balance After Rounded Purchase",
+        "slug": "account-balance-after-rounded-purchase",
+        "difficulty": 1
+    },
+    {
+        "title": "Count Pairs Whose Sum is Less than Target",
+        "slug": "count-pairs-whose-sum-is-less-than-target",
+        "difficulty": 1
+    },
+    {
+        "title": "Max Pair Sum in an Array",
+        "slug": "max-pair-sum-in-an-array",
+        "difficulty": 1
+    },
+    {
+        "title": "Check if Array is Good",
+        "slug": "check-if-array-is-good",
+        "difficulty": 1
+    },
+    {
+        "title": "Faulty Keyboard",
+        "slug": "faulty-keyboard",
+        "difficulty": 1
+    },
+    {
+        "title": "Split Strings by Separator",
+        "slug": "split-strings-by-separator",
+        "difficulty": 1
+    },
+    {
+        "title": "Number of Employees Who Met the Target",
+        "slug": "number-of-employees-who-met-the-target",
+        "difficulty": 1
+    },
+    {
+        "title": "Longest Alternating Subarray",
+        "slug": "longest-alternating-subarray",
+        "difficulty": 1
+    },
+    {
+        "title": "Longest Even Odd Subarray With Threshold",
+        "slug": "longest-even-odd-subarray-with-threshold",
+        "difficulty": 1
+    },
+    {
+        "title": "Total Distance Traveled",
+        "slug": "total-distance-traveled",
+        "difficulty": 1
+    },
+    {
+        "title": "Find Maximum Number of String Pairs",
+        "slug": "find-maximum-number-of-string-pairs",
+        "difficulty": 1
+    },
+    {
+        "title": "Sum of Squares of Special Elements ",
+        "slug": "sum-of-squares-of-special-elements",
+        "difficulty": 1
+    },
+    {
+        "title": "Neither Minimum nor Maximum",
+        "slug": "neither-minimum-nor-maximum",
+        "difficulty": 1
+    },
+    {
+        "title": "Number of Beautiful Pairs",
+        "slug": "number-of-beautiful-pairs",
+        "difficulty": 1
+    },
+    {
+        "title": "Minimize String Length",
+        "slug": "minimize-string-length",
+        "difficulty": 1
+    },
+    {
+        "title": "Check if The Number is Fascinating",
+        "slug": "check-if-the-number-is-fascinating",
+        "difficulty": 1
+    },
+    {
+        "title": "Remove Trailing Zeros From a String",
+        "slug": "remove-trailing-zeros-from-a-string",
+        "difficulty": 1
+    },
+    {
+        "title": "Lexicographically Smallest Palindrome",
+        "slug": "lexicographically-smallest-palindrome",
+        "difficulty": 1
+    },
+    {
+        "title": "Find the Maximum Achievable Number",
+        "slug": "find-the-maximum-achievable-number",
+        "difficulty": 1
+    },
+    {
+        "title": "Minimum String Length After Removing Substrings",
+        "slug": "minimum-string-length-after-removing-substrings",
+        "difficulty": 1
+    },
+    {
+        "title": "Find the Losers of the Circular Game",
+        "slug": "find-the-losers-of-the-circular-game",
+        "difficulty": 1
+    },
+    {
+        "title": "Semi-Ordered Permutation",
+        "slug": "semi-ordered-permutation",
+        "difficulty": 1
+    },
+    {
+        "title": "Find the Distinct Difference Array",
+        "slug": "find-the-distinct-difference-array",
+        "difficulty": 1
+    },
+    {
+        "title": "Maximum Sum With Exactly K Elements ",
+        "slug": "maximum-sum-with-exactly-k-elements",
+        "difficulty": 1
+    },
+    {
+        "title": "Buy Two Chocolates",
+        "slug": "buy-two-chocolates",
+        "difficulty": 1
+    },
+    {
+        "title": "Sum Multiples",
+        "slug": "sum-multiples",
+        "difficulty": 1
+    },
+    {
+        "title": "Calculate Delayed Arrival Time",
+        "slug": "calculate-delayed-arrival-time",
+        "difficulty": 1
+    },
+    {
+        "title": "Row With Maximum Ones",
+        "slug": "row-with-maximum-ones",
+        "difficulty": 1
+    },
+    {
+        "title": "Number of Senior Citizens",
+        "slug": "number-of-senior-citizens",
+        "difficulty": 1
+    },
+    {
+        "title": "Find the Longest Balanced Substring of a Binary String",
+        "slug": "find-the-longest-balanced-substring-of-a-binary-string",
+        "difficulty": 1
+    },
+    {
+        "title": "Prime In Diagonal",
+        "slug": "prime-in-diagonal",
+        "difficulty": 1
+    },
+    {
+        "title": "K Items With the Maximum Sum",
+        "slug": "k-items-with-the-maximum-sum",
+        "difficulty": 1
+    },
+    {
+        "title": "Left and Right Sum Differences",
+        "slug": "left-and-right-sum-differences",
+        "difficulty": 1
+    },
+    {
+        "title": "Merge Two 2D Arrays by Summing Values",
+        "slug": "merge-two-2d-arrays-by-summing-values",
+        "difficulty": 1
+    },
+    {
+        "title": "Maximum Difference by Remapping a Digit",
+        "slug": "maximum-difference-by-remapping-a-digit",
+        "difficulty": 1
+    },
+    {
+        "title": "Find the Array Concatenation Value",
+        "slug": "find-the-array-concatenation-value",
+        "difficulty": 1
+    },
+    {
+        "title": "Find the Maximum Divisibility Score",
+        "slug": "find-the-maximum-divisibility-score",
+        "difficulty": 1
+    },
+    {
+        "title": "Take Gifts From the Richest Pile",
+        "slug": "take-gifts-from-the-richest-pile",
+        "difficulty": 1
+    },
+    {
+        "title": "Determine the Winner of a Bowling Game",
+        "slug": "determine-the-winner-of-a-bowling-game",
+        "difficulty": 1
+    },
+    {
+        "title": "Count Distinct Numbers on Board",
+        "slug": "count-distinct-numbers-on-board",
+        "difficulty": 1
+    },
+    {
+        "title": "Find the Width of Columns of a Grid",
+        "slug": "find-the-width-of-columns-of-a-grid",
+        "difficulty": 1
+    },
+    {
+        "title": "Form Smallest Number From Two Digit Arrays",
+        "slug": "form-smallest-number-from-two-digit-arrays",
+        "difficulty": 1
+    },
+    {
+        "title": "Distribute Money to Maximum Children",
+        "slug": "distribute-money-to-maximum-children",
+        "difficulty": 1
+    },
+    {
+        "title": "Number of Even and Odd Bits",
+        "slug": "number-of-even-and-odd-bits",
+        "difficulty": 1
+    },
+    {
+        "title": "Count the Number of Vowel Strings in Range",
+        "slug": "count-the-number-of-vowel-strings-in-range",
+        "difficulty": 1
+    },
+    {
+        "title": "Split With Minimum Sum",
+        "slug": "split-with-minimum-sum",
+        "difficulty": 1
+    },
+    {
+        "title": "Pass the Pillow",
+        "slug": "pass-the-pillow",
+        "difficulty": 1
+    },
+    {
+        "title": "Separate the Digits in an Array",
+        "slug": "separate-the-digits-in-an-array",
+        "difficulty": 1
+    },
+    {
+        "title": "Minimum Common Value",
+        "slug": "minimum-common-value",
+        "difficulty": 1
+    },
+    {
+        "title": "Alternating Digit Sum",
+        "slug": "alternating-digit-sum",
+        "difficulty": 1
+    },
+    {
+        "title": "Difference Between Element Sum and Digit Sum of an Array",
+        "slug": "difference-between-element-sum-and-digit-sum-of-an-array",
+        "difficulty": 1
+    },
+    {
+        "title": "Categorize Box According to Criteria",
+        "slug": "categorize-box-according-to-criteria",
+        "difficulty": 1
+    },
+    {
+        "title": "Maximum Count of Positive Integer and Negative Integer",
+        "slug": "maximum-count-of-positive-integer-and-negative-integer",
+        "difficulty": 1
+    },
+    {
+        "title": "Count the Digits That Divide a Number",
+        "slug": "count-the-digits-that-divide-a-number",
+        "difficulty": 1
+    },
+    {
+        "title": "Maximum Enemy Forts That Can Be Captured",
+        "slug": "maximum-enemy-forts-that-can-be-captured",
+        "difficulty": 1
+    },
+    {
+        "title": "Shortest Distance to Target String in a Circular Array",
+        "slug": "shortest-distance-to-target-string-in-a-circular-array",
+        "difficulty": 1
+    },
+    {
+        "title": "Count Pairs Of Similar Strings",
+        "slug": "count-pairs-of-similar-strings",
+        "difficulty": 1
+    },
+    {
+        "title": "Maximum Value of a String in an Array",
+        "slug": "maximum-value-of-a-string-in-an-array",
+        "difficulty": 1
+    },
+    {
+        "title": "Delete Greatest Value in Each Row",
+        "slug": "delete-greatest-value-in-each-row",
+        "difficulty": 1
+    },
+    {
+        "title": "Circular Sentence",
+        "slug": "circular-sentence",
+        "difficulty": 1
+    },
+    {
+        "title": "Minimum Cuts to Divide a Circle",
+        "slug": "minimum-cuts-to-divide-a-circle",
+        "difficulty": 1
+    },
+    {
+        "title": "Find the Pivot Integer",
+        "slug": "find-the-pivot-integer",
+        "difficulty": 1
+    },
+    {
+        "title": "Number of Unequal Triplets in Array",
+        "slug": "number-of-unequal-triplets-in-array",
+        "difficulty": 1
+    },
+    {
+        "title": "Number of Distinct Averages",
+        "slug": "number-of-distinct-averages",
+        "difficulty": 1
+    },
+    {
+        "title": "Convert the Temperature",
+        "slug": "convert-the-temperature",
+        "difficulty": 1
+    },
+    {
+        "title": "Apply Operations to an Array",
+        "slug": "apply-operations-to-an-array",
+        "difficulty": 1
+    },
+    {
+        "title": "Odd String Difference",
+        "slug": "odd-string-difference",
+        "difficulty": 1
+    },
+    {
+        "title": "Average Value of Even Numbers That Are Divisible by Three",
+        "slug": "average-value-of-even-numbers-that-are-divisible-by-three",
+        "difficulty": 1
+    },
+    {
+        "title": "Determine if Two Events Have Conflict",
+        "slug": "determine-if-two-events-have-conflict",
+        "difficulty": 1
+    },
+    {
+        "title": "Remove Letter To Equalize Frequency",
+        "slug": "remove-letter-to-equalize-frequency",
+        "difficulty": 1
+    },
+    {
+        "title": "Number of Valid Clock Times",
+        "slug": "number-of-valid-clock-times",
+        "difficulty": 1
+    },
+    {
+        "title": "Largest Positive Integer That Exists With Its Negative",
+        "slug": "largest-positive-integer-that-exists-with-its-negative",
+        "difficulty": 1
+    },
+    {
+        "title": "The Employee That Worked on the Longest Task",
+        "slug": "the-employee-that-worked-on-the-longest-task",
+        "difficulty": 1
+    },
+    {
+        "title": "Number of Common Factors",
+        "slug": "number-of-common-factors",
+        "difficulty": 1
+    },
+    {
+        "title": "Sort the People",
+        "slug": "sort-the-people",
+        "difficulty": 1
+    },
+    {
+        "title": "Count Days Spent Together",
+        "slug": "count-days-spent-together",
+        "difficulty": 1
+    },
+    {
+        "title": "Smallest Even Multiple",
+        "slug": "smallest-even-multiple",
+        "difficulty": 1
+    },
+    {
+        "title": "Most Frequent Even Element",
+        "slug": "most-frequent-even-element",
+        "difficulty": 1
+    },
+    {
+        "title": "Find Subarrays With Equal Sum",
+        "slug": "find-subarrays-with-equal-sum",
+        "difficulty": 1
+    },
+    {
+        "title": "Check Distances Between Same Letters",
+        "slug": "check-distances-between-same-letters",
+        "difficulty": 1
+    },
+    {
+        "title": "Longest Subsequence With Limited Sum",
+        "slug": "longest-subsequence-with-limited-sum",
+        "difficulty": 1
+    },
+    {
+        "title": "Minimum Recolors to Get K Consecutive Black Blocks",
+        "slug": "minimum-recolors-to-get-k-consecutive-black-blocks",
+        "difficulty": 1
+    },
+    {
+        "title": "Minimum Hours of Training to Win a Competition",
+        "slug": "minimum-hours-of-training-to-win-a-competition",
+        "difficulty": 1
+    },
+    {
+        "title": "Largest Local Values in a Matrix",
+        "slug": "largest-local-values-in-a-matrix",
+        "difficulty": 1
+    },
+    {
+        "title": "Merge Similar Items",
+        "slug": "merge-similar-items",
+        "difficulty": 1
+    },
+    {
+        "title": "Number of Arithmetic Triplets",
+        "slug": "number-of-arithmetic-triplets",
+        "difficulty": 1
+    },
+    {
+        "title": "Make Array Zero by Subtracting Equal Amounts",
+        "slug": "make-array-zero-by-subtracting-equal-amounts",
+        "difficulty": 1
+    },
+    {
+        "title": "Best Poker Hand",
+        "slug": "best-poker-hand",
+        "difficulty": 1
+    },
+    {
+        "title": "First Letter to Appear Twice",
+        "slug": "first-letter-to-appear-twice",
+        "difficulty": 1
+    },
+    {
+        "title": "Maximum Number of Pairs in Array",
+        "slug": "maximum-number-of-pairs-in-array",
+        "difficulty": 1
+    },
+    {
+        "title": "Evaluate Boolean Binary Tree",
+        "slug": "evaluate-boolean-binary-tree",
+        "difficulty": 1
+    },
+    {
+        "title": "Minimum Amount of Time to Fill Cups",
+        "slug": "minimum-amount-of-time-to-fill-cups",
+        "difficulty": 1
+    },
+    {
+        "title": "Decode the Message",
+        "slug": "decode-the-message",
+        "difficulty": 1
+    },
+    {
+        "title": "Count Asterisks",
+        "slug": "count-asterisks",
+        "difficulty": 1
+    },
+    {
+        "title": "Check if Matrix Is X-Matrix",
+        "slug": "check-if-matrix-is-x-matrix",
+        "difficulty": 1
+    },
+    {
+        "title": "Strong Password Checker II",
+        "slug": "strong-password-checker-ii",
+        "difficulty": 1
+    },
+    {
+        "title": "Min Max Game",
+        "slug": "min-max-game",
+        "difficulty": 1
+    },
+    {
+        "title": "Root Equals Sum of Children",
+        "slug": "root-equals-sum-of-children",
+        "difficulty": 1
+    },
+    {
+        "title": "Add Two Integers",
+        "slug": "add-two-integers",
+        "difficulty": 1
+    },
+    {
+        "title": "Check if Number Has Equal Digit Count and Digit Value",
+        "slug": "check-if-number-has-equal-digit-count-and-digit-value",
+        "difficulty": 1
+    },
+    {
+        "title": "Rearrange Characters to Make Target String",
+        "slug": "rearrange-characters-to-make-target-string",
+        "difficulty": 1
+    },
+    {
+        "title": "Percentage of Letter in String",
+        "slug": "percentage-of-letter-in-string",
+        "difficulty": 1
+    },
+    {
+        "title": "Calculate Digit Sum of a String",
+        "slug": "calculate-digit-sum-of-a-string",
+        "difficulty": 1
+    },
+    {
+        "title": "Find Closest Number to Zero",
+        "slug": "find-closest-number-to-zero",
+        "difficulty": 1
+    },
+    {
+        "title": "Largest 3-Same-Digit Number in String",
+        "slug": "largest-3-same-digit-number-in-string",
+        "difficulty": 1
+    },
+    {
+        "title": "Minimum Number of Operations to Convert Time",
+        "slug": "minimum-number-of-operations-to-convert-time",
+        "difficulty": 1
+    },
+    {
+        "title": "Count Prefixes of a Given String",
+        "slug": "count-prefixes-of-a-given-string",
+        "difficulty": 1
+    },
+    {
+        "title": "Remove Digit From Number to Maximize Result",
+        "slug": "remove-digit-from-number-to-maximize-result",
+        "difficulty": 1
+    },
+    {
+        "title": "Intersection of Multiple Arrays",
+        "slug": "intersection-of-multiple-arrays",
+        "difficulty": 1
+    },
+    {
+        "title": "Largest Number After Digit Swaps by Parity",
+        "slug": "largest-number-after-digit-swaps-by-parity",
+        "difficulty": 1
+    },
+    {
+        "title": "Minimum Bit Flips to Convert Number",
+        "slug": "minimum-bit-flips-to-convert-number",
+        "difficulty": 1
+    },
+    {
+        "title": "Find All K-Distant Indices in an Array",
+        "slug": "find-all-k-distant-indices-in-an-array",
+        "difficulty": 1
+    },
+    {
+        "title": "Count Hills and Valleys in an Array",
+        "slug": "count-hills-and-valleys-in-an-array",
+        "difficulty": 1
+    },
+    {
+        "title": "Most Frequent Number Following Key In an Array",
+        "slug": "most-frequent-number-following-key-in-an-array",
+        "difficulty": 1
+    },
+    {
+        "title": "Divide Array Into Equal Pairs",
+        "slug": "divide-array-into-equal-pairs",
+        "difficulty": 1
+    },
+    {
+        "title": "Cells in a Range on an Excel Sheet",
+        "slug": "cells-in-a-range-on-an-excel-sheet",
+        "difficulty": 1
+    },
+    {
+        "title": "Count Integers With Even Digit Sum",
+        "slug": "count-integers-with-even-digit-sum",
+        "difficulty": 1
+    },
+    {
+        "title": "Counting Words With a Given Prefix",
+        "slug": "counting-words-with-a-given-prefix",
+        "difficulty": 1
+    },
+    {
+        "title": "Count Operations to Obtain Zero",
+        "slug": "count-operations-to-obtain-zero",
+        "difficulty": 1
+    },
+    {
+        "title": "Sort Even and Odd Indices Independently",
+        "slug": "sort-even-and-odd-indices-independently",
+        "difficulty": 1
+    },
+    {
+        "title": "Count Equal and Divisible Pairs in an Array",
+        "slug": "count-equal-and-divisible-pairs-in-an-array",
+        "difficulty": 1
+    },
+    {
+        "title": "Keep Multiplying Found Values by Two",
+        "slug": "keep-multiplying-found-values-by-two",
+        "difficulty": 1
+    },
+    {
+        "title": "Count Elements With Strictly Smaller and Greater Elements ",
+        "slug": "count-elements-with-strictly-smaller-and-greater-elements",
+        "difficulty": 1
+    },
+    {
+        "title": "Minimum Sum of Four Digit Number After Splitting Digits",
+        "slug": "minimum-sum-of-four-digit-number-after-splitting-digits",
+        "difficulty": 1
+    },
+    {
+        "title": "Divide a String Into Groups of Size k",
+        "slug": "divide-a-string-into-groups-of-size-k",
+        "difficulty": 1
+    },
+    {
+        "title": "Check if Every Row and Column Contains All Numbers",
+        "slug": "check-if-every-row-and-column-contains-all-numbers",
+        "difficulty": 1
+    },
+    {
+        "title": "Minimum Cost of Buying Candies With Discount",
+        "slug": "minimum-cost-of-buying-candies-with-discount",
+        "difficulty": 1
+    },
+    {
+        "title": "Check if All A's Appears Before All B's",
+        "slug": "check-if-all-as-appears-before-all-bs",
+        "difficulty": 1
+    },
+    {
+        "title": "A Number After a Double Reversal",
+        "slug": "a-number-after-a-double-reversal",
+        "difficulty": 1
+    },
+    {
+        "title": "Capitalize the Title",
+        "slug": "capitalize-the-title",
+        "difficulty": 1
+    },
+    {
+        "title": "Find First Palindromic String in the Array",
+        "slug": "find-first-palindromic-string-in-the-array",
+        "difficulty": 1
+    },
+    {
+        "title": "Rings and Rods",
+        "slug": "rings-and-rods",
+        "difficulty": 1
+    },
+    {
+        "title": "Maximum Number of Words Found in Sentences",
+        "slug": "maximum-number-of-words-found-in-sentences",
+        "difficulty": 1
+    },
+    {
+        "title": "Finding 3-Digit Even Numbers",
+        "slug": "finding-3-digit-even-numbers",
+        "difficulty": 1
+    },
+    {
+        "title": "Find Target Indices After Sorting Array",
+        "slug": "find-target-indices-after-sorting-array",
+        "difficulty": 1
+    },
+    {
+        "title": "Find Subsequence of Length K With the Largest Sum",
+        "slug": "find-subsequence-of-length-k-with-the-largest-sum",
+        "difficulty": 1
+    },
+    {
+        "title": "Two Furthest Houses With Different Colors",
+        "slug": "two-furthest-houses-with-different-colors",
+        "difficulty": 1
+    },
+    {
+        "title": "Time Needed to Buy Tickets",
+        "slug": "time-needed-to-buy-tickets",
+        "difficulty": 1
+    },
+    {
+        "title": "Count Common Words With One Occurrence",
+        "slug": "count-common-words-with-one-occurrence",
+        "difficulty": 1
+    },
+    {
+        "title": "Count Vowel Substrings of a String",
+        "slug": "count-vowel-substrings-of-a-string",
+        "difficulty": 1
+    },
+    {
+        "title": "Smallest Index With Equal Value",
+        "slug": "smallest-index-with-equal-value",
+        "difficulty": 1
+    },
+    {
+        "title": "Check Whether Two Strings are Almost Equivalent",
+        "slug": "check-whether-two-strings-are-almost-equivalent",
+        "difficulty": 1
+    },
+    {
+        "title": "Number of Valid Words in a Sentence",
+        "slug": "number-of-valid-words-in-a-sentence",
+        "difficulty": 1
+    },
+    {
+        "title": "Check if Numbers Are Ascending in a Sentence",
+        "slug": "check-if-numbers-are-ascending-in-a-sentence",
+        "difficulty": 1
+    },
+    {
+        "title": "Kth Distinct String in an Array",
+        "slug": "kth-distinct-string-in-an-array",
+        "difficulty": 1
+    },
+    {
+        "title": "Two Out of Three",
+        "slug": "two-out-of-three",
+        "difficulty": 1
+    },
+    {
+        "title": "Minimum Moves to Convert String",
+        "slug": "minimum-moves-to-convert-string",
+        "difficulty": 1
+    },
+    {
+        "title": "Minimum Number of Moves to Seat Everyone",
+        "slug": "minimum-number-of-moves-to-seat-everyone",
+        "difficulty": 1
+    },
+    {
+        "title": "Maximum Difference Between Increasing Elements",
+        "slug": "maximum-difference-between-increasing-elements",
+        "difficulty": 1
+    },
+    {
+        "title": "Final Value of Variable After Performing Operations",
+        "slug": "final-value-of-variable-after-performing-operations",
+        "difficulty": 1
+    },
+    {
+        "title": "Convert 1D Array Into 2D Array",
+        "slug": "convert-1d-array-into-2d-array",
+        "difficulty": 1
+    },
+    {
+        "title": "Reverse Prefix of Word",
+        "slug": "reverse-prefix-of-word",
+        "difficulty": 1
+    },
+    {
+        "title": "Count Special Quadruplets",
+        "slug": "count-special-quadruplets",
+        "difficulty": 1
+    },
+    {
+        "title": "Find if Path Exists in Graph",
+        "slug": "find-if-path-exists-in-graph",
+        "difficulty": 1
+    },
+    {
+        "title": "Count Number of Pairs With Absolute Difference K",
+        "slug": "count-number-of-pairs-with-absolute-difference-k",
+        "difficulty": 1
+    },
+    {
+        "title": "Minimum Difference Between Highest and Lowest of K Scores",
+        "slug": "minimum-difference-between-highest-and-lowest-of-k-scores",
+        "difficulty": 1
+    },
+    {
+        "title": "Find Greatest Common Divisor of Array",
+        "slug": "find-greatest-common-divisor-of-array",
+        "difficulty": 1
+    },
+    {
+        "title": "Find the Middle Index in Array",
+        "slug": "find-the-middle-index-in-array",
+        "difficulty": 1
+    },
+    {
+        "title": "Number of Strings That Appear as Substrings in Word",
+        "slug": "number-of-strings-that-appear-as-substrings-in-word",
+        "difficulty": 1
+    },
+    {
+        "title": "Check If String Is a Prefix of Array",
+        "slug": "check-if-string-is-a-prefix-of-array",
+        "difficulty": 1
+    },
+    {
+        "title": "Minimum Time to Type Word Using Special Typewriter",
+        "slug": "minimum-time-to-type-word-using-special-typewriter",
+        "difficulty": 1
+    },
+    {
+        "title": "Three Divisors",
+        "slug": "three-divisors",
+        "difficulty": 1
+    },
+    {
+        "title": "Sum of Digits of String After Convert",
+        "slug": "sum-of-digits-of-string-after-convert",
+        "difficulty": 1
+    },
+    {
+        "title": "Concatenation of Array",
+        "slug": "concatenation-of-array",
+        "difficulty": 1
+    },
+    {
+        "title": "Check if All Characters Have Equal Number of Occurrences",
+        "slug": "check-if-all-characters-have-equal-number-of-occurrences",
+        "difficulty": 1
+    },
+    {
+        "title": "Build Array from Permutation",
+        "slug": "build-array-from-permutation",
+        "difficulty": 1
+    },
+    {
+        "title": "Maximum Product Difference Between Two Pairs",
+        "slug": "maximum-product-difference-between-two-pairs",
+        "difficulty": 1
+    },
+    {
+        "title": "Count Square Sum Triples",
+        "slug": "count-square-sum-triples",
+        "difficulty": 1
+    },
+    {
+        "title": "Largest Odd Number in String",
+        "slug": "largest-odd-number-in-string",
+        "difficulty": 1
+    },
+    {
+        "title": "Redistribute Characters to Make All Strings Equal",
+        "slug": "redistribute-characters-to-make-all-strings-equal",
+        "difficulty": 1
+    },
+    {
+        "title": "Remove One Element to Make the Array Strictly Increasing",
+        "slug": "remove-one-element-to-make-the-array-strictly-increasing",
+        "difficulty": 1
+    },
+    {
+        "title": "Determine Whether Matrix Can Be Obtained By Rotation",
+        "slug": "determine-whether-matrix-can-be-obtained-by-rotation",
+        "difficulty": 1
+    },
+    {
+        "title": "Check if Word Equals Summation of Two Words",
+        "slug": "check-if-word-equals-summation-of-two-words",
+        "difficulty": 1
+    },
+    {
+        "title": "Check if All the Integers in a Range Are Covered",
+        "slug": "check-if-all-the-integers-in-a-range-are-covered",
+        "difficulty": 1
+    },
+    {
+        "title": "Longer Contiguous Segments of Ones than Zeros",
+        "slug": "longer-contiguous-segments-of-ones-than-zeros",
+        "difficulty": 1
+    },
+    {
+        "title": "Sum of All Subset XOR Totals",
+        "slug": "sum-of-all-subset-xor-totals",
+        "difficulty": 1
+    },
+    {
+        "title": "Substrings of Size Three with Distinct Characters",
+        "slug": "substrings-of-size-three-with-distinct-characters",
+        "difficulty": 1
+    },
+    {
+        "title": "Maximum Population Year",
+        "slug": "maximum-population-year",
+        "difficulty": 1
+    },
+    {
+        "title": "Minimum Distance to the Target Element",
+        "slug": "minimum-distance-to-the-target-element",
+        "difficulty": 1
+    },
+    {
+        "title": "Sorting the Sentence",
+        "slug": "sorting-the-sentence",
+        "difficulty": 1
+    },
+    {
+        "title": "Sum of Digits in Base K",
+        "slug": "sum-of-digits-in-base-k",
+        "difficulty": 1
+    },
+    {
+        "title": "Check if the Sentence Is Pangram",
+        "slug": "check-if-the-sentence-is-pangram",
+        "difficulty": 1
+    },
+    {
+        "title": "Replace All Digits with Characters",
+        "slug": "replace-all-digits-with-characters",
+        "difficulty": 1
+    },
+    {
+        "title": "Sign of the Product of an Array",
+        "slug": "sign-of-the-product-of-an-array",
+        "difficulty": 1
+    },
+    {
+        "title": "Truncate Sentence",
+        "slug": "truncate-sentence",
+        "difficulty": 1
+    },
+    {
+        "title": "Minimum Operations to Make the Array Increasing",
+        "slug": "minimum-operations-to-make-the-array-increasing",
+        "difficulty": 1
+    },
+    {
+        "title": "Number of Different Integers in a String",
+        "slug": "number-of-different-integers-in-a-string",
+        "difficulty": 1
+    },
+    {
+        "title": "Maximum Ascending Subarray Sum",
+        "slug": "maximum-ascending-subarray-sum",
+        "difficulty": 1
+    },
+    {
+        "title": "Determine Color of a Chessboard Square",
+        "slug": "determine-color-of-a-chessboard-square",
+        "difficulty": 1
+    },
+    {
+        "title": "Find Center of Star Graph",
+        "slug": "find-center-of-star-graph",
+        "difficulty": 1
+    },
+    {
+        "title": "Check if One String Swap Can Make Strings Equal",
+        "slug": "check-if-one-string-swap-can-make-strings-equal",
+        "difficulty": 1
+    },
+    {
+        "title": "Check if Binary String Has at Most One Segment of Ones",
+        "slug": "check-if-binary-string-has-at-most-one-segment-of-ones",
+        "difficulty": 1
+    },
+    {
+        "title": "Second Largest Digit in a String",
+        "slug": "second-largest-digit-in-a-string",
+        "difficulty": 1
+    },
+    {
+        "title": "Count Items Matching a Rule",
+        "slug": "count-items-matching-a-rule",
+        "difficulty": 1
+    },
+    {
+        "title": "Merge Strings Alternately",
+        "slug": "merge-strings-alternately",
+        "difficulty": 1
+    },
+    {
+        "title": "Find Nearest Point That Has the Same X or Y Coordinate",
+        "slug": "find-nearest-point-that-has-the-same-x-or-y-coordinate",
+        "difficulty": 1
+    },
+    {
+        "title": "Minimum Changes To Make Alternating Binary String",
+        "slug": "minimum-changes-to-make-alternating-binary-string",
+        "difficulty": 1
+    },
+    {
+        "title": "Check if Array Is Sorted and Rotated",
+        "slug": "check-if-array-is-sorted-and-rotated",
+        "difficulty": 1
+    },
+    {
+        "title": "Longest Nice Substring",
+        "slug": "longest-nice-substring",
+        "difficulty": 1
+    },
+    {
+        "title": "Latest Time by Replacing Hidden Digits",
+        "slug": "latest-time-by-replacing-hidden-digits",
+        "difficulty": 1
+    },
+    {
+        "title": "Sum of Unique Elements",
+        "slug": "sum-of-unique-elements",
+        "difficulty": 1
+    },
+    {
+        "title": "Maximum Number of Balls in a Box",
+        "slug": "maximum-number-of-balls-in-a-box",
+        "difficulty": 1
+    },
+    {
+        "title": "Number Of Rectangles That Can Form The Largest Square",
+        "slug": "number-of-rectangles-that-can-form-the-largest-square",
+        "difficulty": 1
+    },
+    {
+        "title": "Decode XORed Array",
+        "slug": "decode-xored-array",
+        "difficulty": 1
+    },
+    {
+        "title": "Find the Highest Altitude",
+        "slug": "find-the-highest-altitude",
+        "difficulty": 1
+    },
+    {
+        "title": "Maximum Units on a Truck",
+        "slug": "maximum-units-on-a-truck",
+        "difficulty": 1
+    },
+    {
+        "title": "Determine if String Halves Are Alike",
+        "slug": "determine-if-string-halves-are-alike",
+        "difficulty": 1
+    },
+    {
+        "title": "Calculate Money in Leetcode Bank",
+        "slug": "calculate-money-in-leetcode-bank",
+        "difficulty": 1
+    },
+    {
+        "title": "Reformat Phone Number",
+        "slug": "reformat-phone-number",
+        "difficulty": 1
+    },
+    {
+        "title": "Count of Matches in Tournament",
+        "slug": "count-of-matches-in-tournament",
+        "difficulty": 1
+    },
+    {
+        "title": "Number of Students Unable to Eat Lunch",
+        "slug": "number-of-students-unable-to-eat-lunch",
+        "difficulty": 1
+    },
+    {
+        "title": "Goal Parser Interpretation",
+        "slug": "goal-parser-interpretation",
+        "difficulty": 1
+    },
+    {
+        "title": "Richest Customer Wealth",
+        "slug": "richest-customer-wealth",
+        "difficulty": 1
+    },
+    {
+        "title": "Count the Number of Consistent Strings",
+        "slug": "count-the-number-of-consistent-strings",
+        "difficulty": 1
+    },
+    {
+        "title": "Check If Two String Arrays are Equivalent",
+        "slug": "check-if-two-string-arrays-are-equivalent",
+        "difficulty": 1
+    },
+    {
+        "title": "Design an Ordered Stream",
+        "slug": "design-an-ordered-stream",
+        "difficulty": 1
+    },
+    {
+        "title": "Get Maximum in Generated Array",
+        "slug": "get-maximum-in-generated-array",
+        "difficulty": 1
+    },
+    {
+        "title": "Maximum Repeating Substring",
+        "slug": "maximum-repeating-substring",
+        "difficulty": 1
+    },
+    {
+        "title": "Check Array Formation Through Concatenation",
+        "slug": "check-array-formation-through-concatenation",
+        "difficulty": 1
+    },
+    {
+        "title": "Defuse the Bomb",
+        "slug": "defuse-the-bomb",
+        "difficulty": 1
+    },
+    {
+        "title": "Slowest Key",
+        "slug": "slowest-key",
+        "difficulty": 1
+    },
+    {
+        "title": "Largest Substring Between Two Equal Characters",
+        "slug": "largest-substring-between-two-equal-characters",
+        "difficulty": 1
+    },
+    {
+        "title": "Widest Vertical Area Between Two Points Containing No Points",
+        "slug": "widest-vertical-area-between-two-points-containing-no-points",
+        "difficulty": 1
+    },
+    {
+        "title": "Sort Array by Increasing Frequency",
+        "slug": "sort-array-by-increasing-frequency",
+        "difficulty": 1
+    },
+    {
+        "title": "Maximum Nesting Depth of the Parentheses",
+        "slug": "maximum-nesting-depth-of-the-parentheses",
+        "difficulty": 1
+    },
+    {
+        "title": "Special Array With X Elements Greater Than or Equal X",
+        "slug": "special-array-with-x-elements-greater-than-or-equal-x",
+        "difficulty": 1
+    },
+    {
+        "title": "Crawler Log Folder",
+        "slug": "crawler-log-folder",
+        "difficulty": 1
+    },
+    {
+        "title": "Rearrange Spaces Between Words",
+        "slug": "rearrange-spaces-between-words",
+        "difficulty": 1
+    },
+    {
+        "title": "Design Parking System",
+        "slug": "design-parking-system",
+        "difficulty": 1
+    },
+    {
+        "title": "Special Positions in a Binary Matrix",
+        "slug": "special-positions-in-a-binary-matrix",
+        "difficulty": 1
+    },
+    {
+        "title": "Replace All ?'s to Avoid Consecutive Repeating Characters",
+        "slug": "replace-all-s-to-avoid-consecutive-repeating-characters",
+        "difficulty": 1
+    },
+    {
+        "title": "Sum of All Odd Length Subarrays",
+        "slug": "sum-of-all-odd-length-subarrays",
+        "difficulty": 1
+    },
+    {
+        "title": "Detect Pattern of Length M Repeated K or More Times",
+        "slug": "detect-pattern-of-length-m-repeated-k-or-more-times",
+        "difficulty": 1
+    },
+    {
+        "title": "Most Visited Sector in  a Circular Track",
+        "slug": "most-visited-sector-in-a-circular-track",
+        "difficulty": 1
+    },
+    {
+        "title": "Matrix Diagonal Sum",
+        "slug": "matrix-diagonal-sum",
+        "difficulty": 1
+    },
+    {
+        "title": "Make The String Great",
+        "slug": "make-the-string-great",
+        "difficulty": 1
+    },
+    {
+        "title": "Thousand Separator",
+        "slug": "thousand-separator",
+        "difficulty": 1
+    },
+    {
+        "title": "Count Good Triplets",
+        "slug": "count-good-triplets",
+        "difficulty": 1
+    },
+    {
+        "title": "Shuffle String",
+        "slug": "shuffle-string",
+        "difficulty": 1
+    },
+    {
+        "title": "Kth Missing Positive Number",
+        "slug": "kth-missing-positive-number",
+        "difficulty": 1
+    },
+    {
+        "title": "Water Bottles",
+        "slug": "water-bottles",
+        "difficulty": 1
+    },
+    {
+        "title": "Number of Good Pairs",
+        "slug": "number-of-good-pairs",
+        "difficulty": 1
+    },
+    {
+        "title": "Count Odd Numbers in an Interval Range",
+        "slug": "count-odd-numbers-in-an-interval-range",
+        "difficulty": 1
+    },
+    {
+        "title": "Can Make Arithmetic Progression From Sequence",
+        "slug": "can-make-arithmetic-progression-from-sequence",
+        "difficulty": 1
+    },
+    {
+        "title": "Path Crossing",
+        "slug": "path-crossing",
+        "difficulty": 1
+    },
+    {
+        "title": "XOR Operation in an Array",
+        "slug": "xor-operation-in-an-array",
+        "difficulty": 1
+    },
+    {
+        "title": "Running Sum of 1d Array",
+        "slug": "running-sum-of-1d-array",
+        "difficulty": 1
+    },
+    {
+        "title": "Average Salary Excluding the Minimum and Maximum Salary",
+        "slug": "average-salary-excluding-the-minimum-and-maximum-salary",
+        "difficulty": 1
+    },
+    {
+        "title": "Shuffle the Array",
+        "slug": "shuffle-the-array",
+        "difficulty": 1
+    },
+    {
+        "title": "Maximum Product of Two Elements in an Array",
+        "slug": "maximum-product-of-two-elements-in-an-array",
+        "difficulty": 1
+    },
+    {
+        "title": "Final Prices With a Special Discount in a Shop",
+        "slug": "final-prices-with-a-special-discount-in-a-shop",
+        "difficulty": 1
+    },
+    {
+        "title": "Check If a Word Occurs As a Prefix of Any Word in a Sentence",
+        "slug": "check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence",
+        "difficulty": 1
+    },
+    {
+        "title": "Number of Students Doing Homework at a Given Time",
+        "slug": "number-of-students-doing-homework-at-a-given-time",
+        "difficulty": 1
+    },
+    {
+        "title": "Make Two Arrays Equal by Reversing Subarrays",
+        "slug": "make-two-arrays-equal-by-reversing-subarrays",
+        "difficulty": 1
+    },
+    {
+        "title": "Check If All 1's Are at Least Length K Places Away",
+        "slug": "check-if-all-1s-are-at-least-length-k-places-away",
+        "difficulty": 1
+    },
+    {
+        "title": "Destination City",
+        "slug": "destination-city",
+        "difficulty": 1
+    },
+    {
+        "title": "Consecutive Characters",
+        "slug": "consecutive-characters",
+        "difficulty": 1
+    },
+    {
+        "title": "Maximum Score After Splitting a String",
+        "slug": "maximum-score-after-splitting-a-string",
+        "difficulty": 1
+    },
+    {
+        "title": "Reformat The String",
+        "slug": "reformat-the-string",
+        "difficulty": 1
+    },
+    {
+        "title": "Kids With the Greatest Number of Candies",
+        "slug": "kids-with-the-greatest-number-of-candies",
+        "difficulty": 1
+    },
+    {
+        "title": "String Matching in an Array",
+        "slug": "string-matching-in-an-array",
+        "difficulty": 1
+    },
+    {
+        "title": "Minimum Subsequence in Non-Increasing Order",
+        "slug": "minimum-subsequence-in-non-increasing-order",
+        "difficulty": 1
+    },
+    {
+        "title": "Minimum Value to Get Positive Step by Step Sum",
+        "slug": "minimum-value-to-get-positive-step-by-step-sum",
+        "difficulty": 1
+    },
+    {
+        "title": "Find Lucky Integer in an Array",
+        "slug": "find-lucky-integer-in-an-array",
+        "difficulty": 1
+    },
+    {
+        "title": "Create Target Array in the Given Order",
+        "slug": "create-target-array-in-the-given-order",
+        "difficulty": 1
+    },
+    {
+        "title": "Count Largest Group",
+        "slug": "count-largest-group",
+        "difficulty": 1
+    },
+    {
+        "title": "Find a Corresponding Node of a Binary Tree in a Clone of That Tree",
+        "slug": "find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree",
+        "difficulty": 1
+    },
+    {
+        "title": "Lucky Numbers in a Matrix",
+        "slug": "lucky-numbers-in-a-matrix",
+        "difficulty": 1
+    },
+    {
+        "title": "Generate a String With Characters That Have Odd Counts",
+        "slug": "generate-a-string-with-characters-that-have-odd-counts",
+        "difficulty": 1
+    },
+    {
+        "title": "Find the Distance Value Between Two Arrays",
+        "slug": "find-the-distance-value-between-two-arrays",
+        "difficulty": 1
+    },
+    {
+        "title": "How Many Numbers Are Smaller Than the Current Number",
+        "slug": "how-many-numbers-are-smaller-than-the-current-number",
+        "difficulty": 1
+    },
+    {
+        "title": "Count Negative Numbers in a Sorted Matrix",
+        "slug": "count-negative-numbers-in-a-sorted-matrix",
+        "difficulty": 1
+    },
+    {
+        "title": "Increasing Decreasing String",
+        "slug": "increasing-decreasing-string",
+        "difficulty": 1
+    },
+    {
+        "title": "Check If N and Its Double Exist",
+        "slug": "check-if-n-and-its-double-exist",
+        "difficulty": 1
+    },
+    {
+        "title": "The K Weakest Rows in a Matrix",
+        "slug": "the-k-weakest-rows-in-a-matrix",
+        "difficulty": 1
+    },
+    {
+        "title": "Sort Integers by The Number of 1 Bits",
+        "slug": "sort-integers-by-the-number-of-1-bits",
+        "difficulty": 1
+    },
+    {
+        "title": "Remove Palindromic Subsequences",
+        "slug": "remove-palindromic-subsequences",
+        "difficulty": 1
+    },
+    {
+        "title": "Maximum 69 Number",
+        "slug": "maximum-69-number",
+        "difficulty": 1
+    },
+    {
+        "title": "Number of Steps to Reduce a Number to Zero",
+        "slug": "number-of-steps-to-reduce-a-number-to-zero",
+        "difficulty": 1
+    },
+    {
+        "title": "Convert Integer to the Sum of Two No-Zero Integers",
+        "slug": "convert-integer-to-the-sum-of-two-no-zero-integers",
+        "difficulty": 1
+    },
+    {
+        "title": "Decrypt String from Alphabet to Integer Mapping",
+        "slug": "decrypt-string-from-alphabet-to-integer-mapping",
+        "difficulty": 1
+    },
+    {
+        "title": "Find the K-Beauty of a Number",
+        "slug": "find-the-k-beauty-of-a-number",
+        "difficulty": 1
+    },
+    {
+        "title": "Find N Unique Integers Sum up to Zero",
+        "slug": "find-n-unique-integers-sum-up-to-zero",
+        "difficulty": 1
+    },
+    {
+        "title": "Find Numbers with Even Number of Digits",
+        "slug": "find-numbers-with-even-number-of-digits",
+        "difficulty": 1
+    },
+    {
+        "title": "Convert Binary Number in a Linked List to Integer",
+        "slug": "convert-binary-number-in-a-linked-list-to-integer",
+        "difficulty": 1
+    },
+    {
+        "title": "Subtract the Product and Sum of Digits of an Integer",
+        "slug": "subtract-the-product-and-sum-of-digits-of-an-integer",
+        "difficulty": 1
+    },
+    {
+        "title": "Find Winner on a Tic Tac Toe Game",
+        "slug": "find-winner-on-a-tic-tac-toe-game",
+        "difficulty": 1
+    },
+    {
+        "title": "Minimum Time Visiting All Points",
+        "slug": "minimum-time-visiting-all-points",
+        "difficulty": 1
+    },
+    {
+        "title": "Find the Difference of Two Arrays",
+        "slug": "find-the-difference-of-two-arrays",
+        "difficulty": 1
+    },
+    {
+        "title": "Shift 2D Grid",
+        "slug": "shift-2d-grid",
+        "difficulty": 1
+    },
+    {
+        "title": "Calculate Amount Paid in Taxes",
+        "slug": "calculate-amount-paid-in-taxes",
+        "difficulty": 1
+    },
+    {
+        "title": "Cells with Odd Values in a Matrix",
+        "slug": "cells-with-odd-values-in-a-matrix",
+        "difficulty": 1
+    },
+    {
+        "title": "Greatest English Letter in Upper and Lower Case",
+        "slug": "greatest-english-letter-in-upper-and-lower-case",
+        "difficulty": 1
+    },
+    {
+        "title": "Find Resultant Array After Removing Anagrams",
+        "slug": "find-resultant-array-after-removing-anagrams",
+        "difficulty": 1
+    },
+    {
+        "title": "Check If It Is a Straight Line",
+        "slug": "check-if-it-is-a-straight-line",
+        "difficulty": 1
+    },
+    {
+        "title": "Split a String in Balanced Strings",
+        "slug": "split-a-string-in-balanced-strings",
+        "difficulty": 1
+    },
+    {
+        "title": "Minimum Cost to Move Chips to The Same Position",
+        "slug": "minimum-cost-to-move-chips-to-the-same-position",
+        "difficulty": 1
+    },
+    {
+        "title": "Unique Number of Occurrences",
+        "slug": "unique-number-of-occurrences",
+        "difficulty": 1
+    },
+    {
+        "title": "Minimum Absolute Difference",
+        "slug": "minimum-absolute-difference",
+        "difficulty": 1
+    },
+    {
+        "title": "Delete Characters to Make Fancy String",
+        "slug": "delete-characters-to-make-fancy-string",
+        "difficulty": 1
+    },
+    {
+        "title": "Maximum Number of Balloons",
+        "slug": "maximum-number-of-balloons",
+        "difficulty": 1
+    },
+    {
+        "title": "Three Consecutive Odds",
+        "slug": "three-consecutive-odds",
+        "difficulty": 1
+    },
+    {
+        "title": "Day of the Week",
+        "slug": "day-of-the-week",
+        "difficulty": 1
+    },
+    {
+        "title": "Distance Between Bus Stops",
+        "slug": "distance-between-bus-stops",
+        "difficulty": 1
+    },
+    {
+        "title": "Reformat Date",
+        "slug": "reformat-date",
+        "difficulty": 1
+    },
+    {
+        "title": "Prime Arrangements",
+        "slug": "prime-arrangements",
+        "difficulty": 1
+    },
+    {
+        "title": "Number of Days Between Two Dates",
+        "slug": "number-of-days-between-two-dates",
+        "difficulty": 1
+    },
+    {
+        "title": "Maximum Number of Words You Can Type",
+        "slug": "maximum-number-of-words-you-can-type",
+        "difficulty": 1
+    },
+    {
+        "title": "Day of the Year",
+        "slug": "day-of-the-year",
+        "difficulty": 1
+    },
+    {
+        "title": "Rank Transform of an Array",
+        "slug": "rank-transform-of-an-array",
+        "difficulty": 1
+    }
+]
