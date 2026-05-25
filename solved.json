@@ -11,5 +11,6 @@
     "sum-of-digits-of-string-after-convert",
     "count-partitions-with-even-sum-difference",
     "distance-between-bus-stops",
-    "minimum-number-of-pushes-to-type-word-i"
+    "minimum-number-of-pushes-to-type-word-i",
+    "compute-decimal-representation"
 ]
