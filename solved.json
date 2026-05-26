@@ -25,5 +25,6 @@
     "mirror-distance-of-an-integer",
     "most-frequent-even-element",
     "trionic-array-i",
-    "find-the-integer-added-to-array-i"
+    "find-the-integer-added-to-array-i",
+    "count-substrings-that-satisfy-k-constraint-i"
 ]
