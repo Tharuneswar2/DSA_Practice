@@ -21,5 +21,6 @@
     "check-divisibility-by-digit-sum-and-product",
     "largest-number-after-digit-swaps-by-parity",
     "number-of-senior-citizens",
-    "maximum-number-of-balloons"
+    "maximum-number-of-balloons",
+    "mirror-distance-of-an-integer"
 ]
