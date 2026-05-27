@@ -33,5 +33,6 @@
     "number-of-valid-words-in-a-sentence",
     "minimum-element-after-replacement-with-digit-sum",
     "sum-multiples",
-    "circular-sentence"
+    "circular-sentence",
+    "find-words-containing-character"
 ]
