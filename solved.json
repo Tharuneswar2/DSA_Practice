@@ -35,5 +35,6 @@
     "sum-multiples",
     "circular-sentence",
     "find-words-containing-character",
-    "check-if-the-number-is-fascinating"
+    "check-if-the-number-is-fascinating",
+    "maximum-repeating-substring"
 ]
