@@ -36,5 +36,6 @@
     "circular-sentence",
     "find-words-containing-character",
     "check-if-the-number-is-fascinating",
-    "maximum-repeating-substring"
+    "maximum-repeating-substring",
+    "check-if-numbers-are-ascending-in-a-sentence"
 ]
