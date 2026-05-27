@@ -34,5 +34,6 @@
     "minimum-element-after-replacement-with-digit-sum",
     "sum-multiples",
     "circular-sentence",
-    "find-words-containing-character"
+    "find-words-containing-character",
+    "check-if-the-number-is-fascinating"
 ]
