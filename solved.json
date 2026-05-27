@@ -37,5 +37,6 @@
     "find-words-containing-character",
     "check-if-the-number-is-fascinating",
     "maximum-repeating-substring",
-    "check-if-numbers-are-ascending-in-a-sentence"
+    "check-if-numbers-are-ascending-in-a-sentence",
+    "minimum-operations-to-make-the-array-increasing"
 ]
