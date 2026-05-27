@@ -39,5 +39,6 @@
     "maximum-repeating-substring",
     "check-if-numbers-are-ascending-in-a-sentence",
     "minimum-operations-to-make-the-array-increasing",
-    "convert-binary-number-in-a-linked-list-to-integer"
+    "convert-binary-number-in-a-linked-list-to-integer",
+    "sort-integers-by-the-number-of-1-bits"
 ]
