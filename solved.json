@@ -48,5 +48,6 @@
     "check-if-all-1s-are-at-least-length-k-places-away",
     "merge-strings-alternately",
     "two-furthest-houses-with-different-colors",
-    "max-pair-sum-in-an-array"
+    "max-pair-sum-in-an-array",
+    "smallest-index-with-digit-sum-equal-to-index"
 ]
