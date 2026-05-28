@@ -50,5 +50,6 @@
     "two-furthest-houses-with-different-colors",
     "max-pair-sum-in-an-array",
     "smallest-index-with-digit-sum-equal-to-index",
-    "count-largest-group"
+    "count-largest-group",
+    "minimum-subsequence-in-non-increasing-order"
 ]
