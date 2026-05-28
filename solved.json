@@ -49,5 +49,6 @@
     "merge-strings-alternately",
     "two-furthest-houses-with-different-colors",
     "max-pair-sum-in-an-array",
-    "smallest-index-with-digit-sum-equal-to-index"
+    "smallest-index-with-digit-sum-equal-to-index",
+    "count-largest-group"
 ]
