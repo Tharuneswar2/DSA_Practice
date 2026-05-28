@@ -44,5 +44,6 @@
     "maximum-score-after-splitting-a-string",
     "alternating-groups-i",
     "check-if-number-has-equal-digit-count-and-digit-value",
-    "limit-occurrences-in-sorted-array"
+    "limit-occurrences-in-sorted-array",
+    "check-if-all-1s-are-at-least-length-k-places-away"
 ]
