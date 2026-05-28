@@ -52,5 +52,6 @@
     "smallest-index-with-digit-sum-equal-to-index",
     "count-largest-group",
     "minimum-subsequence-in-non-increasing-order",
-    "check-if-array-is-sorted-and-rotated"
+    "check-if-array-is-sorted-and-rotated",
+    "maximum-strong-pair-xor-i"
 ]
