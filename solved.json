@@ -45,5 +45,6 @@
     "alternating-groups-i",
     "check-if-number-has-equal-digit-count-and-digit-value",
     "limit-occurrences-in-sorted-array",
-    "check-if-all-1s-are-at-least-length-k-places-away"
+    "check-if-all-1s-are-at-least-length-k-places-away",
+    "merge-strings-alternately"
 ]
