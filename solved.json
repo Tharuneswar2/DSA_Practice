@@ -53,5 +53,6 @@
     "count-largest-group",
     "minimum-subsequence-in-non-increasing-order",
     "check-if-array-is-sorted-and-rotated",
-    "maximum-strong-pair-xor-i"
+    "maximum-strong-pair-xor-i",
+    "maximum-product-of-two-digits"
 ]
