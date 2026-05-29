@@ -61,5 +61,6 @@
     "reverse-letters-then-special-characters-in-a-string",
     "concatenate-non-zero-digits-and-multiply-by-sum-i",
     "largest-even-number",
-    "count-tested-devices-after-test-operations"
+    "count-tested-devices-after-test-operations",
+    "furthest-point-from-origin"
 ]
