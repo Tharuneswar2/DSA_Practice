@@ -67,5 +67,6 @@
     "largest-substring-between-two-equal-characters",
     "sum-of-elements-with-frequency-divisible-by-k",
     "flip-square-submatrix-vertically",
-    "minimum-number-of-operations-to-convert-time"
+    "minimum-number-of-operations-to-convert-time",
+    "separate-the-digits-in-an-array"
 ]
