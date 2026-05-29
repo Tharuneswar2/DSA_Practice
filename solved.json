@@ -58,5 +58,6 @@
     "number-of-strings-that-appear-as-substrings-in-word",
     "concatenate-array-with-reverse",
     "maximum-69-number",
-    "reverse-letters-then-special-characters-in-a-string"
+    "reverse-letters-then-special-characters-in-a-string",
+    "concatenate-non-zero-digits-and-multiply-by-sum-i"
 ]
