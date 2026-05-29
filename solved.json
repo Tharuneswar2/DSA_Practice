@@ -63,5 +63,6 @@
     "largest-even-number",
     "count-tested-devices-after-test-operations",
     "furthest-point-from-origin",
-    "count-square-sum-triples"
+    "count-square-sum-triples",
+    "largest-substring-between-two-equal-characters"
 ]
