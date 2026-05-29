@@ -62,5 +62,6 @@
     "concatenate-non-zero-digits-and-multiply-by-sum-i",
     "largest-even-number",
     "count-tested-devices-after-test-operations",
-    "furthest-point-from-origin"
+    "furthest-point-from-origin",
+    "count-square-sum-triples"
 ]
