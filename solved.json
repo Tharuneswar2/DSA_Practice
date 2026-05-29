@@ -65,5 +65,6 @@
     "furthest-point-from-origin",
     "count-square-sum-triples",
     "largest-substring-between-two-equal-characters",
-    "sum-of-elements-with-frequency-divisible-by-k"
+    "sum-of-elements-with-frequency-divisible-by-k",
+    "flip-square-submatrix-vertically"
 ]
