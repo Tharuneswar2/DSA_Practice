@@ -60,5 +60,6 @@
     "maximum-69-number",
     "reverse-letters-then-special-characters-in-a-string",
     "concatenate-non-zero-digits-and-multiply-by-sum-i",
-    "largest-even-number"
+    "largest-even-number",
+    "count-tested-devices-after-test-operations"
 ]
