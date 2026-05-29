@@ -64,5 +64,6 @@
     "count-tested-devices-after-test-operations",
     "furthest-point-from-origin",
     "count-square-sum-triples",
-    "largest-substring-between-two-equal-characters"
+    "largest-substring-between-two-equal-characters",
+    "sum-of-elements-with-frequency-divisible-by-k"
 ]
