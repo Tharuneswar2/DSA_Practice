@@ -76,5 +76,6 @@
     "convert-1d-array-into-2d-array",
     "transformed-array",
     "decode-the-message",
-    "kth-distinct-string-in-an-array"
+    "kth-distinct-string-in-an-array",
+    "minimum-operations-to-make-array-values-equal-to-k"
 ]
