@@ -77,5 +77,6 @@
     "transformed-array",
     "decode-the-message",
     "kth-distinct-string-in-an-array",
-    "minimum-operations-to-make-array-values-equal-to-k"
+    "minimum-operations-to-make-array-values-equal-to-k",
+    "intersection-of-multiple-arrays"
 ]
