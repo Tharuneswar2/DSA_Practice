@@ -75,5 +75,6 @@
     "make-a-square-with-the-same-color",
     "convert-1d-array-into-2d-array",
     "transformed-array",
-    "decode-the-message"
+    "decode-the-message",
+    "kth-distinct-string-in-an-array"
 ]
