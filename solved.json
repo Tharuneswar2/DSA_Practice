@@ -74,5 +74,6 @@
     "calculate-amount-paid-in-taxes",
     "make-a-square-with-the-same-color",
     "convert-1d-array-into-2d-array",
-    "transformed-array"
+    "transformed-array",
+    "decode-the-message"
 ]
