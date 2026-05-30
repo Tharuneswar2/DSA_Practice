@@ -72,5 +72,6 @@
     "distribute-money-to-maximum-children",
     "richest-customer-wealth",
     "calculate-amount-paid-in-taxes",
-    "make-a-square-with-the-same-color"
+    "make-a-square-with-the-same-color",
+    "convert-1d-array-into-2d-array"
 ]
