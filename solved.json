@@ -79,5 +79,6 @@
     "kth-distinct-string-in-an-array",
     "minimum-operations-to-make-array-values-equal-to-k",
     "intersection-of-multiple-arrays",
-    "find-the-original-typed-string-i"
+    "find-the-original-typed-string-i",
+    "make-the-string-great"
 ]
