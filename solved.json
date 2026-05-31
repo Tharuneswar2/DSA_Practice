@@ -86,5 +86,6 @@
     "keep-multiplying-found-values-by-two",
     "count-indices-with-opposite-parity",
     "minimum-right-shifts-to-sort-the-array",
-    "count-asterisks"
+    "count-asterisks",
+    "calculate-delayed-arrival-time"
 ]
