@@ -85,5 +85,6 @@
     "last-visited-integers",
     "keep-multiplying-found-values-by-two",
     "count-indices-with-opposite-parity",
-    "minimum-right-shifts-to-sort-the-array"
+    "minimum-right-shifts-to-sort-the-array",
+    "count-asterisks"
 ]
