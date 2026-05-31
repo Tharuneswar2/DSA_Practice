@@ -89,5 +89,6 @@
     "count-asterisks",
     "calculate-delayed-arrival-time",
     "find-the-child-who-has-the-ball-after-k-seconds",
-    "minimum-difference-between-highest-and-lowest-of-k-scores"
+    "minimum-difference-between-highest-and-lowest-of-k-scores",
+    "three-divisors"
 ]
