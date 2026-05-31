@@ -81,5 +81,6 @@
     "intersection-of-multiple-arrays",
     "find-the-original-typed-string-i",
     "make-the-string-great",
-    "find-the-number-of-good-pairs-i"
+    "find-the-number-of-good-pairs-i",
+    "last-visited-integers"
 ]
