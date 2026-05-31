@@ -87,5 +87,6 @@
     "count-indices-with-opposite-parity",
     "minimum-right-shifts-to-sort-the-array",
     "count-asterisks",
-    "calculate-delayed-arrival-time"
+    "calculate-delayed-arrival-time",
+    "find-the-child-who-has-the-ball-after-k-seconds"
 ]
