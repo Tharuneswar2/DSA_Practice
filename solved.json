@@ -80,5 +80,6 @@
     "minimum-operations-to-make-array-values-equal-to-k",
     "intersection-of-multiple-arrays",
     "find-the-original-typed-string-i",
-    "make-the-string-great"
+    "make-the-string-great",
+    "find-the-number-of-good-pairs-i"
 ]
