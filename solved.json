@@ -84,5 +84,6 @@
     "find-the-number-of-good-pairs-i",
     "last-visited-integers",
     "keep-multiplying-found-values-by-two",
-    "count-indices-with-opposite-parity"
+    "count-indices-with-opposite-parity",
+    "minimum-right-shifts-to-sort-the-array"
 ]
