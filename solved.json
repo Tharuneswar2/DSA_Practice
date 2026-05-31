@@ -83,5 +83,6 @@
     "make-the-string-great",
     "find-the-number-of-good-pairs-i",
     "last-visited-integers",
-    "keep-multiplying-found-values-by-two"
+    "keep-multiplying-found-values-by-two",
+    "count-indices-with-opposite-parity"
 ]
