@@ -100,5 +100,6 @@
     "hexadecimal-and-hexatrigesimal-conversion",
     "find-closest-person",
     "minimum-common-value",
-    "check-if-word-equals-summation-of-two-words"
+    "check-if-word-equals-summation-of-two-words",
+    "count-symmetric-integers"
 ]
