@@ -95,5 +95,6 @@
     "largest-positive-integer-that-exists-with-its-negative",
     "first-unique-even-element",
     "sorting-the-sentence",
-    "divide-array-into-equal-pairs"
+    "divide-array-into-equal-pairs",
+    "count-pairs-of-similar-strings"
 ]
