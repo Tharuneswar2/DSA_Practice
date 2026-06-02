@@ -109,5 +109,6 @@
     "maximum-enemy-forts-that-can-be-captured",
     "count-monobit-integers",
     "minimum-operations-to-exceed-threshold-value-i",
-    "pass-the-pillow"
+    "pass-the-pillow",
+    "longer-contiguous-segments-of-ones-than-zeros"
 ]
