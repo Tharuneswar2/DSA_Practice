@@ -110,5 +110,6 @@
     "count-monobit-integers",
     "minimum-operations-to-exceed-threshold-value-i",
     "pass-the-pillow",
-    "longer-contiguous-segments-of-ones-than-zeros"
+    "longer-contiguous-segments-of-ones-than-zeros",
+    "count-the-number-of-vowel-strings-in-range"
 ]
