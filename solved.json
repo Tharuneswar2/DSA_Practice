@@ -101,5 +101,6 @@
     "find-closest-person",
     "minimum-common-value",
     "check-if-word-equals-summation-of-two-words",
-    "count-symmetric-integers"
+    "count-symmetric-integers",
+    "find-if-path-exists-in-graph"
 ]
