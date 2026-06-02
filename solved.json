@@ -106,5 +106,6 @@
     "stone-removal-game",
     "trim-trailing-vowels",
     "minimum-bit-flips-to-convert-number",
-    "maximum-enemy-forts-that-can-be-captured"
+    "maximum-enemy-forts-that-can-be-captured",
+    "count-monobit-integers"
 ]
