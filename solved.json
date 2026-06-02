@@ -111,5 +111,6 @@
     "minimum-operations-to-exceed-threshold-value-i",
     "pass-the-pillow",
     "longer-contiguous-segments-of-ones-than-zeros",
-    "count-the-number-of-vowel-strings-in-range"
+    "count-the-number-of-vowel-strings-in-range",
+    "check-if-all-as-appears-before-all-bs"
 ]
