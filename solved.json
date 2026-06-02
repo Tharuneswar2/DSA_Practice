@@ -115,5 +115,6 @@
     "check-if-all-as-appears-before-all-bs",
     "count-the-number-of-special-characters-i",
     "maximum-height-of-a-triangle",
-    "maximum-odd-binary-number"
+    "maximum-odd-binary-number",
+    "minimum-amount-of-time-to-fill-cups"
 ]
