@@ -105,5 +105,6 @@
     "find-if-path-exists-in-graph",
     "stone-removal-game",
     "trim-trailing-vowels",
-    "minimum-bit-flips-to-convert-number"
+    "minimum-bit-flips-to-convert-number",
+    "maximum-enemy-forts-that-can-be-captured"
 ]
