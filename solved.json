@@ -102,5 +102,6 @@
     "minimum-common-value",
     "check-if-word-equals-summation-of-two-words",
     "count-symmetric-integers",
-    "find-if-path-exists-in-graph"
+    "find-if-path-exists-in-graph",
+    "stone-removal-game"
 ]
