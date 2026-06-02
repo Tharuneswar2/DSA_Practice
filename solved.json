@@ -104,5 +104,6 @@
     "count-symmetric-integers",
     "find-if-path-exists-in-graph",
     "stone-removal-game",
-    "trim-trailing-vowels"
+    "trim-trailing-vowels",
+    "minimum-bit-flips-to-convert-number"
 ]
