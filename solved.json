@@ -121,5 +121,6 @@
     "maximum-ascending-subarray-sum",
     "kids-with-the-greatest-number-of-candies",
     "smallest-stable-index-i",
-    "maximize-expression-of-three-elements"
+    "maximize-expression-of-three-elements",
+    "maximum-length-substring-with-two-occurrences"
 ]
