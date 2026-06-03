@@ -122,5 +122,6 @@
     "kids-with-the-greatest-number-of-candies",
     "smallest-stable-index-i",
     "maximize-expression-of-three-elements",
-    "maximum-length-substring-with-two-occurrences"
+    "maximum-length-substring-with-two-occurrences",
+    "minimum-cuts-to-divide-a-circle"
 ]
