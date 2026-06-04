@@ -128,5 +128,6 @@
     "count-dominant-indices",
     "minimum-changes-to-make-alternating-binary-string",
     "reverse-degree-of-a-string",
-    "most-frequent-number-following-key-in-an-array"
+    "most-frequent-number-following-key-in-an-array",
+    "largest-3-same-digit-number-in-string"
 ]
