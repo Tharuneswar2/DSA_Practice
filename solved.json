@@ -131,5 +131,6 @@
     "most-frequent-number-following-key-in-an-array",
     "largest-3-same-digit-number-in-string",
     "maximum-number-of-words-you-can-type",
-    "alternating-digit-sum"
+    "alternating-digit-sum",
+    "maximum-sum-with-exactly-k-elements"
 ]
