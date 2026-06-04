@@ -133,5 +133,6 @@
     "maximum-number-of-words-you-can-type",
     "alternating-digit-sum",
     "maximum-sum-with-exactly-k-elements",
-    "add-two-integers"
+    "add-two-integers",
+    "check-array-formation-through-concatenation"
 ]
