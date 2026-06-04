@@ -130,5 +130,6 @@
     "reverse-degree-of-a-string",
     "most-frequent-number-following-key-in-an-array",
     "largest-3-same-digit-number-in-string",
-    "maximum-number-of-words-you-can-type"
+    "maximum-number-of-words-you-can-type",
+    "alternating-digit-sum"
 ]
