@@ -127,5 +127,6 @@
     "maximize-sum-of-at-most-k-distinct-elements",
     "count-dominant-indices",
     "minimum-changes-to-make-alternating-binary-string",
-    "reverse-degree-of-a-string"
+    "reverse-degree-of-a-string",
+    "most-frequent-number-following-key-in-an-array"
 ]
