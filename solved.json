@@ -140,5 +140,6 @@
     "substrings-of-size-three-with-distinct-characters",
     "maximum-product-difference-between-two-pairs",
     "generate-a-string-with-characters-that-have-odd-counts",
-    "number-of-students-doing-homework-at-a-given-time"
+    "number-of-students-doing-homework-at-a-given-time",
+    "number-of-employees-who-met-the-target"
 ]
