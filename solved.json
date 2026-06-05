@@ -138,5 +138,6 @@
     "check-if-all-characters-have-equal-number-of-occurrences",
     "valid-elements-in-an-array",
     "substrings-of-size-three-with-distinct-characters",
-    "maximum-product-difference-between-two-pairs"
+    "maximum-product-difference-between-two-pairs",
+    "generate-a-string-with-characters-that-have-odd-counts"
 ]
