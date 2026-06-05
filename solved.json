@@ -136,5 +136,6 @@
     "add-two-integers",
     "check-array-formation-through-concatenation",
     "check-if-all-characters-have-equal-number-of-occurrences",
-    "valid-elements-in-an-array"
+    "valid-elements-in-an-array",
+    "substrings-of-size-three-with-distinct-characters"
 ]
