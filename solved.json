@@ -139,5 +139,6 @@
     "valid-elements-in-an-array",
     "substrings-of-size-three-with-distinct-characters",
     "maximum-product-difference-between-two-pairs",
-    "generate-a-string-with-characters-that-have-odd-counts"
+    "generate-a-string-with-characters-that-have-odd-counts",
+    "number-of-students-doing-homework-at-a-given-time"
 ]
