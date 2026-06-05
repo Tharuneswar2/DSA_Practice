@@ -137,5 +137,6 @@
     "check-array-formation-through-concatenation",
     "check-if-all-characters-have-equal-number-of-occurrences",
     "valid-elements-in-an-array",
-    "substrings-of-size-three-with-distinct-characters"
+    "substrings-of-size-three-with-distinct-characters",
+    "maximum-product-difference-between-two-pairs"
 ]
