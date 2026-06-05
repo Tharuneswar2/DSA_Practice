@@ -134,5 +134,6 @@
     "alternating-digit-sum",
     "maximum-sum-with-exactly-k-elements",
     "add-two-integers",
-    "check-array-formation-through-concatenation"
+    "check-array-formation-through-concatenation",
+    "check-if-all-characters-have-equal-number-of-occurrences"
 ]
