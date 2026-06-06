@@ -150,5 +150,6 @@
     "find-x-sum-of-all-k-long-subarrays-i",
     "find-the-losers-of-the-circular-game",
     "minimum-absolute-difference-between-two-values",
-    "smallest-absent-positive-greater-than-average"
+    "smallest-absent-positive-greater-than-average",
+    "minimum-time-visiting-all-points"
 ]
