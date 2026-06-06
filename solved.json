@@ -143,5 +143,6 @@
     "number-of-students-doing-homework-at-a-given-time",
     "number-of-employees-who-met-the-target",
     "decode-xored-array",
-    "sort-the-people"
+    "sort-the-people",
+    "count-vowel-substrings-of-a-string"
 ]
