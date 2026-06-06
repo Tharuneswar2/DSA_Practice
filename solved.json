@@ -148,5 +148,6 @@
     "valid-word",
     "find-if-digit-game-can-be-won",
     "find-x-sum-of-all-k-long-subarrays-i",
-    "find-the-losers-of-the-circular-game"
+    "find-the-losers-of-the-circular-game",
+    "minimum-absolute-difference-between-two-values"
 ]
