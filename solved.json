@@ -144,5 +144,6 @@
     "number-of-employees-who-met-the-target",
     "decode-xored-array",
     "sort-the-people",
-    "count-vowel-substrings-of-a-string"
+    "count-vowel-substrings-of-a-string",
+    "valid-word"
 ]
