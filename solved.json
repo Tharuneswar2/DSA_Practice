@@ -145,5 +145,6 @@
     "decode-xored-array",
     "sort-the-people",
     "count-vowel-substrings-of-a-string",
-    "valid-word"
+    "valid-word",
+    "find-if-digit-game-can-be-won"
 ]
