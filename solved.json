@@ -149,5 +149,6 @@
     "find-if-digit-game-can-be-won",
     "find-x-sum-of-all-k-long-subarrays-i",
     "find-the-losers-of-the-circular-game",
-    "minimum-absolute-difference-between-two-values"
+    "minimum-absolute-difference-between-two-values",
+    "smallest-absent-positive-greater-than-average"
 ]
