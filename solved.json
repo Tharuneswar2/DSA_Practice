@@ -153,5 +153,6 @@
     "smallest-absent-positive-greater-than-average",
     "minimum-time-visiting-all-points",
     "number-of-unequal-triplets-in-array",
-    "best-poker-hand"
+    "best-poker-hand",
+    "count-pairs-whose-sum-is-less-than-target"
 ]
