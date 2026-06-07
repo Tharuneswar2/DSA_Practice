@@ -156,5 +156,6 @@
     "best-poker-hand",
     "count-pairs-whose-sum-is-less-than-target",
     "find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree",
-    "minimum-number-of-moves-to-seat-everyone"
+    "minimum-number-of-moves-to-seat-everyone",
+    "day-of-the-year"
 ]
