@@ -161,5 +161,6 @@
     "average-value-of-even-numbers-that-are-divisible-by-three",
     "remove-trailing-zeros-from-a-string",
     "longest-unequal-adjacent-groups-subsequence-i",
-    "find-numbers-with-even-number-of-digits"
+    "find-numbers-with-even-number-of-digits",
+    "design-an-ordered-stream"
 ]
