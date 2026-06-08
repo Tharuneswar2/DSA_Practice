@@ -163,5 +163,6 @@
     "longest-unequal-adjacent-groups-subsequence-i",
     "find-numbers-with-even-number-of-digits",
     "design-an-ordered-stream",
-    "sort-array-by-increasing-frequency"
+    "sort-array-by-increasing-frequency",
+    "count-operations-to-obtain-zero"
 ]
