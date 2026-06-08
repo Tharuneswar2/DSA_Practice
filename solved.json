@@ -165,5 +165,6 @@
     "design-an-ordered-stream",
     "sort-array-by-increasing-frequency",
     "count-operations-to-obtain-zero",
-    "maximum-difference-between-even-and-odd-frequency-i"
+    "maximum-difference-between-even-and-odd-frequency-i",
+    "first-matching-character-from-both-ends"
 ]
