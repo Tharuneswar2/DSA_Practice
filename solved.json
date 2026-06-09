@@ -177,5 +177,6 @@
     "generate-tag-for-video-caption",
     "sum-of-variable-length-subarrays",
     "toggle-light-bulbs",
-    "subarrays-distinct-element-sum-of-squares-i"
+    "subarrays-distinct-element-sum-of-squares-i",
+    "minimum-number-of-flips-to-reverse-binary-string"
 ]
