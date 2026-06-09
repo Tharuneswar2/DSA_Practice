@@ -169,5 +169,6 @@
     "first-matching-character-from-both-ends",
     "number-of-steps-to-reduce-a-number-to-zero",
     "reformat-phone-number",
-    "xor-operation-in-an-array"
+    "xor-operation-in-an-array",
+    "find-the-longest-balanced-substring-of-a-binary-string"
 ]
