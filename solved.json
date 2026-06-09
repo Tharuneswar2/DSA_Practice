@@ -182,5 +182,6 @@
     "valid-digit-number",
     "shuffle-string",
     "find-indices-with-index-and-value-difference-i",
-    "count-of-matches-in-tournament"
+    "count-of-matches-in-tournament",
+    "find-the-sum-of-encrypted-integers"
 ]
