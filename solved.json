@@ -170,5 +170,6 @@
     "number-of-steps-to-reduce-a-number-to-zero",
     "reformat-phone-number",
     "xor-operation-in-an-array",
-    "find-the-longest-balanced-substring-of-a-binary-string"
+    "find-the-longest-balanced-substring-of-a-binary-string",
+    "most-visited-sector-in-a-circular-track"
 ]
