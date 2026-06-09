@@ -171,5 +171,6 @@
     "reformat-phone-number",
     "xor-operation-in-an-array",
     "find-the-longest-balanced-substring-of-a-binary-string",
-    "most-visited-sector-in-a-circular-track"
+    "most-visited-sector-in-a-circular-track",
+    "unique-number-of-occurrences"
 ]
