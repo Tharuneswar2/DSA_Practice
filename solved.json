@@ -173,5 +173,6 @@
     "find-the-longest-balanced-substring-of-a-binary-string",
     "most-visited-sector-in-a-circular-track",
     "unique-number-of-occurrences",
-    "design-neighbor-sum-service"
+    "design-neighbor-sum-service",
+    "generate-tag-for-video-caption"
 ]
