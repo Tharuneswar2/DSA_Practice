@@ -180,5 +180,6 @@
     "subarrays-distinct-element-sum-of-squares-i",
     "minimum-number-of-flips-to-reverse-binary-string",
     "valid-digit-number",
-    "shuffle-string"
+    "shuffle-string",
+    "find-indices-with-index-and-value-difference-i"
 ]
