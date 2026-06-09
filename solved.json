@@ -176,5 +176,6 @@
     "design-neighbor-sum-service",
     "generate-tag-for-video-caption",
     "sum-of-variable-length-subarrays",
-    "toggle-light-bulbs"
+    "toggle-light-bulbs",
+    "subarrays-distinct-element-sum-of-squares-i"
 ]
