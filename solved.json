@@ -189,5 +189,6 @@
     "smallest-pair-with-different-frequencies",
     "second-largest-digit-in-a-string",
     "maximum-value-of-a-string-in-an-array",
-    "permutation-difference-between-two-strings"
+    "permutation-difference-between-two-strings",
+    "minimum-operations-to-equalize-array"
 ]
