@@ -184,5 +184,6 @@
     "find-indices-with-index-and-value-difference-i",
     "count-of-matches-in-tournament",
     "find-the-sum-of-encrypted-integers",
-    "number-of-bit-changes-to-make-two-integers-equal"
+    "number-of-bit-changes-to-make-two-integers-equal",
+    "merge-similar-items"
 ]
