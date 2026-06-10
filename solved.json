@@ -185,5 +185,6 @@
     "count-of-matches-in-tournament",
     "find-the-sum-of-encrypted-integers",
     "number-of-bit-changes-to-make-two-integers-equal",
-    "merge-similar-items"
+    "merge-similar-items",
+    "smallest-pair-with-different-frequencies"
 ]
