@@ -193,5 +193,6 @@
     "minimum-operations-to-equalize-array",
     "transform-array-by-parity",
     "check-if-the-sentence-is-pangram",
-    "sum-of-values-at-indices-with-k-set-bits"
+    "sum-of-values-at-indices-with-k-set-bits",
+    "special-array-with-x-elements-greater-than-or-equal-x"
 ]
