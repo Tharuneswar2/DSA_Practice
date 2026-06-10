@@ -192,5 +192,6 @@
     "permutation-difference-between-two-strings",
     "minimum-operations-to-equalize-array",
     "transform-array-by-parity",
-    "check-if-the-sentence-is-pangram"
+    "check-if-the-sentence-is-pangram",
+    "sum-of-values-at-indices-with-k-set-bits"
 ]
