@@ -187,5 +187,6 @@
     "number-of-bit-changes-to-make-two-integers-equal",
     "merge-similar-items",
     "smallest-pair-with-different-frequencies",
-    "second-largest-digit-in-a-string"
+    "second-largest-digit-in-a-string",
+    "maximum-value-of-a-string-in-an-array"
 ]
