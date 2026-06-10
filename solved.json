@@ -191,5 +191,6 @@
     "maximum-value-of-a-string-in-an-array",
     "permutation-difference-between-two-strings",
     "minimum-operations-to-equalize-array",
-    "transform-array-by-parity"
+    "transform-array-by-parity",
+    "check-if-the-sentence-is-pangram"
 ]
