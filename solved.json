@@ -186,5 +186,6 @@
     "find-the-sum-of-encrypted-integers",
     "number-of-bit-changes-to-make-two-integers-equal",
     "merge-similar-items",
-    "smallest-pair-with-different-frequencies"
+    "smallest-pair-with-different-frequencies",
+    "second-largest-digit-in-a-string"
 ]
