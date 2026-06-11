@@ -206,5 +206,6 @@
     "detect-pattern-of-length-m-repeated-k-or-more-times",
     "maximum-unique-subarray-sum-after-deletion",
     "longest-strictly-increasing-or-strictly-decreasing-subarray",
-    "reformat-date"
+    "reformat-date",
+    "smallest-divisible-digit-product-i"
 ]
