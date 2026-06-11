@@ -195,5 +195,6 @@
     "check-if-the-sentence-is-pangram",
     "sum-of-values-at-indices-with-k-set-bits",
     "special-array-with-x-elements-greater-than-or-equal-x",
-    "remove-digit-from-number-to-maximize-result"
+    "remove-digit-from-number-to-maximize-result",
+    "rank-transform-of-an-array"
 ]
