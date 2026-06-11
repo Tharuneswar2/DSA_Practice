@@ -204,5 +204,6 @@
     "lexicographically-smallest-string-after-a-swap",
     "kth-missing-positive-number",
     "detect-pattern-of-length-m-repeated-k-or-more-times",
-    "maximum-unique-subarray-sum-after-deletion"
+    "maximum-unique-subarray-sum-after-deletion",
+    "longest-strictly-increasing-or-strictly-decreasing-subarray"
 ]
