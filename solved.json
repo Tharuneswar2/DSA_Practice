@@ -207,5 +207,6 @@
     "maximum-unique-subarray-sum-after-deletion",
     "longest-strictly-increasing-or-strictly-decreasing-subarray",
     "reformat-date",
-    "smallest-divisible-digit-product-i"
+    "smallest-divisible-digit-product-i",
+    "maximum-difference-between-adjacent-elements-in-a-circular-array"
 ]
