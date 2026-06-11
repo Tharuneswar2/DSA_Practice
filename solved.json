@@ -200,5 +200,6 @@
     "smallest-even-multiple",
     "final-prices-with-a-special-discount-in-a-shop",
     "k-items-with-the-maximum-sum",
-    "rearrange-characters-to-make-target-string"
+    "rearrange-characters-to-make-target-string",
+    "lexicographically-smallest-string-after-a-swap"
 ]
