@@ -212,5 +212,6 @@
     "vowel-consonant-score",
     "minimum-number-game",
     "slowest-key",
-    "count-odd-numbers-in-an-interval-range"
+    "count-odd-numbers-in-an-interval-range",
+    "cells-in-a-range-on-an-excel-sheet"
 ]
