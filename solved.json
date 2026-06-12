@@ -211,5 +211,6 @@
     "maximum-difference-between-adjacent-elements-in-a-circular-array",
     "vowel-consonant-score",
     "minimum-number-game",
-    "slowest-key"
+    "slowest-key",
+    "count-odd-numbers-in-an-interval-range"
 ]
