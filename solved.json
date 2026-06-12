@@ -217,5 +217,6 @@
     "make-array-elements-equal-to-zero",
     "find-most-frequent-vowel-and-consonant",
     "check-if-digits-are-equal-in-string-after-operations-i",
-    "replace-all-digits-with-characters"
+    "replace-all-digits-with-characters",
+    "zigzag-grid-traversal-with-skip"
 ]
