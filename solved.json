@@ -210,5 +210,6 @@
     "smallest-divisible-digit-product-i",
     "maximum-difference-between-adjacent-elements-in-a-circular-array",
     "vowel-consonant-score",
-    "minimum-number-game"
+    "minimum-number-game",
+    "slowest-key"
 ]
