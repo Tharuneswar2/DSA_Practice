@@ -219,5 +219,6 @@
     "check-if-digits-are-equal-in-string-after-operations-i",
     "replace-all-digits-with-characters",
     "zigzag-grid-traversal-with-skip",
-    "snake-in-matrix"
+    "snake-in-matrix",
+    "number-of-different-integers-in-a-string"
 ]
