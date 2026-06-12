@@ -213,5 +213,6 @@
     "minimum-number-game",
     "slowest-key",
     "count-odd-numbers-in-an-interval-range",
-    "cells-in-a-range-on-an-excel-sheet"
+    "cells-in-a-range-on-an-excel-sheet",
+    "make-array-elements-equal-to-zero"
 ]
