@@ -208,5 +208,6 @@
     "longest-strictly-increasing-or-strictly-decreasing-subarray",
     "reformat-date",
     "smallest-divisible-digit-product-i",
-    "maximum-difference-between-adjacent-elements-in-a-circular-array"
+    "maximum-difference-between-adjacent-elements-in-a-circular-array",
+    "vowel-consonant-score"
 ]
