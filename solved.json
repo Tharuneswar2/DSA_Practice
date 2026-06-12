@@ -220,5 +220,6 @@
     "replace-all-digits-with-characters",
     "zigzag-grid-traversal-with-skip",
     "snake-in-matrix",
-    "number-of-different-integers-in-a-string"
+    "number-of-different-integers-in-a-string",
+    "check-if-bitwise-or-has-trailing-zeros"
 ]
