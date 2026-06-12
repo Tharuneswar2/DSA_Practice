@@ -209,5 +209,6 @@
     "reformat-date",
     "smallest-divisible-digit-product-i",
     "maximum-difference-between-adjacent-elements-in-a-circular-array",
-    "vowel-consonant-score"
+    "vowel-consonant-score",
+    "minimum-number-game"
 ]
