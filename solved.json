@@ -215,5 +215,6 @@
     "count-odd-numbers-in-an-interval-range",
     "cells-in-a-range-on-an-excel-sheet",
     "make-array-elements-equal-to-zero",
-    "find-most-frequent-vowel-and-consonant"
+    "find-most-frequent-vowel-and-consonant",
+    "check-if-digits-are-equal-in-string-after-operations-i"
 ]
