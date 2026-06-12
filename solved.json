@@ -218,5 +218,6 @@
     "find-most-frequent-vowel-and-consonant",
     "check-if-digits-are-equal-in-string-after-operations-i",
     "replace-all-digits-with-characters",
-    "zigzag-grid-traversal-with-skip"
+    "zigzag-grid-traversal-with-skip",
+    "snake-in-matrix"
 ]
