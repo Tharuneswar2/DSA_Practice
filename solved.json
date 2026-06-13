@@ -228,5 +228,6 @@
     "neither-minimum-nor-maximum",
     "special-array-i",
     "restore-finishing-order",
-    "check-if-n-and-its-double-exist"
+    "check-if-n-and-its-double-exist",
+    "remove-letter-to-equalize-frequency"
 ]
