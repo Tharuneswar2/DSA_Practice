@@ -230,5 +230,6 @@
     "restore-finishing-order",
     "check-if-n-and-its-double-exist",
     "remove-letter-to-equalize-frequency",
-    "find-winner-on-a-tic-tac-toe-game"
+    "find-winner-on-a-tic-tac-toe-game",
+    "sort-integers-by-binary-reflection"
 ]
