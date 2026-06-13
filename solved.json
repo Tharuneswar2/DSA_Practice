@@ -223,5 +223,6 @@
     "number-of-different-integers-in-a-string",
     "check-if-bitwise-or-has-trailing-zeros",
     "minimum-number-of-operations-to-make-elements-in-array-distinct",
-    "three-consecutive-odds"
+    "three-consecutive-odds",
+    "find-the-key-of-the-numbers"
 ]
