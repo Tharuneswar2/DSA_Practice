@@ -222,5 +222,6 @@
     "snake-in-matrix",
     "number-of-different-integers-in-a-string",
     "check-if-bitwise-or-has-trailing-zeros",
-    "minimum-number-of-operations-to-make-elements-in-array-distinct"
+    "minimum-number-of-operations-to-make-elements-in-array-distinct",
+    "three-consecutive-odds"
 ]
