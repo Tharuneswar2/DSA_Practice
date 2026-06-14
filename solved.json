@@ -233,5 +233,6 @@
     "find-winner-on-a-tic-tac-toe-game",
     "sort-integers-by-binary-reflection",
     "how-many-numbers-are-smaller-than-the-current-number",
-    "consecutive-characters"
+    "consecutive-characters",
+    "find-the-encrypted-string"
 ]
