@@ -237,5 +237,6 @@
     "find-the-encrypted-string",
     "maximum-product-of-two-elements-in-an-array",
     "check-if-every-row-and-column-contains-all-numbers",
-    "traffic-signal-color"
+    "traffic-signal-color",
+    "find-the-least-frequent-digit"
 ]
