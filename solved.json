@@ -234,5 +234,6 @@
     "sort-integers-by-binary-reflection",
     "how-many-numbers-are-smaller-than-the-current-number",
     "consecutive-characters",
-    "find-the-encrypted-string"
+    "find-the-encrypted-string",
+    "maximum-product-of-two-elements-in-an-array"
 ]
