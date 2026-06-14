@@ -239,5 +239,6 @@
     "check-if-every-row-and-column-contains-all-numbers",
     "traffic-signal-color",
     "find-the-least-frequent-digit",
-    "find-center-of-star-graph"
+    "find-center-of-star-graph",
+    "maximum-number-of-balls-in-a-box"
 ]
