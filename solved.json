@@ -235,5 +235,6 @@
     "how-many-numbers-are-smaller-than-the-current-number",
     "consecutive-characters",
     "find-the-encrypted-string",
-    "maximum-product-of-two-elements-in-an-array"
+    "maximum-product-of-two-elements-in-an-array",
+    "check-if-every-row-and-column-contains-all-numbers"
 ]
