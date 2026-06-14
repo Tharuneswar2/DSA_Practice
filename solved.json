@@ -238,5 +238,6 @@
     "maximum-product-of-two-elements-in-an-array",
     "check-if-every-row-and-column-contains-all-numbers",
     "traffic-signal-color",
-    "find-the-least-frequent-digit"
+    "find-the-least-frequent-digit",
+    "find-center-of-star-graph"
 ]
