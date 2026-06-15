@@ -244,5 +244,6 @@
     "counting-words-with-a-given-prefix",
     "apple-redistribution-into-boxes",
     "find-subarrays-with-equal-sum",
-    "calculate-digit-sum-of-a-string"
+    "calculate-digit-sum-of-a-string",
+    "substring-matching-pattern"
 ]
