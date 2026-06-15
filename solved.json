@@ -245,5 +245,6 @@
     "apple-redistribution-into-boxes",
     "find-subarrays-with-equal-sum",
     "calculate-digit-sum-of-a-string",
-    "substring-matching-pattern"
+    "substring-matching-pattern",
+    "find-n-unique-integers-sum-up-to-zero"
 ]
