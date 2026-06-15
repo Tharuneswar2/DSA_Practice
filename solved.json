@@ -247,5 +247,6 @@
     "calculate-digit-sum-of-a-string",
     "substring-matching-pattern",
     "find-n-unique-integers-sum-up-to-zero",
-    "merge-two-2d-arrays-by-summing-values"
+    "merge-two-2d-arrays-by-summing-values",
+    "longest-alternating-subarray"
 ]
