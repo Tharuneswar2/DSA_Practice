@@ -249,5 +249,6 @@
     "find-n-unique-integers-sum-up-to-zero",
     "merge-two-2d-arrays-by-summing-values",
     "longest-alternating-subarray",
-    "minimum-operations-to-make-array-sum-divisible-by-k"
+    "minimum-operations-to-make-array-sum-divisible-by-k",
+    "minimum-hours-of-training-to-win-a-competition"
 ]
