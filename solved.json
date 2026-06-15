@@ -246,5 +246,6 @@
     "find-subarrays-with-equal-sum",
     "calculate-digit-sum-of-a-string",
     "substring-matching-pattern",
-    "find-n-unique-integers-sum-up-to-zero"
+    "find-n-unique-integers-sum-up-to-zero",
+    "merge-two-2d-arrays-by-summing-values"
 ]
