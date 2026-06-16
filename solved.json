@@ -260,5 +260,6 @@
     "ant-on-the-boundary",
     "check-if-array-is-good",
     "make-two-arrays-equal-by-reversing-subarrays",
-    "check-if-it-is-a-straight-line"
+    "check-if-it-is-a-straight-line",
+    "minimum-average-of-smallest-and-largest-elements"
 ]
