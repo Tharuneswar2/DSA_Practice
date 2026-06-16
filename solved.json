@@ -255,5 +255,6 @@
     "minimum-number-of-chairs-in-a-waiting-room",
     "categorize-box-according-to-criteria",
     "maximum-number-of-words-found-in-sentences",
-    "check-if-string-is-a-prefix-of-array"
+    "check-if-string-is-a-prefix-of-array",
+    "find-greatest-common-divisor-of-array"
 ]
