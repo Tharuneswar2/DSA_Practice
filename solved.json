@@ -256,5 +256,6 @@
     "categorize-box-according-to-criteria",
     "maximum-number-of-words-found-in-sentences",
     "check-if-string-is-a-prefix-of-array",
-    "find-greatest-common-divisor-of-array"
+    "find-greatest-common-divisor-of-array",
+    "ant-on-the-boundary"
 ]
