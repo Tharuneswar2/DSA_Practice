@@ -258,5 +258,6 @@
     "check-if-string-is-a-prefix-of-array",
     "find-greatest-common-divisor-of-array",
     "ant-on-the-boundary",
-    "check-if-array-is-good"
+    "check-if-array-is-good",
+    "make-two-arrays-equal-by-reversing-subarrays"
 ]
