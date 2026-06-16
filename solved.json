@@ -259,5 +259,6 @@
     "find-greatest-common-divisor-of-array",
     "ant-on-the-boundary",
     "check-if-array-is-good",
-    "make-two-arrays-equal-by-reversing-subarrays"
+    "make-two-arrays-equal-by-reversing-subarrays",
+    "check-if-it-is-a-straight-line"
 ]
