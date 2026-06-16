@@ -254,5 +254,6 @@
     "finding-3-digit-even-numbers",
     "minimum-number-of-chairs-in-a-waiting-room",
     "categorize-box-according-to-criteria",
-    "maximum-number-of-words-found-in-sentences"
+    "maximum-number-of-words-found-in-sentences",
+    "check-if-string-is-a-prefix-of-array"
 ]
