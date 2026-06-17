@@ -263,5 +263,6 @@
     "check-if-it-is-a-straight-line",
     "minimum-average-of-smallest-and-largest-elements",
     "crawler-log-folder",
-    "matrix-similarity-after-cyclic-shifts"
+    "matrix-similarity-after-cyclic-shifts",
+    "lexicographically-smallest-palindrome"
 ]
