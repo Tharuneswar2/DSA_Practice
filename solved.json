@@ -274,5 +274,6 @@
     "construct-uniform-parity-array-i",
     "clear-digits",
     "maximum-count-of-positive-integer-and-negative-integer",
-    "check-if-strings-can-be-made-equal-with-operations-i"
+    "check-if-strings-can-be-made-equal-with-operations-i",
+    "minimum-distance-to-the-target-element"
 ]
