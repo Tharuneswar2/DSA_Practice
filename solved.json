@@ -268,5 +268,6 @@
     "minimum-deletions-for-at-most-k-distinct-characters",
     "coupon-code-validator",
     "goal-parser-interpretation",
-    "create-target-array-in-the-given-order"
+    "create-target-array-in-the-given-order",
+    "minimum-cost-to-move-chips-to-the-same-position"
 ]
