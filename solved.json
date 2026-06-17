@@ -269,5 +269,6 @@
     "coupon-code-validator",
     "goal-parser-interpretation",
     "create-target-array-in-the-given-order",
-    "minimum-cost-to-move-chips-to-the-same-position"
+    "minimum-cost-to-move-chips-to-the-same-position",
+    "shortest-subarray-with-or-at-least-k-i"
 ]
