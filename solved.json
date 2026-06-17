@@ -262,5 +262,6 @@
     "make-two-arrays-equal-by-reversing-subarrays",
     "check-if-it-is-a-straight-line",
     "minimum-average-of-smallest-and-largest-elements",
-    "crawler-log-folder"
+    "crawler-log-folder",
+    "matrix-similarity-after-cyclic-shifts"
 ]
