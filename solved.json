@@ -266,5 +266,6 @@
     "matrix-similarity-after-cyclic-shifts",
     "lexicographically-smallest-palindrome",
     "minimum-deletions-for-at-most-k-distinct-characters",
-    "coupon-code-validator"
+    "coupon-code-validator",
+    "goal-parser-interpretation"
 ]
