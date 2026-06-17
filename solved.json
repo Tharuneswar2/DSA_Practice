@@ -270,5 +270,6 @@
     "goal-parser-interpretation",
     "create-target-array-in-the-given-order",
     "minimum-cost-to-move-chips-to-the-same-position",
-    "shortest-subarray-with-or-at-least-k-i"
+    "shortest-subarray-with-or-at-least-k-i",
+    "construct-uniform-parity-array-i"
 ]
