@@ -267,5 +267,6 @@
     "lexicographically-smallest-palindrome",
     "minimum-deletions-for-at-most-k-distinct-characters",
     "coupon-code-validator",
-    "goal-parser-interpretation"
+    "goal-parser-interpretation",
+    "create-target-array-in-the-given-order"
 ]
