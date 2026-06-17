@@ -265,5 +265,6 @@
     "crawler-log-folder",
     "matrix-similarity-after-cyclic-shifts",
     "lexicographically-smallest-palindrome",
-    "minimum-deletions-for-at-most-k-distinct-characters"
+    "minimum-deletions-for-at-most-k-distinct-characters",
+    "coupon-code-validator"
 ]
