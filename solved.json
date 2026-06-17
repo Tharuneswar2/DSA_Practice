@@ -273,5 +273,6 @@
     "shortest-subarray-with-or-at-least-k-i",
     "construct-uniform-parity-array-i",
     "clear-digits",
-    "maximum-count-of-positive-integer-and-negative-integer"
+    "maximum-count-of-positive-integer-and-negative-integer",
+    "check-if-strings-can-be-made-equal-with-operations-i"
 ]
