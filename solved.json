@@ -281,5 +281,6 @@
     "defuse-the-bomb",
     "number-of-valid-clock-times",
     "latest-time-you-can-obtain-after-replacing-characters",
-    "find-the-maximum-achievable-number"
+    "find-the-maximum-achievable-number",
+    "find-the-winning-player-in-coin-game"
 ]
