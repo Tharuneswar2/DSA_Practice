@@ -279,5 +279,6 @@
     "find-all-k-distant-indices-in-an-array",
     "two-out-of-three",
     "defuse-the-bomb",
-    "number-of-valid-clock-times"
+    "number-of-valid-clock-times",
+    "latest-time-you-can-obtain-after-replacing-characters"
 ]
