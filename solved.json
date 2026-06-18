@@ -278,5 +278,6 @@
     "minimum-distance-to-the-target-element",
     "find-all-k-distant-indices-in-an-array",
     "two-out-of-three",
-    "defuse-the-bomb"
+    "defuse-the-bomb",
+    "number-of-valid-clock-times"
 ]
