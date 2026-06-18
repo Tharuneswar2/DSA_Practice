@@ -275,5 +275,6 @@
     "clear-digits",
     "maximum-count-of-positive-integer-and-negative-integer",
     "check-if-strings-can-be-made-equal-with-operations-i",
-    "minimum-distance-to-the-target-element"
+    "minimum-distance-to-the-target-element",
+    "find-all-k-distant-indices-in-an-array"
 ]
