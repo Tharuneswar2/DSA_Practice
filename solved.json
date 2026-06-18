@@ -287,5 +287,6 @@
     "count-prefix-and-suffix-pairs-i",
     "minimum-sum-of-mountain-triplets-i",
     "truncate-sentence",
-    "special-positions-in-a-binary-matrix"
+    "special-positions-in-a-binary-matrix",
+    "count-elements-with-maximum-frequency"
 ]
