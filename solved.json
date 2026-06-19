@@ -294,5 +294,6 @@
     "minimum-cost-of-buying-candies-with-discount",
     "divisible-and-non-divisible-sums-difference",
     "minimum-absolute-difference",
-    "maximum-difference-between-increasing-elements"
+    "maximum-difference-between-increasing-elements",
+    "minimum-moves-to-convert-string"
 ]
