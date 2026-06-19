@@ -290,5 +290,6 @@
     "special-positions-in-a-binary-matrix",
     "count-elements-with-maximum-frequency",
     "minimum-cost-to-reach-every-position",
-    "make-three-strings-equal"
+    "make-three-strings-equal",
+    "minimum-cost-of-buying-candies-with-discount"
 ]
