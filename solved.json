@@ -295,5 +295,6 @@
     "divisible-and-non-divisible-sums-difference",
     "minimum-absolute-difference",
     "maximum-difference-between-increasing-elements",
-    "minimum-moves-to-convert-string"
+    "minimum-moves-to-convert-string",
+    "maximum-nesting-depth-of-the-parentheses"
 ]
