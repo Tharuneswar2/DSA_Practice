@@ -289,5 +289,6 @@
     "truncate-sentence",
     "special-positions-in-a-binary-matrix",
     "count-elements-with-maximum-frequency",
-    "minimum-cost-to-reach-every-position"
+    "minimum-cost-to-reach-every-position",
+    "make-three-strings-equal"
 ]
