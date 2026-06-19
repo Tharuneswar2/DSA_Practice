@@ -288,5 +288,6 @@
     "minimum-sum-of-mountain-triplets-i",
     "truncate-sentence",
     "special-positions-in-a-binary-matrix",
-    "count-elements-with-maximum-frequency"
+    "count-elements-with-maximum-frequency",
+    "minimum-cost-to-reach-every-position"
 ]
