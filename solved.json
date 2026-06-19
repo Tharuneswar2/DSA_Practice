@@ -296,5 +296,6 @@
     "minimum-absolute-difference",
     "maximum-difference-between-increasing-elements",
     "minimum-moves-to-convert-string",
-    "maximum-nesting-depth-of-the-parentheses"
+    "maximum-nesting-depth-of-the-parentheses",
+    "convert-date-to-binary"
 ]
