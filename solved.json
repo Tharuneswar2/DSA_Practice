@@ -297,5 +297,6 @@
     "maximum-difference-between-increasing-elements",
     "minimum-moves-to-convert-string",
     "maximum-nesting-depth-of-the-parentheses",
-    "convert-date-to-binary"
+    "convert-date-to-binary",
+    "unique-3-digit-even-numbers"
 ]
