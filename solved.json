@@ -302,5 +302,6 @@
     "day-of-the-week",
     "prime-in-diagonal",
     "total-distance-traveled",
-    "maximum-units-on-a-truck"
+    "maximum-units-on-a-truck",
+    "minimize-string-length"
 ]
