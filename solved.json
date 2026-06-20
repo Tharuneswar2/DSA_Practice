@@ -300,5 +300,6 @@
     "convert-date-to-binary",
     "unique-3-digit-even-numbers",
     "day-of-the-week",
-    "prime-in-diagonal"
+    "prime-in-diagonal",
+    "total-distance-traveled"
 ]
