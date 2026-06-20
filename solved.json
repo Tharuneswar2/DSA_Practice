@@ -298,5 +298,6 @@
     "minimum-moves-to-convert-string",
     "maximum-nesting-depth-of-the-parentheses",
     "convert-date-to-binary",
-    "unique-3-digit-even-numbers"
+    "unique-3-digit-even-numbers",
+    "day-of-the-week"
 ]
