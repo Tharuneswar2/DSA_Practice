@@ -303,5 +303,6 @@
     "prime-in-diagonal",
     "total-distance-traveled",
     "maximum-units-on-a-truck",
-    "minimize-string-length"
+    "minimize-string-length",
+    "find-the-difference-of-two-arrays"
 ]
