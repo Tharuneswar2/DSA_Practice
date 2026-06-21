@@ -309,5 +309,6 @@
     "find-the-middle-index-in-array",
     "rearrange-spaces-between-words",
     "number-of-days-between-two-dates",
-    "count-number-of-pairs-with-absolute-difference-k"
+    "count-number-of-pairs-with-absolute-difference-k",
+    "find-closest-number-to-zero"
 ]
