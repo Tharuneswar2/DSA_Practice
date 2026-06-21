@@ -317,5 +317,6 @@
     "find-the-k-or-of-an-array",
     "final-array-state-after-k-multiplication-operations-i",
     "get-maximum-in-generated-array",
-    "count-residue-prefixes"
+    "count-residue-prefixes",
+    "replace-all-s-to-avoid-consecutive-repeating-characters"
 ]
