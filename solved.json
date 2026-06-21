@@ -316,5 +316,6 @@
     "number-of-common-factors",
     "find-the-k-or-of-an-array",
     "final-array-state-after-k-multiplication-operations-i",
-    "get-maximum-in-generated-array"
+    "get-maximum-in-generated-array",
+    "count-residue-prefixes"
 ]
