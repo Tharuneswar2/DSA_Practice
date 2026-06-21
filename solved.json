@@ -308,5 +308,6 @@
     "modify-the-matrix",
     "find-the-middle-index-in-array",
     "rearrange-spaces-between-words",
-    "number-of-days-between-two-dates"
+    "number-of-days-between-two-dates",
+    "count-number-of-pairs-with-absolute-difference-k"
 ]
