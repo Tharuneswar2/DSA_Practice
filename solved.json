@@ -310,5 +310,6 @@
     "rearrange-spaces-between-words",
     "number-of-days-between-two-dates",
     "count-number-of-pairs-with-absolute-difference-k",
-    "find-closest-number-to-zero"
+    "find-closest-number-to-zero",
+    "fruits-into-baskets-ii"
 ]
