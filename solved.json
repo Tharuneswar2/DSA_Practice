@@ -306,5 +306,6 @@
     "minimize-string-length",
     "find-the-difference-of-two-arrays",
     "modify-the-matrix",
-    "find-the-middle-index-in-array"
+    "find-the-middle-index-in-array",
+    "rearrange-spaces-between-words"
 ]
