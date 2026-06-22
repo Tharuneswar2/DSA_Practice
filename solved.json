@@ -329,5 +329,6 @@
     "find-indices-of-stable-mountains",
     "the-two-sneaky-numbers-of-digitville",
     "subtract-the-product-and-sum-of-digits-of-an-integer",
-    "root-equals-sum-of-children"
+    "root-equals-sum-of-children",
+    "minimum-positive-sum-subarray"
 ]
