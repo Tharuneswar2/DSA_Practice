@@ -326,5 +326,6 @@
     "check-adjacent-digit-differences",
     "find-missing-elements",
     "find-the-degree-of-each-vertex",
-    "find-indices-of-stable-mountains"
+    "find-indices-of-stable-mountains",
+    "the-two-sneaky-numbers-of-digitville"
 ]
