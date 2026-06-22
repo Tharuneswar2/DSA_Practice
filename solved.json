@@ -332,5 +332,6 @@
     "root-equals-sum-of-children",
     "minimum-positive-sum-subarray",
     "delete-characters-to-make-fancy-string",
-    "buy-two-chocolates"
+    "buy-two-chocolates",
+    "form-smallest-number-from-two-digit-arrays"
 ]
