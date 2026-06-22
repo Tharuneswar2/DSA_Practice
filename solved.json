@@ -333,5 +333,6 @@
     "minimum-positive-sum-subarray",
     "delete-characters-to-make-fancy-string",
     "buy-two-chocolates",
-    "form-smallest-number-from-two-digit-arrays"
+    "form-smallest-number-from-two-digit-arrays",
+    "minimum-time-to-type-word-using-special-typewriter"
 ]
