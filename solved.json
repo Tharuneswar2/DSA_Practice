@@ -321,5 +321,6 @@
     "replace-all-s-to-avoid-consecutive-repeating-characters",
     "find-the-array-concatenation-value",
     "sum-of-digits-in-base-k",
-    "score-of-a-string"
+    "score-of-a-string",
+    "the-k-weakest-rows-in-a-matrix"
 ]
