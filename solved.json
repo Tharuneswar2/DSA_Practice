@@ -319,5 +319,6 @@
     "get-maximum-in-generated-array",
     "count-residue-prefixes",
     "replace-all-s-to-avoid-consecutive-repeating-characters",
-    "find-the-array-concatenation-value"
+    "find-the-array-concatenation-value",
+    "sum-of-digits-in-base-k"
 ]
