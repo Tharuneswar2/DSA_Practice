@@ -325,5 +325,6 @@
     "the-k-weakest-rows-in-a-matrix",
     "check-adjacent-digit-differences",
     "find-missing-elements",
-    "find-the-degree-of-each-vertex"
+    "find-the-degree-of-each-vertex",
+    "find-indices-of-stable-mountains"
 ]
