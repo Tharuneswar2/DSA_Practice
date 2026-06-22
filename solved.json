@@ -330,5 +330,6 @@
     "the-two-sneaky-numbers-of-digitville",
     "subtract-the-product-and-sum-of-digits-of-an-integer",
     "root-equals-sum-of-children",
-    "minimum-positive-sum-subarray"
+    "minimum-positive-sum-subarray",
+    "delete-characters-to-make-fancy-string"
 ]
