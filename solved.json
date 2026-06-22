@@ -322,5 +322,6 @@
     "find-the-array-concatenation-value",
     "sum-of-digits-in-base-k",
     "score-of-a-string",
-    "the-k-weakest-rows-in-a-matrix"
+    "the-k-weakest-rows-in-a-matrix",
+    "check-adjacent-digit-differences"
 ]
