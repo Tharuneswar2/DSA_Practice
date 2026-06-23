@@ -342,5 +342,6 @@
     "faulty-keyboard",
     "widest-vertical-area-between-two-points-containing-no-points",
     "minimum-capacity-box",
-    "minimum-operations-to-make-columns-strictly-increasing"
+    "minimum-operations-to-make-columns-strictly-increasing",
+    "maximum-population-year"
 ]
