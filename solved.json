@@ -338,5 +338,6 @@
     "maximum-number-of-pairs-in-array",
     "number-of-even-and-odd-bits",
     "distribute-elements-into-two-arrays-i",
-    "adjacent-increasing-subarrays-detection-i"
+    "adjacent-increasing-subarrays-detection-i",
+    "faulty-keyboard"
 ]
