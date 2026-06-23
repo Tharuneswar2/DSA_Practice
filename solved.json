@@ -337,5 +337,6 @@
     "minimum-time-to-type-word-using-special-typewriter",
     "maximum-number-of-pairs-in-array",
     "number-of-even-and-odd-bits",
-    "distribute-elements-into-two-arrays-i"
+    "distribute-elements-into-two-arrays-i",
+    "adjacent-increasing-subarrays-detection-i"
 ]
