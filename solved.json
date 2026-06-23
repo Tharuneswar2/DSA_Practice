@@ -344,5 +344,6 @@
     "minimum-capacity-box",
     "minimum-operations-to-make-columns-strictly-increasing",
     "maximum-population-year",
-    "check-if-two-chessboard-squares-have-the-same-color"
+    "check-if-two-chessboard-squares-have-the-same-color",
+    "split-with-minimum-sum"
 ]
