@@ -339,5 +339,6 @@
     "number-of-even-and-odd-bits",
     "distribute-elements-into-two-arrays-i",
     "adjacent-increasing-subarrays-detection-i",
-    "faulty-keyboard"
+    "faulty-keyboard",
+    "widest-vertical-area-between-two-points-containing-no-points"
 ]
