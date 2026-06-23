@@ -343,5 +343,6 @@
     "widest-vertical-area-between-two-points-containing-no-points",
     "minimum-capacity-box",
     "minimum-operations-to-make-columns-strictly-increasing",
-    "maximum-population-year"
+    "maximum-population-year",
+    "check-if-two-chessboard-squares-have-the-same-color"
 ]
