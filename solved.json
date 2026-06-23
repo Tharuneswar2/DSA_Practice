@@ -345,5 +345,6 @@
     "minimum-operations-to-make-columns-strictly-increasing",
     "maximum-population-year",
     "check-if-two-chessboard-squares-have-the-same-color",
-    "split-with-minimum-sum"
+    "split-with-minimum-sum",
+    "count-distinct-numbers-on-board"
 ]
