@@ -334,5 +334,6 @@
     "delete-characters-to-make-fancy-string",
     "buy-two-chocolates",
     "form-smallest-number-from-two-digit-arrays",
-    "minimum-time-to-type-word-using-special-typewriter"
+    "minimum-time-to-type-word-using-special-typewriter",
+    "maximum-number-of-pairs-in-array"
 ]
