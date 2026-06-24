@@ -352,5 +352,6 @@
     "smallest-missing-integer-greater-than-sequential-prefix-sum",
     "thousand-separator",
     "a-number-after-a-double-reversal",
-    "sum-of-unique-elements"
+    "sum-of-unique-elements",
+    "find-common-elements-between-two-arrays"
 ]
