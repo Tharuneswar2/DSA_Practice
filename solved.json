@@ -350,5 +350,6 @@
     "matrix-diagonal-sum",
     "count-hills-and-valleys-in-an-array",
     "smallest-missing-integer-greater-than-sequential-prefix-sum",
-    "thousand-separator"
+    "thousand-separator",
+    "a-number-after-a-double-reversal"
 ]
