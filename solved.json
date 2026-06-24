@@ -348,5 +348,6 @@
     "split-with-minimum-sum",
     "count-distinct-numbers-on-board",
     "matrix-diagonal-sum",
-    "count-hills-and-valleys-in-an-array"
+    "count-hills-and-valleys-in-an-array",
+    "smallest-missing-integer-greater-than-sequential-prefix-sum"
 ]
