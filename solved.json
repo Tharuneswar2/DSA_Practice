@@ -349,5 +349,6 @@
     "count-distinct-numbers-on-board",
     "matrix-diagonal-sum",
     "count-hills-and-valleys-in-an-array",
-    "smallest-missing-integer-greater-than-sequential-prefix-sum"
+    "smallest-missing-integer-greater-than-sequential-prefix-sum",
+    "thousand-separator"
 ]
