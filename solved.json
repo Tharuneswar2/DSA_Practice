@@ -353,5 +353,6 @@
     "thousand-separator",
     "a-number-after-a-double-reversal",
     "sum-of-unique-elements",
-    "find-common-elements-between-two-arrays"
+    "find-common-elements-between-two-arrays",
+    "minimum-recolors-to-get-k-consecutive-black-blocks"
 ]
