@@ -351,5 +351,6 @@
     "count-hills-and-valleys-in-an-array",
     "smallest-missing-integer-greater-than-sequential-prefix-sum",
     "thousand-separator",
-    "a-number-after-a-double-reversal"
+    "a-number-after-a-double-reversal",
+    "sum-of-unique-elements"
 ]
