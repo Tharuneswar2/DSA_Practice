@@ -346,5 +346,6 @@
     "maximum-population-year",
     "check-if-two-chessboard-squares-have-the-same-color",
     "split-with-minimum-sum",
-    "count-distinct-numbers-on-board"
+    "count-distinct-numbers-on-board",
+    "matrix-diagonal-sum"
 ]
