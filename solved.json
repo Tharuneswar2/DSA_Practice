@@ -347,5 +347,6 @@
     "check-if-two-chessboard-squares-have-the-same-color",
     "split-with-minimum-sum",
     "count-distinct-numbers-on-board",
-    "matrix-diagonal-sum"
+    "matrix-diagonal-sum",
+    "count-hills-and-valleys-in-an-array"
 ]
