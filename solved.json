@@ -354,5 +354,6 @@
     "a-number-after-a-double-reversal",
     "sum-of-unique-elements",
     "find-common-elements-between-two-arrays",
-    "minimum-recolors-to-get-k-consecutive-black-blocks"
+    "minimum-recolors-to-get-k-consecutive-black-blocks",
+    "convert-the-temperature"
 ]
