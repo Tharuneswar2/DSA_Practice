@@ -361,5 +361,6 @@
     "left-and-right-sum-differences",
     "count-integers-with-even-digit-sum",
     "semi-ordered-permutation",
-    "find-subsequence-of-length-k-with-the-largest-sum"
+    "find-subsequence-of-length-k-with-the-largest-sum",
+    "check-balanced-string"
 ]
