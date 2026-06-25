@@ -357,5 +357,6 @@
     "minimum-recolors-to-get-k-consecutive-black-blocks",
     "convert-the-temperature",
     "path-crossing",
-    "find-the-largest-almost-missing-integer"
+    "find-the-largest-almost-missing-integer",
+    "left-and-right-sum-differences"
 ]
