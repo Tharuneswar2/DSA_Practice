@@ -355,5 +355,6 @@
     "sum-of-unique-elements",
     "find-common-elements-between-two-arrays",
     "minimum-recolors-to-get-k-consecutive-black-blocks",
-    "convert-the-temperature"
+    "convert-the-temperature",
+    "path-crossing"
 ]
