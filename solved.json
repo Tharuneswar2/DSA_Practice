@@ -359,5 +359,6 @@
     "path-crossing",
     "find-the-largest-almost-missing-integer",
     "left-and-right-sum-differences",
-    "count-integers-with-even-digit-sum"
+    "count-integers-with-even-digit-sum",
+    "semi-ordered-permutation"
 ]
