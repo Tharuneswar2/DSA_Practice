@@ -356,5 +356,6 @@
     "find-common-elements-between-two-arrays",
     "minimum-recolors-to-get-k-consecutive-black-blocks",
     "convert-the-temperature",
-    "path-crossing"
+    "path-crossing",
+    "find-the-largest-almost-missing-integer"
 ]
