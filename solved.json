@@ -358,5 +358,6 @@
     "convert-the-temperature",
     "path-crossing",
     "find-the-largest-almost-missing-integer",
-    "left-and-right-sum-differences"
+    "left-and-right-sum-differences",
+    "count-integers-with-even-digit-sum"
 ]
