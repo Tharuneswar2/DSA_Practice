@@ -375,5 +375,6 @@
     "sum-of-squares-of-special-elements",
     "reverse-prefix-of-word",
     "number-of-students-unable-to-eat-lunch",
-    "shift-2d-grid"
+    "shift-2d-grid",
+    "check-if-grid-satisfies-conditions"
 ]
