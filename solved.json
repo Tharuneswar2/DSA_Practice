@@ -380,5 +380,6 @@
     "build-array-from-permutation",
     "calculate-money-in-leetcode-bank",
     "points-that-intersect-with-cars",
-    "number-of-changing-keys"
+    "number-of-changing-keys",
+    "check-if-a-string-is-an-acronym-of-words"
 ]
