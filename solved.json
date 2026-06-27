@@ -378,5 +378,6 @@
     "shift-2d-grid",
     "check-if-grid-satisfies-conditions",
     "build-array-from-permutation",
-    "calculate-money-in-leetcode-bank"
+    "calculate-money-in-leetcode-bank",
+    "points-that-intersect-with-cars"
 ]
