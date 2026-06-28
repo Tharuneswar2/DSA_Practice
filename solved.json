@@ -387,5 +387,6 @@
     "split-the-array",
     "majority-frequency-characters",
     "count-prefixes-of-a-given-string",
-    "check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence"
+    "check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence",
+    "find-resultant-array-after-removing-anagrams"
 ]
