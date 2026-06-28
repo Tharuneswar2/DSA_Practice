@@ -383,5 +383,6 @@
     "number-of-changing-keys",
     "check-if-a-string-is-an-acronym-of-words",
     "find-champion-i",
-    "find-minimum-log-transportation-cost"
+    "find-minimum-log-transportation-cost",
+    "split-the-array"
 ]
