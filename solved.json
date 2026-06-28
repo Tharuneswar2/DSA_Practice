@@ -389,5 +389,6 @@
     "count-prefixes-of-a-given-string",
     "check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence",
     "find-resultant-array-after-removing-anagrams",
-    "remove-zeros-in-decimal-representation"
+    "remove-zeros-in-decimal-representation",
+    "remove-palindromic-subsequences"
 ]
