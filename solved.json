@@ -385,5 +385,6 @@
     "find-champion-i",
     "find-minimum-log-transportation-cost",
     "split-the-array",
-    "majority-frequency-characters"
+    "majority-frequency-characters",
+    "count-prefixes-of-a-given-string"
 ]
