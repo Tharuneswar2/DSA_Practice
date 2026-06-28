@@ -384,5 +384,6 @@
     "check-if-a-string-is-an-acronym-of-words",
     "find-champion-i",
     "find-minimum-log-transportation-cost",
-    "split-the-array"
+    "split-the-array",
+    "majority-frequency-characters"
 ]
