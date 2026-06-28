@@ -390,5 +390,6 @@
     "check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence",
     "find-resultant-array-after-removing-anagrams",
     "remove-zeros-in-decimal-representation",
-    "remove-palindromic-subsequences"
+    "remove-palindromic-subsequences",
+    "cells-with-odd-values-in-a-matrix"
 ]
