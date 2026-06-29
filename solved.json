@@ -399,5 +399,6 @@
     "find-minimum-operations-to-make-all-elements-divisible-by-three",
     "reformat-the-string",
     "count-good-triplets",
-    "sort-even-and-odd-indices-independently"
+    "sort-even-and-odd-indices-independently",
+    "maximum-number-of-operations-with-the-same-score-i"
 ]
