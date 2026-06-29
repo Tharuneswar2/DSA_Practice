@@ -401,5 +401,6 @@
     "count-good-triplets",
     "sort-even-and-odd-indices-independently",
     "maximum-number-of-operations-with-the-same-score-i",
-    "existence-of-a-substring-in-a-string-and-its-reverse"
+    "existence-of-a-substring-in-a-string-and-its-reverse",
+    "check-whether-two-strings-are-almost-equivalent"
 ]
