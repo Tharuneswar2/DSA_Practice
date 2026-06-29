@@ -393,5 +393,6 @@
     "remove-palindromic-subsequences",
     "cells-with-odd-values-in-a-matrix",
     "make-array-zero-by-subtracting-equal-amounts",
-    "average-salary-excluding-the-minimum-and-maximum-salary"
+    "average-salary-excluding-the-minimum-and-maximum-salary",
+    "sum-of-all-odd-length-subarrays"
 ]
