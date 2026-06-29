@@ -395,5 +395,6 @@
     "make-array-zero-by-subtracting-equal-amounts",
     "average-salary-excluding-the-minimum-and-maximum-salary",
     "sum-of-all-odd-length-subarrays",
-    "maximum-value-of-an-ordered-triplet-i"
+    "maximum-value-of-an-ordered-triplet-i",
+    "find-minimum-operations-to-make-all-elements-divisible-by-three"
 ]
