@@ -397,5 +397,6 @@
     "sum-of-all-odd-length-subarrays",
     "maximum-value-of-an-ordered-triplet-i",
     "find-minimum-operations-to-make-all-elements-divisible-by-three",
-    "reformat-the-string"
+    "reformat-the-string",
+    "count-good-triplets"
 ]
