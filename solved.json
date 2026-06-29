@@ -400,5 +400,6 @@
     "reformat-the-string",
     "count-good-triplets",
     "sort-even-and-odd-indices-independently",
-    "maximum-number-of-operations-with-the-same-score-i"
+    "maximum-number-of-operations-with-the-same-score-i",
+    "existence-of-a-substring-in-a-string-and-its-reverse"
 ]
