@@ -391,5 +391,6 @@
     "find-resultant-array-after-removing-anagrams",
     "remove-zeros-in-decimal-representation",
     "remove-palindromic-subsequences",
-    "cells-with-odd-values-in-a-matrix"
+    "cells-with-odd-values-in-a-matrix",
+    "make-array-zero-by-subtracting-equal-amounts"
 ]
