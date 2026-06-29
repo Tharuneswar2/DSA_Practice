@@ -392,5 +392,6 @@
     "remove-zeros-in-decimal-representation",
     "remove-palindromic-subsequences",
     "cells-with-odd-values-in-a-matrix",
-    "make-array-zero-by-subtracting-equal-amounts"
+    "make-array-zero-by-subtracting-equal-amounts",
+    "average-salary-excluding-the-minimum-and-maximum-salary"
 ]
