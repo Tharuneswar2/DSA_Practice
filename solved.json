@@ -404,5 +404,6 @@
     "existence-of-a-substring-in-a-string-and-its-reverse",
     "check-whether-two-strings-are-almost-equivalent",
     "type-of-triangle",
-    "minimum-moves-to-equal-array-elements-iii"
+    "minimum-moves-to-equal-array-elements-iii",
+    "minimum-string-length-after-removing-substrings"
 ]
