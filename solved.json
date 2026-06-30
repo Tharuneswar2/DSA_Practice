@@ -413,5 +413,6 @@
     "minimum-swaps-to-move-zeros-to-end",
     "count-items-matching-a-rule",
     "minimum-operations-to-collect-elements",
-    "shortest-distance-to-target-string-in-a-circular-array"
+    "shortest-distance-to-target-string-in-a-circular-array",
+    "divide-a-string-into-groups-of-size-k"
 ]
