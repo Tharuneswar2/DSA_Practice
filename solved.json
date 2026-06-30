@@ -406,5 +406,6 @@
     "type-of-triangle",
     "minimum-moves-to-equal-array-elements-iii",
     "minimum-string-length-after-removing-substrings",
-    "minimum-distance-between-three-equal-elements-i"
+    "minimum-distance-between-three-equal-elements-i",
+    "find-the-highest-altitude"
 ]
