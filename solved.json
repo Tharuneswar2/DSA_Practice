@@ -408,5 +408,6 @@
     "minimum-string-length-after-removing-substrings",
     "minimum-distance-between-three-equal-elements-i",
     "find-the-highest-altitude",
-    "difference-between-element-sum-and-digit-sum-of-an-array"
+    "difference-between-element-sum-and-digit-sum-of-an-array",
+    "smallest-number-with-all-set-bits"
 ]
