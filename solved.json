@@ -412,5 +412,6 @@
     "smallest-number-with-all-set-bits",
     "minimum-swaps-to-move-zeros-to-end",
     "count-items-matching-a-rule",
-    "minimum-operations-to-collect-elements"
+    "minimum-operations-to-collect-elements",
+    "shortest-distance-to-target-string-in-a-circular-array"
 ]
