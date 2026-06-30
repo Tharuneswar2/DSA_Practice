@@ -415,5 +415,6 @@
     "minimum-operations-to-collect-elements",
     "shortest-distance-to-target-string-in-a-circular-array",
     "divide-a-string-into-groups-of-size-k",
-    "minimum-pair-removal-to-sort-array-i"
+    "minimum-pair-removal-to-sort-array-i",
+    "find-the-maximum-divisibility-score"
 ]
