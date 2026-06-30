@@ -414,5 +414,6 @@
     "count-items-matching-a-rule",
     "minimum-operations-to-collect-elements",
     "shortest-distance-to-target-string-in-a-circular-array",
-    "divide-a-string-into-groups-of-size-k"
+    "divide-a-string-into-groups-of-size-k",
+    "minimum-pair-removal-to-sort-array-i"
 ]
