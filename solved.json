@@ -411,5 +411,6 @@
     "difference-between-element-sum-and-digit-sum-of-an-array",
     "smallest-number-with-all-set-bits",
     "minimum-swaps-to-move-zeros-to-end",
-    "count-items-matching-a-rule"
+    "count-items-matching-a-rule",
+    "minimum-operations-to-collect-elements"
 ]
