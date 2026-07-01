@@ -425,5 +425,6 @@
     "earliest-finish-time-for-land-and-water-rides-i",
     "can-make-arithmetic-progression-from-sequence",
     "sign-of-the-product-of-an-array",
-    "split-strings-by-separator"
+    "split-strings-by-separator",
+    "equal-score-substrings"
 ]
