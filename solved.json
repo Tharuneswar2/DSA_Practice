@@ -435,5 +435,6 @@
     "maximum-containers-on-a-ship",
     "longest-subsequence-with-limited-sum",
     "number-of-good-pairs",
-    "find-the-distinct-difference-array"
+    "find-the-distinct-difference-array",
+    "gcd-of-odd-and-even-sums"
 ]
