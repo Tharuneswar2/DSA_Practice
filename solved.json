@@ -427,5 +427,6 @@
     "sign-of-the-product-of-an-array",
     "split-strings-by-separator",
     "equal-score-substrings",
-    "determine-if-string-halves-are-alike"
+    "determine-if-string-halves-are-alike",
+    "count-the-number-of-incremovable-subarrays-i"
 ]
