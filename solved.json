@@ -434,5 +434,6 @@
     "minimum-sum-of-four-digit-number-after-splitting-digits",
     "maximum-containers-on-a-ship",
     "longest-subsequence-with-limited-sum",
-    "number-of-good-pairs"
+    "number-of-good-pairs",
+    "find-the-distinct-difference-array"
 ]
