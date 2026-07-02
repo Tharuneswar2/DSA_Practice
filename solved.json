@@ -440,5 +440,6 @@
     "smallest-index-with-equal-value",
     "find-lucky-integer-in-an-array",
     "number-of-beautiful-pairs",
-    "find-valid-pair-of-adjacent-digits-in-string"
+    "find-valid-pair-of-adjacent-digits-in-string",
+    "find-first-palindromic-string-in-the-array"
 ]
