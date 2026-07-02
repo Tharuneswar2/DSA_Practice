@@ -438,5 +438,6 @@
     "find-the-distinct-difference-array",
     "gcd-of-odd-and-even-sums",
     "smallest-index-with-equal-value",
-    "find-lucky-integer-in-an-array"
+    "find-lucky-integer-in-an-array",
+    "number-of-beautiful-pairs"
 ]
