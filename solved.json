@@ -428,5 +428,6 @@
     "split-strings-by-separator",
     "equal-score-substrings",
     "determine-if-string-halves-are-alike",
-    "count-the-number-of-incremovable-subarrays-i"
+    "count-the-number-of-incremovable-subarrays-i",
+    "find-the-pivot-integer"
 ]
