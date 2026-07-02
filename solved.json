@@ -436,5 +436,6 @@
     "longest-subsequence-with-limited-sum",
     "number-of-good-pairs",
     "find-the-distinct-difference-array",
-    "gcd-of-odd-and-even-sums"
+    "gcd-of-odd-and-even-sums",
+    "smallest-index-with-equal-value"
 ]
