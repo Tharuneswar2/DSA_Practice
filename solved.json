@@ -431,5 +431,6 @@
     "count-the-number-of-incremovable-subarrays-i",
     "find-the-pivot-integer",
     "latest-time-by-replacing-hidden-digits",
-    "minimum-sum-of-four-digit-number-after-splitting-digits"
+    "minimum-sum-of-four-digit-number-after-splitting-digits",
+    "maximum-containers-on-a-ship"
 ]
