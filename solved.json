@@ -439,5 +439,6 @@
     "gcd-of-odd-and-even-sums",
     "smallest-index-with-equal-value",
     "find-lucky-integer-in-an-array",
-    "number-of-beautiful-pairs"
+    "number-of-beautiful-pairs",
+    "find-valid-pair-of-adjacent-digits-in-string"
 ]
