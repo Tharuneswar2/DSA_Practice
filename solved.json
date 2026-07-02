@@ -430,5 +430,6 @@
     "determine-if-string-halves-are-alike",
     "count-the-number-of-incremovable-subarrays-i",
     "find-the-pivot-integer",
-    "latest-time-by-replacing-hidden-digits"
+    "latest-time-by-replacing-hidden-digits",
+    "minimum-sum-of-four-digit-number-after-splitting-digits"
 ]
