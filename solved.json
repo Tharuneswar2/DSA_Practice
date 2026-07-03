@@ -445,5 +445,6 @@
     "longest-even-odd-subarray-with-threshold",
     "count-negative-numbers-in-a-sorted-matrix",
     "count-pairs-that-form-a-complete-day-i",
-    "find-the-k-beauty-of-a-number"
+    "find-the-k-beauty-of-a-number",
+    "first-letter-to-appear-twice"
 ]
