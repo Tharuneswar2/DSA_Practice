@@ -442,5 +442,6 @@
     "number-of-beautiful-pairs",
     "find-valid-pair-of-adjacent-digits-in-string",
     "find-first-palindromic-string-in-the-array",
-    "longest-even-odd-subarray-with-threshold"
+    "longest-even-odd-subarray-with-threshold",
+    "count-negative-numbers-in-a-sorted-matrix"
 ]
