@@ -441,5 +441,6 @@
     "find-lucky-integer-in-an-array",
     "number-of-beautiful-pairs",
     "find-valid-pair-of-adjacent-digits-in-string",
-    "find-first-palindromic-string-in-the-array"
+    "find-first-palindromic-string-in-the-array",
+    "longest-even-odd-subarray-with-threshold"
 ]
