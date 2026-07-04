@@ -454,5 +454,6 @@
     "odd-string-difference",
     "minimum-value-to-get-positive-step-by-step-sum",
     "find-nearest-point-that-has-the-same-x-or-y-coordinate",
-    "count-elements-with-strictly-smaller-and-greater-elements"
+    "count-elements-with-strictly-smaller-and-greater-elements",
+    "maximum-area-of-longest-diagonal-rectangle"
 ]
