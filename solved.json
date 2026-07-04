@@ -451,5 +451,6 @@
     "string-matching-in-an-array",
     "check-if-binary-string-has-at-most-one-segment-of-ones",
     "check-if-matrix-is-x-matrix",
-    "odd-string-difference"
+    "odd-string-difference",
+    "minimum-value-to-get-positive-step-by-step-sum"
 ]
