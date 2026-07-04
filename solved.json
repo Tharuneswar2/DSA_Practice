@@ -461,5 +461,6 @@
     "find-target-indices-after-sorting-array",
     "count-commas-in-range",
     "number-of-rectangles-that-can-form-the-largest-square",
-    "min-max-game"
+    "min-max-game",
+    "water-bottles"
 ]
