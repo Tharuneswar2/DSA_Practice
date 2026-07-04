@@ -456,5 +456,6 @@
     "find-nearest-point-that-has-the-same-x-or-y-coordinate",
     "count-elements-with-strictly-smaller-and-greater-elements",
     "maximum-area-of-longest-diagonal-rectangle",
-    "find-the-distance-value-between-two-arrays"
+    "find-the-distance-value-between-two-arrays",
+    "largest-local-values-in-a-matrix"
 ]
