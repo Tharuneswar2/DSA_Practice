@@ -452,5 +452,6 @@
     "check-if-binary-string-has-at-most-one-segment-of-ones",
     "check-if-matrix-is-x-matrix",
     "odd-string-difference",
-    "minimum-value-to-get-positive-step-by-step-sum"
+    "minimum-value-to-get-positive-step-by-step-sum",
+    "find-nearest-point-that-has-the-same-x-or-y-coordinate"
 ]
