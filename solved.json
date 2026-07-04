@@ -460,5 +460,6 @@
     "largest-local-values-in-a-matrix",
     "find-target-indices-after-sorting-array",
     "count-commas-in-range",
-    "number-of-rectangles-that-can-form-the-largest-square"
+    "number-of-rectangles-that-can-form-the-largest-square",
+    "min-max-game"
 ]
