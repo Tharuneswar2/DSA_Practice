@@ -449,5 +449,6 @@
     "first-letter-to-appear-twice",
     "construct-the-minimum-bitwise-array-i",
     "string-matching-in-an-array",
-    "check-if-binary-string-has-at-most-one-segment-of-ones"
+    "check-if-binary-string-has-at-most-one-segment-of-ones",
+    "check-if-matrix-is-x-matrix"
 ]
