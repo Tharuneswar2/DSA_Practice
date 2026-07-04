@@ -459,5 +459,6 @@
     "find-the-distance-value-between-two-arrays",
     "largest-local-values-in-a-matrix",
     "find-target-indices-after-sorting-array",
-    "count-commas-in-range"
+    "count-commas-in-range",
+    "number-of-rectangles-that-can-form-the-largest-square"
 ]
