@@ -458,5 +458,6 @@
     "maximum-area-of-longest-diagonal-rectangle",
     "find-the-distance-value-between-two-arrays",
     "largest-local-values-in-a-matrix",
-    "find-target-indices-after-sorting-array"
+    "find-target-indices-after-sorting-array",
+    "count-commas-in-range"
 ]
