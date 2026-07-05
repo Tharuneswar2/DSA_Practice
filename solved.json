@@ -471,5 +471,6 @@
     "longest-nice-substring",
     "concatenation-of-array",
     "reverse-string-prefix",
-    "check-if-any-element-has-prime-frequency"
+    "check-if-any-element-has-prime-frequency",
+    "account-balance-after-rounded-purchase"
 ]
