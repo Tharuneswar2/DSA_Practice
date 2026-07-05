@@ -469,5 +469,6 @@
     "number-of-distinct-averages",
     "sum-of-all-subset-xor-totals",
     "longest-nice-substring",
-    "concatenation-of-array"
+    "concatenation-of-array",
+    "reverse-string-prefix"
 ]
