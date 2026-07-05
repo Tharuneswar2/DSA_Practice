@@ -462,5 +462,6 @@
     "count-commas-in-range",
     "number-of-rectangles-that-can-form-the-largest-square",
     "min-max-game",
-    "water-bottles"
+    "water-bottles",
+    "determine-if-two-events-have-conflict"
 ]
