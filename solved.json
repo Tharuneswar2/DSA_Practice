@@ -466,5 +466,6 @@
     "determine-if-two-events-have-conflict",
     "determine-the-winner-of-a-bowling-game",
     "count-days-spent-together",
-    "number-of-distinct-averages"
+    "number-of-distinct-averages",
+    "sum-of-all-subset-xor-totals"
 ]
