@@ -463,5 +463,6 @@
     "number-of-rectangles-that-can-form-the-largest-square",
     "min-max-game",
     "water-bottles",
-    "determine-if-two-events-have-conflict"
+    "determine-if-two-events-have-conflict",
+    "determine-the-winner-of-a-bowling-game"
 ]
