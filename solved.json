@@ -474,5 +474,6 @@
     "check-if-any-element-has-prime-frequency",
     "account-balance-after-rounded-purchase",
     "find-special-substring-of-length-k",
-    "find-the-peaks"
+    "find-the-peaks",
+    "shuffle-the-array"
 ]
