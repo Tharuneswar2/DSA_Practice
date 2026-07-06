@@ -485,5 +485,6 @@
     "absolute-difference-between-maximum-and-minimum-k-elements",
     "delete-greatest-value-in-each-row",
     "decrypt-string-from-alphabet-to-integer-mapping",
-    "remove-one-element-to-make-the-array-strictly-increasing"
+    "remove-one-element-to-make-the-array-strictly-increasing",
+    "evaluate-boolean-binary-tree"
 ]
