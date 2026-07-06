@@ -476,5 +476,6 @@
     "find-special-substring-of-length-k",
     "find-the-peaks",
     "shuffle-the-array",
-    "find-missing-and-repeated-values"
+    "find-missing-and-repeated-values",
+    "greatest-english-letter-in-upper-and-lower-case"
 ]
