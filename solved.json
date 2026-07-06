@@ -475,5 +475,6 @@
     "account-balance-after-rounded-purchase",
     "find-special-substring-of-length-k",
     "find-the-peaks",
-    "shuffle-the-array"
+    "shuffle-the-array",
+    "find-missing-and-repeated-values"
 ]
