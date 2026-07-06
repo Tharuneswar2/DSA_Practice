@@ -477,5 +477,6 @@
     "find-the-peaks",
     "shuffle-the-array",
     "find-missing-and-repeated-values",
-    "greatest-english-letter-in-upper-and-lower-case"
+    "greatest-english-letter-in-upper-and-lower-case",
+    "divide-an-array-into-subarrays-with-minimum-cost-i"
 ]
