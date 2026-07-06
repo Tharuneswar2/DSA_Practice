@@ -481,5 +481,6 @@
     "divide-an-array-into-subarrays-with-minimum-cost-i",
     "check-if-all-the-integers-in-a-range-are-covered",
     "check-if-two-string-arrays-are-equivalent",
-    "compute-alternating-sum"
+    "compute-alternating-sum",
+    "absolute-difference-between-maximum-and-minimum-k-elements"
 ]
