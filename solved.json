@@ -483,5 +483,6 @@
     "check-if-two-string-arrays-are-equivalent",
     "compute-alternating-sum",
     "absolute-difference-between-maximum-and-minimum-k-elements",
-    "delete-greatest-value-in-each-row"
+    "delete-greatest-value-in-each-row",
+    "decrypt-string-from-alphabet-to-integer-mapping"
 ]
