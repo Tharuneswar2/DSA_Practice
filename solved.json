@@ -479,5 +479,6 @@
     "find-missing-and-repeated-values",
     "greatest-english-letter-in-upper-and-lower-case",
     "divide-an-array-into-subarrays-with-minimum-cost-i",
-    "check-if-all-the-integers-in-a-range-are-covered"
+    "check-if-all-the-integers-in-a-range-are-covered",
+    "check-if-two-string-arrays-are-equivalent"
 ]
