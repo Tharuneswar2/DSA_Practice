@@ -484,5 +484,6 @@
     "compute-alternating-sum",
     "absolute-difference-between-maximum-and-minimum-k-elements",
     "delete-greatest-value-in-each-row",
-    "decrypt-string-from-alphabet-to-integer-mapping"
+    "decrypt-string-from-alphabet-to-integer-mapping",
+    "remove-one-element-to-make-the-array-strictly-increasing"
 ]
