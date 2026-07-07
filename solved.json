@@ -496,5 +496,6 @@
     "increasing-decreasing-string",
     "sum-of-good-numbers",
     "score-validator",
-    "weighted-word-mapping"
+    "weighted-word-mapping",
+    "count-common-words-with-one-occurrence"
 ]
