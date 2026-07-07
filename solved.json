@@ -488,5 +488,6 @@
     "remove-one-element-to-make-the-array-strictly-increasing",
     "evaluate-boolean-binary-tree",
     "take-gifts-from-the-richest-pile",
-    "earliest-time-to-finish-one-task"
+    "earliest-time-to-finish-one-task",
+    "percentage-of-letter-in-string"
 ]
