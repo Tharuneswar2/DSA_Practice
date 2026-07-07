@@ -487,5 +487,6 @@
     "decrypt-string-from-alphabet-to-integer-mapping",
     "remove-one-element-to-make-the-array-strictly-increasing",
     "evaluate-boolean-binary-tree",
-    "take-gifts-from-the-richest-pile"
+    "take-gifts-from-the-richest-pile",
+    "earliest-time-to-finish-one-task"
 ]
