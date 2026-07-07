@@ -486,5 +486,6 @@
     "delete-greatest-value-in-each-row",
     "decrypt-string-from-alphabet-to-integer-mapping",
     "remove-one-element-to-make-the-array-strictly-increasing",
-    "evaluate-boolean-binary-tree"
+    "evaluate-boolean-binary-tree",
+    "take-gifts-from-the-richest-pile"
 ]
