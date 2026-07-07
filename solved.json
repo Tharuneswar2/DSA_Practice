@@ -494,5 +494,6 @@
     "apply-operations-to-an-array",
     "check-if-one-string-swap-can-make-strings-equal",
     "increasing-decreasing-string",
-    "sum-of-good-numbers"
+    "sum-of-good-numbers",
+    "score-validator"
 ]
