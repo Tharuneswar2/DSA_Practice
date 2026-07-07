@@ -493,5 +493,6 @@
     "running-sum-of-1d-array",
     "apply-operations-to-an-array",
     "check-if-one-string-swap-can-make-strings-equal",
-    "increasing-decreasing-string"
+    "increasing-decreasing-string",
+    "sum-of-good-numbers"
 ]
