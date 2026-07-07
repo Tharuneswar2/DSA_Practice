@@ -492,5 +492,6 @@
     "percentage-of-letter-in-string",
     "running-sum-of-1d-array",
     "apply-operations-to-an-array",
-    "check-if-one-string-swap-can-make-strings-equal"
+    "check-if-one-string-swap-can-make-strings-equal",
+    "increasing-decreasing-string"
 ]
