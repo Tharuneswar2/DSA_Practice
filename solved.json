@@ -495,5 +495,6 @@
     "check-if-one-string-swap-can-make-strings-equal",
     "increasing-decreasing-string",
     "sum-of-good-numbers",
-    "score-validator"
+    "score-validator",
+    "weighted-word-mapping"
 ]
