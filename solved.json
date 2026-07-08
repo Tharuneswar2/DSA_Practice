@@ -497,5 +497,6 @@
     "sum-of-good-numbers",
     "score-validator",
     "weighted-word-mapping",
-    "count-common-words-with-one-occurrence"
+    "count-common-words-with-one-occurrence",
+    "count-the-number-of-consistent-strings"
 ]
