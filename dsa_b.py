@@ -70,8 +70,11 @@ def main():
         print("All problems solved!")
         return
 
-    # Pick 8 to 15 problems to solve today
-    num_to_solve = random.randint(8, min(15, len(unsolved)))
+
+
+    max_to_solve = min(15, len(unsolved))
+    min_to_solve = min(8, max_to_solve)
+    num_to_solve = random.randint(min_to_solve, max_to_solve)
     print(f"Planning to solve {num_to_solve} problems today.")
     
     selected_problems = random.sample(unsolved, num_to_solve)
