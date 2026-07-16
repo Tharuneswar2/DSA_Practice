@@ -1,20 +1,32 @@
-def areAlmostEqual(s1: str, s2: str) -> bool:
-    # If the two strings are equal, we can make them equal with 0 swaps
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
+def areAlmostEqual(self, s1: str, s2: str) -> bool:
+    # Check if the two strings are equal, if so, return True
     if s1 == s2:
         return True
     
-    # If the two strings have different lengths or different characters, 
-    # we cannot make them equal with one swap
-    if len(s1) != len(s2) or sorted(s1) != sorted(s2):
+    # If the two strings are not equal, check if they have the same length
+    if len(s1) != len(s2):
         return False
     
-    # Find the indices of the different characters
-    diff = [(a, b) for a, b in zip(s1, s2) if a != b]
+    # Initialize two lists to store the different characters
+    diff1, diff2 = [], []
     
-    # If there are more than 2 different characters, we cannot make them equal with one swap
-    if len(diff) != 2:
+    # Iterate over the characters in the two strings
+    for i in range(len(s1)):
+        # If the characters at the current position are different
+        if s1[i] != s2[i]:
+            # Add the characters to the lists
+            diff1.append(s1[i])
+            diff2.append(s2[i])
+    
+    # If there are more than two different characters, return False
+    if len(diff1) > 2:
         return False
     
-    # If the two different characters are the same but in different order, 
-    # we can make them equal with one swap
-    return diff[0] == diff[1][::-1]
+    # If there are exactly two different characters
+    if len(diff1) == 2:
+        # Check if the two characters are swapped
+        return diff1[0] == diff2[1] and diff1[1] == diff2[0]
+    
+    # If there are less than two different characters, return False
+    return False
