@@ -3,5 +3,6 @@
     "shift-2d-grid",
     "minimize-string-length",
     "min-max-game",
-    "maximum-population-year"
+    "maximum-population-year",
+    "smallest-index-with-equal-value"
 ]
