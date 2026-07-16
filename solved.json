@@ -4,5 +4,6 @@
     "minimize-string-length",
     "min-max-game",
     "maximum-population-year",
-    "smallest-index-with-equal-value"
+    "smallest-index-with-equal-value",
+    "the-k-weakest-rows-in-a-matrix"
 ]
