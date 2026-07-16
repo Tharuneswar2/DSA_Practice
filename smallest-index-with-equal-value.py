@@ -1,14 +1,10 @@
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
 def smallestEqual(nums):
-    # Iterate over the list with enumerate to get both index and value
+    # Iterate over the list of numbers with their indices
     for i, num in enumerate(nums):
-        # Check if the index is equal to the value
+        # Check if the current index is equal to the current number
         if i == num:
-            # If it is, return the index
+            # If they are equal, return the index
             return i
-    # If no such index is found, return -1
+    # If no equal index and number are found, return -1
     return -1
-
-# Test the function
-print(smallestEqual([0,1,2]))  # Output: 0
-print(smallestEqual([4,3,2]))  # Output: -1
-print(smallestEqual([1,2,3,4,5,6]))  # Output: -1
