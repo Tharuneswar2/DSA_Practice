@@ -5,5 +5,6 @@
     "min-max-game",
     "maximum-population-year",
     "smallest-index-with-equal-value",
-    "the-k-weakest-rows-in-a-matrix"
+    "the-k-weakest-rows-in-a-matrix",
+    "find-the-width-of-columns-of-a-grid"
 ]
