@@ -2,7 +2,9 @@ name: Daily DSA Practice Bot
 
 on:
   schedule:
-    - cron: '0 0 * * *'
+    # Run at multiple times throughout the day (IST-friendly)
+    - cron: '30 0 * * *'    # 6:00 AM IST
+    - cron: '30 6 * * *'    # 12:00 PM IST (optional midday run)
   workflow_dispatch:
 
 jobs:
@@ -31,13 +33,24 @@ jobs:
           git config --global user.name "Tharuneswar"
           git config --global user.email "dtharuneswar@aditya.ac.in"
 
+      - name: Pull latest changes
+        run: git pull --rebase origin main || git pull --rebase origin master || true
+
       - name: Run DSA Bot
         env:
           NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
         run: python dsa_b.py
 
-      - name: Commit and Push Changes
+      - name: Ensure daily commit (fallback)
         run: |
-          git add .
-          git diff --cached --quiet || git commit -m "Daily DSA update"
-          git push
+          # If the bot didn't make any commits (e.g., API failure),
+          # create a minimal commit to maintain the streak
+          if git diff --cached --quiet && git diff --quiet; then
+            echo "$(date -u +%Y-%m-%dT%H:%M:%SZ) - Daily streak maintained" >> streak_log.txt
+            git add streak_log.txt
+            git commit -m "Daily streak check - $(date -u +%Y-%m-%d)" || true
+          fi
+
+      - name: Push changes
+        run: |
+          git push || git pull --rebase && git push
