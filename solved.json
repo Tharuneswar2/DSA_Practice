@@ -7,5 +7,6 @@
     "smallest-index-with-equal-value",
     "the-k-weakest-rows-in-a-matrix",
     "find-the-width-of-columns-of-a-grid",
-    "check-if-bitwise-or-has-trailing-zeros"
+    "check-if-bitwise-or-has-trailing-zeros",
+    "check-if-one-string-swap-can-make-strings-equal"
 ]
