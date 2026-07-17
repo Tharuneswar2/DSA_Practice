@@ -18,5 +18,6 @@
     "minimum-recolors-to-get-k-consecutive-black-blocks",
     "second-largest-digit-in-a-string",
     "design-parking-system",
-    "remove-one-element-to-make-the-array-strictly-increasing"
+    "remove-one-element-to-make-the-array-strictly-increasing",
+    "root-equals-sum-of-children"
 ]
