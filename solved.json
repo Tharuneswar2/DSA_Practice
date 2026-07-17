@@ -14,5 +14,6 @@
     "check-if-a-string-is-an-acronym-of-words",
     "check-if-the-number-is-fascinating",
     "lexicographically-smallest-palindrome",
-    "capitalize-the-title"
+    "capitalize-the-title",
+    "minimum-recolors-to-get-k-consecutive-black-blocks"
 ]
