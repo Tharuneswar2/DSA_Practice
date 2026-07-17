@@ -20,5 +20,6 @@
     "design-parking-system",
     "remove-one-element-to-make-the-array-strictly-increasing",
     "root-equals-sum-of-children",
-    "increasing-decreasing-string"
+    "increasing-decreasing-string",
+    "maximum-difference-between-increasing-elements"
 ]

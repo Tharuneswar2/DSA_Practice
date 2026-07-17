@@ -1,25 +1,27 @@
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
 def minTimeToType(word: str) -> int:
     # Initialize the total time to type the word
     total_time = 0
     
-    # Initialize the previous character
+    # Initialize the previous character to None
     prev_char = None
     
     # Iterate over each character in the word
     for char in word:
-        # If the character is the same as the previous character, 
-        # we can type it in 1 second
-        if char == prev_char:
-            total_time += 1
-        else:
-            # If the character is different from the previous character, 
-            # we need to find the minimum time to type it
-            # We can either type it from the beginning or from the previous character
-            # The minimum time is the minimum of the two options
-            total_time += min(abs(ord(char) - ord('a')), abs(ord(char) - ord(prev_char))) + 1
+        # If the previous character is not None and it's different from the current character
+        if prev_char is not None and prev_char != char:
+            # Calculate the minimum time to move to the current character
+            # This is done by taking the minimum between the absolute difference between the ASCII values of the two characters
+            # and 26 minus this difference (because we can move in both clockwise and counter-clockwise directions)
+            min_time = min(abs(ord(char) - ord(prev_char)), 26 - abs(ord(char) - ord(prev_char)))
+            # Add the minimum time to the total time
+            total_time += min_time
+        
+        # Add 1 to the total time because we need to type the current character
+        total_time += 1
         
         # Update the previous character
         prev_char = char
     
-    # Return the total time to type the word
+    # Return the total time
     return total_time
