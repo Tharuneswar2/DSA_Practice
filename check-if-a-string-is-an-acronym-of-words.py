@@ -1,9 +1,10 @@
-def is_acronym(s, words):
-    # Convert the string to uppercase for case-insensitive comparison
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
+def isAcronym(s, words):
+    # Convert the input string to uppercase for case-insensitive comparison
     s = s.upper()
     
     # Initialize an empty string to store the acronym
-    acronym = ''
+    acronym = ""
     
     # Iterate over each word in the list of words
     for word in words:
@@ -12,10 +13,16 @@ def is_acronym(s, words):
         
         # Add the first character to the acronym
         acronym += first_char
-    
-    # Check if the acronym matches the given string
+        
+    # Check if the acronym matches the input string
     return acronym == s
 
-# Example usage:
-print(is_acronym('ABC', ['Alpha', 'Beta', 'Computer']))  # Returns: True
-print(is_acronym('ABC', ['Alpha', 'Beta', 'Code']))  # Returns: False
+def isAcronymAlternative(s, words):
+    # Convert the input string to uppercase for case-insensitive comparison
+    s = s.upper()
+    
+    # Use a list comprehension to extract the first character of each word and join them into a string
+    acronym = "".join(word[0].upper() for word in words)
+    
+    # Check if the acronym matches the input string
+    return acronym == s
