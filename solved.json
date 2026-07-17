@@ -11,5 +11,6 @@
     "check-if-one-string-swap-can-make-strings-equal",
     "minimum-operations-to-make-array-sum-divisible-by-k",
     "smallest-missing-integer-greater-than-sequential-prefix-sum",
-    "check-if-a-string-is-an-acronym-of-words"
+    "check-if-a-string-is-an-acronym-of-words",
+    "check-if-the-number-is-fascinating"
 ]
