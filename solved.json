@@ -21,5 +21,6 @@
     "remove-one-element-to-make-the-array-strictly-increasing",
     "root-equals-sum-of-children",
     "increasing-decreasing-string",
-    "maximum-difference-between-increasing-elements"
+    "maximum-difference-between-increasing-elements",
+    "minimum-time-to-type-word-using-special-typewriter"
 ]

@@ -1,16 +1,15 @@
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
 def findMaxK(nums):
-    # Create a set from the list for efficient lookups
-    num_set = set(nums)
+    # Create a set to store the numbers we have seen so far for efficient lookups
+    num_set = set()
     
-    # Initialize max_k to a negative value
-    max_k = -1
+    # Initialize the maximum positive integer that exists with its negative
+    max_k = float('-inf')
     
-    # Iterate over the set
-    for num in num_set:
-        # Check if the negative of the current number exists in the set
+    # Iterate over the list of numbers
+    for num in nums:
+        # If the negative of the current number exists in the set, update max_k
         if -num in num_set:
-            # Update max_k if the current number is greater
             max_k = max(max_k, num)
-    
-    # Return max_k if it's positive, otherwise return -1
-    return max_k if max_k > 0 else -1
+        # Add the current number to the set
+        num_set.add(num)
