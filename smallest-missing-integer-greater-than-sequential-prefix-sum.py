@@ -1,6 +1,7 @@
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
 def smallest_missing_integer(nums):
-    # Create a set to store the numbers we've seen so far
-    seen = set()
+    # Create a set from the input list for efficient lookups
+    num_set = set(nums)
     
     # Initialize the smallest missing integer to 1
     smallest_missing = 1
@@ -8,17 +9,14 @@ def smallest_missing_integer(nums):
     # Initialize the prefix sum to 0
     prefix_sum = 0
     
-    # Iterate over the numbers in the list
+    # Iterate over the input list
     for num in nums:
         # Add the current number to the prefix sum
         prefix_sum += num
         
-        # Add the current number to the set of seen numbers
-        seen.add(num)
-        
-        # While the smallest missing integer is less than or equal to the prefix sum
-        # and it's in the set of seen numbers, increment it
-        while smallest_missing <= prefix_sum and smallest_missing in seen:
+        # While the prefix sum is greater than or equal to the smallest missing integer
+        # and the smallest missing integer is in the set, increment the smallest missing integer
+        while prefix_sum >= smallest_missing and smallest_missing in num_set:
             smallest_missing += 1
     
     # Return the smallest missing integer
