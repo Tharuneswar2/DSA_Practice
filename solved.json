@@ -33,5 +33,6 @@
     "permutation-difference-between-two-strings",
     "kth-distinct-string-in-an-array",
     "reverse-letters-then-special-characters-in-a-string",
-    "minimum-number-of-operations-to-make-elements-in-array-distinct"
+    "minimum-number-of-operations-to-make-elements-in-array-distinct",
+    "number-of-good-pairs"
 ]
