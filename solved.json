@@ -36,5 +36,6 @@
     "minimum-number-of-operations-to-make-elements-in-array-distinct",
     "number-of-good-pairs",
     "split-a-string-in-balanced-strings",
-    "count-prefix-and-suffix-pairs-i"
+    "count-prefix-and-suffix-pairs-i",
+    "maximum-difference-between-adjacent-elements-in-a-circular-array"
 ]
