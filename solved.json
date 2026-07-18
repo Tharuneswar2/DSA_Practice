@@ -44,5 +44,6 @@
     "check-if-any-element-has-prime-frequency",
     "most-frequent-number-following-key-in-an-array",
     "find-most-frequent-vowel-and-consonant",
-    "smallest-even-multiple"
+    "smallest-even-multiple",
+    "hexadecimal-and-hexatrigesimal-conversion"
 ]
