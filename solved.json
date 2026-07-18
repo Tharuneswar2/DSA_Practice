@@ -34,5 +34,6 @@
     "kth-distinct-string-in-an-array",
     "reverse-letters-then-special-characters-in-a-string",
     "minimum-number-of-operations-to-make-elements-in-array-distinct",
-    "number-of-good-pairs"
+    "number-of-good-pairs",
+    "split-a-string-in-balanced-strings"
 ]
