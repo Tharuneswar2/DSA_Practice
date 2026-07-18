@@ -32,5 +32,6 @@
     "divide-an-array-into-subarrays-with-minimum-cost-i",
     "permutation-difference-between-two-strings",
     "kth-distinct-string-in-an-array",
-    "reverse-letters-then-special-characters-in-a-string"
+    "reverse-letters-then-special-characters-in-a-string",
+    "minimum-number-of-operations-to-make-elements-in-array-distinct"
 ]
