@@ -1,57 +1,32 @@
-class TrieNode:
-    def __init__(self):
-        # Initialize a TrieNode with an empty dictionary to store children and a variable to store the word
-        self.children = {}
-        self.word = None
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
 
-class WeightedWordMapping:
-    def __init__(self):
-        # Initialize the WeightedWordMapping with a TrieNode as the root
-        self.root = TrieNode()
+def weighted_word_mapping(words, weights):
+    # Create a dictionary to store the weighted word mapping
+    weighted_mapping = {}
+    
+    # Iterate over each word and its corresponding weight
+    for word, weight in zip(words, weights):
+        # If the word is already in the dictionary, update its weight
+        if word in weighted_mapping:
+            # Update the weight by adding the new weight to the existing weight
+            weighted_mapping[word] += weight
+        else:
+            # If the word is not in the dictionary, add it with its weight
+            weighted_mapping[word] = weight
+    
+    # Return the weighted word mapping
+    return weighted_mapping
 
-    def insert(self, word, weight):
-        # Start at the root of the Trie
-        node = self.root
-        # Iterate over each character in the word
-        for char in word:
-            # If the character is not in the node's children, add it
-            if char not in node.children:
-                node.children[char] = TrieNode()
-            # Move to the child node
-            node = node.children[char]
-        # Store the word and its weight in the final node
-        node.word = word
-        node.weight = weight
+def main():
+    # Example usage
+    words = ["apple", "banana", "apple", "orange", "banana", "banana"]
+    weights = [2, 3, 1, 4, 2, 1]
+    
+    # Create the weighted word mapping
+    weighted_mapping = weighted_word_mapping(words, weights)
+    
+    # Print the weighted word mapping
+    print(weighted_mapping)
 
-    def search(self, prefix):
-        # Start at the root of the Trie
-        node = self.root
-        # Iterate over each character in the prefix
-        for char in prefix:
-            # If the character is not in the node's children, return an empty list
-            if char not in node.children:
-                return []
-            # Move to the child node
-            node = node.children[char]
-        # Perform a depth-first search to find all words with the given prefix
-        return self._dfs(node, prefix)
-
-    def _dfs(self, node, prefix):
-        # Initialize a list to store the results
-        results = []
-        # If the node has a word, add it to the results
-        if node.word:
-            results.append((node.word, node.weight))
-        # Iterate over each child node
-        for child in node.children.values():
-            # Recursively search the child node and add the results
-            results.extend(self._dfs(child, prefix))
-        # Return the results
-        return results
-
-# Example usage
-mapping = WeightedWordMapping()
-mapping.insert("apple", 5)
-mapping.insert("app", 3)
-mapping.insert("application", 10)
-print(mapping.search("app"))
+if __name__ == "__main__":
+    main()
