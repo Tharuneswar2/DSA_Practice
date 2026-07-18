@@ -26,5 +26,6 @@
     "largest-positive-integer-that-exists-with-its-negative",
     "first-unique-even-element",
     "furthest-point-from-origin",
-    "day-of-the-week"
+    "day-of-the-week",
+    "minimum-operations-to-exceed-threshold-value-i"
 ]
