@@ -37,5 +37,6 @@
     "number-of-good-pairs",
     "split-a-string-in-balanced-strings",
     "count-prefix-and-suffix-pairs-i",
-    "maximum-difference-between-adjacent-elements-in-a-circular-array"
+    "maximum-difference-between-adjacent-elements-in-a-circular-array",
+    "find-the-degree-of-each-vertex"
 ]

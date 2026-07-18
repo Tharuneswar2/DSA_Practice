@@ -1,18 +1,19 @@
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
 def canBeTypedWords(text, brokenLetters):
-    # Split the text into words
+    # Split the input text into words
     words = text.split()
     
-    # Initialize a counter for the number of words that can be typed
+    # Initialize a counter to store the number of words that can be typed
     count = 0
     
     # Iterate over each word in the text
     for word in words:
-        # Assume the word can be typed
+        # Assume the word can be typed initially
         can_type = True
         
         # Iterate over each broken letter
         for letter in brokenLetters:
-            # If the word contains the broken letter, it cannot be typed
+            # If the word contains a broken letter, it cannot be typed
             if letter in word:
                 can_type = False
                 break
@@ -21,5 +22,5 @@ def canBeTypedWords(text, brokenLetters):
         if can_type:
             count += 1
     
-    # Return the number of words that can be typed
+    # Return the total number of words that can be typed
     return count
