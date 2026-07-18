@@ -31,5 +31,6 @@
     "sort-integers-by-binary-reflection",
     "divide-an-array-into-subarrays-with-minimum-cost-i",
     "permutation-difference-between-two-strings",
-    "kth-distinct-string-in-an-array"
+    "kth-distinct-string-in-an-array",
+    "reverse-letters-then-special-characters-in-a-string"
 ]

@@ -1,26 +1,28 @@
-def minOperations(arr):
-    # Create a set to store unique elements
-    unique_set = set()
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
+def minOperations(nums):
+    # Create a set to store unique elements from the array
+    unique_nums = set()
     
     # Initialize the count of operations
     operations = 0
     
-    # Iterate over the array
-    for num in arr:
-        # Initialize a variable to store the next unique number
-        next_unique = num
-        
-        # While the next unique number is in the set, increment it
-        while next_unique in unique_set:
-            next_unique += 1
+    # Iterate over each element in the array
+    for num in nums:
+        # If the number is already in the set, it's not distinct
+        if num in unique_nums:
             # Increment the operations count
             operations += 1
-        
-        # Add the next unique number to the set
-        unique_set.add(next_unique)
+            
+            # Make the number distinct by incrementing it
+            while num in unique_nums:
+                num += 1
+                operations += 1
+            
+            # Add the distinct number to the set
+            unique_nums.add(num)
+        else:
+            # If the number is distinct, add it to the set
+            unique_nums.add(num)
     
-    # Return the total operations
+    # Return the total operations count
     return operations
-
-# Test the function
-print(minOperations([1, 2, 2, 3, 4, 4, 5]))  # Output: 2
