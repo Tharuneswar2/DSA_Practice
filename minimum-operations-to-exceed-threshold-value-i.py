@@ -1,16 +1,13 @@
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
 def min_operations(nums, threshold, divisor):
-    # Calculate the threshold value
-    threshold_value = threshold // divisor
-    
     # Initialize the count of operations
     operations = 0
     
-    # Iterate over the list of numbers
+    # Iterate over each number in the list
     for num in nums:
-        # If the number is greater than or equal to the threshold value
-        if num >= threshold_value:
-            # Increment the operations count by the difference between the number and the threshold value
-            operations += num - threshold_value
+        # Calculate the ceiling of the division of the number by the divisor
+        # This is because we need to exceed the threshold, so we round up
+        operations += (threshold + num - 1) // num
     
-    # Return the total operations count
+    # Return the total count of operations
     return operations
