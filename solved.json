@@ -27,5 +27,6 @@
     "first-unique-even-element",
     "furthest-point-from-origin",
     "day-of-the-week",
-    "minimum-operations-to-exceed-threshold-value-i"
+    "minimum-operations-to-exceed-threshold-value-i",
+    "sort-integers-by-binary-reflection"
 ]
