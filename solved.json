@@ -35,5 +35,6 @@
     "reverse-letters-then-special-characters-in-a-string",
     "minimum-number-of-operations-to-make-elements-in-array-distinct",
     "number-of-good-pairs",
-    "split-a-string-in-balanced-strings"
+    "split-a-string-in-balanced-strings",
+    "count-prefix-and-suffix-pairs-i"
 ]

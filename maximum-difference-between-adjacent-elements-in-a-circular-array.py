@@ -1,36 +1,40 @@
-def max_adjacent_difference(nums):
-    # Calculate the maximum difference between adjacent elements in a circular array
-    # First, find the maximum difference between adjacent elements in a linear array
-    max_diff_linear = max(abs(nums[i] - nums[i-1]) for i in range(1, len(nums)))
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
+def maximumGap(nums):
+    # Check if the input list is empty or contains less than 2 elements
+    if len(nums) < 2:
+        return 0
     
-    # Then, find the maximum difference between the first and last elements in the array
-    # considering the array as a circular array
-    max_diff_circular = max(abs(nums[0] - nums[-1]), abs(nums[-1] - nums[0]))
-    
-    # The maximum difference between adjacent elements in a circular array is the maximum
-    # of the maximum differences in the linear and circular arrays
-    return max(max_diff_linear, max_diff_circular)
-
-def max_adjacent_difference_optimized(nums):
-    # Calculate the maximum difference between adjacent elements in a circular array
-    # Find the minimum and maximum elements in the array
+    # Find the minimum and maximum values in the list
     min_val = min(nums)
     max_val = max(nums)
     
-    # If the array contains only one element, return 0
+    # If all elements are the same, return 0
     if min_val == max_val:
         return 0
     
-    # Initialize the maximum difference between adjacent elements
-    max_diff = 0
+    # Calculate the bucket size
+    bucket_size = max(1, (max_val - min_val) // (len(nums) - 1))
     
-    # Iterate over the array to find the maximum difference between adjacent elements
-    for i in range(len(nums)):
-        # Calculate the difference between the current element and the next element
-        diff = abs(nums[i] - nums[(i+1) % len(nums)])
-        
-        # Update the maximum difference if the current difference is larger
-        max_diff = max(max_diff, diff)
+    # Initialize the bucket list with default values
+    bucket = [[float('inf'), float('-inf')] for _ in range((max_val - min_val) // bucket_size + 1)]
     
-    # Return the maximum difference between adjacent elements in the circular array
-    return max_diff
+    # Distribute the elements into the buckets
+    for num in nums:
+        index = (num - min_val) // bucket_size
+        bucket[index][0] = min(bucket[index][0], num)
+        bucket[index][1] = max(bucket[index][1], num)
+    
+    # Initialize the maximum gap and the previous maximum value
+    max_gap = 0
+    prev_max = bucket[0][1]
+    
+    # Iterate over the buckets to find the maximum gap
+    for i in range(1, len(bucket)):
+        if bucket[i][0] != float('inf'):
+            max_gap = max(max_gap, bucket[i][0] - prev_max)
+            prev_max = bucket[i][1]
+    
+    # Consider the gap between the last bucket and the first bucket
+    max_gap = max(max_gap, bucket[0][0] - prev_max, bucket[0][1] - prev_max)
+    
+    return max_gap
