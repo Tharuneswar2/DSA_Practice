@@ -1,29 +1,15 @@
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
+
 def minNumberGame(nums):
-    n = len(nums)
-    prefix_sum = [0] * (n + 1)
-    for i in range(n):
-        prefix_sum[i + 1] = prefix_sum[i] + nums[i]
-
-    def get_sum(left, right):
-        return prefix_sum[right + 1] - prefix_sum[left]
-
-    memo = {}
-
-    def dp(left, right):
-        if left >= right:
-            return 0
-        if (left, right) in memo:
-            return memo[(left, right)]
-
-        # try to find the minimum difference by splitting the array into two parts
-        res = float('inf')
-        for i in range(left, right):
-            # calculate the difference between the sum of the left part and the sum of the right part
-            diff = abs(get_sum(left, i) - get_sum(i + 1, right))
-            # recursively find the minimum difference for the left and right parts
-            res = min(res, max(dp(left, i), dp(i + 1, right), diff))
-
-        memo[(left, right)] = res
-        return res
-
-    return dp(0, n - 1)
+    # Initialize variables to store the total sum and the maximum prefix sum
+    total_sum = sum(nums)  # Calculate the total sum of the array
+    max_prefix_sum = 0  # Initialize the maximum prefix sum as 0
+    current_prefix_sum = 0  # Initialize the current prefix sum as 0
+    
+    # Iterate through the array to find the maximum prefix sum
+    for num in nums:
+        current_prefix_sum += num  # Add the current number to the prefix sum
+        max_prefix_sum = max(max_prefix_sum, current_prefix_sum)  # Update the maximum prefix sum
+    
+    # Calculate the minimum number of operations required
+    return total_sum - max_prefix_sum + 1  # The minimum number of operations is the total sum minus the maximum prefix sum plus 1

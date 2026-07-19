@@ -64,5 +64,6 @@
     "minimum-sum-of-mountain-triplets-i",
     "find-the-number-of-good-pairs-i",
     "traffic-signal-color",
-    "merge-strings-alternately"
+    "merge-strings-alternately",
+    "earliest-time-to-finish-one-task"
 ]
