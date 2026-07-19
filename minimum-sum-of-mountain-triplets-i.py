@@ -1,27 +1,33 @@
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
 def minimumMountainRemovals(nums):
+    # Initialize variables to store the length of the longest increasing subsequence (LIS) and the longest decreasing subsequence (LDS)
     n = len(nums)
-    # Initialize arrays to store the length of the longest increasing subsequence ending at each position
-    # and the length of the longest decreasing subsequence starting at each position
-    inc, dec = [1] * n, [1] * n
+    lis = [1] * n
+    lds = [1] * n
     
-    # Calculate the length of the longest increasing subsequence ending at each position
+    # Compute the LIS for each element in the array
     for i in range(1, n):
         for j in range(i):
+            # If the current element is greater than the previous element, update the LIS
             if nums[i] > nums[j]:
-                inc[i] = max(inc[i], inc[j] + 1)
+                lis[i] = max(lis[i], lis[j] + 1)
     
-    # Calculate the length of the longest decreasing subsequence starting at each position
+    # Compute the LDS for each element in the array
     for i in range(n - 2, -1, -1):
         for j in range(n - 1, i, -1):
+            # If the current element is greater than the next element, update the LDS
             if nums[i] > nums[j]:
-                dec[i] = max(dec[i], dec[j] + 1)
+                lds[i] = max(lds[i], lds[j] + 1)
     
-    # Initialize the minimum sum of mountain triplets
-    min_sum = float('inf')
+    # Initialize a variable to store the maximum length of the mountain subsequence
+    max_len = 0
     
-    # Calculate the minimum sum of mountain triplets
-    for i in range(1, n - 1):
-        if inc[i] > 1 and dec[i] > 1:
-            min_sum = min(min_sum, nums[i] + nums[i - inc[i] + 1] + nums[i + dec[i] - 1])
+    # Compute the maximum length of the mountain subsequence
+    for i in range(n):
+        # The mountain subsequence must have at least 3 elements
+        if lis[i] > 1 and lds[i] > 1:
+            # Update the maximum length
+            max_len = max(max_len, lis[i] + lds[i] - 1)
     
-    return min_sum if min_sum != float('inf') else -1
+    # Return the minimum number of elements to remove to make the array a mountain subsequence
+    return n - max_len
