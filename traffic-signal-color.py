@@ -1,20 +1,19 @@
-def traffic_light_color(color):
-    # Define a dictionary to map traffic light colors to their corresponding durations
-    traffic_light_durations = {
-        'red': 5,
-        'yellow': 2,
-        'green': 10
-    }
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
 
-    # Check if the input color is valid
-    if color not in traffic_light_durations:
-        return "Invalid color"
-
-    # Return the duration of the given traffic light color
-    return traffic_light_durations[color]
+def traffic_light_color(n):
+    # Define the colors of the traffic light in the order they appear
+    colors = ["red", "green", "yellow"]
+    
+    # Calculate the index of the color based on the input number
+    # We use the modulus operator to ensure the index is within the bounds of the list
+    index = (n - 1) % len(colors)
+    
+    # Return the color at the calculated index
+    return colors[index]
 
 # Test the function
-print(traffic_light_color('red'))  # Output: 5
-print(traffic_light_color('yellow'))  # Output: 2
-print(traffic_light_color('green'))  # Output: 10
-print(traffic_light_color('blue'))  # Output: Invalid color
+print(traffic_light_color(1))  # red
+print(traffic_light_color(2))  # green
+print(traffic_light_color(3))  # yellow
+print(traffic_light_color(4))  # red
+print(traffic_light_color(5))  # green
