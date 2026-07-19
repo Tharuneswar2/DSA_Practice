@@ -54,5 +54,6 @@
     "find-the-difference-of-two-arrays",
     "circular-sentence",
     "largest-number-after-digit-swaps-by-parity",
-    "three-consecutive-odds"
+    "three-consecutive-odds",
+    "matrix-similarity-after-cyclic-shifts"
 ]
