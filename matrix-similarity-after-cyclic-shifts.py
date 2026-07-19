@@ -1,24 +1,34 @@
-def are_matrices_similar_after_cyclic_shifts(matrix1, matrix2):
-    # Check if the matrices are of the same size
-    if len(matrix1) != len(matrix2) or len(matrix1[0]) != len(matrix2[0]):
-        return False
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
+def areMatricesSimilar(mat1, mat2):
+    # First, we check if the two matrices are equal
+    if mat1 == mat2:
+        return True
 
-    # Flatten the matrices into strings
-    str1 = ''.join(''.join(map(str, row)) for row in matrix1)
-    str2 = ''.join(''.join(map(str, row)) for row in matrix2)
+    # If not, we perform cyclic shifts on the first matrix and check for equality
+    # We only need to check for 3 cyclic shifts (up, down, left, right) because 
+    # after 4 shifts, the matrix will be the same as the original
+    for _ in range(3):
+        # Perform a cyclic shift on the first matrix
+        mat1 = shiftMatrix(mat1)
+        
+        # Check if the shifted matrix is equal to the second matrix
+        if mat1 == mat2:
+            return True
 
-    # Check if str2 is a cyclic shift of str1
-    if len(str1) != len(str2):
-        return False
+    # If none of the cyclic shifts result in equality, return False
+    return False
 
-    # Concatenate str1 with itself
-    double_str1 = str1 + str1
-
-    # Check if str2 is a substring of double_str1
-    return str2 in double_str1
-
-
-# Example usage:
-matrix1 = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
-matrix2 = [[3, 1, 2], [6, 4, 5], [9, 7, 8]]
-print(are_matrices_similar_after_cyclic_shifts(matrix1, matrix2))  # Output: True
+def shiftMatrix(mat):
+    # Perform a cyclic shift on the matrix by shifting each row to the right
+    # and then shifting the last column to the first column
+    n = len(mat)
+    for i in range(n):
+        # Shift each row to the right
+        mat[i] = [mat[i][-1]] + mat[i][:-1]
+    
+    # Shift the last column to the first column
+    last_col = [mat[i][-1] for i in range(n)]
+    for i in range(n):
+        mat[i] = [last_col[i]] + mat[i][:-1]
+    
+    return mat
