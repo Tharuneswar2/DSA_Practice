@@ -1,19 +1,20 @@
-def maximum_value(strs):
-    # Initialize max_value as negative infinity
-    max_value = float('-inf')
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
+def maximum_value(arr):
+    # Initialize max_val as negative infinity to ensure any string value will be greater
+    max_val = float('-inf')
     
-    # Iterate over each string in the input list
-    for s in strs:
-        # Check if the string is numeric
-        if s.isnumeric():
-            # Convert the numeric string to an integer and update max_value if necessary
-            max_value = max(max_value, int(s))
-        else:
-            # If the string is not numeric, calculate its length and update max_value if necessary
-            max_value = max(max_value, len(s))
+    # Iterate over each string in the input array
+    for s in arr:
+        # Initialize a variable to store the numeric value of the current string
+        num = 0
+        
+        # Iterate over each character in the string
+        for c in s:
+            # Convert the character to its corresponding numeric value (A=1, B=2, ..., Z=26)
+            num = num * 27 + ord(c) - ord('A') + 1
+        
+        # Update max_val if the numeric value of the current string is greater
+        max_val = max(max_val, num)
     
-    # Return the maximum value found
-    return max_value
-
-# Example usage:
-print(maximum_value(["alic3", "bob", "4", "3", "leetcod3"]))  # Output: 5
+    # Return the maximum numeric value found
+    return max_val
