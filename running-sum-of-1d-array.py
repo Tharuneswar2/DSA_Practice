@@ -1,25 +1,18 @@
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
 def runningSum(nums):
-    # Initialize the running sum to 0
-    running_sum = 0
+    # Initialize an empty list to store the running sum
+    running_sum = []
     
-    # Initialize an empty list to store the running sums
-    result = []
+    # Initialize a variable to keep track of the current sum
+    current_sum = 0
     
     # Iterate over each number in the input list
     for num in nums:
-        # Add the current number to the running sum
-        running_sum += num
+        # Add the current number to the current sum
+        current_sum += num
         
-        # Append the current running sum to the result list
-        result.append(running_sum)
+        # Append the current sum to the running sum list
+        running_sum.append(current_sum)
     
-    # Return the list of running sums
-    return result
-
-# Alternatively, you can use a list comprehension with the accumulate function from the itertools module
-from itertools import accumulate
-
-def runningSum(nums):
-    # Use the accumulate function to calculate the running sum
-    # and convert the result to a list
-    return list(accumulate(nums))
+    # Return the running sum list
+    return running_sum
