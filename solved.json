@@ -60,5 +60,6 @@
     "check-if-digits-are-equal-in-string-after-operations-i",
     "count-negative-numbers-in-a-sorted-matrix",
     "minimum-number-of-chairs-in-a-waiting-room",
-    "convert-integer-to-the-sum-of-two-no-zero-integers"
+    "convert-integer-to-the-sum-of-two-no-zero-integers",
+    "minimum-sum-of-mountain-triplets-i"
 ]
