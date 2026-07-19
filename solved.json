@@ -52,5 +52,6 @@
     "running-sum-of-1d-array",
     "maximum-value-of-a-string-in-an-array",
     "find-the-difference-of-two-arrays",
-    "circular-sentence"
+    "circular-sentence",
+    "largest-number-after-digit-swaps-by-parity"
 ]

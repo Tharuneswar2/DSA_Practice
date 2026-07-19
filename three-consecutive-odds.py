@@ -1,10 +1,12 @@
-def three_consecutive_odds(arr):
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
+
+def threeConsecutiveOdds(arr):
     # Initialize a counter to track the number of consecutive odd numbers
     consecutive_odds = 0
     
     # Iterate over the array
     for num in arr:
-        # Check if the number is odd
+        # Check if the current number is odd
         if num % 2 != 0:
             # If the number is odd, increment the counter
             consecutive_odds += 1
@@ -17,7 +19,3 @@ def three_consecutive_odds(arr):
     
     # If we have iterated over the entire array and haven't found three consecutive odd numbers, return False
     return False
-
-# Test the function
-print(three_consecutive_odds([2, 6, 4, 1, 3, 5]))  # True
-print(three_consecutive_odds([1, 2, 3, 4, 5]))  # False
