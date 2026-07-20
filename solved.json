@@ -75,5 +75,6 @@
     "remove-zeros-in-decimal-representation",
     "find-words-containing-character",
     "find-lucky-integer-in-an-array",
-    "harshad-number"
+    "harshad-number",
+    "determine-if-string-halves-are-alike"
 ]
