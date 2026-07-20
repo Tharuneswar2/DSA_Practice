@@ -86,5 +86,6 @@
     "convert-1d-array-into-2d-array",
     "check-whether-two-strings-are-almost-equivalent",
     "type-of-triangle",
-    "find-the-distinct-difference-array"
+    "find-the-distinct-difference-array",
+    "maximum-sum-with-exactly-k-elements"
 ]
