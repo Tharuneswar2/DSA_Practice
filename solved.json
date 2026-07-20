@@ -76,5 +76,6 @@
     "find-words-containing-character",
     "find-lucky-integer-in-an-array",
     "harshad-number",
-    "determine-if-string-halves-are-alike"
+    "determine-if-string-halves-are-alike",
+    "construct-the-minimum-bitwise-array-i"
 ]
