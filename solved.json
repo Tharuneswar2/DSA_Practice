@@ -77,5 +77,6 @@
     "find-lucky-integer-in-an-array",
     "harshad-number",
     "determine-if-string-halves-are-alike",
-    "construct-the-minimum-bitwise-array-i"
+    "construct-the-minimum-bitwise-array-i",
+    "check-if-array-is-sorted-and-rotated"
 ]
