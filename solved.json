@@ -67,5 +67,6 @@
     "merge-strings-alternately",
     "earliest-time-to-finish-one-task",
     "minimum-number-game",
-    "minimum-common-value"
+    "minimum-common-value",
+    "minimum-moves-to-equal-array-elements-iii"
 ]
