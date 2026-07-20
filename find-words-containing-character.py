@@ -1,12 +1,14 @@
-def find_words_containing_char(lst, char):
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
+
+def find_words_containing_char(words, char):
     # Initialize an empty list to store the words containing the character
     result = []
     
-    # Iterate over each word in the input list
-    for word in lst:
-        # Check if the character is in the word
+    # Iterate over each word in the list of words
+    for word in words:
+        # Check if the character is present in the word
         if char in word:
-            # If the character is found, append the word to the result list
+            # If the character is present, append the word to the result list
             result.append(word)
     
     # Return the list of words containing the character
