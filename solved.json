@@ -66,5 +66,6 @@
     "traffic-signal-color",
     "merge-strings-alternately",
     "earliest-time-to-finish-one-task",
-    "minimum-number-game"
+    "minimum-number-game",
+    "minimum-common-value"
 ]
