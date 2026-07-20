@@ -1,21 +1,21 @@
-def triangle_type(a, b, c):
-    # Check if the sides can form a triangle
-    if a + b <= c or a + c <= b or b + c <= a:
-        return "Not a triangle"
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
 
-    # Check if all sides are equal
+def triangle_type(a, b, c):
+    # First, we sort the sides of the triangle in ascending order
+    a, b, c = sorted([a, b, c])
+    
+    # Check if the given sides can form a valid triangle
+    # The sum of the lengths of any two sides of a triangle must be greater than the length of the third side
+    if a + b <= c:
+        return "Not a triangle"
+    
+    # Check if the triangle is equilateral (all sides are equal)
     if a == b == c:
         return "Equilateral"
-
-    # Check if two sides are equal
-    if a == b or a == c or b == c:
+    
+    # Check if the triangle is isosceles (two sides are equal)
+    if a == b or b == c:
         return "Isosceles"
-
-    # If none of the above conditions are met, it's a scalene triangle
+    
+    # If none of the above conditions are met, the triangle is scalene (all sides are unequal)
     return "Scalene"
-
-# Test the function
-print(triangle_type(3, 4, 5))  # Scalene
-print(triangle_type(5, 5, 5))  # Equilateral
-print(triangle_type(7, 7, 2))  # Isosceles
-print(triangle_type(1, 2, 5))  # Not a triangle
