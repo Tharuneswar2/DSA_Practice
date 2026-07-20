@@ -69,5 +69,6 @@
     "minimum-number-game",
     "minimum-common-value",
     "minimum-moves-to-equal-array-elements-iii",
-    "maximum-containers-on-a-ship"
+    "maximum-containers-on-a-ship",
+    "compute-alternating-sum"
 ]
