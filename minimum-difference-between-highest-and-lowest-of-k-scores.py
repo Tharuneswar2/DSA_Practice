@@ -1,5 +1,6 @@
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
 def minimumDifference(nums, k):
-    # Sort the list in ascending order
+    # Sort the list of scores in ascending order
     nums.sort()
     
     # Initialize the minimum difference as infinity
@@ -13,10 +14,5 @@ def minimumDifference(nums, k):
         # Update the minimum difference if the current difference is smaller
         min_diff = min(min_diff, diff)
     
-    # Return the minimum difference
+    # Return the minimum difference found
     return min_diff
-
-# Example usage:
-nums = [9, 4, 5, 7, 6, 8, 2, 1, 3]
-k = 4
-print(minimumDifference(nums, k))
