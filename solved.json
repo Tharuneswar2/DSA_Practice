@@ -68,5 +68,6 @@
     "earliest-time-to-finish-one-task",
     "minimum-number-game",
     "minimum-common-value",
-    "minimum-moves-to-equal-array-elements-iii"
+    "minimum-moves-to-equal-array-elements-iii",
+    "maximum-containers-on-a-ship"
 ]
