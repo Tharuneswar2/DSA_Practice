@@ -87,5 +87,6 @@
     "check-whether-two-strings-are-almost-equivalent",
     "type-of-triangle",
     "find-the-distinct-difference-array",
-    "maximum-sum-with-exactly-k-elements"
+    "maximum-sum-with-exactly-k-elements",
+    "best-poker-hand"
 ]
