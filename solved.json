@@ -81,5 +81,6 @@
     "check-if-array-is-sorted-and-rotated",
     "determine-color-of-a-chessboard-square",
     "minimum-difference-between-highest-and-lowest-of-k-scores",
-    "two-furthest-houses-with-different-colors"
+    "two-furthest-houses-with-different-colors",
+    "find-subarrays-with-equal-sum"
 ]

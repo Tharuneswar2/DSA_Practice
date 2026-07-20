@@ -1,32 +1,24 @@
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
+
 def construct2DArray(original, m, n):
-    # Check if the original array can be reshaped into an m x n array
-    if len(original) != m * n:
+    # Check if the total number of elements in the 2D array matches the length of the original array
+    if m * n != len(original):
         return []
 
     # Initialize an empty 2D array with m rows and n columns
-    result = [[0 for _ in range(n)] for _ in range(m)]
+    result = [[0] * n for _ in range(m)]
 
-    # Fill the 2D array with elements from the original array
+    # Initialize an index to track the current position in the original array
     index = 0
+
+    # Iterate over each row in the 2D array
     for i in range(m):
+        # Iterate over each column in the 2D array
         for j in range(n):
-            # Place the next element from the original array at the current position in the 2D array
+            # Assign the current element from the original array to the corresponding position in the 2D array
             result[i][j] = original[index]
+            # Move to the next element in the original array
             index += 1
 
+    # Return the constructed 2D array
     return result
-
-def construct2DArray_pythonic(original, m, n):
-    # Check if the original array can be reshaped into an m x n array
-    if len(original) != m * n:
-        return []
-
-    # Use list comprehension to create the 2D array
-    return [original[i * n:(i + 1) * n] for i in range(m)]
-
-# Test the functions
-original = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
-m = 3
-n = 4
-print(construct2DArray(original, m, n))
-print(construct2DArray_pythonic(original, m, n))
