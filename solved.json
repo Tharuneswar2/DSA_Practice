@@ -73,5 +73,6 @@
     "compute-alternating-sum",
     "fruits-into-baskets-ii",
     "remove-zeros-in-decimal-representation",
-    "find-words-containing-character"
+    "find-words-containing-character",
+    "find-lucky-integer-in-an-array"
 ]
