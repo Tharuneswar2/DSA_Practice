@@ -79,5 +79,6 @@
     "determine-if-string-halves-are-alike",
     "construct-the-minimum-bitwise-array-i",
     "check-if-array-is-sorted-and-rotated",
-    "determine-color-of-a-chessboard-square"
+    "determine-color-of-a-chessboard-square",
+    "minimum-difference-between-highest-and-lowest-of-k-scores"
 ]

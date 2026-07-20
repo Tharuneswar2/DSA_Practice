@@ -1,22 +1,30 @@
-def maxDistance(colors):
-    # Initialize two pointers, one at the start and one at the end of the list
-    left, right = 0, len(colors) - 1
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
+def maxDistance(self, color: list[int]) -> int:
+    # Initialize variables to store the maximum distance and the indices of the furthest houses with different colors
+    max_dist = 0
+    left, right = 0, len(color) - 1
     
-    # If the colors at the start and end are different, return the distance
-    if colors[left] != colors[right]:
-        return right - left
-    
-    # If the colors at the start and end are the same, move the pointers towards each other
-    while left < right:
-        # Move the left pointer to the right until we find a different color
-        if colors[left] != colors[right]:
-            break
+    # Traverse the list from the left and find the first house with a different color
+    while color[left] == color[0]:
         left += 1
-        
-        # Move the right pointer to the left until we find a different color
-        if colors[left] != colors[right]:
-            break
+    
+    # Traverse the list from the right and find the first house with a different color
+    while color[right] == color[-1]:
         right -= 1
     
+    # Update the maximum distance
+    max_dist = max(max_dist, right - left)
+    
+    # Traverse the list from the left and find the furthest house with a different color
+    for i in range(len(color)):
+        # If the current house has a different color than the first house
+        if color[i] != color[0]:
+            # Update the maximum distance
+            max_dist = max(max_dist, i - left)
+        # If the current house has a different color than the last house
+        if color[i] != color[-1]:
+            # Update the maximum distance
+            max_dist = max(max_dist, right - i)
+    
     # Return the maximum distance
-    return max(right - left, len(colors) - 1 - left, right)
+    return max_dist
