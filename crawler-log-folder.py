@@ -1,21 +1,19 @@
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
 def minOperations(logs):
-    # Initialize a stack to keep track of the directories
-    stack = []
+    # Initialize a counter to track the number of operations needed to reach the root folder
+    count = 0
     
     # Iterate over each log in the list of logs
     for log in logs:
-        # If the log is '../', it means we need to go back to the parent directory
+        # If the log is '../', it means we need to move up one level, so decrement the count if it's not already 0
         if log == '../':
-            # If the stack is not empty, pop the last directory from the stack
-            if stack:
-                stack.pop()
-        # If the log is './', it means we are already in the current directory, so do nothing
+            count = max(0, count - 1)
+        # If the log is './', it means we're staying in the same folder, so do nothing
         elif log == './':
             continue
-        # If the log is not '../' or './', it means we need to go into a new directory
+        # If the log is a folder name, it means we're moving down one level, so increment the count
         else:
-            # Add the new directory to the stack
-            stack.append(log)
+            count += 1
     
-    # The minimum number of operations is the number of directories in the stack
-    return len(stack)
+    # Return the total number of operations needed to reach the root folder
+    return count

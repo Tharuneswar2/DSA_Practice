@@ -96,5 +96,6 @@
     "shortest-subarray-with-or-at-least-k-i",
     "reverse-string-prefix",
     "find-the-longest-balanced-substring-of-a-binary-string",
-    "minimum-operations-to-equalize-array"
+    "minimum-operations-to-equalize-array",
+    "concatenation-of-array"
 ]
