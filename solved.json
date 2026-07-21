@@ -93,5 +93,6 @@
     "distribute-candies-among-children-i",
     "count-dominant-indices",
     "pass-the-pillow",
-    "shortest-subarray-with-or-at-least-k-i"
+    "shortest-subarray-with-or-at-least-k-i",
+    "reverse-string-prefix"
 ]
