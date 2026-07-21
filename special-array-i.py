@@ -1,20 +1,27 @@
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
 def specialArray(nums):
-    # Create a set of unique elements in the array
-    unique_nums = set(nums)
+    # First, sort the array in ascending order
+    nums.sort()
     
-    # Initialize the count of special elements
-    special_count = 0
+    # Initialize two pointers, one at the start and one at the end of the array
+    left, right = 0, len(nums)
     
-    # Iterate over the unique elements
-    for num in unique_nums:
-        # Check if the count of elements less than or equal to the current number is equal to the current number
-        if sum(1 for x in nums if x <= num) == num:
-            # If it is, increment the special count
-            special_count += 1
+    # Continue the loop until the two pointers meet
+    while left < right:
+        # Calculate the middle index
+        mid = (left + right + 1) // 2
+        
+        # If the number of elements greater than or equal to 'mid' is equal to 'mid', return 'mid'
+        if sum(1 for num in nums if num >= mid) == mid:
+            return mid
+        
+        # If the number of elements greater than or equal to 'mid' is less than 'mid', move the left pointer to 'mid'
+        elif sum(1 for num in nums if num >= mid) < mid:
+            right = mid - 1
+        
+        # If the number of elements greater than or equal to 'mid' is greater than 'mid', move the left pointer to 'mid'
+        else:
+            left = mid
     
-    # If no special elements are found, return -1
-    if special_count == 0:
-        return -1
-    # Otherwise, return the count of special elements
-    else:
-        return special_count
+    # If no such 'mid' is found, return -1
+    return -1
