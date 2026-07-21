@@ -107,5 +107,6 @@
     "special-array-i",
     "distribute-elements-into-two-arrays-i",
     "destination-city",
-    "toggle-light-bulbs"
+    "toggle-light-bulbs",
+    "check-if-n-and-its-double-exist"
 ]
