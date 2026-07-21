@@ -94,5 +94,6 @@
     "count-dominant-indices",
     "pass-the-pillow",
     "shortest-subarray-with-or-at-least-k-i",
-    "reverse-string-prefix"
+    "reverse-string-prefix",
+    "find-the-longest-balanced-substring-of-a-binary-string"
 ]

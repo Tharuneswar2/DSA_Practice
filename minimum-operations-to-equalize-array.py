@@ -1,16 +1,16 @@
-def min_operations(nums):
-    # Calculate the median of the array
-    median = sorted(nums)[len(nums) // 2]
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
+def minOperations(nums):
+    # First, find the minimum element in the array, as this will be the target value for equalization
+    min_val = min(nums)
     
-    # Initialize the count of operations
+    # Initialize a variable to store the total number of operations required
     operations = 0
     
-    # For each number in the array, calculate the absolute difference with the median
-    # This difference represents the number of operations required to equalize the number with the median
+    # Iterate over each element in the array
     for num in nums:
-        operations += abs(num - median)
+        # For each element, calculate the difference between the current element and the target value
+        # This difference represents the number of operations required to equalize the current element
+        operations += num - min_val
     
+    # Return the total number of operations required to equalize the entire array
     return operations
-
-# Test the function
-print(min_operations([1, 5, 3, 19, 18, 25]))  # Output: 13
