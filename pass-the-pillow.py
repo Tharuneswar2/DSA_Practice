@@ -1,12 +1,22 @@
-def pass_the_pillow(n, k):
-    # Calculate the position of the pillow after k passes
-    # We use the modulo operator to handle cases where k is greater than n
-    position = (k - 1) % n + 1
-    
-    # Return the position of the pillow
-    return position
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
+def passThePillow(n, m):
+    # Calculate the remainder of m divided by n to find the position of the pillow after m seconds
+    # If the remainder is 0, the pillow will be at the first position
+    remainder = m % n
+    # If the remainder is 0, return n, otherwise return the remainder
+    return n if remainder == 0 else remainder
 
-# Test the function
-n = int(input())
-k = int(input())
-print(pass_the_pillow(n, k))
+def main():
+    # Read the number of test cases
+    t = int(input())
+    # Iterate over each test case
+    for _ in range(t):
+        # Read the number of people and the number of seconds
+        n, m = map(int, input().split())
+        # Call the function to calculate the position of the pillow
+        result = passThePillow(n, m)
+        # Print the result
+        print(result)
+
+if __name__ == "__main__":
+    main()
