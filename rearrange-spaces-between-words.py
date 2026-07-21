@@ -1,30 +1,25 @@
-def reorder_spaces(text):
-    # Count the total number of spaces in the text
-    total_spaces = text.count(' ')
-
-    # Split the text into words
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
+def reorderSpaces(text):
+    # Split the input string into words and count the total number of spaces
     words = text.split()
-
-    # If there's only one word, return the text with all spaces appended at the end
-    if len(words) == 1:
-        return words[0] + ' ' * total_spaces
-
-    # Calculate the number of spaces to be added between words
-    spaces_between = total_spaces // (len(words) - 1)
-
-    # Calculate the number of extra spaces
-    extra_spaces = total_spaces % (len(words) - 1)
-
-    # Initialize the result string
-    result = ''
-
-    # Add words to the result string with the calculated number of spaces in between
-    for i in range(len(words)):
-        result += words[i]
-        if i < len(words) - 1:
-            result += ' ' * spaces_between
-        # Add an extra space if there are remaining spaces
-        if i < extra_spaces:
-            result += ' '
-
+    total_spaces = text.count(' ')
+    
+    # If there are multiple words, distribute the spaces evenly between them
+    if len(words) > 1:
+        # Calculate the number of spaces to be added between each word
+        space_between_words = total_spaces // (len(words) - 1)
+        # Calculate the remaining spaces to be added at the end
+        remaining_spaces = total_spaces % (len(words) - 1)
+        
+        # Initialize the result string with the first word
+        result = words[0]
+        # Add the calculated number of spaces and the next word to the result string
+        for word in words[1:]:
+            result += ' ' * space_between_words + word
+        # Add the remaining spaces at the end of the result string
+        result += ' ' * remaining_spaces
+    else:
+        # If there's only one word, add all the spaces at the end
+        result = words[0] + ' ' * total_spaces
+    
     return result
