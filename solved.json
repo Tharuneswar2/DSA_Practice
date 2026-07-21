@@ -106,5 +106,6 @@
     "find-missing-elements",
     "special-array-i",
     "distribute-elements-into-two-arrays-i",
-    "destination-city"
+    "destination-city",
+    "toggle-light-bulbs"
 ]
