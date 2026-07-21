@@ -108,5 +108,6 @@
     "distribute-elements-into-two-arrays-i",
     "destination-city",
     "toggle-light-bulbs",
-    "check-if-n-and-its-double-exist"
+    "check-if-n-and-its-double-exist",
+    "can-make-arithmetic-progression-from-sequence"
 ]
