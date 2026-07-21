@@ -105,5 +105,6 @@
     "check-if-all-the-integers-in-a-range-are-covered",
     "find-missing-elements",
     "special-array-i",
-    "distribute-elements-into-two-arrays-i"
+    "distribute-elements-into-two-arrays-i",
+    "destination-city"
 ]
