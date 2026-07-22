@@ -112,5 +112,6 @@
     "can-make-arithmetic-progression-from-sequence",
     "most-visited-sector-in-a-circular-track",
     "separate-the-digits-in-an-array",
-    "modify-the-matrix"
+    "modify-the-matrix",
+    "absolute-difference-between-maximum-and-minimum-k-elements"
 ]
