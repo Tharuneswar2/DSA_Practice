@@ -120,5 +120,6 @@
     "merge-two-2d-arrays-by-summing-values",
     "shuffle-the-array",
     "find-if-digit-game-can-be-won",
-    "check-if-two-string-arrays-are-equivalent"
+    "check-if-two-string-arrays-are-equivalent",
+    "minimum-operations-to-make-columns-strictly-increasing"
 ]
