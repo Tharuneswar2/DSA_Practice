@@ -1,22 +1,29 @@
-def is_trionic_array(arr):
-    # Check if the array has at least 3 elements
-    if len(arr) < 3:
-        return False
-
-    # Check if the array is sorted in ascending order
-    if arr != sorted(arr):
-        return False
-
-    # Check if the difference between consecutive elements is the same
-    diff = arr[1] - arr[0]
-    for i in range(2, len(arr)):
-        if arr[i] - arr[i-1] != diff:
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
+def isTonic(nums):
+    # Initialize a variable to track the trend of the sequence
+    trend = None
+    
+    # Iterate over the sequence from the second element to the end
+    for i in range(1, len(nums)):
+        # If the current element is greater than the previous one, the trend is increasing
+        if nums[i] > nums[i - 1]:
+            # If the trend was previously decreasing or None, update the trend
+            if trend == False or trend is None:
+                trend = True
+            # If the trend was previously increasing, continue
+            else:
+                continue
+        # If the current element is less than the previous one, the trend is decreasing
+        elif nums[i] < nums[i - 1]:
+            # If the trend was previously increasing or None, update the trend
+            if trend == True or trend is None:
+                trend = False
+            # If the trend was previously decreasing, continue
+            else:
+                continue
+        # If the current element is equal to the previous one, the sequence is not tonic
+        else:
             return False
-
+    
+    # If the sequence has passed the checks, it is tonic
     return True
-
-# Test the function
-print(is_trionic_array([1, 2, 3, 4, 5]))  # True
-print(is_trionic_array([1, 3, 5, 7, 9]))  # True
-print(is_trionic_array([1, 2, 4, 6, 8]))   # True
-print(is_trionic_array([1, 2, 3, 5, 6]))   # False
