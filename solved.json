@@ -119,5 +119,6 @@
     "trionic-array-i",
     "merge-two-2d-arrays-by-summing-values",
     "shuffle-the-array",
-    "find-if-digit-game-can-be-won"
+    "find-if-digit-game-can-be-won",
+    "check-if-two-string-arrays-are-equivalent"
 ]
