@@ -1,25 +1,18 @@
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
+
 def findChild(n, k):
-    # Create a circular linked list with n children
-    children = [i for i in range(1, n + 1)]
+    # Initialize the child who has the ball as 1 (since we start with child 1)
+    child_with_ball = 1
     
-    # Initialize the index of the child who has the ball
-    index = 0
-    
-    # Simulate the passing of the ball k times
-    for _ in range(k):
-        # The ball is passed to the next child
-        index = (index + 1) % n
+    # Iterate from 2 to n (since we have n children)
+    for i in range(2, n + 1):
+        # Update the child who has the ball using the recursive formula: (child_with_ball + k) % i
+        # The modulus operation ensures the child index wraps around to the start if it exceeds the current number of children
+        child_with_ball = (child_with_ball + k) % i
+        
+        # If the result of the modulus operation is 0, it means the ball is with the last child, so we update it to i
+        if child_with_ball == 0:
+            child_with_ball = i
     
     # Return the child who has the ball after k seconds
-    return children[index]
-
-def findChildMath(n, k):
-    # The child who has the ball after k seconds is the one at index (k - 1) % n
-    # This is because the ball is passed to the next child k times, and the index wraps around to 0 when it reaches n
-    return (k - 1) % n + 1
-
-# Test the functions
-n = 5  # number of children
-k = 3  # number of seconds
-print(findChild(n, k))  # Output: 3
-print(findChildMath(n, k))  # Output: 3
+    return child_with_ball
