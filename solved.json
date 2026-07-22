@@ -123,5 +123,6 @@
     "check-if-two-string-arrays-are-equivalent",
     "minimum-operations-to-make-columns-strictly-increasing",
     "day-of-the-year",
-    "remove-digit-from-number-to-maximize-result"
+    "remove-digit-from-number-to-maximize-result",
+    "find-the-child-who-has-the-ball-after-k-seconds"
 ]
