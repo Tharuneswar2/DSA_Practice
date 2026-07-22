@@ -124,5 +124,6 @@
     "minimum-operations-to-make-columns-strictly-increasing",
     "day-of-the-year",
     "remove-digit-from-number-to-maximize-result",
-    "find-the-child-who-has-the-ball-after-k-seconds"
+    "find-the-child-who-has-the-ball-after-k-seconds",
+    "check-divisibility-by-digit-sum-and-product"
 ]
