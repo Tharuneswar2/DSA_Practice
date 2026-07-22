@@ -128,5 +128,6 @@
     "check-divisibility-by-digit-sum-and-product",
     "smallest-missing-multiple-of-k",
     "maximum-number-of-operations-with-the-same-score-i",
-    "find-closest-person"
+    "find-closest-person",
+    "sorting-the-sentence"
 ]
