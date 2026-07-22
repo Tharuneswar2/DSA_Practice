@@ -121,5 +121,6 @@
     "shuffle-the-array",
     "find-if-digit-game-can-be-won",
     "check-if-two-string-arrays-are-equivalent",
-    "minimum-operations-to-make-columns-strictly-increasing"
+    "minimum-operations-to-make-columns-strictly-increasing",
+    "day-of-the-year"
 ]
