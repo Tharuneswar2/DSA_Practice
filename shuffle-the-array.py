@@ -1,17 +1,15 @@
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
 def shuffle(nums, n):
     # Initialize an empty list to store the shuffled array
     shuffled = []
     
-    # Iterate over the first half of the array
+    # Loop through the first half of the array
     for i in range(n):
-        # Append the elements from the first half and the second half in alternating order
+        # Append the current element from the first half
         shuffled.append(nums[i])
+        
+        # Append the corresponding element from the second half
         shuffled.append(nums[n + i])
     
     # Return the shuffled array
     return shuffled
-
-# Example usage:
-nums = [1, 2, 3, 4, 5, 6]
-n = 3
-print(shuffle(nums, n))  # Output: [1, 4, 2, 5, 3, 6]
