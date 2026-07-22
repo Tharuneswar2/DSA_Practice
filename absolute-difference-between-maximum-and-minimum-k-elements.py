@@ -1,23 +1,25 @@
-def getMinDiff(arr, n, k):
-    # Sort the array in ascending order
-    arr.sort()
-    
-    # Initialize the minimum difference
-    min_diff = float('inf')
-    
-    # Iterate over the array to find the minimum difference
-    for i in range(n - k + 1):
-        # Calculate the difference between the maximum and minimum elements in the current window
-        diff = arr[i + k - 1] - arr[i]
-        
-        # Update the minimum difference if the current difference is smaller
-        min_diff = min(min_diff, diff)
-    
-    # Return the minimum difference
-    return min_diff
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
 
-# Test the function
-arr = [1, 2, 3, 4, 5]
-n = len(arr)
-k = 3
-print(getMinDiff(arr, n, k))
+def get_max_min_diff(nums, k):
+    # First, sort the list of numbers in ascending order
+    nums.sort()
+    
+    # Initialize variables to store the maximum and minimum differences
+    max_diff = float('-inf')  # Initialize max_diff as negative infinity
+    min_diff = float('inf')   # Initialize min_diff as positive infinity
+    
+    # Iterate over the sorted list to consider all possible subarrays of size k
+    for i in range(len(nums) - k + 1):
+        # Calculate the difference between the maximum and minimum elements in the current subarray
+        diff = nums[i + k - 1] - nums[i]
+        
+        # Update max_diff if the current difference is larger
+        if diff > max_diff:
+            max_diff = diff
+            
+        # Update min_diff if the current difference is smaller
+        if diff < min_diff:
+            min_diff = diff
+            
+    # Return the absolute difference between max_diff and min_diff
+    return abs(max_diff - min_diff)
