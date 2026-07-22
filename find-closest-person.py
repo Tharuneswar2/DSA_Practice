@@ -1,32 +1,27 @@
-import math
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
 
-def distance(person1, person2):
-    # Calculate the Euclidean distance between two people
-    return math.sqrt((person1[0] - person2[0])**2 + (person1[1] - person2[1])**2)
-
-def find_closest_person(person, people):
+def find_closest_person(people, target_person):
     # Initialize the minimum distance and the closest person
-    min_distance = float('inf')
+    min_distance = float('inf')  # Initialize with infinity
     closest_person = None
 
-    # Iterate over all people
-    for p in people:
-        # Skip the person itself
-        if p == person:
-            continue
+    # Iterate over each person in the list of people
+    for person in people:
+        # Check if the person is not the target person
+        if person != target_person:
+            # Calculate the distance between the person and the target person
+            distance = abs(person[0] - target_person[0]) + abs(person[1] - target_person[1])
+            
+            # Check if the distance is less than the current minimum distance
+            if distance < min_distance:
+                # Update the minimum distance and the closest person
+                min_distance = distance
+                closest_person = person
 
-        # Calculate the distance between the person and the current person
-        dist = distance(person, p)
-
-        # Update the minimum distance and the closest person if necessary
-        if dist < min_distance:
-            min_distance = dist
-            closest_person = p
-
+    # Return the closest person
     return closest_person
 
 # Example usage:
-people = [(1, 2), (3, 4), (5, 6), (7, 8)]
-person = (1, 2)
-closest = find_closest_person(person, people)
-print(closest)
+people = [(1, 2), (3, 4), (5, 6), (7, 8), (9, 10)]
+target_person = (4, 5)
+print(find_closest_person(people, target_person))

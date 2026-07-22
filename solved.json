@@ -126,5 +126,6 @@
     "remove-digit-from-number-to-maximize-result",
     "find-the-child-who-has-the-ball-after-k-seconds",
     "check-divisibility-by-digit-sum-and-product",
-    "smallest-missing-multiple-of-k"
+    "smallest-missing-multiple-of-k",
+    "maximum-number-of-operations-with-the-same-score-i"
 ]
