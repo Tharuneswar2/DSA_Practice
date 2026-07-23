@@ -1,24 +1,19 @@
-def count_even_odd_bits(n):
-    # Initialize counters for even and odd bits
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
+def countBits(n):
+    # Initialize variables to store the count of even and odd bits
     even_bits = 0
     odd_bits = 0
     
-    # Loop until n becomes 0
-    while n:
-        # Check the least significant bit of n
-        # If it's 1, increment odd_bits, else increment even_bits
-        if n & 1:
-            odd_bits += 1
-        else:
-            even_bits += 1
+    # Loop through all numbers from 0 to n (inclusive)
+    for i in range(n + 1):
+        # Convert the current number to binary and remove the '0b' prefix
+        binary = bin(i)[2:]
         
-        # Right shift n by 1 bit to move to the next bit
-        n >>= 1
+        # Count the number of '1's in the binary representation (i.e., the number of odd bits)
+        odd_bits += binary.count('1')
+        
+        # The number of even bits is the total number of bits minus the number of odd bits
+        even_bits += len(binary) - binary.count('1')
     
-    # Return the counts of even and odd bits
-    return even_bits, odd_bits
-
-# Test the function
-n = 5  # Binary representation: 101
-even_bits, odd_bits = count_even_odd_bits(n)
-print(f"Even bits: {even_bits}, Odd bits: {odd_bits}")
+    # Return the counts of even and odd bits as a list
+    return [even_bits, odd_bits]

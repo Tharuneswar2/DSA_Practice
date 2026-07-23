@@ -145,5 +145,6 @@
     "count-substrings-that-satisfy-k-constraint-i",
     "find-the-encrypted-string",
     "find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree",
-    "find-subsequence-of-length-k-with-the-largest-sum"
+    "find-subsequence-of-length-k-with-the-largest-sum",
+    "average-salary-excluding-the-minimum-and-maximum-salary"
 ]
