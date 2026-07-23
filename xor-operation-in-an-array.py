@@ -1,13 +1,16 @@
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
+
 def xorOperation(n, start):
-    # Initialize result with the first element of the array
-    result = start
+    # Initialize the result variable to 0, which will store the final XOR result
+    result = 0
     
-    # Iterate over the range from 1 to n (exclusive)
-    for i in range(1, n):
-        # Calculate the next element in the array using the formula start + 2 * i
-        next_element = start + 2 * i
-        # XOR the result with the next element
-        result ^= next_element
+    # Iterate over the range from 0 to n (exclusive) to generate the array elements
+    for i in range(n):
+        # Calculate the current array element using the given formula: start + 2 * i
+        current_element = start + 2 * i
+        
+        # XOR the current element with the result, updating the result variable
+        result ^= current_element
     
-    # Return the final result
+    # Return the final XOR result
     return result
