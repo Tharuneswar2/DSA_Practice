@@ -129,5 +129,6 @@
     "smallest-missing-multiple-of-k",
     "maximum-number-of-operations-with-the-same-score-i",
     "find-closest-person",
-    "sorting-the-sentence"
+    "sorting-the-sentence",
+    "count-number-of-pairs-with-absolute-difference-k"
 ]
