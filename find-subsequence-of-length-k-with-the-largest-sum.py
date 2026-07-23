@@ -1,16 +1,14 @@
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
+
 def maxSubsequence(nums, k):
-    # Create a list of tuples where each tuple contains a number from the input list and its index
-    indexed_nums = [(num, i) for i, num in enumerate(nums)]
+    # Create a list of tuples where each tuple contains the value and its index
+    indexed_nums = [(val, idx) for idx, val in enumerate(nums)]
     
-    # Sort the list of tuples in descending order based on the numbers
+    # Sort the list of tuples in descending order based on the values
     indexed_nums.sort(key=lambda x: x[0], reverse=True)
     
-    # Select the k largest numbers and sort them based on their original indices
-    selected_nums = sorted(indexed_nums[:k], key=lambda x: x[1])
+    # Select the k largest values and sort them based on their original indices
+    max_k = sorted(indexed_nums[:k], key=lambda x: x[1])
     
-    # Return the selected numbers
-    return [num for num, _ in selected_nums]
-
-# Test the function
-print(maxSubsequence([2,1,3,3], 2))  # Output: [3, 3]
-print(maxSubsequence([-1,-2,3,4], 3))  # Output: [-1, 3, 4]
+    # Return the subsequence of length k with the largest sum
+    return [val for val, idx in max_k]
