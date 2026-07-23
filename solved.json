@@ -146,5 +146,6 @@
     "find-the-encrypted-string",
     "find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree",
     "find-subsequence-of-length-k-with-the-largest-sum",
-    "average-salary-excluding-the-minimum-and-maximum-salary"
+    "average-salary-excluding-the-minimum-and-maximum-salary",
+    "number-of-even-and-odd-bits"
 ]

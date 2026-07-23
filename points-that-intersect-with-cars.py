@@ -1,3 +1,5 @@
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
+
 def countPoints(points, queries):
     # Initialize an empty list to store the count of points that intersect with each query
     result = []
@@ -9,21 +11,16 @@ def countPoints(points, queries):
         
         # Iterate over each point
         for a, b in points:
-            # Calculate the Euclidean distance between the point and the center of the query circle
+            # Calculate the Euclidean distance between the point and the center of the query
             distance = (a - x) ** 2 + (b - y) ** 2
             
-            # Check if the point lies within the query circle
+            # Check if the point lies within the query (i.e., the distance is less than or equal to the radius squared)
             if distance <= r ** 2:
-                # If the point intersects with the query circle, increment the counter
+                # If the point intersects with the query, increment the counter
                 count += 1
         
-        # Append the count of points that intersect with the current query to the result list
+        # Append the count for the current query to the result list
         result.append(count)
     
     # Return the result list
     return result
-
-# Example usage:
-points = [[1, 3], [3, 3], [5, 3], [2, 2]]
-queries = [[2, 3, 1], [4, 3, 1], [1, 1, 2]]
-print(countPoints(points, queries))
