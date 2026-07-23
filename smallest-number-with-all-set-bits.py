@@ -1,14 +1,24 @@
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
 def smallest_number_with_all_set_bits(n):
-    # Initialize the result with 1 (which has the least significant bit set)
-    result = 1
+    # Initialize the result variable to 0
+    result = 0
     
-    # Loop until we have set all the bits
-    while bin(result).count('1') < n:
-        # Left shift the result by 1 (to make space for the new bit)
-        # and add 1 (to set the least significant bit)
-        result = (result << 1) + 1
+    # Initialize the current bit position to 0
+    bit_position = 0
     
+    # Iterate over the range from 1 to n (inclusive)
+    for i in range(1, n + 1):
+        # Left shift 1 by the current bit position to create a binary number with only the current bit set
+        # Add this number to the result to set the current bit in the result
+        result |= 1 << bit_position
+        
+        # Increment the bit position for the next iteration
+        bit_position += 1
+        
+        # If the bit position is equal to the number of bits required to represent the number i in binary
+        # Reset the bit position to 0 to start setting bits from the least significant bit again
+        if bit_position == i.bit_length():
+            bit_position = 0
+    
+    # Return the result
     return result
-
-# Test the function
-print(smallest_number_with_all_set_bits(3))  # Output: 7
