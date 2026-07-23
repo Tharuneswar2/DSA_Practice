@@ -137,5 +137,6 @@
     "percentage-of-letter-in-string",
     "three-divisors",
     "sum-of-good-numbers",
-    "smallest-number-with-all-set-bits"
+    "smallest-number-with-all-set-bits",
+    "smallest-divisible-digit-product-i"
 ]

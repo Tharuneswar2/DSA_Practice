@@ -1,30 +1,32 @@
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
+
 def hardestWorker(n, logs):
     # Initialize the maximum time and the id of the employee who worked the longest
     max_time = 0
-    hardest_worker_id = -1
+    max_id = -1
     
-    # Initialize the previous time to 0
+    # Initialize the previous timestamp
     prev_time = 0
     
     # Iterate over each log
     for log in logs:
-        # Extract the id and time from the log
-        id, time = log
+        # Extract the id and timestamp from the log
+        id, timestamp = log
         
         # Calculate the time spent on the task
-        time_spent = time - prev_time
+        time_spent = timestamp - prev_time
         
-        # Update the previous time
-        prev_time = time
+        # Update the previous timestamp
+        prev_time = timestamp
         
-        # If the time spent is greater than the max time, update the max time and the hardest worker id
+        # If the time spent is greater than the max time, update the max time and id
         if time_spent > max_time:
             max_time = time_spent
-            hardest_worker_id = id
+            max_id = id
             
-        # If the time spent is equal to the max time, update the hardest worker id if the id is smaller
+        # If the time spent is equal to the max time, update the id if it's smaller
         elif time_spent == max_time:
-            hardest_worker_id = min(hardest_worker_id, id)
+            max_id = min(max_id, id)
     
-    # Return the id of the hardest worker
-    return hardest_worker_id
+    # Return the id of the employee who worked the longest
+    return max_id
