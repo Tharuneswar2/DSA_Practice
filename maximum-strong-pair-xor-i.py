@@ -1,35 +1,51 @@
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
 class TrieNode:
     def __init__(self):
-        self.children = {}
+        # Initialize a Trie node with two children (0 and 1) and a flag to mark the end of a number
+        self.children = [None, None]
+        self.end = False
 
 class Solution:
-    def findMaximumXOR(self, nums):
+    def findMaximumXOR(self, nums: List[int]) -> int:
+        # Create the root of the Trie
         root = TrieNode()
-        max_len = len(bin(max(nums))) - 2
         
         # Insert all numbers into the Trie
         for num in nums:
             node = root
-            binary = bin(num)[2:].zfill(max_len)
-            for bit in binary:
-                if bit not in node.children:
+            # Convert the number to binary and iterate over each bit
+            for i in range(31, -1, -1):
+                bit = (num >> i) & 1
+                # If the bit is not in the Trie, create a new node
+                if node.children[bit] is None:
                     node.children[bit] = TrieNode()
+                # Move to the next node
                 node = node.children[bit]
+            # Mark the end of the number
+            node.end = True
         
+        # Initialize the maximum XOR
         max_xor = 0
-        # Find the maximum XOR for each number
+        
+        # Iterate over all numbers to find the maximum XOR
         for num in nums:
             node = root
-            binary = bin(num)[2:].zfill(max_len)
-            curr_xor = ''
-            for bit in binary:
-                opposite = '1' if bit == '0' else '0'
-                if opposite in node.children:
-                    curr_xor += '1'
-                    node = node.children[opposite]
+            # Initialize the current XOR
+            curr_xor = 0
+            # Convert the number to binary and iterate over each bit
+            for i in range(31, -1, -1):
+                bit = (num >> i) & 1
+                # Try to find the opposite bit in the Trie to maximize the XOR
+                opposite_bit = 1 - bit
+                if node.children[opposite_bit] is not None:
+                    # If the opposite bit is found, update the current XOR
+                    curr_xor = (curr_xor << 1) | 1
+                    node = node.children[opposite_bit]
                 else:
-                    curr_xor += '0'
+                    # If the opposite bit is not found, move to the next node
+                    curr_xor = curr_xor << 1
                     node = node.children[bit]
-            max_xor = max(max_xor, int(curr_xor, 2))
+            # Update the maximum XOR
+            max_xor = max(max_xor, curr_xor)
         
         return max_xor
