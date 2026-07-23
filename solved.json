@@ -141,5 +141,6 @@
     "smallest-divisible-digit-product-i",
     "the-employee-that-worked-on-the-longest-task",
     "remove-trailing-zeros-from-a-string",
-    "valid-elements-in-an-array"
+    "valid-elements-in-an-array",
+    "count-substrings-that-satisfy-k-constraint-i"
 ]
