@@ -1,21 +1,30 @@
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
 def count_substrings(s, k):
-    # Initialize count of substrings
+    # Initialize count to store the number of substrings that satisfy the k-constraint
     count = 0
     
-    # Iterate over each character in the string
+    # Iterate over the string with two nested loops to generate all possible substrings
     for i in range(len(s)):
-        # Initialize a dictionary to store the frequency of characters in the current substring
-        char_freq = {}
-        
-        # Iterate over each substring starting from the current character
-        for j in range(i, len(s)):
-            # Increment the frequency of the current character
-            char_freq[s[j]] = char_freq.get(s[j], 0) + 1
+        for j in range(i + 1, len(s) + 1):
+            # Extract the current substring
+            substring = s[i:j]
             
-            # If the number of unique characters in the substring is equal to k
-            if len(char_freq) == k:
-                # Increment the count of substrings
+            # Initialize a dictionary to store the frequency of each character in the substring
+            freq = {}
+            
+            # Iterate over the substring to count the frequency of each character
+            for char in substring:
+                # If the character is already in the dictionary, increment its count
+                if char in freq:
+                    freq[char] += 1
+                # If the character is not in the dictionary, add it with a count of 1
+                else:
+                    freq[char] = 1
+            
+            # Check if the substring satisfies the k-constraint
+            if len(freq) == k:
+                # If the substring satisfies the k-constraint, increment the count
                 count += 1
-                
-    # Return the count of substrings
+    
+    # Return the total count of substrings that satisfy the k-constraint
     return count

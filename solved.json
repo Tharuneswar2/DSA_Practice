@@ -140,5 +140,6 @@
     "smallest-number-with-all-set-bits",
     "smallest-divisible-digit-product-i",
     "the-employee-that-worked-on-the-longest-task",
-    "remove-trailing-zeros-from-a-string"
+    "remove-trailing-zeros-from-a-string",
+    "valid-elements-in-an-array"
 ]
