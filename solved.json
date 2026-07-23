@@ -144,5 +144,6 @@
     "valid-elements-in-an-array",
     "count-substrings-that-satisfy-k-constraint-i",
     "find-the-encrypted-string",
-    "find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree"
+    "find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree",
+    "find-subsequence-of-length-k-with-the-largest-sum"
 ]
