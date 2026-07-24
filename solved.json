@@ -162,5 +162,6 @@
     "maximum-score-after-splitting-a-string",
     "sort-the-people",
     "check-if-all-as-appears-before-all-bs",
-    "concatenate-non-zero-digits-and-multiply-by-sum-i"
+    "concatenate-non-zero-digits-and-multiply-by-sum-i",
+    "sum-of-digits-of-string-after-convert"
 ]
