@@ -1,37 +1,20 @@
-def flip_square_submatrix_vertically(matrix, row, col, size):
-    # Check if the submatrix is within the bounds of the matrix
-    if row < 0 or col < 0 or row + size > len(matrix) or col + size > len(matrix[0]):
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
+
+def flip_square_submatrix_vertically(matrix, submatrix_size):
+    # Check if the submatrix size is valid
+    if submatrix_size <= 0 or submatrix_size > len(matrix):
         return matrix
     
-    # Flip the submatrix vertically
-    for i in range(row, row + size):
-        # Calculate the middle index
-        mid = (col + col + size - 1) // 2
-        
-        # Swap elements from the top and bottom of the submatrix
-        for j in range(col, mid + 1):
-            # Calculate the corresponding index from the bottom
-            bottom_idx = col + size - 1 - (j - col)
-            
-            # Swap the elements
-            matrix[i][j], matrix[i][bottom_idx] = matrix[i][bottom_idx], matrix[i][j]
+    # Iterate over each row in the matrix
+    for i in range(len(matrix)):
+        # Iterate over each column in the matrix
+        for j in range(len(matrix[0])):
+            # Check if the current position can form a submatrix of the given size
+            if i + submatrix_size <= len(matrix) and j + submatrix_size <= len(matrix[0]):
+                # Flip the submatrix vertically
+                for k in range(submatrix_size):
+                    # Swap the top and bottom elements of the submatrix
+                    matrix[i + k][j], matrix[i + submatrix_size - k - 1][j] = matrix[i + submatrix_size - k - 1][j], matrix[i + k][j]
     
+    # Return the modified matrix
     return matrix
-
-# Example usage:
-matrix = [
-    [1, 2, 3, 4],
-    [5, 6, 7, 8],
-    [9, 10, 11, 12],
-    [13, 14, 15, 16]
-]
-
-print("Original Matrix:")
-for row in matrix:
-    print(row)
-
-flipped_matrix = flip_square_submatrix_vertically(matrix, 1, 1, 2)
-
-print("\nFlipped Matrix:")
-for row in flipped_matrix:
-    print(row)
