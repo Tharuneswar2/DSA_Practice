@@ -1,49 +1,46 @@
-def alternating_groups(arr):
-    # Initialize variables to track the current group and its size
-    current_group = arr[0]
-    current_group_size = 1
-    max_group_size = 1
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
 
-    # Iterate over the array starting from the second element
-    for i in range(1, len(arr)):
-        # If the current element is the same as the current group, increment the group size
-        if arr[i] == current_group:
-            current_group_size += 1
-        # If the current element is different from the current group, update the max group size and reset the current group
-        else:
-            max_group_size = max(max_group_size, current_group_size)
-            current_group = arr[i]
-            current_group_size = 1
-
-    # Update the max group size one last time after the loop ends
-    max_group_size = max(max_group_size, current_group_size)
-
-    return max_group_size
-
-def alternating_groups_i(arr):
-    # Initialize variables to track the current group and its size
-    current_group = arr[0]
-    current_group_size = 1
-    max_group_size = 1
-    prev_group = None
-
-    # Iterate over the array starting from the second element
-    for i in range(1, len(arr)):
-        # If the current element is the same as the current group, increment the group size
-        if arr[i] == current_group:
-            current_group_size += 1
-        # If the current element is different from the current group, update the max group size and reset the current group
-        else:
-            # If the current group is the same as the previous group, reset the current group size
-            if current_group == prev_group:
-                current_group_size = 1
-            else:
-                max_group_size = max(max_group_size, current_group_size)
-            prev_group = current_group
-            current_group = arr[i]
-            current_group_size = 1
-
-    # Update the max group size one last time after the loop ends
-    max_group_size = max(max_group_size, current_group_size)
-
-    return max_group_size
+def alternatingGroups(arr):
+    # Initialize variables to store the count of positive and negative numbers
+    pos_count = 0
+    neg_count = 0
+    
+    # Initialize variables to store the maximum length of alternating groups
+    max_pos_len = 0
+    max_neg_len = 0
+    
+    # Initialize variables to store the current length of alternating groups
+    curr_pos_len = 0
+    curr_neg_len = 0
+    
+    # Iterate over the array
+    for num in arr:
+        # If the number is positive
+        if num > 0:
+            # Increment the positive count
+            pos_count += 1
+            
+            # Update the current positive length
+            curr_pos_len += 1
+            
+            # Update the maximum positive length if needed
+            max_pos_len = max(max_pos_len, curr_pos_len)
+            
+            # Reset the current negative length
+            curr_neg_len = 0
+        # If the number is negative
+        elif num < 0:
+            # Increment the negative count
+            neg_count += 1
+            
+            # Update the current negative length
+            curr_neg_len += 1
+            
+            # Update the maximum negative length if needed
+            max_neg_len = max(max_neg_len, curr_neg_len)
+            
+            # Reset the current positive length
+            curr_pos_len = 0
+    
+    # Return the maximum length of alternating groups
+    return max(max_pos_len, max_neg_len)
