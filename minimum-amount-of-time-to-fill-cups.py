@@ -1,33 +1,27 @@
-def fillCups(self, amount: list[int]) -> int:
-    # Create a max heap from the given list
-    amount = [-x for x in amount]
-    import heapq
-    heapq.heapify(amount)
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
 
-    # Initialize the time variable
-    time = 0
-
-    # Continue the process until the heap is not empty
-    while len(amount) > 1:
-        # Extract the two largest elements from the heap
-        first = -heapq.heappop(amount)
-        second = -heapq.heappop(amount)
-
-        # If both elements are greater than 1, push them back to the heap after decrementing
-        if first > 1 and second > 1:
-            heapq.heappush(amount, -first + 1)
-            heapq.heappush(amount, -second + 1)
-        # If only one element is greater than 1, push it back to the heap after decrementing
-        elif first > 1:
-            heapq.heappush(amount, -first + 1)
-        elif second > 1:
-            heapq.heappush(amount, -second + 1)
-
-        # Increment the time
-        time += 1
-
-    # If there is one element left in the heap, add it to the time
-    if amount:
-        time += -amount[0]
-
-    return time
+def fillCups(self, amount: List[int]) -> int:
+    # Sort the amounts in descending order to prioritize the largest amounts first
+    amount.sort(reverse=True)
+    
+    # Initialize the total time and the index for the current amount
+    total_time = 0
+    i = 0
+    
+    # Continue filling cups until all amounts have been processed
+    while i < len(amount):
+        # If there are at least two amounts left, fill the first two cups
+        if i + 1 < len(amount):
+            # Fill the first two cups and increment the total time
+            total_time += max(amount[i], amount[i+1])
+            # Move to the next two amounts
+            i += 2
+        # If there is only one amount left, fill the last cup
+        else:
+            # Fill the last cup and increment the total time
+            total_time += amount[i]
+            # Move to the next amount (which doesn't exist, so the loop will end)
+            i += 1
+    
+    # Return the total time
+    return total_time

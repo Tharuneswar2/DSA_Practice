@@ -166,5 +166,6 @@
     "sum-of-digits-of-string-after-convert",
     "keep-multiplying-found-values-by-two",
     "delete-greatest-value-in-each-row",
-    "cells-with-odd-values-in-a-matrix"
+    "cells-with-odd-values-in-a-matrix",
+    "check-if-all-characters-have-equal-number-of-occurrences"
 ]
