@@ -1,19 +1,16 @@
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
 def check_string(s):
-    # Initialize a flag to track if we've seen a 'b'
-    seen_b = False
+    # Initialize a flag to track if we have encountered 'b' in the string
+    encountered_b = False
     
-    # Iterate over the string
+    # Iterate over each character in the string
     for char in s:
-        # If we've seen a 'b' and now see an 'a', return False
-        if seen_b and char == 'a':
+        # If we encounter 'b' before 'a', return False
+        if char == 'b':
+            encountered_b = True
+        # If we encounter 'a' after 'b', return False
+        elif char == 'a' and encountered_b:
             return False
-        # If we see a 'b', set the flag
-        elif char == 'b':
-            seen_b = True
     
-    # If we've iterated over the entire string without returning False, return True
+    # If we have iterated over the entire string and haven't returned False, return True
     return True
-
-# Test the function
-print(check_string("aaabbb"))  # True
-print(check_string("ababab"))  # False
