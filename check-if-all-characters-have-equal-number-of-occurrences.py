@@ -1,5 +1,6 @@
 # Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
-def areOccurrencesEqual(s: str) -> bool:
+
+def areAllCharactersEqual(s):
     # Create a dictionary to store the frequency of each character in the string
     char_frequency = {}
     
@@ -13,13 +14,14 @@ def areOccurrencesEqual(s: str) -> bool:
             char_frequency[char] = 1
     
     # Get the frequency of the first character in the string
+    # This will be used as a reference to compare with the frequency of other characters
     expected_frequency = char_frequency[s[0]]
     
     # Iterate over the frequency of each character in the dictionary
     for frequency in char_frequency.values():
-        # If any character has a different frequency than the expected frequency, return False
+        # If the frequency of any character is not equal to the expected frequency, return False
         if frequency != expected_frequency:
             return False
     
-    # If all characters have the same frequency, return True
+    # If the function has not returned False after checking all characters, return True
     return True
