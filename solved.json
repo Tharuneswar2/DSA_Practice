@@ -164,5 +164,6 @@
     "check-if-all-as-appears-before-all-bs",
     "concatenate-non-zero-digits-and-multiply-by-sum-i",
     "sum-of-digits-of-string-after-convert",
-    "keep-multiplying-found-values-by-two"
+    "keep-multiplying-found-values-by-two",
+    "delete-greatest-value-in-each-row"
 ]
