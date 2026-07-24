@@ -153,5 +153,6 @@
     "count-operations-to-obtain-zero",
     "divisible-and-non-divisible-sums-difference",
     "trim-trailing-vowels",
-    "split-with-minimum-sum"
+    "split-with-minimum-sum",
+    "count-the-digits-that-divide-a-number"
 ]
