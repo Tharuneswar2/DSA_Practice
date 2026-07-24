@@ -1,11 +1,15 @@
 # Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
+
 def strongPasswordCheckerII(password: str) -> bool:
     # Check if password length is at least 8
     if len(password) < 8:
         return False
     
-    # Initialize flags for different character types
-    has_lower = has_upper = has_digit = has_special = False
+    # Initialize flags for different conditions
+    has_lower = False
+    has_upper = False
+    has_digit = False
+    has_special = False
     
     # Iterate over each character in the password
     for i in range(len(password)):
@@ -22,9 +26,9 @@ def strongPasswordCheckerII(password: str) -> bool:
         elif not password[i].isalnum():
             has_special = True
         
-        # Check for repeating characters
+        # Check for consecutive repeating characters
         if i > 0 and password[i] == password[i-1]:
             return False
     
-    # Return True if all conditions are met, False otherwise
+    # Return True if all conditions are met
     return has_lower and has_upper and has_digit and has_special
