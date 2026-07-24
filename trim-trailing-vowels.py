@@ -1,5 +1,6 @@
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
 def trim_trailing_vowels(s):
-    # Define the set of vowels
+    # Define the set of vowels for efficient look-up
     vowels = set('aeiouAEIOU')
     
     # Initialize an empty string to store the result
@@ -15,14 +16,9 @@ def trim_trailing_vowels(s):
         else:
             result = char + result
     
-    # If the result is empty, return the original string
+    # If the result is empty, it means the input string ended with a vowel, so return the original string
     if not result:
         return s
     # Otherwise, return the result
     else:
         return result
-
-# Test the function
-print(trim_trailing_vowels('hello'))  # Output: 'hell'
-print(trim_trailing_vowels('world'))  # Output: 'world'
-print(trim_trailing_vowels('aeiou'))  # Output: ''
