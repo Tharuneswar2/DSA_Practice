@@ -1,17 +1,19 @@
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
 def deleteGreatestValue(grid):
     # Transpose the grid to easily access columns
     transposed_grid = list(map(list, zip(*grid)))
     
-    # Sort each column in descending order
+    # Initialize the total sum of deleted values
+    total_sum = 0
+    
+    # Iterate over each column in the transposed grid
     for col in transposed_grid:
+        # Sort the column in descending order
         col.sort(reverse=True)
+        
+        # If the column is not empty, add the greatest value to the total sum
+        if col:
+            total_sum += col[0]
     
-    # Initialize result variable to store the sum of the greatest values
-    result = 0
-    
-    # Iterate over each row in the transposed grid
-    for col in transposed_grid:
-        # Add the first element (greatest value) of each column to the result
-        result += col[0]
-    
-    return result
+    # Return the total sum of deleted values
+    return total_sum
