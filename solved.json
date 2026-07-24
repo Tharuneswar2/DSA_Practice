@@ -168,5 +168,6 @@
     "delete-greatest-value-in-each-row",
     "cells-with-odd-values-in-a-matrix",
     "check-if-all-characters-have-equal-number-of-occurrences",
-    "minimum-amount-of-time-to-fill-cups"
+    "minimum-amount-of-time-to-fill-cups",
+    "minimum-element-after-replacement-with-digit-sum"
 ]

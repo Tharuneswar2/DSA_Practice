@@ -1,4 +1,6 @@
-def odd_string_difference(words):
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
+
+def oddString(words):
     # Calculate the difference between consecutive characters in the first word
     diff = [ord(words[0][i+1]) - ord(words[0][i]) for i in range(len(words[0]) - 1)]
     
@@ -10,6 +12,6 @@ def odd_string_difference(words):
         # If the difference is not the same as the first word, return the current word
         if curr_diff != diff:
             return word
-
-# Test the function
-print(odd_string_difference(["adc", "wzy", "abc"]))  # Output: "abc"
+    
+    # If all words have the same difference, return the first word
+    return words[0]
