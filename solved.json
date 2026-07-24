@@ -152,5 +152,6 @@
     "final-prices-with-a-special-discount-in-a-shop",
     "count-operations-to-obtain-zero",
     "divisible-and-non-divisible-sums-difference",
-    "trim-trailing-vowels"
+    "trim-trailing-vowels",
+    "split-with-minimum-sum"
 ]

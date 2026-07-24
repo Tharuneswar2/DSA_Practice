@@ -1,18 +1,19 @@
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
 def findDigits(n):
-    # Convert the number to a string to easily access each digit
+    # Convert the number into a string to easily access each digit
     str_n = str(n)
     
-    # Initialize a counter to store the count of digits that divide the number
+    # Initialize a counter variable to store the count of digits that divide the number
     count = 0
     
-    # Iterate over each digit in the string
+    # Iterate over each character (digit) in the string
     for digit in str_n:
-        # Convert the digit back to an integer
+        # Convert the character back into an integer
         int_digit = int(digit)
         
-        # Check if the digit is non-zero and the number is divisible by the digit
+        # Check if the digit is non-zero (to avoid division by zero error) and if it divides the number
         if int_digit != 0 and n % int_digit == 0:
-            # If the condition is met, increment the counter
+            # If the digit divides the number, increment the counter
             count += 1
     
     # Return the count of digits that divide the number
