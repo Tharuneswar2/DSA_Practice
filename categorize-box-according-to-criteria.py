@@ -1,27 +1,23 @@
-def categorizeBox(length, width, height, mass) -> str:
-    # Check if the box is bulky
-    isBulky = length >= 10**4 or width >= 10**4 or height >= 10**4 or length * width * height >= 10**9
-
-    # Check if the box is heavy
-    isHeavy = mass >= 100
-
-    # Check if the box is large
-    isLarge = length >= 20 or width >= 20 or height >= 20 or length + width + height >= 70
-
-    # Categorize the box based on the criteria
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
+def categorizeBox(length, width, height, mass):
+    # Check if the box is heavy (mass > 10000)
+    isHeavy = mass > 10000
+    
+    # Check if the box is bulky (length, width, height > 10000 or volume > 1000000000)
+    isBulky = length > 10000 or width > 10000 or height > 10000 or length * width * height > 1000000000
+    
+    # Check if the box is both heavy and bulky
     if isHeavy and isBulky:
         return "Both"
-    elif isHeavy and isLarge:
+    
+    # Check if the box is heavy but not bulky
+    elif isHeavy:
         return "Heavy"
-    elif isBulky and isLarge:
+    
+    # Check if the box is bulky but not heavy
+    elif isBulky:
         return "Bulky"
-    elif isHeavy or isBulky or isLarge:
-        return "Neither"
+    
+    # If the box is neither heavy nor bulky
     else:
         return "Neither"
-
-# Test the function
-print(categorizeBox(10000, 1, 1, 1))  # Bulky
-print(categorizeBox(1, 1, 1, 100))  # Heavy
-print(categorizeBox(20, 20, 20, 1))  # Large
-print(categorizeBox(10000, 20, 20, 100))  # Both
