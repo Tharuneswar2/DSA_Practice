@@ -1,47 +1,47 @@
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
 def decrypt(code, k):
-    n = len(code)
-    if k == 0:
-        return [0] * n
+    # Initialize an empty list to store the decrypted code
+    decrypted_code = [0] * len(code)
     
-    result = []
-    if k > 0:
-        for i in range(n):
-            total = 0
-            for j in range(1, k + 1):
-                if i + j < n:
-                    total += code[i + j]
-                else:
-                    total += code[(i + j) % n]
-            result.append(total)
-    else:
-        k = abs(k)
-        for i in range(n):
-            total = 0
-            for j in range(1, k + 1):
-                if i - j >= 0:
-                    total += code[i - j]
-                else:
-                    total += code[n + i - j]
-            result.append(total)
-    return result
-
-def decrypt_v2(code, k):
-    n = len(code)
+    # If k is 0, return the original code as no decryption is needed
     if k == 0:
-        return [0] * n
+        return code
     
-    result = [0] * n
+    # If k is positive, decrypt the code by summing the next k elements
     if k > 0:
+        # Initialize a variable to store the sum of the next k elements
         total = sum(code[:k])
-        result[0] = total
-        for i in range(1, n):
-            total = total - code[i] + code[(i + k - 1) % n]
-            result[i] = total
-    else:
-        k = abs(k)
-        total = sum(code[-k:])
-        result[-1] = total
-        for i in range(n - 2, -1, -1):
-            total = total - code[i + 1] + code[(i - k + 1) % n]
-            result[i] = total
-    return result
+        
+        # Iterate over the code list
+        for i in range(len(code)):
+            # If we have reached the end of the list, wrap around to the start
+            if i + k >= len(code):
+                # Update the total by subtracting the element that is no longer in the window and adding the new element
+                total = total - code[i] + code[(i + k) % len(code)]
+            else:
+                # Update the total by subtracting the element that is no longer in the window and adding the new element
+                total = total - code[i] + code[i + k]
+            
+            # Store the decrypted code
+            decrypted_code[i] = total
+    
+    # If k is negative, decrypt the code by summing the previous k elements
+    elif k < 0:
+        # Initialize a variable to store the sum of the previous k elements
+        total = sum(code[k:])
+        
+        # Iterate over the code list in reverse order
+        for i in range(len(code) - 1, -1, -1):
+            # Store the decrypted code
+            decrypted_code[i] = total
+            
+            # If we have reached the start of the list, wrap around to the end
+            if i + k < 0:
+                # Update the total by subtracting the element that is no longer in the window and adding the new element
+                total = total - code[(i + k) % len(code)] + code[i]
+            else:
+                # Update the total by subtracting the element that is no longer in the window and adding the new element
+                total = total - code[i + k] + code[i]
+    
+    # Return the decrypted code
+    return decrypted_code

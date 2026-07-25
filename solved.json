@@ -183,5 +183,6 @@
     "get-maximum-in-generated-array",
     "find-the-integer-added-to-array-i",
     "find-the-peaks",
-    "check-adjacent-digit-differences"
+    "check-adjacent-digit-differences",
+    "shuffle-string"
 ]
