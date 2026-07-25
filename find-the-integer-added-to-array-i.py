@@ -1,31 +1,11 @@
-def findExtra(nums1, nums2):
-    # Calculate the sum of the first array
-    sum1 = sum(nums1)
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
+def findIntegerAdded(arr):
+    # Calculate the total sum of elements in the array using the formula n*(n+1)//2 where n is the length of the array
+    n = len(arr)
+    total_sum = n * (n + 1) // 2
     
-    # Calculate the sum of the second array
-    sum2 = sum(nums2)
+    # Calculate the actual sum of elements in the array
+    actual_sum = sum(arr)
     
-    # The extra integer is the difference between the two sums
-    # Since the second array has one extra integer, we subtract the sum of the first array from the sum of the second array
-    extra = sum2 - sum1
-    
-    # Return the extra integer
-    return extra
-
-# Alternatively, we can use XOR operation to find the extra integer
-def findExtraXOR(nums1, nums2):
-    # Initialize the result as 0
-    result = 0
-    
-    # Iterate over the first array
-    for num in nums1:
-        # XOR the result with the current number
-        result ^= num
-    
-    # Iterate over the second array
-    for num in nums2:
-        # XOR the result with the current number
-        result ^= num
-    
-    # The result will be the extra integer
-    return result
+    # The integer added to the array is the difference between the total sum and the actual sum
+    return total_sum - actual_sum

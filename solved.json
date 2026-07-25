@@ -179,5 +179,6 @@
     "minimum-changes-to-make-alternating-binary-string",
     "check-if-array-is-good",
     "minimum-operations-to-make-the-array-increasing",
-    "find-the-highest-altitude"
+    "find-the-highest-altitude",
+    "get-maximum-in-generated-array"
 ]
