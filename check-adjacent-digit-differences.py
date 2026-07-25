@@ -1,22 +1,16 @@
-def check_adjacent_digit_differences(num):
-    # Convert the number to a string to easily access each digit
-    num_str = str(num)
-    
-    # Initialize a flag to track if the number has adjacent digit differences
-    has_adjacent_digit_differences = False
-    
-    # Iterate over the digits in the number
-    for i in range(len(num_str) - 1):
-        # Check if the current digit is one more than the next digit
-        if int(num_str[i]) == int(num_str[i + 1]) + 1:
-            # If it is, set the flag to True
-            has_adjacent_digit_differences = True
-            # Break out of the loop since we've found a pair of adjacent digits with a difference of 1
-            break
-    
-    # Return the result
-    return has_adjacent_digit_differences
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
 
-# Test the function
-print(check_adjacent_digit_differences(123))  # True
-print(check_adjacent_digit_differences(124))  # False
+def adjacentElementsProduct(inputArray):
+    # Initialize an empty list to store the products of adjacent elements
+    products = []
+    
+    # Iterate over the input array from the first element to the second last element
+    for i in range(len(inputArray) - 1):
+        # Calculate the product of the current element and the next element
+        product = inputArray[i] * inputArray[i + 1]
+        
+        # Append the product to the list of products
+        products.append(product)
+    
+    # Return the maximum product from the list of products
+    return max(products)

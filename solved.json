@@ -181,5 +181,6 @@
     "minimum-operations-to-make-the-array-increasing",
     "find-the-highest-altitude",
     "get-maximum-in-generated-array",
-    "find-the-integer-added-to-array-i"
+    "find-the-integer-added-to-array-i",
+    "find-the-peaks"
 ]
