@@ -1,11 +1,12 @@
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
 def restoreString(s, indices):
-    # Create a list of tuples where each tuple contains a character from the string and its corresponding index
-    indexed_chars = [(char, index) for char, index in zip(s, indices)]
+    # Initialize an empty list to store the characters at their respective indices
+    res = [''] * len(s)
     
-    # Sort the list of tuples based on the indices
-    indexed_chars.sort(key=lambda x: x[1])
+    # Iterate over the string and the indices list simultaneously
+    for i, (char, idx) in enumerate(zip(s, indices)):
+        # Place each character at its corresponding index in the result list
+        res[idx] = char
     
-    # Join the characters in the sorted order to form the shuffled string
-    shuffled_string = ''.join([char for char, index in indexed_chars])
-    
-    return shuffled_string
+    # Join the characters in the result list to form the shuffled string
+    return ''.join(res)
