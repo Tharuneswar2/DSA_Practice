@@ -188,5 +188,6 @@
     "defuse-the-bomb",
     "largest-odd-number-in-string",
     "minimum-capacity-box",
-    "count-partitions-with-even-sum-difference"
+    "count-partitions-with-even-sum-difference",
+    "check-if-matrix-is-x-matrix"
 ]
