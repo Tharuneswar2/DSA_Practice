@@ -187,5 +187,6 @@
     "shuffle-string",
     "defuse-the-bomb",
     "largest-odd-number-in-string",
-    "minimum-capacity-box"
+    "minimum-capacity-box",
+    "count-partitions-with-even-sum-difference"
 ]
