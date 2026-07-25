@@ -1,29 +1,19 @@
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
 def isGoodArray(nums):
-    # Initialize the gcd with the first element of the array
+    # Check if the input is a list
+    if not isinstance(nums, list):
+        raise TypeError("Input must be a list")
+
+    # Check if the list is empty
+    if len(nums) == 0:
+        return True  # An empty list is considered a good array
+
+    # Find the greatest common divisor (GCD) of the first two elements
     gcd = nums[0]
-    
-    # Iterate over the rest of the array
     for num in nums[1:]:
-        # Update the gcd using the Euclidean algorithm
-        gcd = gcd_helper(gcd, num)
-        
-        # If the gcd becomes 1, we can return True immediately
-        if gcd == 1:
-            return True
-            
-    # If we've iterated over the entire array and the gcd is not 1, return False
-    return False
+        # Use the Euclidean algorithm to calculate the GCD
+        while num != 0:
+            gcd, num = num, gcd % num
 
-
-def gcd_helper(a, b):
-    # Base case: if b is 0, the gcd is a
-    if b == 0:
-        return a
-    else:
-        # Recursive case: gcd(a, b) = gcd(b, a % b)
-        return gcd_helper(b, a % b)
-
-
-# Example usage:
-print(isGoodArray([12, 10, 18, 15]))  # False
-print(isGoodArray([4, 2, 4, 2]))  # True
+    # If the GCD is 1, the array is good
+    return gcd == 1

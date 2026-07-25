@@ -175,5 +175,6 @@
     "count-good-triplets",
     "count-pairs-whose-sum-is-less-than-target",
     "sum-of-variable-length-subarrays",
-    "categorize-box-according-to-criteria"
+    "categorize-box-according-to-criteria",
+    "minimum-changes-to-make-alternating-binary-string"
 ]
