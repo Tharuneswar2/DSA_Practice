@@ -184,5 +184,6 @@
     "find-the-integer-added-to-array-i",
     "find-the-peaks",
     "check-adjacent-digit-differences",
-    "shuffle-string"
+    "shuffle-string",
+    "defuse-the-bomb"
 ]
