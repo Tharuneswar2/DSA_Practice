@@ -185,5 +185,6 @@
     "find-the-peaks",
     "check-adjacent-digit-differences",
     "shuffle-string",
-    "defuse-the-bomb"
+    "defuse-the-bomb",
+    "largest-odd-number-in-string"
 ]
