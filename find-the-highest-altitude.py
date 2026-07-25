@@ -1,3 +1,4 @@
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
 def largestAltitude(gain):
     # Initialize the maximum altitude and the current altitude to 0
     max_altitude = 0

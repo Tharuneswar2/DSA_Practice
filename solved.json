@@ -177,5 +177,6 @@
     "sum-of-variable-length-subarrays",
     "categorize-box-according-to-criteria",
     "minimum-changes-to-make-alternating-binary-string",
-    "check-if-array-is-good"
+    "check-if-array-is-good",
+    "minimum-operations-to-make-the-array-increasing"
 ]
