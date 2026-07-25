@@ -186,5 +186,6 @@
     "check-adjacent-digit-differences",
     "shuffle-string",
     "defuse-the-bomb",
-    "largest-odd-number-in-string"
+    "largest-odd-number-in-string",
+    "minimum-capacity-box"
 ]
