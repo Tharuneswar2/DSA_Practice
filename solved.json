@@ -178,5 +178,6 @@
     "categorize-box-according-to-criteria",
     "minimum-changes-to-make-alternating-binary-string",
     "check-if-array-is-good",
-    "minimum-operations-to-make-the-array-increasing"
+    "minimum-operations-to-make-the-array-increasing",
+    "find-the-highest-altitude"
 ]
