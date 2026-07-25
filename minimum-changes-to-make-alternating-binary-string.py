@@ -1,19 +1,25 @@
-def min_operations(s):
-    # Initialize two counters for the number of operations needed to make the string alternating
-    # starting with '0' and '1' respectively
-    operations_starting_with_0 = 0
-    operations_starting_with_1 = 0
-
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
+def minChanges(self, s: str) -> int:
+    # Initialize variables to store the number of changes required for both possible alternating strings
+    changes1 = 0
+    changes2 = 0
+    
+    # Initialize the expected characters for both alternating strings
+    expected1 = '0'
+    expected2 = '1'
+    
     # Iterate over the string
-    for i, char in enumerate(s):
-        # If the character at the current index is not equal to the expected character in an alternating string
-        # starting with '0', increment the operations counter for '0'
-        if char != str(i % 2):
-            operations_starting_with_0 += 1
-        # If the character at the current index is not equal to the expected character in an alternating string
-        # starting with '1', increment the operations counter for '1'
-        if char != str((i + 1) % 2):
-            operations_starting_with_1 += 1
-
-    # Return the minimum number of operations needed to make the string alternating
-    return min(operations_starting_with_0, operations_starting_with_1)
+    for char in s:
+        # If the current character does not match the expected character for the first alternating string, increment changes1
+        if char != expected1:
+            changes1 += 1
+        # If the current character does not match the expected character for the second alternating string, increment changes2
+        if char != expected2:
+            changes2 += 1
+        
+        # Flip the expected characters for the next iteration
+        expected1 = '1' if expected1 == '0' else '0'
+        expected2 = '1' if expected2 == '0' else '0'
+    
+    # Return the minimum number of changes required
+    return min(changes1, changes2)
