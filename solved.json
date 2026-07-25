@@ -176,5 +176,6 @@
     "count-pairs-whose-sum-is-less-than-target",
     "sum-of-variable-length-subarrays",
     "categorize-box-according-to-criteria",
-    "minimum-changes-to-make-alternating-binary-string"
+    "minimum-changes-to-make-alternating-binary-string",
+    "check-if-array-is-good"
 ]
