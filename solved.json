@@ -197,5 +197,6 @@
     "distribute-money-to-maximum-children",
     "count-hills-and-valleys-in-an-array",
     "count-the-number-of-special-characters-i",
-    "generate-a-string-with-characters-that-have-odd-counts"
+    "generate-a-string-with-characters-that-have-odd-counts",
+    "minimum-value-to-get-positive-step-by-step-sum"
 ]
