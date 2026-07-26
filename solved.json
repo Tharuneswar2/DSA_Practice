@@ -206,5 +206,6 @@
     "find-greatest-common-divisor-of-array",
     "existence-of-a-substring-in-a-string-and-its-reverse",
     "find-the-losers-of-the-circular-game",
-    "snake-in-matrix"
+    "snake-in-matrix",
+    "vowel-consonant-score"
 ]
