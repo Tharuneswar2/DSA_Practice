@@ -205,5 +205,6 @@
     "count-elements-with-strictly-smaller-and-greater-elements",
     "find-greatest-common-divisor-of-array",
     "existence-of-a-substring-in-a-string-and-its-reverse",
-    "find-the-losers-of-the-circular-game"
+    "find-the-losers-of-the-circular-game",
+    "snake-in-matrix"
 ]

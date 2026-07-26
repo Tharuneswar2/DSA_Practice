@@ -1,26 +1,22 @@
-def score_words(words):
-    # Initialize the score
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
+
+def score(s):
+    # Initialize the score as 0
     score = 0
     
-    # Iterate over each word in the list
-    for word in words:
-        # Initialize the vowel count for the current word
-        vowel_count = 0
-        
-        # Iterate over each character in the word
-        for char in word:
-            # Check if the character is a vowel
-            if char.lower() in 'aeiou':
-                # If it's a vowel, increment the vowel count
-                vowel_count += 1
-        
-        # If the vowel count is greater than the number of consonants, 
-        # increment the score by the vowel count
-        if vowel_count > (len(word) - vowel_count):
-            score += vowel_count
-        # Otherwise, increment the score by the number of consonants
-        else:
-            score += (len(word) - vowel_count)
+    # Define the vowels
+    vowels = 'aeiou'
     
-    # Return the total score
+    # Iterate over each character in the string
+    for char in s:
+        # Check if the character is a vowel
+        if char.lower() in vowels:
+            # If it's a vowel, increment the score by 1
+            score += 1
+        # Check if the character is an alphabet letter and not a vowel
+        elif char.isalpha():
+            # If it's a consonant, decrement the score by 1
+            score -= 1
+    
+    # Return the final score
     return score
