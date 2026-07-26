@@ -1,3 +1,4 @@
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
 def reversePrefix(word, ch):
     # Find the index of the character in the word
     idx = word.find(ch)
@@ -11,6 +12,3 @@ def reversePrefix(word, ch):
     
     # Return the reversed prefix concatenated with the rest of the word
     return prefix + word[idx+1:]
-
-# Test the function
-print(reversePrefix("abcdefd", "d"))  # Output: "dcbaefd"
