@@ -203,5 +203,6 @@
     "check-if-all-1s-are-at-least-length-k-places-away",
     "take-gifts-from-the-richest-pile",
     "count-elements-with-strictly-smaller-and-greater-elements",
-    "find-greatest-common-divisor-of-array"
+    "find-greatest-common-divisor-of-array",
+    "existence-of-a-substring-in-a-string-and-its-reverse"
 ]

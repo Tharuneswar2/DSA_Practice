@@ -1,31 +1,33 @@
-def circularGameLosers(n, k):
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
+def circularGameLosers(self, n: int, k: int) -> List[int]:
     # Initialize a set to store the losers
     losers = set()
     
-    # Initialize the current position and the number of moves
-    i, moves = 1, 0
+    # Initialize the current marble position
+    marble = 1
     
-    # Continue the game until we reach the starting position again
-    while True:
-        # If the current position is already in the losers set, we've reached the starting position again
-        if i in losers:
-            break
-        
-        # Add the current position to the losers set
-        losers.add(i)
-        
-        # Calculate the next position
-        i = (i + k - 1) % n + 1
-        
-        # Increment the number of moves
-        moves += 1
-        
-        # If the number of moves is equal to n, we've reached the starting position again
-        if moves == n:
-            break
+    # Initialize the current player
+    player = 0
     
-    # Convert the losers set to a list and sort it
-    losers = sorted(list(losers))
+    # Continue the game until all players have lost
+    while len(losers) < n - 1:
+        # If the current player has already lost, skip their turn
+        if player in losers:
+            player = (player + 1) % n
+            continue
+        
+        # Calculate the next marble position
+        marble = (marble + k - 1) % n + 1
+        
+        # If the next marble position is 1, the current player loses
+        if marble == 1:
+            losers.add(player)
+        
+        # Move to the next player
+        player = (player + 1) % n
     
-    # Return the losers
-    return losers
+    # The remaining players are the losers
+    losers = [i for i in range(n) if i not in losers]
+    
+    # Return the losers in ascending order
+    return sorted(losers)
