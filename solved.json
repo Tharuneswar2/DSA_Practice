@@ -210,5 +210,6 @@
     "vowel-consonant-score",
     "maximum-nesting-depth-of-the-parentheses",
     "minimum-hours-of-training-to-win-a-competition",
-    "concatenate-array-with-reverse"
+    "concatenate-array-with-reverse",
+    "calculate-money-in-leetcode-bank"
 ]

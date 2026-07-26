@@ -1,22 +1,25 @@
-def find_sum_of_encrypted_integers(nums):
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
+
+def findEncryptedSum(nums):
     # Initialize the sum of encrypted integers to 0
     encrypted_sum = 0
     
     # Iterate over each number in the input list
     for num in nums:
-        # Convert the number to binary and remove the '0b' prefix
-        binary_num = bin(num)[2:]
+        # Convert the integer to a string to easily access each digit
+        str_num = str(num)
         
-        # Calculate the encrypted integer by summing the digits of the binary representation
-        encrypted_num = sum(int(digit) for digit in binary_num)
+        # Initialize the encrypted number to 0
+        encrypted_num = 0
         
-        # Add the encrypted integer to the total sum
+        # Iterate over each digit in the number
+        for digit in str_num:
+            # Add the ASCII value of the digit to the encrypted number
+            # The ASCII value of a digit is the digit itself plus 48 (for '0' to '9')
+            encrypted_num += ord(digit)
+        
+        # Add the encrypted number to the total sum
         encrypted_sum += encrypted_num
     
     # Return the total sum of encrypted integers
     return encrypted_sum
-
-# Example usage:
-numbers = [1, 2, 3, 4, 5]
-result = find_sum_of_encrypted_integers(numbers)
-print(result)
