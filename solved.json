@@ -192,5 +192,6 @@
     "check-if-matrix-is-x-matrix",
     "subtract-the-product-and-sum-of-digits-of-an-integer",
     "check-balanced-string",
-    "clear-digits"
+    "clear-digits",
+    "number-of-students-doing-homework-at-a-given-time"
 ]

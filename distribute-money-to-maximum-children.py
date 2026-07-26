@@ -1,45 +1,24 @@
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
 def distMoney(candies, num_people):
-    # Calculate the total number of rounds
+    # Calculate the total number of rounds we can distribute candies
     rounds = candies // num_people
     
-    # Calculate the remaining candies
-    remaining = candies % num_people
+    # Calculate the remaining candies after distributing the rounds
+    remaining_candies = candies % num_people
     
-    # Initialize the result array with the base amount each person gets
-    result = [rounds] * num_people
+    # Initialize the result array with the number of people
+    result = [0] * num_people
     
-    # Distribute the remaining candies
-    for i in range(remaining):
-        result[i] += 1
-    
-    return result
-
-def distMoneyOptimized(candies, num_people):
-    # Calculate the total number of rounds
-    rounds = candies // num_people
-    
-    # Calculate the remaining candies
-    remaining = candies % num_people
-    
-    # Initialize the result array with the base amount each person gets
-    result = [rounds] * num_people
+    # Distribute the candies for each round
+    for i in range(rounds):
+        # For each round, distribute candies to each person
+        for j in range(num_people):
+            # Add the current round number plus one to the result array
+            result[j] += i + 1
     
     # Distribute the remaining candies
-    for i in range(remaining):
-        result[i] += 1
-    
-    # If the number of people is less than or equal to the remaining candies, 
-    # we can directly return the result
-    if num_people <= remaining:
-        return result
-    
-    # Otherwise, we need to distribute the remaining candies in a circular manner
-    else:
-        i = 0
-        while remaining > 0:
-            if result[i] < rounds + 1:
-                result[i] += 1
-                remaining -= 1
-            i = (i + 1) % num_people
+    for i in range(remaining_candies):
+        # Add one to the result array for the remaining candies
+        result[i] += rounds + 1
     
     return result
