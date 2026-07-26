@@ -1,77 +1,65 @@
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
 def binarySearch(nums, target):
+    # Initialize two pointers, one at the start and one at the end of the list
     left, right = 0, len(nums) - 1
+    
+    # Continue the search until the two pointers meet
     while left <= right:
+        # Calculate the middle index
         mid = (left + right) // 2
-        if nums[mid] <= target:
-            left = mid + 1
-        else:
+        
+        # If the middle element is equal to the target, return the index
+        if nums[mid] == target:
+            return mid
+        # If the middle element is greater than the target, move the right pointer to the left
+        elif nums[mid] > target:
             right = mid - 1
+        # If the middle element is less than the target, move the left pointer to the right
+        else:
+            left = mid + 1
+            
+    # If the target is not found, return the index where it should be inserted to maintain sorted order
     return left
 
 def busyStudent(startTime, endTime, queryTime):
+    # Initialize a counter to store the number of students doing homework at the query time
     count = 0
+    
+    # Iterate over the start and end times
     for start, end in zip(startTime, endTime):
+        # Check if the query time is within the start and end time
         if start <= queryTime <= end:
+            # If it is, increment the counter
             count += 1
+            
+    # Return the count of students doing homework at the query time
     return count
 
-def busyStudentOptimized(startTime, endTime, queryTime):
-    # Combine start and end times into a list of tuples
-    times = list(zip(startTime, endTime))
+def busyStudentBinarySearch(startTime, endTime, queryTime):
+    # Initialize a list to store the times when students start or end doing homework
+    times = []
     
-    # Sort the times based on the start time
-    times.sort(key=lambda x: x[0])
+    # Iterate over the start and end times
+    for start, end in zip(startTime, endTime):
+        # Add the start time with a value of 1 (representing the start of homework) to the list
+        times.append((start, 1))
+        # Add the end time with a value of -1 (representing the end of homework) to the list
+        times.append((end, -1))
+        
+    # Sort the list of times
+    times.sort()
     
-    # Initialize two pointers, one at the start and one at the end
-    left, right = 0, len(times) - 1
+    # Initialize a counter to store the number of students doing homework at the query time
+    count = 0
     
-    # Find the first start time that is greater than the query time
-    while left <= right:
-        mid = (left + right) // 2
-        if times[mid][0] <= queryTime:
-            left = mid + 1
+    # Iterate over the sorted list of times
+    for time, value in times:
+        # If the time is less than or equal to the query time, add the value to the counter
+        if time <= queryTime:
+            count += value
+        # If the time is greater than the query time, break the loop
         else:
-            right = mid - 1
-    
-    # The number of students doing homework is the number of start times less than or equal to the query time
-    count = left
-    
-    # Find the first end time that is greater than the query time
-    left, right = 0, len(times) - 1
-    while left <= right:
-        mid = (left + right) // 2
-        if times[mid][1] <= queryTime:
-            left = mid + 1
-        else:
-            right = mid - 1
-    
-    # The number of students not doing homework is the number of end times less than or equal to the query time
-    not_doing_homework = left
-    
-    # The number of students doing homework is the total number of students minus the number of students not doing homework
-    return count - not_doing_homework
-
-def busyStudentOptimized2(startTime, endTime, queryTime):
-    # Combine start and end times into a list of tuples
-    times = list(zip(startTime, endTime))
-    
-    # Sort the times based on the start time
-    times.sort(key=lambda x: x[0])
-    
-    # Find the first start time that is greater than the query time
-    start_index = binarySearch([time[0] for time in times], queryTime)
-    
-    # Find the first end time that is greater than the query time
-    end_index = binarySearch([time[1] for time in times], queryTime)
-    
-    # The number of students doing homework is the number of start times less than or equal to the query time
-    # minus the number of end times less than or equal to the query time
-    return start_index - end_index
-
-# Test the functions
-startTime = [1, 2, 3]
-endTime = [2, 3, 4]
-queryTime = 3
-print(busyStudent(startTime, endTime, queryTime))  # Output: 1
-print(busyStudentOptimized(startTime, endTime, queryTime))  # Output: 1
-print(busyStudentOptimized2(startTime, endTime, queryTime))  # Output: 1
+            break
+            
+    # Return the count of students doing homework at the query time
+    return count

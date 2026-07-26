@@ -191,5 +191,6 @@
     "count-partitions-with-even-sum-difference",
     "check-if-matrix-is-x-matrix",
     "subtract-the-product-and-sum-of-digits-of-an-integer",
-    "check-balanced-string"
+    "check-balanced-string",
+    "clear-digits"
 ]
