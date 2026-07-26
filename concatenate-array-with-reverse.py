@@ -1,17 +1,13 @@
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
 def getConcatenation(nums):
-    # Create a copy of the input array
-    reversed_nums = nums[:]
+    # Create a copy of the input list to avoid modifying the original list
+    result = nums.copy()
     
-    # Reverse the copied array
-    reversed_nums.reverse()
+    # Use list slicing to get the reversed list
+    reversed_nums = nums[::-1]
     
-    # Concatenate the original array with the reversed array
-    concatenated_nums = nums + reversed_nums
+    # Extend the result list with the reversed list
+    result.extend(reversed_nums)
     
-    # Return the concatenated array
-    return concatenated_nums
-
-# Alternatively, using list slicing
-def getConcatenationAlternative(nums):
-    # Concatenate the original array with the reversed array using list slicing
-    return nums + nums[::-1]
+    # Return the concatenated list
+    return result
