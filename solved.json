@@ -194,5 +194,6 @@
     "check-balanced-string",
     "clear-digits",
     "number-of-students-doing-homework-at-a-given-time",
-    "distribute-money-to-maximum-children"
+    "distribute-money-to-maximum-children",
+    "count-hills-and-valleys-in-an-array"
 ]

@@ -1,16 +1,17 @@
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
 def count_special_characters(s):
     # Initialize a counter variable to store the count of special characters
     count = 0
     
-    # Iterate over each character in the string
+    # Define a string of special characters
+    special_chars = "!@#$%^&*()-+?_=,<>/"
+    
+    # Iterate over each character in the input string
     for char in s:
-        # Check if the character is not alphanumeric (i.e., it's a special character)
-        if not char.isalnum():
-            # If it's a special character, increment the counter
+        # Check if the character is in the string of special characters
+        if char in special_chars:
+            # If the character is special, increment the counter
             count += 1
     
-    # Return the total count of special characters
+    # Return the count of special characters
     return count
-
-# Test the function
-print(count_special_characters("Hello, World!"))
