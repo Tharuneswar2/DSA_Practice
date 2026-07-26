@@ -201,5 +201,6 @@
     "minimum-value-to-get-positive-step-by-step-sum",
     "check-if-two-chessboard-squares-have-the-same-color",
     "check-if-all-1s-are-at-least-length-k-places-away",
-    "take-gifts-from-the-richest-pile"
+    "take-gifts-from-the-richest-pile",
+    "count-elements-with-strictly-smaller-and-greater-elements"
 ]
