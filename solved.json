@@ -199,5 +199,6 @@
     "count-the-number-of-special-characters-i",
     "generate-a-string-with-characters-that-have-odd-counts",
     "minimum-value-to-get-positive-step-by-step-sum",
-    "check-if-two-chessboard-squares-have-the-same-color"
+    "check-if-two-chessboard-squares-have-the-same-color",
+    "check-if-all-1s-are-at-least-length-k-places-away"
 ]
