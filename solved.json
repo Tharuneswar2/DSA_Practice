@@ -225,5 +225,6 @@
     "determine-if-two-events-have-conflict",
     "count-monobit-integers",
     "maximum-count-of-positive-integer-and-negative-integer",
-    "reverse-degree-of-a-string"
+    "reverse-degree-of-a-string",
+    "faulty-keyboard"
 ]
