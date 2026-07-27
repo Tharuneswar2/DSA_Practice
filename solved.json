@@ -215,5 +215,6 @@
     "find-the-sum-of-encrypted-integers",
     "maximum-difference-by-remapping-a-digit",
     "rings-and-rods",
-    "sum-of-elements-with-frequency-divisible-by-k"
+    "sum-of-elements-with-frequency-divisible-by-k",
+    "remove-letter-to-equalize-frequency"
 ]
