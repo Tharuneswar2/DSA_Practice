@@ -230,5 +230,6 @@
     "majority-frequency-characters",
     "count-largest-group",
     "smallest-pair-with-different-frequencies",
-    "sum-multiples"
+    "sum-multiples",
+    "calculate-digit-sum-of-a-string"
 ]
