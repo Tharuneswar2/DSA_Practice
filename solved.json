@@ -213,5 +213,6 @@
     "concatenate-array-with-reverse",
     "calculate-money-in-leetcode-bank",
     "find-the-sum-of-encrypted-integers",
-    "maximum-difference-by-remapping-a-digit"
+    "maximum-difference-by-remapping-a-digit",
+    "rings-and-rods"
 ]
