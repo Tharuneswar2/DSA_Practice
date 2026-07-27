@@ -1,5 +1,7 @@
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
+
 def reverse_words(s):
-    # Split the string into words
+    # Split the input string into a list of words
     words = s.split()
     
     # Initialize an empty list to store the reversed words
@@ -13,15 +15,5 @@ def reverse_words(s):
     # Join the reversed words back into a string separated by spaces
     reversed_string = ' '.join(reversed_words)
     
-    # Return the reversed string
+    # Return the resulting string
     return reversed_string
-
-def reverse_degree_of_string(s):
-    # Call the function to reverse the words in the string
-    reversed_string = reverse_words(s)
-    
-    # Return the reversed string
-    return reversed_string
-
-# Test the function
-print(reverse_degree_of_string("Hello World"))

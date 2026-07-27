@@ -223,5 +223,6 @@
     "count-items-matching-a-rule",
     "find-the-maximum-achievable-number",
     "determine-if-two-events-have-conflict",
-    "count-monobit-integers"
+    "count-monobit-integers",
+    "maximum-count-of-positive-integer-and-negative-integer"
 ]
