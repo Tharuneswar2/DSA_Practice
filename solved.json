@@ -217,5 +217,6 @@
     "rings-and-rods",
     "sum-of-elements-with-frequency-divisible-by-k",
     "remove-letter-to-equalize-frequency",
-    "first-letter-to-appear-twice"
+    "first-letter-to-appear-twice",
+    "equal-score-substrings"
 ]
