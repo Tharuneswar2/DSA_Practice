@@ -227,5 +227,6 @@
     "maximum-count-of-positive-integer-and-negative-integer",
     "reverse-degree-of-a-string",
     "faulty-keyboard",
-    "majority-frequency-characters"
+    "majority-frequency-characters",
+    "count-largest-group"
 ]
