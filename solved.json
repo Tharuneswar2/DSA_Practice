@@ -231,5 +231,6 @@
     "count-largest-group",
     "smallest-pair-with-different-frequencies",
     "sum-multiples",
-    "calculate-digit-sum-of-a-string"
+    "calculate-digit-sum-of-a-string",
+    "minimum-operations-to-make-array-values-equal-to-k"
 ]
