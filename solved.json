@@ -219,5 +219,6 @@
     "remove-letter-to-equalize-frequency",
     "first-letter-to-appear-twice",
     "equal-score-substrings",
-    "count-the-number-of-consistent-strings"
+    "count-the-number-of-consistent-strings",
+    "count-items-matching-a-rule"
 ]
