@@ -222,5 +222,6 @@
     "count-the-number-of-consistent-strings",
     "count-items-matching-a-rule",
     "find-the-maximum-achievable-number",
-    "determine-if-two-events-have-conflict"
+    "determine-if-two-events-have-conflict",
+    "count-monobit-integers"
 ]

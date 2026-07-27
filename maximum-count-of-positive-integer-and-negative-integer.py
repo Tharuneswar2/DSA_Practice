@@ -1,27 +1,28 @@
 # Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
+
 def maximumCount(nums):
     # Initialize two pointers, one at the start and one at the end of the array
-    pos = 0 
-    neg = len(nums) - 1
+    left, right = 0, len(nums) - 1
     
-    # Initialize counters for positive and negative numbers
-    pos_count = 0
-    neg_count = 0
+    # Initialize the count of positive and negative integers
+    positive_count, negative_count = 0, 0
     
     # Traverse the array from both ends
-    while pos <= neg:
-        # If the current number is positive, increment the positive counter and move the positive pointer
-        if nums[pos] > 0:
-            pos_count += 1
-            pos += 1
-        # If the current number is negative, increment the negative counter and move the negative pointer
-        elif nums[neg] < 0:
-            neg_count += 1
-            neg -= 1
-        # If the current numbers are both zero or one is zero and the other is not, move both pointers
+    while left <= right:
+        # If the left element is negative, increment the negative count and move the left pointer
+        if nums[left] < 0:
+            negative_count += 1
+            left += 1
+        # If the right element is positive, increment the positive count and move the right pointer
+        elif nums[right] > 0:
+            positive_count += 1
+            right -= 1
+        # If the left element is 0, move the left pointer
+        elif nums[left] == 0:
+            left += 1
+        # If the right element is 0, move the right pointer
         else:
-            pos += 1
-            neg -= 1
+            right -= 1
     
-    # Return the maximum count
-    return max(pos_count, neg_count)
+    # Return the maximum count of positive and negative integers
+    return max(positive_count, negative_count)
