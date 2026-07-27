@@ -220,5 +220,6 @@
     "first-letter-to-appear-twice",
     "equal-score-substrings",
     "count-the-number-of-consistent-strings",
-    "count-items-matching-a-rule"
+    "count-items-matching-a-rule",
+    "find-the-maximum-achievable-number"
 ]

@@ -1,18 +1,16 @@
-def have_conflict(event1, event2):
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
+
+def haveConflict(event1, event2):
     # Unpack the start and end times of the two events
     start1, end1 = event1
     start2, end2 = event2
-
-    # If the start time of the second event is less than the end time of the first event
-    # and the start time of the first event is less than the end time of the second event,
-    # then the two events have a conflict
+    
+    # Check if event1 starts before event2 ends and event2 starts before event1 ends
+    # If both conditions are true, it means the two events have a conflict
     return start1 < end2 and start2 < end1
 
-# Example usage:
-event1 = (1, 3)  # Event 1 starts at 1 and ends at 3
-event2 = (2, 4)  # Event 2 starts at 2 and ends at 4
-print(have_conflict(event1, event2))  # Output: True
-
-event1 = (1, 3)  # Event 1 starts at 1 and ends at 3
-event2 = (4, 6)  # Event 2 starts at 4 and ends at 6
-print(have_conflict(event1, event2))  # Output: False
+def haveConflictAlternative(event1, event2):
+    # Sort the start times of the two events
+    # If the end time of the first event is greater than the start time of the second event, 
+    # it means the two events have a conflict
+    return max(event1[0], event2[0]) < min(event1[1], event2[1])
