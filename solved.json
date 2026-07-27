@@ -228,5 +228,6 @@
     "reverse-degree-of-a-string",
     "faulty-keyboard",
     "majority-frequency-characters",
-    "count-largest-group"
+    "count-largest-group",
+    "smallest-pair-with-different-frequencies"
 ]
