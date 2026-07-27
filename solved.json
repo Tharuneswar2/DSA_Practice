@@ -218,5 +218,6 @@
     "sum-of-elements-with-frequency-divisible-by-k",
     "remove-letter-to-equalize-frequency",
     "first-letter-to-appear-twice",
-    "equal-score-substrings"
+    "equal-score-substrings",
+    "count-the-number-of-consistent-strings"
 ]
