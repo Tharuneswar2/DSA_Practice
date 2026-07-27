@@ -221,5 +221,6 @@
     "equal-score-substrings",
     "count-the-number-of-consistent-strings",
     "count-items-matching-a-rule",
-    "find-the-maximum-achievable-number"
+    "find-the-maximum-achievable-number",
+    "determine-if-two-events-have-conflict"
 ]

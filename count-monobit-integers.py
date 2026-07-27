@@ -1,24 +1,29 @@
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
 def countMonotoneNumbers(n):
-    # Initialize a dictionary to store the count of monotone numbers for each digit
-    dp = {i: 1 for i in range(10)}
-
-    # Iterate over the number of digits from 2 to n
-    for digits in range(2, n + 1):
-        # Initialize a dictionary to store the count of monotone numbers for the current number of digits
-        new_dp = {i: 0 for i in range(10)}
+    # Initialize a variable to store the count of monotone numbers
+    count = 0
+    
+    # Iterate over all numbers from 1 to n
+    for i in range(1, n+1):
+        # Convert the number to a string to easily access each digit
+        str_i = str(i)
         
-        # Iterate over the possible last digits
-        for last_digit in range(10):
-            # Iterate over the possible second last digits
-            for second_last_digit in range(last_digit + 1):
-                # Update the count of monotone numbers for the current last digit
-                new_dp[last_digit] += dp[second_last_digit]
+        # Initialize variables to track if the number is increasing or decreasing
+        is_increasing = True
+        is_decreasing = True
         
-        # Update the dictionary for the next iteration
-        dp = new_dp
-
-    # Calculate the total count of monotone numbers
-    total_count = sum(dp.values())
-
-    # Return the total count
-    return total_count
+        # Iterate over each digit in the number
+        for j in range(1, len(str_i)):
+            # If the current digit is less than the previous digit, the number is not increasing
+            if str_i[j] < str_i[j-1]:
+                is_increasing = False
+            # If the current digit is greater than the previous digit, the number is not decreasing
+            if str_i[j] > str_i[j-1]:
+                is_decreasing = False
+        
+        # If the number is either increasing or decreasing, increment the count
+        if is_increasing or is_decreasing:
+            count += 1
+    
+    # Return the count of monotone numbers
+    return count
