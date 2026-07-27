@@ -216,5 +216,6 @@
     "maximum-difference-by-remapping-a-digit",
     "rings-and-rods",
     "sum-of-elements-with-frequency-divisible-by-k",
-    "remove-letter-to-equalize-frequency"
+    "remove-letter-to-equalize-frequency",
+    "first-letter-to-appear-twice"
 ]
