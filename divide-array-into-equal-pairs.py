@@ -1,17 +1,22 @@
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
 def divideArray(nums):
-    # Create a dictionary to store the frequency of each number
-    freq = {}
+    # Create a hashmap to store the frequency of each number in the array
+    freq_map = {}
     
-    # Iterate over the array to count the frequency of each number
+    # Iterate over the array to populate the hashmap
     for num in nums:
-        if num in freq:
-            freq[num] += 1
+        # If the number is already in the hashmap, increment its count
+        if num in freq_map:
+            freq_map[num] += 1
+        # If the number is not in the hashmap, add it with a count of 1
         else:
-            freq[num] = 1
+            freq_map[num] = 1
     
-    # Check if all frequencies are even
-    for count in freq.values():
+    # Iterate over the hashmap to check if all numbers have even frequencies
+    for count in freq_map.values():
+        # If any number has an odd frequency, return False
         if count % 2 != 0:
             return False
     
+    # If all numbers have even frequencies, return True
     return True

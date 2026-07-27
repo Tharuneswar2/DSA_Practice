@@ -224,5 +224,6 @@
     "find-the-maximum-achievable-number",
     "determine-if-two-events-have-conflict",
     "count-monobit-integers",
-    "maximum-count-of-positive-integer-and-negative-integer"
+    "maximum-count-of-positive-integer-and-negative-integer",
+    "reverse-degree-of-a-string"
 ]
