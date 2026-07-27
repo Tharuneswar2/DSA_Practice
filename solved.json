@@ -229,5 +229,6 @@
     "faulty-keyboard",
     "majority-frequency-characters",
     "count-largest-group",
-    "smallest-pair-with-different-frequencies"
+    "smallest-pair-with-different-frequencies",
+    "sum-multiples"
 ]

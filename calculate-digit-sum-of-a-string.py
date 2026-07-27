@@ -1,16 +1,23 @@
-def digit_sum(s):
-    # Initialize a variable to store the sum of digits
-    total_sum = 0
-    
-    # Iterate over each character in the string
-    for char in s:
-        # Check if the character is a digit
-        if char.isdigit():
-            # Add the digit to the total sum
-            total_sum += int(char)
-    
-    # Return the total sum
-    return total_sum
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
 
-# Test the function
-print(digit_sum("abc123"))  # Output: 6
+def digitSum(s, k):
+    # Convert the string into a list of integers for easier manipulation
+    digits = [int(d) for d in s]
+    
+    # Calculate the sum of the digits
+    total_sum = sum(digits)
+    
+    # If k is 1, return the sum of the digits
+    if k == 1:
+        return total_sum
+    
+    # Initialize a variable to store the result
+    result = total_sum
+    
+    # While the result has more than one digit
+    while result >= 10:
+        # Calculate the sum of the digits of the result
+        result = sum(int(d) for d in str(result))
+    
+    # Return the final result
+    return result
