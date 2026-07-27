@@ -1,25 +1,27 @@
-def countLargestGroup(n):
-    # Initialize a hashmap to store the sum of digits as keys and their counts as values
-    count_map = {}
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
+def countLargestGroup(n: int) -> int:
+    # Initialize a hashmap to store the frequency of each sum
+    sum_freq = {}
     
-    # Initialize the maximum count and the count of the maximum groups
-    max_count = 0
-    max_groups = 0
+    # Initialize the maximum frequency and the count of maximum frequency
+    max_freq = 0
+    max_freq_count = 0
     
-    # Iterate over the range from 1 to n
+    # Iterate over all numbers from 1 to n
     for i in range(1, n + 1):
         # Calculate the sum of digits of the current number
         digit_sum = sum(int(digit) for digit in str(i))
         
-        # Increment the count of the current sum in the hashmap
-        count_map[digit_sum] = count_map.get(digit_sum, 0) + 1
+        # Increment the frequency of the current sum in the hashmap
+        sum_freq[digit_sum] = sum_freq.get(digit_sum, 0) + 1
         
-        # Update the maximum count and the count of the maximum groups
-        if count_map[digit_sum] > max_count:
-            max_count = count_map[digit_sum]
-            max_groups = 1
-        elif count_map[digit_sum] == max_count:
-            max_groups += 1
+        # Update the maximum frequency and its count if the current frequency is higher
+        if sum_freq[digit_sum] > max_freq:
+            max_freq = sum_freq[digit_sum]
+            max_freq_count = 1
+        elif sum_freq[digit_sum] == max_freq:
+            # If the current frequency is equal to the maximum frequency, increment its count
+            max_freq_count += 1
     
-    # Return the count of the maximum groups
-    return max_groups
+    # Return the count of maximum frequency
+    return max_freq_count

@@ -226,5 +226,6 @@
     "count-monobit-integers",
     "maximum-count-of-positive-integer-and-negative-integer",
     "reverse-degree-of-a-string",
-    "faulty-keyboard"
+    "faulty-keyboard",
+    "majority-frequency-characters"
 ]
