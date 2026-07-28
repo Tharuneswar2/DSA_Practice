@@ -246,5 +246,6 @@
     "path-crossing",
     "adjacent-increasing-subarrays-detection-i",
     "find-champion-i",
-    "evaluate-boolean-binary-tree"
+    "evaluate-boolean-binary-tree",
+    "minimum-bit-flips-to-convert-number"
 ]
