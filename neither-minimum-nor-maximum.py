@@ -1,28 +1,28 @@
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
+
 def neither_min_nor_max(arr):
-    # Check if the array has less than 3 elements
-    if len(arr) < 3:
+    # Check if the input array is empty
+    if not arr:
         return -1
     
-    # Initialize minimum and maximum values
+    # Find the minimum and maximum elements in the array
     min_val = min(arr)
     max_val = max(arr)
     
-    # Iterate over the array to find the second minimum and second maximum values
-    second_min = float('inf')
-    second_max = float('-inf')
-    for num in arr:
-        if num < second_min and num != min_val:
-            second_min = num
-        if num > second_max and num != max_val:
-            second_max = num
-    
-    # Check if second minimum and second maximum values exist
-    if second_min == float('inf') or second_max == float('-inf'):
+    # If the array contains only one unique element, return -1
+    if min_val == max_val:
         return -1
     
-    # Return the second minimum and second maximum values
-    return second_min, second_max
-
-# Test the function
-arr = [1, 2, 3, 4, 5]
-print(neither_min_nor_max(arr))
+    # Initialize a variable to store the result
+    result = -1
+    
+    # Iterate through the array to find the first element that is neither min nor max
+    for num in arr:
+        # Check if the current number is neither min nor max
+        if num != min_val and num != max_val:
+            # Update the result and break the loop
+            result = num
+            break
+    
+    # Return the result
+    return result
