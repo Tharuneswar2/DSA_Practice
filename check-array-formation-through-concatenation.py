@@ -1,6 +1,8 @@
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
+
 def canFormArray(arr, pieces):
-    # Create a hashmap to store the pieces for O(1) lookup
-    piece_map = {tuple(piece): piece for piece in pieces}
+    # Create a hashmap to store the pieces for efficient lookups
+    piece_map = {piece[0]: piece for piece in pieces}
     
     # Initialize an empty result array
     result = []
@@ -8,17 +10,14 @@ def canFormArray(arr, pieces):
     # Iterate over the input array
     i = 0
     while i < len(arr):
-        # Check if the current subarray is in the piece map
-        for j in range(i + 1, len(arr) + 1):
-            subarray = tuple(arr[i:j])
-            if subarray in piece_map:
-                # If it is, append it to the result array and move the index
-                result.append(piece_map[subarray])
-                i = j
-                break
+        # If the current element is the start of a piece, append the entire piece to the result
+        if arr[i] in piece_map:
+            result.extend(piece_map[arr[i]])
+            # Move the index forward by the length of the piece
+            i += len(piece_map[arr[i]])
         else:
-            # If no matching piece is found, return False
+            # If the current element is not the start of a piece, return False
             return False
     
-    # If we've iterated over the entire array, return True
-    return True
+    # If we've iterated over the entire array and the result matches the input array, return True
+    return result == arr
