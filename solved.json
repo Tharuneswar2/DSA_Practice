@@ -240,5 +240,6 @@
     "find-closest-number-to-zero",
     "determine-the-winner-of-a-bowling-game",
     "count-subarrays-of-length-three-with-a-condition",
-    "smallest-stable-index-i"
+    "smallest-stable-index-i",
+    "find-indices-with-index-and-value-difference-i"
 ]
