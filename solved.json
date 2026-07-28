@@ -249,5 +249,6 @@
     "evaluate-boolean-binary-tree",
     "minimum-bit-flips-to-convert-number",
     "thousand-separator",
-    "decode-the-message"
+    "decode-the-message",
+    "xor-operation-in-an-array"
 ]

@@ -1,5 +1,6 @@
-def alternating_digit_sum(n):
-    # Convert the number into a string to easily access each digit
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
+def alternatingDigitSum(n):
+    # Convert the integer into a string to easily access each digit
     str_n = str(n)
     
     # Initialize the sum as 0
@@ -19,7 +20,7 @@ def alternating_digit_sum(n):
         else:
             total_sum -= int_digit
         
-        # Flip the add flag for the next iteration
+        # Flip the flag for the next iteration
         add = not add
     
     # Return the final sum
