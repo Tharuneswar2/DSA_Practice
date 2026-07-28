@@ -233,5 +233,6 @@
     "sum-multiples",
     "calculate-digit-sum-of-a-string",
     "minimum-operations-to-make-array-values-equal-to-k",
-    "check-array-formation-through-concatenation"
+    "check-array-formation-through-concatenation",
+    "max-pair-sum-in-an-array"
 ]

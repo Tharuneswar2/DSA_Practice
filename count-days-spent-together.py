@@ -1,40 +1,35 @@
 # Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
+
 def countDaysTogether(arriveAlice, leaveAlice, arriveBob, leaveBob):
     # Define the days in each month
-    days_in_month = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+    daysInMonth = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
     
-    # Initialize the count of days spent together
-    days_together = 0
+    # Initialize the total days spent together
+    totalDays = 0
     
-    # Iterate over each year
-    for year in range(max(arriveAlice[0], arriveBob[0]), min(leaveAlice[0], leaveBob[0]) + 1):
+    # Iterate over the years
+    for year in range(min(arriveAlice[0], arriveBob[0]), max(leaveAlice[0], leaveBob[0]) + 1):
         # Calculate the start and end months and days for Alice and Bob
-        start_month_alice = arriveAlice[1] if year == arriveAlice[0] else 1
-        start_day_alice = arriveAlice[2] if year == arriveAlice[0] else 1
-        end_month_alice = leaveAlice[1] if year == leaveAlice[0] else 12
-        end_day_alice = leaveAlice[2] if year == leaveAlice[0] else days_in_month[end_month_alice - 1]
+        startAlice = (arriveAlice[0] == year) * arriveAlice[1] + (arriveAlice[0] < year) * 1
+        endAlice = (leaveAlice[0] == year) * leaveAlice[1] + (leaveAlice[0] > year) * 12
+        startBob = (arriveBob[0] == year) * arriveBob[1] + (arriveBob[0] < year) * 1
+        endBob = (leaveBob[0] == year) * leaveBob[1] + (leaveBob[0] > year) * 12
         
-        start_month_bob = arriveBob[1] if year == arriveBob[0] else 1
-        start_day_bob = arriveBob[2] if year == arriveBob[0] else 1
-        end_month_bob = leaveBob[1] if year == leaveBob[0] else 12
-        end_day_bob = leaveBob[2] if year == leaveBob[0] else days_in_month[end_month_bob - 1]
+        # Calculate the overlap months and days
+        overlapStart = max(startAlice, startBob)
+        overlapEnd = min(endAlice, endBob)
         
-        # Calculate the maximum start month and day
-        max_start_month = max(start_month_alice, start_month_bob)
-        max_start_day = max(start_day_alice + (start_month_alice < max_start_month) * (days_in_month[start_month_alice - 1] - start_day_alice), 
-                            start_day_bob + (start_month_bob < max_start_month) * (days_in_month[start_month_bob - 1] - start_day_bob))
-        
-        # Calculate the minimum end month and day
-        min_end_month = min(end_month_alice, end_month_bob)
-        min_end_day = min(end_day_alice + (end_month_alice > min_end_month) * (days_in_month[end_month_alice - 1] - end_day_alice), 
-                           end_day_bob + (end_month_bob > min_end_month) * (days_in_month[end_month_bob - 1] - end_day_bob))
-        
-        # Calculate the days spent together in the current year
-        days_in_year = sum(days_in_month[max_start_month - 1:min_end_month]) + min_end_day - max_start_day + 1
-        
-        # If the days spent together in the current year is positive, add it to the total count
-        if days_in_year > 0:
-            days_together += days_in_year
+        # If there is an overlap, calculate the total days
+        if overlapStart <= overlapEnd:
+            # Calculate the days in the overlap months
+            days = sum(daysInMonth[overlapStart - 1:overlapEnd])
+            
+            # Subtract the days before the start of the overlap and add the days after the end of the overlap
+            days -= sum(daysInMonth[:overlapStart - 1])
+            days -= sum(daysInMonth[overlapEnd:])
+            
+            # Add the days in the overlap to the total days
+            totalDays += days
     
-    # Return the total count of days spent together
-    return days_together
+    # Return the total days spent together
+    return totalDays
