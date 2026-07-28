@@ -1,19 +1,21 @@
 # Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
 
-def minBitFlip(a, b):
-    # XOR operation will give us the bits that are different between a and b
-    xor = a ^ b
+def minBitFlip(x, y):
+    # XOR operation to find the bits that are different between x and y
+    xor = x ^ y
     
-    # Initialize count of bits that need to be flipped
+    # Initialize count of bits to be flipped
     count = 0
     
-    # While there are still bits set in xor
+    # Traverse the bits of the XOR result
     while xor:
-        # Clear the least significant bit set in xor
-        # This effectively counts the number of bits set in xor
+        # Count the number of bits set in the XOR result
+        # This is done by performing a bitwise AND operation with the number 1
+        # If the result is 1, it means the bit is set, so increment the count
         count += xor & 1
-        # Right shift xor to move to the next bit
+        
+        # Right shift the XOR result by 1 bit to move to the next bit
         xor >>= 1
     
-    # Return the total count of bits that need to be flipped
+    # Return the total count of bits to be flipped
     return count

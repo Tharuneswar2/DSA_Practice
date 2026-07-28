@@ -245,5 +245,6 @@
     "minimum-number-of-pushes-to-type-word-i",
     "path-crossing",
     "adjacent-increasing-subarrays-detection-i",
-    "find-champion-i"
+    "find-champion-i",
+    "evaluate-boolean-binary-tree"
 ]
