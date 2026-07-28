@@ -1,21 +1,27 @@
-def find_champion_I(candidates, votes):
-    # Create a dictionary to store the votes for each candidate
-    vote_count = {}
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
+def findChampionI(candidates):
+    # Initialize a dictionary to store the frequency of each candidate
+    frequency = {}
     
-    # Iterate over the votes and update the vote count for each candidate
-    for vote in votes:
-        if vote in vote_count:
-            vote_count[vote] += 1
+    # Iterate over the list of candidates
+    for candidate in candidates:
+        # If the candidate is already in the dictionary, increment its frequency
+        if candidate in frequency:
+            frequency[candidate] += 1
+        # If the candidate is not in the dictionary, add it with a frequency of 1
         else:
-            vote_count[vote] = 1
+            frequency[candidate] = 1
     
-    # Find the candidate with the most votes
-    champion = max(vote_count, key=vote_count.get)
+    # Initialize variables to store the champion and its frequency
+    champion = None
+    max_frequency = 0
+    
+    # Iterate over the dictionary to find the champion
+    for candidate, freq in frequency.items():
+        # If the frequency of the current candidate is greater than the max frequency, update the champion and max frequency
+        if freq > max_frequency:
+            champion = candidate
+            max_frequency = freq
     
     # Return the champion
     return champion
-
-# Example usage:
-candidates = ['John', 'Mary', 'David']
-votes = ['John', 'Mary', 'John', 'David', 'Mary', 'John', 'Mary', 'John']
-print(find_champion_I(candidates, votes))  # Output: John
