@@ -1,39 +1,31 @@
-def decode_message(key, message):
-    # Create a dictionary to store the mapping of numbers to letters
-    mapping = {}
-    alphabet = 'abcdefghijklmnopqrstuvwxyz'
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
+def decodeMessage(key, message):
+    # Create a dictionary to store the mapping of keys to characters
+    key_map = {}
     
-    # Populate the mapping dictionary
-    for i in range(26):
-        mapping[str(i+1)] = alphabet[i]
+    # Initialize the character counter to 'a'
+    char = 'a'
+    
+    # Iterate over each character in the key
+    for k in key:
+        # If the character is not already in the dictionary and it's not a space
+        if k not in key_map and k != ' ':
+            # Map the character to the current character in the alphabet
+            key_map[k] = char
+            # Move to the next character in the alphabet
+            char = chr(ord(char) + 1)
     
     # Initialize an empty string to store the decoded message
     decoded_message = ''
     
-    # Split the message into words
-    words = message.split()
-    
-    # Iterate over each word in the message
-    for word in words:
-        # Initialize an empty string to store the decoded word
-        decoded_word = ''
-        
-        # Iterate over each character in the word
-        for char in word:
-            # If the character is a digit, add the corresponding letter to the decoded word
-            if char.isdigit():
-                decoded_word += mapping[char]
-            # If the character is a space, add a space to the decoded word
-            elif char == ' ':
-                decoded_word += ' '
-        
-        # Add the decoded word to the decoded message
-        decoded_message += decoded_word + ' '
+    # Iterate over each character in the message
+    for m in message:
+        # If the character is a space, add a space to the decoded message
+        if m == ' ':
+            decoded_message += ' '
+        # Otherwise, add the mapped character to the decoded message
+        else:
+            decoded_message += key_map[m]
     
     # Return the decoded message
-    return decoded_message.strip()
-
-# Example usage:
-key = '123'
-message = '1 23 2 1 20 8 5 19 7 15 14 7 5 20 8 5 19'
-print(decode_message(key, message))
+    return decoded_message

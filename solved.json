@@ -247,5 +247,6 @@
     "adjacent-increasing-subarrays-detection-i",
     "find-champion-i",
     "evaluate-boolean-binary-tree",
-    "minimum-bit-flips-to-convert-number"
+    "minimum-bit-flips-to-convert-number",
+    "thousand-separator"
 ]
