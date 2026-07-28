@@ -1,4 +1,5 @@
-# Definition for a binary tree node.
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
+
 class TreeNode:
     def __init__(self, x):
         self.val = x
@@ -6,9 +7,9 @@ class TreeNode:
         self.right = None
 
 def evaluateTree(root):
-    # Base case: if the tree is empty, return True
+    # Base case: if the tree is empty, return False
     if not root:
-        return True
+        return False
     
     # If the node is a leaf node (i.e., it has no children), return its value
     if not root.left and not root.right:

@@ -244,5 +244,6 @@
     "find-indices-with-index-and-value-difference-i",
     "minimum-number-of-pushes-to-type-word-i",
     "path-crossing",
-    "adjacent-increasing-subarrays-detection-i"
+    "adjacent-increasing-subarrays-detection-i",
+    "find-champion-i"
 ]
