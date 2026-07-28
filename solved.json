@@ -238,5 +238,6 @@
     "count-days-spent-together",
     "find-the-least-frequent-digit",
     "find-closest-number-to-zero",
-    "determine-the-winner-of-a-bowling-game"
+    "determine-the-winner-of-a-bowling-game",
+    "count-subarrays-of-length-three-with-a-condition"
 ]
