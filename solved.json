@@ -237,5 +237,6 @@
     "max-pair-sum-in-an-array",
     "count-days-spent-together",
     "find-the-least-frequent-digit",
-    "find-closest-number-to-zero"
+    "find-closest-number-to-zero",
+    "determine-the-winner-of-a-bowling-game"
 ]
