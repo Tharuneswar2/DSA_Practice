@@ -1,56 +1,23 @@
-def increasing_subarrays(nums):
-    # Initialize variables to track the current and maximum length of increasing subarrays
-    current_length = 1
-    max_length = 1
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
+def increasingTriplet(nums):
+    # Initialize the first and second elements of the increasing subsequence to infinity
+    # This is because we want to ensure that the first and second elements are updated correctly
+    first = second = float('inf')
     
-    # Iterate over the array from the second element to the end
-    for i in range(1, len(nums)):
-        # If the current element is greater than the previous one, it can be part of the current increasing subarray
-        if nums[i] > nums[i - 1]:
-            # Increase the length of the current increasing subarray
-            current_length += 1
+    # Iterate over the input list
+    for num in nums:
+        # If the current number is less than or equal to the first element, update the first element
+        # This is because we want to find the smallest possible first element of the increasing subsequence
+        if num <= first:
+            first = num
+        # If the current number is less than or equal to the second element but greater than the first element, update the second element
+        # This is because we want to find the smallest possible second element of the increasing subsequence
+        elif num <= second:
+            second = num
+        # If the current number is greater than the second element, return True
+        # This is because we have found an increasing subsequence of length 3
         else:
-            # If the current element is not greater than the previous one, update the maximum length if necessary
-            max_length = max(max_length, current_length)
-            # Reset the length of the current increasing subarray
-            current_length = 1
+            return True
     
-    # Update the maximum length one last time after the loop
-    max_length = max(max_length, current_length)
-    
-    return max_length
-
-def adjacent_increasing_subarrays(nums):
-    # Initialize variables to track the start and end indices of the longest increasing subarray
-    start = 0
-    end = 0
-    max_length = 0
-    
-    # Iterate over the array
-    for i in range(len(nums)):
-        # Initialize variables to track the current length of increasing subarray
-        current_length = 1
-        
-        # Iterate over the array from the current element to the end
-        for j in range(i + 1, len(nums)):
-            # If the current element is greater than the previous one, it can be part of the current increasing subarray
-            if nums[j] > nums[j - 1]:
-                # Increase the length of the current increasing subarray
-                current_length += 1
-            else:
-                # If the current element is not greater than the previous one, break the loop
-                break
-        
-        # If the length of the current increasing subarray is greater than the maximum length, update the maximum length and the start and end indices
-        if current_length > max_length:
-            max_length = current_length
-            start = i
-            end = i + max_length - 1
-    
-    # Return the longest increasing subarray
-    return nums[start:end + 1]
-
-# Test the functions
-nums = [1, 2, 3, 4, 5, 2, 3, 4, 5, 6]
-print(increasing_subarrays(nums))
-print(adjacent_increasing_subarrays(nums))
+    # If we have iterated over the entire list and haven't found an increasing subsequence of length 3, return False
+    return False
