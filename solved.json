@@ -232,5 +232,6 @@
     "smallest-pair-with-different-frequencies",
     "sum-multiples",
     "calculate-digit-sum-of-a-string",
-    "minimum-operations-to-make-array-values-equal-to-k"
+    "minimum-operations-to-make-array-values-equal-to-k",
+    "check-array-formation-through-concatenation"
 ]
