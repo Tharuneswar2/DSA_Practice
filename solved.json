@@ -251,5 +251,6 @@
     "thousand-separator",
     "decode-the-message",
     "xor-operation-in-an-array",
-    "alternating-digit-sum"
+    "alternating-digit-sum",
+    "minimum-absolute-difference-between-two-values"
 ]
