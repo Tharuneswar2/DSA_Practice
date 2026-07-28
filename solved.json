@@ -254,5 +254,6 @@
     "alternating-digit-sum",
     "minimum-absolute-difference-between-two-values",
     "find-special-substring-of-length-k",
-    "find-the-largest-almost-missing-integer"
+    "find-the-largest-almost-missing-integer",
+    "neither-minimum-nor-maximum"
 ]
