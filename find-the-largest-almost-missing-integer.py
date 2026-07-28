@@ -1,14 +1,20 @@
-def solution(A):
-    # Create a set from the list for efficient lookups
-    A_set = set(A)
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
+
+def largestAlmostMissingInteger(nums):
+    # Create a set from the list to remove duplicates and have O(1) lookup time
+    num_set = set(nums)
     
-    # Initialize the smallest missing integer to 1
-    smallest_missing = 1
+    # Initialize the variable to store the largest almost missing integer
+    largest_almost_missing = 1
     
-    # Iterate through the range from 1 to the maximum value in the list plus one
-    while smallest_missing in A_set:
-        # If the current integer is in the set, increment it
-        smallest_missing += 1
+    # Iterate over the range from 1 to the maximum number in the set plus 1
+    for i in range(1, max(num_set) + 2):
+        # If the current number is not in the set, it's the largest almost missing integer
+        if i not in num_set:
+            # Update the largest almost missing integer
+            largest_almost_missing = i
+            # Break the loop as we've found the largest almost missing integer
+            break
     
-    # Return the smallest missing integer
-    return smallest_missing
+    # Return the largest almost missing integer
+    return largest_almost_missing

@@ -252,5 +252,6 @@
     "decode-the-message",
     "xor-operation-in-an-array",
     "alternating-digit-sum",
-    "minimum-absolute-difference-between-two-values"
+    "minimum-absolute-difference-between-two-values",
+    "find-special-substring-of-length-k"
 ]
