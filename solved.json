@@ -235,5 +235,6 @@
     "minimum-operations-to-make-array-values-equal-to-k",
     "check-array-formation-through-concatenation",
     "max-pair-sum-in-an-array",
-    "count-days-spent-together"
+    "count-days-spent-together",
+    "find-the-least-frequent-digit"
 ]

@@ -1,14 +1,17 @@
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
+
 def find_closest_to_zero(numbers):
     # Initialize the minimum difference and the closest number to zero
-    min_diff = float('inf')  # Initialize with positive infinity
-    closest_num = None
+    # We assume the first number in the list is the closest to zero initially
+    min_diff = abs(numbers[0])  # Calculate the absolute difference of the first number
+    closest_num = numbers[0]  # Store the first number as the closest to zero
 
-    # Iterate over each number in the list
-    for num in numbers:
-        # Calculate the absolute difference between the current number and zero
+    # Iterate through the list of numbers starting from the second number
+    for num in numbers[1:]:
+        # Calculate the absolute difference of the current number
         diff = abs(num)
-
-        # If the difference is less than the current minimum difference
+        
+        # If the difference of the current number is less than the minimum difference found so far
         if diff < min_diff:
             # Update the minimum difference and the closest number to zero
             min_diff = diff
@@ -16,7 +19,3 @@ def find_closest_to_zero(numbers):
 
     # Return the closest number to zero
     return closest_num
-
-# Example usage:
-numbers = [10, -5, 3, 7, -1]
-print(find_closest_to_zero(numbers))  # Output: -1
