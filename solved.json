@@ -255,5 +255,6 @@
     "minimum-absolute-difference-between-two-values",
     "find-special-substring-of-length-k",
     "find-the-largest-almost-missing-integer",
-    "neither-minimum-nor-maximum"
+    "neither-minimum-nor-maximum",
+    "number-of-unequal-triplets-in-array"
 ]
