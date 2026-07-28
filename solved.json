@@ -250,5 +250,6 @@
     "minimum-bit-flips-to-convert-number",
     "thousand-separator",
     "decode-the-message",
-    "xor-operation-in-an-array"
+    "xor-operation-in-an-array",
+    "alternating-digit-sum"
 ]
