@@ -260,5 +260,6 @@
     "prime-arrangements",
     "zigzag-grid-traversal-with-skip",
     "convert-binary-number-in-a-linked-list-to-integer",
-    "left-and-right-sum-differences"
+    "left-and-right-sum-differences",
+    "check-if-numbers-are-ascending-in-a-sentence"
 ]
