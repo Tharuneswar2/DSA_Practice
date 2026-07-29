@@ -1,21 +1,18 @@
-def min_flips(s):
-    # Initialize variables to keep track of the number of flips
-    # and the current character
-    flips = 0
-    curr_char = '0'
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
 
-    # Iterate over the string
-    for char in s:
-        # If the current character is different from the previous one,
-        # increment the number of flips and update the current character
-        if char != curr_char:
-            flips += 1
-            curr_char = char
-
-    # Return the minimum number of flips
-    return (flips + 1) // 2
-
-# Test the function
-print(min_flips("00000101110"))  # Output: 2
-print(min_flips("00000000"))  # Output: 0
-print(min_flips("11111111"))  # Output: 0
+def minFlips(s):
+    # Initialize variables to store the number of flips required for both cases (starting with 0 and 1)
+    flips_start_with_0 = 0
+    flips_start_with_1 = 0
+    
+    # Iterate over the binary string
+    for i, char in enumerate(s):
+        # If the current character is different from the expected character in the first case (starting with 0), increment the flips count
+        if char != str(i % 2):
+            flips_start_with_0 += 1
+        # If the current character is different from the expected character in the second case (starting with 1), increment the flips count
+        if char != str((i + 1) % 2):
+            flips_start_with_1 += 1
+    
+    # Return the minimum number of flips required between the two cases
+    return min(flips_start_with_0, flips_start_with_1)
