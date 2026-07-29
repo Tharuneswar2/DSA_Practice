@@ -277,5 +277,6 @@
     "delete-characters-to-make-fancy-string",
     "ant-on-the-boundary",
     "make-two-arrays-equal-by-reversing-subarrays",
-    "number-of-distinct-averages"
+    "number-of-distinct-averages",
+    "maximum-area-of-longest-diagonal-rectangle"
 ]
