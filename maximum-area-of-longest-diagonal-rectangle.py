@@ -1,37 +1,46 @@
-def largestRectangleArea(heights):
-    stack = []
-    max_area = 0
-    heights = [0] + heights + [0]
-    
-    # Iterate over the heights array
-    for i in range(len(heights)):
-        # While the stack is not empty and the current height is less than the height at the top of the stack
-        while stack and heights[i] < heights[stack[-1]]:
-            # Get the height at the top of the stack
-            h = heights[stack.pop()]
-            # Get the width of the rectangle
-            w = i - stack[-1] - 1
-            # Update the max area
-            max_area = max(max_area, h * w)
-        # Push the current index to the stack
-        stack.append(i)
-    
-    return max_area
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
 
-def maximalRectangle(matrix):
-    if not matrix:
-        return 0
+def largestRectangleArea(heights):
+    # Initialize a stack to store indices of the heights array
+    stack = []
     
-    # Initialize the heights array with the first row of the matrix
-    heights = [int(x) for x in matrix[0]]
-    max_area = largestRectangleArea(heights)
+    # Initialize the maximum area
+    max_area = 0
     
-    # Iterate over the rest of the rows in the matrix
-    for row in matrix[1:]:
-        # Update the heights array
-        for i in range(len(row)):
-            heights[i] = heights[i] + 1 if row[i] == '1' else 0
-        # Update the max area
-        max_area = max(max_area, largestRectangleArea(heights))
+    # Initialize the index
+    index = 0
     
+    # Traverse the heights array
+    while index < len(heights):
+        # If the stack is empty or the current height is greater than the height at the top of the stack, push the index to the stack
+        if not stack or heights[index] >= heights[stack[-1]]:
+            stack.append(index)
+            index += 1
+        else:
+            # If the current height is less than the height at the top of the stack, calculate the area
+            top_of_stack = stack.pop()
+            
+            # Calculate the width
+            width = index if not stack else index - stack[-1] - 1
+            
+            # Calculate the area
+            area = heights[top_of_stack] * width
+            
+            # Update the maximum area
+            max_area = max(max_area, area)
+    
+    # Calculate the area for the remaining heights in the stack
+    while stack:
+        top_of_stack = stack.pop()
+        
+        # Calculate the width
+        width = index if not stack else len(heights) - stack[-1] - 1
+        
+        # Calculate the area
+        area = heights[top_of_stack] * width
+        
+        # Update the maximum area
+        max_area = max(max_area, area)
+    
+    # Return the maximum area
     return max_area
