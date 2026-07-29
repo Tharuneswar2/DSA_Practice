@@ -1,14 +1,13 @@
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
 def maxProductDifference(nums):
-    # Sort the list in ascending order
+    # Sort the list in ascending order to easily access the smallest and largest numbers
     nums.sort()
     
-    # The maximum product difference will be between the product of the last two elements 
-    # and the product of the first two elements
+    # Calculate the product of the two largest numbers
     max_product = nums[-1] * nums[-2]
+    
+    # Calculate the product of the two smallest numbers
     min_product = nums[0] * nums[1]
     
-    # Return the difference between the maximum product and the minimum product
+    # Return the difference between the max product and the min product
     return max_product - min_product
-
-# Test the function
-print(maxProductDifference([5, 6, 2, 7, 4]))
