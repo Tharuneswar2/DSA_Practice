@@ -271,5 +271,6 @@
     "find-the-pivot-integer",
     "find-the-k-beauty-of-a-number",
     "latest-time-by-replacing-hidden-digits",
-    "minimum-number-of-flips-to-reverse-binary-string"
+    "minimum-number-of-flips-to-reverse-binary-string",
+    "maximum-product-difference-between-two-pairs"
 ]
