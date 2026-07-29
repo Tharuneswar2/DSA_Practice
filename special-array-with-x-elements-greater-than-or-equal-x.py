@@ -1,6 +1,6 @@
 # Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
 def specialArray(nums):
-    # Sort the array in descending order to easily find the number of elements greater than or equal to x
+    # First, sort the array in descending order to easily find the number of elements greater than or equal to x
     nums.sort(reverse=True)
     
     # Initialize the count of elements greater than or equal to x
@@ -8,18 +8,16 @@ def specialArray(nums):
     
     # Iterate over the sorted array
     for i, num in enumerate(nums):
-        # If the current number is greater than or equal to its index plus one (because indices start at 0)
+        # If the current number is greater than or equal to its index plus one (since indices are 0-based), increment the count
         if num >= i + 1:
-            # Increment the count
             count += 1
-        # If the current number is less than its index plus one, we can break the loop
-        # Because the array is sorted in descending order, all subsequent numbers will also be less than their indices plus one
+        # If the current number is less than its index plus one, break the loop since the array is sorted in descending order
         else:
             break
     
-    # If the count of elements greater than or equal to x is equal to x, return x
-    if count == count + 1 - count:
-        return count + 1 - count
-    # Otherwise, return -1
-    else:
+    # If the count is equal to the length of the array, return -1 since there is no such x
+    if count == len(nums):
         return -1
+    # Otherwise, return the count
+    else:
+        return count

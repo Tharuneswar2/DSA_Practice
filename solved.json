@@ -262,5 +262,6 @@
     "convert-binary-number-in-a-linked-list-to-integer",
     "left-and-right-sum-differences",
     "check-if-numbers-are-ascending-in-a-sentence",
-    "find-the-k-th-character-in-string-game-i"
+    "find-the-k-th-character-in-string-game-i",
+    "sum-of-digits-in-base-k"
 ]
