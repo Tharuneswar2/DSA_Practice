@@ -275,5 +275,6 @@
     "maximum-product-difference-between-two-pairs",
     "most-frequent-even-element",
     "delete-characters-to-make-fancy-string",
-    "ant-on-the-boundary"
+    "ant-on-the-boundary",
+    "make-two-arrays-equal-by-reversing-subarrays"
 ]
