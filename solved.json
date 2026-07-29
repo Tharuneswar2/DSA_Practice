@@ -266,5 +266,6 @@
     "sum-of-digits-in-base-k",
     "special-array-with-x-elements-greater-than-or-equal-x",
     "minimum-moves-to-convert-string",
-    "cells-in-a-range-on-an-excel-sheet"
+    "cells-in-a-range-on-an-excel-sheet",
+    "coupon-code-validator"
 ]

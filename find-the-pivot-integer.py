@@ -1,22 +1,20 @@
-def find_pivot(nums):
-    # Calculate the total sum of the array
-    total_sum = sum(nums)
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
+
+def find_pivot(n):
+    # Calculate the sum of all numbers from 1 to n using Gauss' formula
+    total_sum = n * (n + 1) // 2
     
     # Initialize the left sum to 0
     left_sum = 0
     
-    # Iterate over the array
-    for num in nums:
+    # Iterate over all numbers from 1 to n
+    for i in range(1, n + 1):
         # If the left sum is equal to the total sum minus the left sum and the current number
-        # then the current number is the pivot
-        if left_sum == total_sum - left_sum - num:
-            return num
+        if left_sum == total_sum - left_sum - i:
+            # Return the current number as it is the pivot integer
+            return i
         # Otherwise, add the current number to the left sum
-        left_sum += num
+        left_sum += i
     
-    # If no pivot is found, return -1
+    # If no pivot integer is found, return -1
     return -1
-
-# Test the function
-print(find_pivot([1, 7, 3, 6, 5, 6]))  # Output: 3
-print(find_pivot([1, 2, 3, 4, 5]))  # Output: -1
