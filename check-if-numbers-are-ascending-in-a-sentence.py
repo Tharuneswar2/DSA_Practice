@@ -1,9 +1,10 @@
-def are_numbers_ascending(s: str) -> bool:
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
+def areNumbersAscending(s: str) -> bool:
+    # Initialize the previous number to 0, assuming the first number in the sentence will be greater than 0
+    prev_num = 0
+    
     # Split the input string into words
     words = s.split()
-    
-    # Initialize the previous number to negative infinity
-    prev_num = float('-inf')
     
     # Iterate over each word in the sentence
     for word in words:
@@ -19,5 +20,5 @@ def are_numbers_ascending(s: str) -> bool:
             # Update the previous number
             prev_num = num
     
-    # If we have checked all numbers and haven't returned False, return True
+    # If we have iterated over all the numbers in the sentence and they are in ascending order, return True
     return True
