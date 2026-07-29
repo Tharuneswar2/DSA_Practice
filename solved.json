@@ -258,5 +258,6 @@
     "neither-minimum-nor-maximum",
     "number-of-unequal-triplets-in-array",
     "prime-arrangements",
-    "zigzag-grid-traversal-with-skip"
+    "zigzag-grid-traversal-with-skip",
+    "convert-binary-number-in-a-linked-list-to-integer"
 ]
