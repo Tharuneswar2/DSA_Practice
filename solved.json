@@ -265,5 +265,6 @@
     "find-the-k-th-character-in-string-game-i",
     "sum-of-digits-in-base-k",
     "special-array-with-x-elements-greater-than-or-equal-x",
-    "minimum-moves-to-convert-string"
+    "minimum-moves-to-convert-string",
+    "cells-in-a-range-on-an-excel-sheet"
 ]
