@@ -1,19 +1,8 @@
-def divisorSubstrings(n: int, k: int) -> int:
-    # Convert the number to a string to easily extract substrings
-    str_n = str(n)
-    
-    # Initialize a counter for the k-beauty
-    beauty = 0
-    
-    # Iterate over the string representation of the number
-    for i in range(len(str_n)):
-        # Extract a substring of length k
-        substring = str_n[i:i+k]
-        
-        # Check if the substring is a divisor of the number
-        if int(substring) != 0 and n % int(substring) == 0:
-            # If it is, increment the beauty counter
-            beauty += 1
-    
-    # Return the k-beauty of the number
-    return beauty
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
+def divisorGame(n: int) -> bool:
+    # The key insight here is that the person who starts the game can always win if n is even
+    # This is because they can choose to divide n by 2, forcing the other player to play with an odd number
+    # The player who plays with an odd number will always lose, because no matter what divisor they choose, the result will be even
+    # So, the first player can always win by mirroring the moves of the second player
+    # Therefore, we can simply return whether n is even
+    return n % 2 == 0
