@@ -257,5 +257,6 @@
     "find-the-largest-almost-missing-integer",
     "neither-minimum-nor-maximum",
     "number-of-unequal-triplets-in-array",
-    "prime-arrangements"
+    "prime-arrangements",
+    "zigzag-grid-traversal-with-skip"
 ]
