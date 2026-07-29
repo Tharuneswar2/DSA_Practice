@@ -1,16 +1,18 @@
-def sumBase(n, k):
-    # Convert the number to base k
-    base_k_num = ''
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
+def sumBase(self, n: int, k: int) -> int:
+    # Initialize sum variable to store the sum of digits in base k
+    total_sum = 0
+    
+    # Continue the process until n becomes 0
     while n > 0:
-        # Append the remainder of n divided by k to the base k number
-        base_k_num = str(n % k) + base_k_num
-        # Update n to be the quotient of n divided by k
+        # Calculate the remainder of n when divided by k, this will give the last digit in base k
+        remainder = n % k
+        
+        # Add the remainder to the total sum
+        total_sum += remainder
+        
+        # Update n by performing integer division of n by k, effectively removing the last digit
         n = n // k
-
-    # Calculate the sum of the digits in the base k number
-    sum_of_digits = 0
-    for digit in base_k_num:
-        # Add the integer value of the digit to the sum
-        sum_of_digits += int(digit)
-
-    return sum_of_digits
+    
+    # Return the total sum of digits in base k
+    return total_sum
