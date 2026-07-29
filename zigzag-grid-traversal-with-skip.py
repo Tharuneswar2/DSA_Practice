@@ -1,28 +1,34 @@
-def zigzag_traversal(grid, skip):
-    if not grid or not grid[0]:
-        return []
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
 
-    rows, cols = len(grid), len(grid[0])
+def findDiagonalOrder(nums):
+    # Initialize a hashmap to store the diagonal elements
+    diagonal = {}
+    
+    # Iterate over each row in the grid
+    for i in range(len(nums)):
+        # Iterate over each element in the current row
+        for j in range(len(nums[i])):
+            # Calculate the diagonal index (i + j)
+            diagonal_idx = i + j
+            
+            # If the diagonal index is not in the hashmap, add it
+            if diagonal_idx not in diagonal:
+                diagonal[diagonal_idx] = []
+            
+            # Append the current element to the corresponding diagonal in the hashmap
+            diagonal[diagonal_idx].append(nums[i][j])
+    
+    # Initialize the result list
     result = []
-    direction = 1  # 1 for right, -1 for left
-
-    for i in range(rows):
-        if i % 2 == 0:
-            for j in range(cols):
-                if (i, j) not in skip:
-                    result.append(grid[i][j])
+    
+    # Iterate over the diagonals in the hashmap
+    for diagonal_idx in diagonal:
+        # If the diagonal index is even, append the elements in reverse order
+        if diagonal_idx % 2 == 0:
+            result.extend(reversed(diagonal[diagonal_idx]))
+        # If the diagonal index is odd, append the elements in normal order
         else:
-            for j in range(cols - 1, -1, -1):
-                if (i, j) not in skip:
-                    result.append(grid[i][j])
-
+            result.extend(diagonal[diagonal_idx])
+    
+    # Return the result list
     return result
-
-# Example usage:
-grid = [
-    [1, 2, 3],
-    [4, 5, 6],
-    [7, 8, 9]
-]
-skip = {(1, 1)}
-print(zigzag_traversal(grid, skip))
