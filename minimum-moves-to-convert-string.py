@@ -1,19 +1,18 @@
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
 def minimumMoves(s: str) -> int:
     # Initialize the count of moves and the index of the current character
     moves = 0
     i = 0
     
-    # Iterate over the string
+    # Loop through the string
     while i < len(s):
-        # If the current character is 'X', we need to make a move
+        # If the current character is 'X', increment the moves and skip the next two characters
         if s[i] == 'X':
-            # Increment the moves count
             moves += 1
-            
-            # We can skip the next two characters because they will be 'O's
+            # Skip the next two characters
             i += 3
         else:
-            # If the current character is 'O', we don't need to make a move
+            # If the current character is not 'X', move to the next character
             i += 1
     
     # Return the total moves

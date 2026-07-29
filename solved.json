@@ -263,5 +263,6 @@
     "left-and-right-sum-differences",
     "check-if-numbers-are-ascending-in-a-sentence",
     "find-the-k-th-character-in-string-game-i",
-    "sum-of-digits-in-base-k"
+    "sum-of-digits-in-base-k",
+    "special-array-with-x-elements-greater-than-or-equal-x"
 ]
