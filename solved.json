@@ -284,5 +284,6 @@
     "compute-decimal-representation",
     "consecutive-characters",
     "number-of-bit-changes-to-make-two-integers-equal",
-    "check-if-the-sentence-is-pangram"
+    "check-if-the-sentence-is-pangram",
+    "difference-between-element-sum-and-digit-sum-of-an-array"
 ]
