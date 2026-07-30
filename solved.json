@@ -278,5 +278,6 @@
     "ant-on-the-boundary",
     "make-two-arrays-equal-by-reversing-subarrays",
     "number-of-distinct-averages",
-    "maximum-area-of-longest-diagonal-rectangle"
+    "maximum-area-of-longest-diagonal-rectangle",
+    "find-maximum-number-of-string-pairs"
 ]
