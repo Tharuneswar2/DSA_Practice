@@ -286,5 +286,6 @@
     "number-of-bit-changes-to-make-two-integers-equal",
     "check-if-the-sentence-is-pangram",
     "difference-between-element-sum-and-digit-sum-of-an-array",
-    "minimum-cuts-to-divide-a-circle"
+    "minimum-cuts-to-divide-a-circle",
+    "minimum-average-of-smallest-and-largest-elements"
 ]

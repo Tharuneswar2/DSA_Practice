@@ -1,13 +1,23 @@
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
 def luckyNumbers(matrix):
-    # Get the number of rows and columns in the matrix
-    rows, cols = len(matrix), len(matrix[0])
+    # First, we transpose the matrix to easily find the minimum in each row
+    transposed_matrix = list(map(list, zip(*matrix)))
     
-    # Initialize two sets to store the minimum values in each row and the maximum values in each column
-    row_mins = set(min(row) for row in matrix)
-    col_maxs = set(max(col) for col in zip(*matrix))
+    # Initialize an empty set to store the lucky numbers
+    lucky_nums = set()
     
-    # Find the intersection of the two sets, which are the lucky numbers
-    lucky_nums = row_mins & col_maxs
+    # Iterate over each row in the original matrix
+    for row in matrix:
+        # Find the minimum in the current row
+        min_in_row = min(row)
+        
+        # Find the column index of the minimum in the current row
+        col_idx = row.index(min_in_row)
+        
+        # Check if the minimum in the current row is the maximum in its column
+        if min_in_row == max(transposed_matrix[col_idx]):
+            # If it is, add it to the set of lucky numbers
+            lucky_nums.add(min_in_row)
     
-    # Return the lucky numbers as a list
+    # Return the list of lucky numbers
     return list(lucky_nums)
