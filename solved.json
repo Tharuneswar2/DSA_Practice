@@ -281,5 +281,6 @@
     "maximum-area-of-longest-diagonal-rectangle",
     "find-maximum-number-of-string-pairs",
     "restore-finishing-order",
-    "compute-decimal-representation"
+    "compute-decimal-representation",
+    "consecutive-characters"
 ]
