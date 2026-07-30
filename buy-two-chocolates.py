@@ -1,30 +1,19 @@
-def buy_two_chocolates(candies, cost):
-    # Sort the candies in ascending order
-    candies.sort()
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
+def buy_two_chocolates(candies, wrapper_cost, candy_cost):
+    # Calculate the total number of candies that can be bought with the given amount of money
+    total_candies = candies // candy_cost
     
-    # Initialize two pointers, one at the start and one at the end
-    left = 0
-    right = len(candies) - 1
+    # Initialize the total number of wrappers
+    total_wrappers = total_candies
     
-    # Continue the loop until the two pointers meet
-    while left < right:
-        # Calculate the total cost of the two chocolates
-        total_cost = candies[left] + candies[right]
+    # Continue the process until we have enough wrappers to buy more candies
+    while total_wrappers >= wrapper_cost:
+        # Calculate the number of new candies that can be bought with the current wrappers
+        new_candies = total_wrappers // wrapper_cost
         
-        # If the total cost is equal to the cost of two chocolates, return True
-        if total_cost == cost:
-            return True
-        # If the total cost is less than the cost of two chocolates, move the left pointer to the right
-        elif total_cost < cost:
-            left += 1
-        # If the total cost is greater than the cost of two chocolates, move the right pointer to the left
-        else:
-            right -= 1
+        # Update the total number of candies and wrappers
+        total_candies += new_candies
+        total_wrappers = new_candies + (total_wrappers % wrapper_cost)
     
-    # If no two chocolates can be bought, return False
-    return False
-
-# Test the function
-candies = [1, 2, 3, 4, 5]
-cost = 7
-print(buy_two_chocolates(candies, cost))  # Output: True
+    # Return the total number of candies
+    return total_candies
