@@ -283,5 +283,6 @@
     "restore-finishing-order",
     "compute-decimal-representation",
     "consecutive-characters",
-    "number-of-bit-changes-to-make-two-integers-equal"
+    "number-of-bit-changes-to-make-two-integers-equal",
+    "check-if-the-sentence-is-pangram"
 ]

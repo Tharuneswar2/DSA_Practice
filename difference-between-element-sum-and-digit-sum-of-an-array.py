@@ -1,22 +1,21 @@
-def difference_sum(arr):
-    # Calculate the sum of elements in the array
-    element_sum = sum(arr)
-    
-    # Initialize a variable to store the sum of digits
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
+def differenceBetweenElementSumAndDigitSum(arr):
+    # Initialize two variables to store the sum of elements and the sum of digits
+    element_sum = 0
     digit_sum = 0
     
     # Iterate over each element in the array
     for num in arr:
-        # Convert the number to a string to calculate the sum of its digits
-        str_num = str(num)
+        # Add the current element to the element sum
+        element_sum += num
         
-        # Calculate the sum of digits of the current number
+        # Convert the current element to a string to easily iterate over its digits
+        str_num = str(abs(num))  # abs is used to handle negative numbers
+        
+        # Iterate over each digit in the current element
         for digit in str_num:
+            # Add the integer value of the current digit to the digit sum
             digit_sum += int(digit)
     
-    # Return the difference between the sum of elements and the sum of digits
-    return element_sum - digit_sum
-
-# Example usage:
-arr = [1, 15, 6, 3]
-print(difference_sum(arr))
+    # Return the absolute difference between the element sum and the digit sum
+    return abs(element_sum - digit_sum)
