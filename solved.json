@@ -282,5 +282,6 @@
     "find-maximum-number-of-string-pairs",
     "restore-finishing-order",
     "compute-decimal-representation",
-    "consecutive-characters"
+    "consecutive-characters",
+    "number-of-bit-changes-to-make-two-integers-equal"
 ]
