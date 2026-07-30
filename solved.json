@@ -279,5 +279,6 @@
     "make-two-arrays-equal-by-reversing-subarrays",
     "number-of-distinct-averages",
     "maximum-area-of-longest-diagonal-rectangle",
-    "find-maximum-number-of-string-pairs"
+    "find-maximum-number-of-string-pairs",
+    "restore-finishing-order"
 ]
