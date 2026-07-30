@@ -1,3 +1,4 @@
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
 def createTargetArray(nums, index):
     # Initialize an empty list to store the target array
     target = []
@@ -5,8 +6,9 @@ def createTargetArray(nums, index):
     # Iterate over the given list of numbers and their indices
     for num, idx in zip(nums, index):
         # Insert the number at the specified index in the target array
-        # If the index is out of range, append the number to the end
+        # The insert operation in Python lists is O(n) because all elements after the insertion point need to be shifted
+        # However, since we are inserting at most n elements, the overall time complexity remains O(n)
         target.insert(idx, num)
     
-    # Return the target array
+    # Return the constructed target array
     return target

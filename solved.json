@@ -294,5 +294,6 @@
     "number-of-valid-words-in-a-sentence",
     "count-odd-numbers-in-an-interval-range",
     "apply-operations-to-an-array",
-    "make-a-square-with-the-same-color"
+    "make-a-square-with-the-same-color",
+    "first-matching-character-from-both-ends"
 ]
