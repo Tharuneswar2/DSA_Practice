@@ -297,5 +297,6 @@
     "make-a-square-with-the-same-color",
     "first-matching-character-from-both-ends",
     "create-target-array-in-the-given-order",
-    "sum-of-unique-elements"
+    "sum-of-unique-elements",
+    "find-if-path-exists-in-graph"
 ]

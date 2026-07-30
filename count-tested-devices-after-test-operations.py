@@ -1,19 +1,15 @@
-def count_tested_devices(test_operations):
-    # Initialize a set to store unique devices
-    tested_devices = set()
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
+def countTestedDevices(tests):
+    # Initialize a variable to store the count of tested devices
+    tested_devices = 0
     
-    # Iterate over each operation in the test operations
-    for operation in test_operations:
-        # If the operation is 1, add the device to the set
-        if operation[0] == 1:
-            tested_devices.add(operation[1])
-        # If the operation is 2, remove the device from the set
-        elif operation[0] == 2:
-            tested_devices.discard(operation[1])
-    
-    # Return the number of unique devices tested
-    return len(tested_devices)
-
-# Example usage:
-test_operations = [[1, 1], [1, 2], [2, 1], [1, 3]]
-print(count_tested_devices(test_operations))  # Output: 2
+    # Iterate over each test operation
+    for test in tests:
+        # Extract the number of devices tested in the current test operation
+        devices_tested = test[1]
+        
+        # Increment the total count of tested devices by the number of devices tested in the current test operation
+        tested_devices += devices_tested
+        
+    # Return the total count of tested devices
+    return tested_devices
