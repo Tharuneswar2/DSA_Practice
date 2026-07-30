@@ -1,48 +1,34 @@
-from collections import defaultdict
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
 
-class Graph:
-    def __init__(self, vertices):
-        self.V = vertices
-        self.graph = defaultdict(list)
-
-    def add_edge(self, u, v):
-        self.graph[u].append(v)
-
-    def is_valid(self, v, visited, path):
-        # Check if the current vertex is already in the path
-        if v in path:
-            return False
-        # Mark the current vertex as visited
-        visited[v] = True
-        # Add the current vertex to the path
-        path.append(v)
-        # If the current vertex is the destination, return True
-        if v == self.V - 1:
+def validPath(n, edges, source, destination):
+    # Create an adjacency list to represent the graph
+    graph = [[] for _ in range(n)]
+    
+    # Populate the adjacency list with edges
+    for u, v in edges:
+        graph[u].append(v)
+        graph[v].append(u)  # Assuming the graph is undirected
+    
+    # Use a set to keep track of visited nodes
+    visited = set()
+    
+    # Define a helper function for DFS
+    def dfs(node):
+        # Mark the current node as visited
+        visited.add(node)
+        
+        # If the current node is the destination, return True
+        if node == destination:
             return True
-        # Recur for all the adjacent vertices of the current vertex
-        for neighbor in self.graph[v]:
-            if not visited[neighbor]:
-                if self.is_valid(neighbor, visited, path):
+        
+        # Recur for all adjacent nodes that have not been visited yet
+        for neighbor in graph[node]:
+            if neighbor not in visited:
+                if dfs(neighbor):
                     return True
-        # If no path is found, remove the current vertex from the path and return False
-        path.pop()
+        
+        # If no path is found, return False
         return False
-
-    def is_path_exists(self, source, destination):
-        # Create a visited array and initialize all entries as False
-        visited = [False] * self.V
-        # Create a path array to store the path
-        path = []
-        # Check if a path exists from the source to the destination
-        return self.is_valid(source, visited, path)
-
-
-# Example usage
-g = Graph(5)
-g.add_edge(0, 1)
-g.add_edge(0, 2)
-g.add_edge(1, 3)
-g.add_edge(2, 4)
-print(g.is_path_exists(0, 4))  # Output: True
-print(g.is_path_exists(0, 3))  # Output: True
-print(g.is_path_exists(1, 4))  # Output: False
+    
+    # Start DFS from the source node
+    return dfs(source)
