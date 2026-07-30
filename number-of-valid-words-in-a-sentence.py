@@ -1,9 +1,10 @@
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
 def countValidWords(sentence: str) -> int:
+    # Initialize count of valid words to 0
+    count = 0
+    
     # Split the sentence into words
     words = sentence.split()
-    
-    # Initialize a counter for valid words
-    valid_words = 0
     
     # Iterate over each word in the sentence
     for word in words:
@@ -12,12 +13,12 @@ def countValidWords(sentence: str) -> int:
         
         # Check if the word contains any digits
         if any(char.isdigit() for char in word):
-            # If the word contains a digit, it's not valid
+            # If the word contains any digits, it is not valid
             is_valid = False
         
         # Check if the word contains any hyphens
         if '-' in word:
-            # If the word contains a hyphen, check if it's in a valid position
+            # If the word contains a hyphen, check if it is in a valid position
             if word.count('-') > 1 or word[0] == '-' or word[-1] == '-':
                 # If the hyphen is not in a valid position, the word is not valid
                 is_valid = False
@@ -31,17 +32,12 @@ def countValidWords(sentence: str) -> int:
         
         # Check if the word contains any punctuation
         if any(not char.isalnum() and char != '-' and char != ' ' for char in word):
-            # If the word contains punctuation, it's not valid
+            # If the word contains any punctuation, it is not valid
             is_valid = False
         
-        # Check if the word is a single punctuation mark
-        if len(word) == 1 and not word.isalnum():
-            # If the word is a single punctuation mark, it's not valid
-            is_valid = False
-        
-        # If the word is valid, increment the counter
+        # If the word is valid, increment the count
         if is_valid:
-            valid_words += 1
+            count += 1
     
     # Return the count of valid words
-    return valid_words
+    return count
