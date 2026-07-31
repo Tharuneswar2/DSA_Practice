@@ -1,41 +1,16 @@
-def originalTypedString(typed, target):
-    # Initialize two pointers for the typed and target strings
-    i = j = 0
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
+def originalTypedString(typed: str) -> str:
+    # Initialize an empty stack to store characters
+    stack = []
     
-    # Initialize a flag to track if we are currently in a sequence of repeated characters
-    in_sequence = False
+    # Iterate over each character in the typed string
+    for char in typed:
+        # If the stack is not empty and the current character is 'B' (backspace), pop the last character from the stack
+        if stack and char == 'B':
+            stack.pop()
+        # If the current character is not 'B', push it onto the stack
+        elif char != 'B':
+            stack.append(char)
     
-    # Initialize the result string
-    result = ''
-    
-    # Iterate over the typed string
-    while i < len(typed):
-        # If the current character in the typed string matches the current character in the target string
-        if j < len(target) and typed[i] == target[j]:
-            # If we are not in a sequence of repeated characters, add the character to the result string
-            if not in_sequence:
-                result += typed[i]
-            # Move to the next character in the target string
-            j += 1
-            # Move to the next character in the typed string
-            i += 1
-            # Reset the flag
-            in_sequence = False
-        # If the current character in the typed string is a repeat of the previous character
-        elif i > 0 and typed[i] == typed[i-1]:
-            # Set the flag to indicate that we are in a sequence of repeated characters
-            in_sequence = True
-            # Move to the next character in the typed string
-            i += 1
-        # If the current character in the typed string does not match the current character in the target string
-        else:
-            # If we are in a sequence of repeated characters, remove the last character from the result string
-            if in_sequence:
-                result = result[:-1]
-            # Move to the next character in the typed string
-            i += 1
-            # Reset the flag
-            in_sequence = False
-    
-    # Return the result string
-    return result
+    # Join all characters in the stack into a string and return the result
+    return ''.join(stack)

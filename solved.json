@@ -298,5 +298,6 @@
     "first-matching-character-from-both-ends",
     "create-target-array-in-the-given-order",
     "sum-of-unique-elements",
-    "find-if-path-exists-in-graph"
+    "find-if-path-exists-in-graph",
+    "generate-tag-for-video-caption"
 ]
