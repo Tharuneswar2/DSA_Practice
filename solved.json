@@ -313,5 +313,6 @@
     "maximum-unique-subarray-sum-after-deletion",
     "subarrays-distinct-element-sum-of-squares-i",
     "find-x-sum-of-all-k-long-subarrays-i",
-    "maximum-number-of-words-found-in-sentences"
+    "maximum-number-of-words-found-in-sentences",
+    "maximum-odd-binary-number"
 ]
