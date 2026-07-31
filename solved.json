@@ -303,5 +303,6 @@
     "find-the-original-typed-string-i",
     "slowest-key",
     "convert-date-to-binary",
-    "count-vowel-substrings-of-a-string"
+    "count-vowel-substrings-of-a-string",
+    "maximum-number-of-pairs-in-array"
 ]
