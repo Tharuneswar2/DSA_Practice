@@ -299,5 +299,6 @@
     "create-target-array-in-the-given-order",
     "sum-of-unique-elements",
     "find-if-path-exists-in-graph",
-    "generate-tag-for-video-caption"
+    "generate-tag-for-video-caption",
+    "find-the-original-typed-string-i"
 ]
