@@ -302,5 +302,6 @@
     "generate-tag-for-video-caption",
     "find-the-original-typed-string-i",
     "slowest-key",
-    "convert-date-to-binary"
+    "convert-date-to-binary",
+    "count-vowel-substrings-of-a-string"
 ]
