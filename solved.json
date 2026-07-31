@@ -312,5 +312,6 @@
     "account-balance-after-rounded-purchase",
     "maximum-unique-subarray-sum-after-deletion",
     "subarrays-distinct-element-sum-of-squares-i",
-    "find-x-sum-of-all-k-long-subarrays-i"
+    "find-x-sum-of-all-k-long-subarrays-i",
+    "maximum-number-of-words-found-in-sentences"
 ]
