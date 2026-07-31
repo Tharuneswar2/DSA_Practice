@@ -1,23 +1,26 @@
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
 def kConcatenationMaxSum(arr, k):
     # Calculate the total sum of the array
     total_sum = sum(arr)
     
-    # Calculate the maximum sum of a subarray within the array
+    # Calculate the maximum sum of subarray using Kadane's algorithm
     max_sum = kadane(arr)
     
-    # If k is 1, return the maximum sum of a subarray
+    # If k is 1, return the maximum sum of subarray
     if k == 1:
         return max_sum
     
-    # If the total sum is positive, it means the array has a positive contribution to the overall sum
-    # In this case, we can add the total sum (k-2) times to the maximum sum of a subarray
+    # If the total sum is positive, it means the array has positive numbers
+    # In this case, we can concatenate the array k times to get a larger sum
     if total_sum > 0:
+        # Return the maximum sum of subarray plus the total sum times (k-2)
+        # We subtract 2 because we have already considered one subarray in max_sum
         return max_sum + total_sum * (k-2)
     
-    # If the total sum is not positive, we can't add it to the maximum sum
-    # In this case, we return the maximum sum of a subarray
+    # If the total sum is not positive, it means the array has non-positive numbers
+    # In this case, we cannot get a larger sum by concatenating the array
+    # So, we return the maximum sum of subarray
     return max_sum
-
 
 def kadane(arr):
     # Initialize the maximum sum and the current sum to the first element of the array
