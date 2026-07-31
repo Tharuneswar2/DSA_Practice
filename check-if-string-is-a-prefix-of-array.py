@@ -1,3 +1,4 @@
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
 def is_prefix_of_array(s, words):
     # Initialize an empty string to store the concatenated words
     concatenated_str = ""
@@ -12,11 +13,11 @@ def is_prefix_of_array(s, words):
             # If it is, return True
             return True
         
-        # If the concatenated string is longer than the given string, 
-        # it's impossible for the given string to be a prefix of the array
+        # If the length of the concatenated string exceeds the length of the given string, 
+        # it's impossible for the given string to be a prefix of the array, so return False
         if len(concatenated_str) > len(s):
-            # So, break out of the loop
-            break
-    
-    # If the loop completes without finding a match, return False
+            return False
+            
+    # If we've iterated over all words and haven't returned True or False, 
+    # it means the given string is not a prefix of the array, so return False
     return False

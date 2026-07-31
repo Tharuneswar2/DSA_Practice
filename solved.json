@@ -306,5 +306,6 @@
     "count-vowel-substrings-of-a-string",
     "maximum-number-of-pairs-in-array",
     "rank-transform-of-an-array",
-    "semi-ordered-permutation"
+    "semi-ordered-permutation",
+    "find-the-maximum-divisibility-score"
 ]
