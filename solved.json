@@ -317,5 +317,6 @@
     "maximum-odd-binary-number",
     "divide-array-into-equal-pairs",
     "maximum-number-of-balloons",
-    "split-strings-by-separator"
+    "split-strings-by-separator",
+    "find-winner-on-a-tic-tac-toe-game"
 ]

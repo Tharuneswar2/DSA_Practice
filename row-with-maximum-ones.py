@@ -1,35 +1,30 @@
-def rowWithMax1s(arr, n, m):
-    max_row = -1
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
+
+def rowWithMax1s(arr):
+    # Initialize the maximum count of 1s and the corresponding row index
     max_count = 0
-
-    # Traverse each row of the matrix
-    for i in range(n):
-        # Initialize count of 1s in the current row
-        count = 0
-        # Traverse each element in the row from left to right
-        for j in range(m):
-            # If the element is 1, increment the count
-            if arr[i][j] == 1:
-                count += 1
-        # If the count of 1s in the current row is more than the max_count
-        if count > max_count:
-            # Update max_count and max_row
-            max_count = count
-            max_row = i
-
-    # If no row contains 1, return -1
-    if max_count == 0:
-        return -1
-    else:
-        return max_row
-
-# Test the function
-arr = [[0, 1, 1, 1],
-       [0, 0, 1, 0],
-       [0, 0, 1, 1],
-       [0, 0, 0, 1]]
-
-n = len(arr)
-m = len(arr[0])
-
-print("Index of row with maximum 1s is", rowWithMax1s(arr, n, m))
+    max_row_index = -1
+    
+    # Iterate over each row in the 2D array
+    for i in range(len(arr)):
+        # Use binary search to find the first occurrence of 1 in the current row
+        low, high = 0, len(arr[i]) - 1
+        while low <= high:
+            mid = (low + high) // 2
+            # If the middle element is 1, update the high pointer to find the first 1
+            if arr[i][mid] == 1:
+                high = mid - 1
+            # If the middle element is 0, update the low pointer
+            else:
+                low = mid + 1
+        
+        # If the first 1 is found, calculate the count of 1s in the current row
+        if low < len(arr[i]) and arr[i][low] == 1:
+            count = len(arr[i]) - low
+            # Update the maximum count and the corresponding row index
+            if count > max_count:
+                max_count = count
+                max_row_index = i
+    
+    # Return the row index with the maximum count of 1s
+    return max_row_index
