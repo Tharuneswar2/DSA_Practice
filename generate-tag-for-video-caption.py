@@ -1,31 +1,31 @@
-def generate_tags(caption):
-    # Convert the caption to lowercase to make the function case-insensitive
-    caption = caption.lower()
-    
-    # Remove punctuation from the caption
-    caption = ''.join(e for e in caption if e.isalnum() or e.isspace())
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
+
+def generate_tags(video_caption):
+    # Convert the caption to lowercase to handle case-insensitive comparison
+    caption = video_caption.lower()
     
     # Split the caption into words
     words = caption.split()
     
-    # Initialize an empty set to store unique words
-    unique_words = set()
-    
-    # Initialize an empty list to store the tags
-    tags = []
+    # Initialize an empty set to store unique tags
+    tags = set()
     
     # Iterate over each word in the caption
     for word in words:
-        # If the word is not already in the set of unique words
-        if word not in unique_words:
-            # Add the word to the set of unique words
-            unique_words.add(word)
-            # Add the word to the list of tags
-            tags.append(word)
+        # Remove punctuation from the word
+        word = ''.join(e for e in word if e.isalnum())
+        
+        # Check if the word is not empty and not a common word (like 'the', 'and', etc.)
+        if word and word not in ['the', 'and', 'a', 'an', 'is', 'in', 'it', 'of', 'to']:
+            # Add the word to the set of tags
+            tags.add(word)
     
-    # Return the list of tags
-    return tags
+    # Convert the set of tags to a list and sort it
+    tags = sorted(list(tags))
+    
+    # Join the tags with commas and return the result
+    return ', '.join(tags)
 
 # Example usage:
-caption = "This is a video about machine learning and artificial intelligence."
-print(generate_tags(caption))
+video_caption = "This is a sample video caption for testing the generate tags function."
+print(generate_tags(video_caption))
