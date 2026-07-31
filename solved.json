@@ -309,5 +309,6 @@
     "semi-ordered-permutation",
     "find-the-maximum-divisibility-score",
     "check-if-string-is-a-prefix-of-array",
-    "account-balance-after-rounded-purchase"
+    "account-balance-after-rounded-purchase",
+    "maximum-unique-subarray-sum-after-deletion"
 ]
