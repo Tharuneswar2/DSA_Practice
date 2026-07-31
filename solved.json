@@ -308,5 +308,6 @@
     "rank-transform-of-an-array",
     "semi-ordered-permutation",
     "find-the-maximum-divisibility-score",
-    "check-if-string-is-a-prefix-of-array"
+    "check-if-string-is-a-prefix-of-array",
+    "account-balance-after-rounded-purchase"
 ]
