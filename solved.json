@@ -304,5 +304,6 @@
     "slowest-key",
     "convert-date-to-binary",
     "count-vowel-substrings-of-a-string",
-    "maximum-number-of-pairs-in-array"
+    "maximum-number-of-pairs-in-array",
+    "rank-transform-of-an-array"
 ]
