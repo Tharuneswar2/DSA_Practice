@@ -301,5 +301,6 @@
     "find-if-path-exists-in-graph",
     "generate-tag-for-video-caption",
     "find-the-original-typed-string-i",
-    "slowest-key"
+    "slowest-key",
+    "convert-date-to-binary"
 ]
