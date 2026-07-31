@@ -1,16 +1,16 @@
-def account_balance_after_rounded_purchase(balance, purchase_amount):
-    # Calculate the rounded purchase amount
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
+
+def account_balance_after_rounded_purchase(initial_balance, purchase_amount):
+    # Calculate the rounded purchase amount to the nearest dollar
     rounded_purchase_amount = round(purchase_amount)
     
-    # Check if the rounded purchase amount is greater than the balance
-    if rounded_purchase_amount > balance:
-        # If it is, return the balance as it is
-        return balance
+    # Check if the rounded purchase amount is less than or equal to the initial balance
+    if rounded_purchase_amount <= initial_balance:
+        # If true, subtract the rounded purchase amount from the initial balance
+        new_balance = initial_balance - rounded_purchase_amount
     else:
-        # If not, subtract the rounded purchase amount from the balance
-        return balance - rounded_purchase_amount
-
-# Test the function
-balance = 100.0
-purchase_amount = 25.75
-print(account_balance_after_rounded_purchase(balance, purchase_amount))
+        # If false, set the new balance to 0 (insufficient funds)
+        new_balance = 0
+    
+    # Return the new balance after the rounded purchase
+    return new_balance
