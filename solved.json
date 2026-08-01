@@ -322,5 +322,6 @@
     "limit-occurrences-in-sorted-array",
     "intersection-of-multiple-arrays",
     "count-prefixes-of-a-given-string",
-    "minimum-number-of-operations-to-convert-time"
+    "minimum-number-of-operations-to-convert-time",
+    "sum-of-squares-of-special-elements"
 ]
