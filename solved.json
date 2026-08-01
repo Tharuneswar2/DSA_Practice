@@ -318,5 +318,6 @@
     "divide-array-into-equal-pairs",
     "maximum-number-of-balloons",
     "split-strings-by-separator",
-    "find-winner-on-a-tic-tac-toe-game"
+    "find-winner-on-a-tic-tac-toe-game",
+    "limit-occurrences-in-sorted-array"
 ]
