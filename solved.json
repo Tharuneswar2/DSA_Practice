@@ -341,5 +341,6 @@
     "valid-word",
     "reformat-date",
     "widest-vertical-area-between-two-points-containing-no-points",
-    "prime-in-diagonal"
+    "prime-in-diagonal",
+    "number-of-arithmetic-triplets"
 ]
