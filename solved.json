@@ -321,5 +321,6 @@
     "find-winner-on-a-tic-tac-toe-game",
     "limit-occurrences-in-sorted-array",
     "intersection-of-multiple-arrays",
-    "count-prefixes-of-a-given-string"
+    "count-prefixes-of-a-given-string",
+    "minimum-number-of-operations-to-convert-time"
 ]
