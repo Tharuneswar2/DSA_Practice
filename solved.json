@@ -330,5 +330,6 @@
     "special-positions-in-a-binary-matrix",
     "minimum-cost-of-buying-candies-with-discount",
     "string-matching-in-an-array",
-    "weighted-word-mapping"
+    "weighted-word-mapping",
+    "stone-removal-game"
 ]
