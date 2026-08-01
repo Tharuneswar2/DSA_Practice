@@ -1,3 +1,5 @@
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
+
 def limit_occurrences(nums, limit):
     # Initialize an empty dictionary to store the count of each number
     count_dict = {}
@@ -20,8 +22,3 @@ def limit_occurrences(nums, limit):
     
     # Return the result
     return result
-
-# Example usage:
-nums = [1, 2, 2, 3, 3, 3, 4, 4, 4, 4]
-limit = 2
-print(limit_occurrences(nums, limit))  # Output: [1, 2, 2, 3, 3, 4, 4]
