@@ -342,5 +342,6 @@
     "reformat-date",
     "widest-vertical-area-between-two-points-containing-no-points",
     "prime-in-diagonal",
-    "number-of-arithmetic-triplets"
+    "number-of-arithmetic-triplets",
+    "check-distances-between-same-letters"
 ]

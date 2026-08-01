@@ -1,54 +1,27 @@
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
+
 class NeighborSumService:
-    def __init__(self, grid):
-        """
-        Initialize the NeighborSumService with a grid of integers.
-        
-        Args:
-        grid (list of lists): A 2D grid of integers.
-        """
-        self.grid = grid
-        self.rows = len(grid)
-        self.cols = len(grid[0])
-        self.cache = {}
+    def __init__(self, nums):
+        # Initialize the service with a list of numbers
+        self.nums = nums
+        # Create a prefix sum array to store the cumulative sum of the numbers
+        self.prefix_sum = [0] * (len(nums) + 1)
+        # Calculate the prefix sum
+        for i in range(len(nums)):
+            # The prefix sum at index i is the sum of all numbers up to index i
+            self.prefix_sum[i + 1] = self.prefix_sum[i] + nums[i]
 
-    def get_neighbor_sum(self, row, col):
-        """
-        Get the sum of the neighboring cells of the cell at (row, col).
-        
-        Args:
-        row (int): The row index of the cell.
-        col (int): The column index of the cell.
-        
-        Returns:
-        int: The sum of the neighboring cells.
-        """
-        # Check if the result is already cached
-        if (row, col) in self.cache:
-            return self.cache[(row, col)]
+    def query(self, left, right):
+        # Calculate the sum of the numbers in the range [left, right] using the prefix sum array
+        # The sum is the difference between the prefix sum at index right + 1 and the prefix sum at index left
+        return self.prefix_sum[right + 1] - self.prefix_sum[left]
 
-        # Initialize the sum to 0
-        neighbor_sum = 0
-
-        # Check all neighboring cells
-        for r in range(max(0, row-1), min(self.rows, row+2)):
-            for c in range(max(0, col-1), min(self.cols, col+2)):
-                # Skip the cell itself
-                if r == row and c == col:
-                    continue
-                # Add the value of the neighboring cell to the sum
-                neighbor_sum += self.grid[r][c]
-
-        # Cache the result
-        self.cache[(row, col)] = neighbor_sum
-
-        return neighbor_sum
-
-
-# Example usage
-grid = [
-    [1, 2, 3],
-    [4, 5, 6],
-    [7, 8, 9]
-]
-service = NeighborSumService(grid)
-print(service.get_neighbor_sum(1, 1))  # Output: 30
+    def update(self, index, val):
+        # Update the number at index to val
+        # Calculate the difference between the new value and the old value
+        diff = val - self.nums[index]
+        # Update the prefix sum array by adding the difference to all elements after index
+        for i in range(index + 1, len(self.prefix_sum)):
+            self.prefix_sum[i] += diff
+        # Update the number at index to val
+        self.nums[index] = val
