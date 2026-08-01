@@ -324,5 +324,6 @@
     "count-prefixes-of-a-given-string",
     "minimum-number-of-operations-to-convert-time",
     "sum-of-squares-of-special-elements",
-    "minimum-swaps-to-move-zeros-to-end"
+    "minimum-swaps-to-move-zeros-to-end",
+    "maximum-enemy-forts-that-can-be-captured"
 ]
