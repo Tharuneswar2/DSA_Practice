@@ -326,5 +326,6 @@
     "sum-of-squares-of-special-elements",
     "minimum-swaps-to-move-zeros-to-end",
     "maximum-enemy-forts-that-can-be-captured",
-    "find-center-of-star-graph"
+    "find-center-of-star-graph",
+    "special-positions-in-a-binary-matrix"
 ]

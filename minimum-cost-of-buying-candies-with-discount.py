@@ -1,17 +1,18 @@
-def minCost(candies):
-    # Sort the candies in descending order
-    candies.sort(reverse=True)
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
+def minCost(candies, coins, extraCandies):
+    # Sort the candies array in ascending order to easily find the minimum cost
+    candies.sort()
     
-    # Initialize the total cost and the number of candies to buy
-    total_cost = 0
-    num_to_buy = len(candies)
+    # Initialize the minimum cost as infinity
+    min_cost = float('inf')
     
-    # Iterate over the sorted candies
-    for i in range(num_to_buy):
-        # If the index is a multiple of 3, it's free
-        if (i + 1) % 3 == 0:
-            continue
-        # Add the cost of the candy to the total cost
-        total_cost += candies[i]
+    # Iterate over each candy in the sorted candies array
+    for candy in candies:
+        # Calculate the cost of buying the current candy with the given coins and extra candies
+        cost = max(0, candy - coins - extraCandies)
+        
+        # Update the minimum cost if the current cost is less than the minimum cost
+        min_cost = min(min_cost, cost)
     
-    return total_cost
+    # Return the minimum cost
+    return min_cost
