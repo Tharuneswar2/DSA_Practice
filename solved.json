@@ -327,5 +327,6 @@
     "minimum-swaps-to-move-zeros-to-end",
     "maximum-enemy-forts-that-can-be-captured",
     "find-center-of-star-graph",
-    "special-positions-in-a-binary-matrix"
+    "special-positions-in-a-binary-matrix",
+    "minimum-cost-of-buying-candies-with-discount"
 ]
