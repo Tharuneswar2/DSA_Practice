@@ -339,5 +339,6 @@
     "score-validator",
     "count-commas-in-range",
     "valid-word",
-    "reformat-date"
+    "reformat-date",
+    "widest-vertical-area-between-two-points-containing-no-points"
 ]
