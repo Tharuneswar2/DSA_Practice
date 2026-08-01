@@ -333,5 +333,6 @@
     "weighted-word-mapping",
     "stone-removal-game",
     "transform-array-by-parity",
-    "find-target-indices-after-sorting-array"
+    "find-target-indices-after-sorting-array",
+    "minimum-operations-to-collect-elements"
 ]
