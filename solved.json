@@ -323,5 +323,6 @@
     "intersection-of-multiple-arrays",
     "count-prefixes-of-a-given-string",
     "minimum-number-of-operations-to-convert-time",
-    "sum-of-squares-of-special-elements"
+    "sum-of-squares-of-special-elements",
+    "minimum-swaps-to-move-zeros-to-end"
 ]
