@@ -340,5 +340,6 @@
     "count-commas-in-range",
     "valid-word",
     "reformat-date",
-    "widest-vertical-area-between-two-points-containing-no-points"
+    "widest-vertical-area-between-two-points-containing-no-points",
+    "prime-in-diagonal"
 ]
