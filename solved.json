@@ -325,5 +325,6 @@
     "minimum-number-of-operations-to-convert-time",
     "sum-of-squares-of-special-elements",
     "minimum-swaps-to-move-zeros-to-end",
-    "maximum-enemy-forts-that-can-be-captured"
+    "maximum-enemy-forts-that-can-be-captured",
+    "find-center-of-star-graph"
 ]
