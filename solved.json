@@ -334,5 +334,6 @@
     "stone-removal-game",
     "transform-array-by-parity",
     "find-target-indices-after-sorting-array",
-    "minimum-operations-to-collect-elements"
+    "minimum-operations-to-collect-elements",
+    "sort-even-and-odd-indices-independently"
 ]

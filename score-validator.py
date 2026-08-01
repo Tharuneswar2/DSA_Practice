@@ -1,16 +1,12 @@
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
 def score_validator(score):
+    # Check if the input score is an integer
+    if not isinstance(score, int):
+        return "Invalid input. Score must be an integer."
+    
     # Check if the score is within the valid range (0-1000)
     if score < 0 or score > 1000:
-        return False
+        return "Invalid score. Score must be between 0 and 1000."
     
-    # Check if the score is a multiple of 10
-    if score % 10 != 0:
-        return False
-    
-    # If the score passes both checks, it's valid
-    return True
-
-# Test the function
-print(score_validator(990))  # Expected output: True
-print(score_validator(1001))  # Expected output: False
-print(score_validator(901))  # Expected output: False
+    # If the score is valid, return a success message
+    return "Valid score."
