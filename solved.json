@@ -338,5 +338,6 @@
     "sort-even-and-odd-indices-independently",
     "score-validator",
     "count-commas-in-range",
-    "valid-word"
+    "valid-word",
+    "reformat-date"
 ]

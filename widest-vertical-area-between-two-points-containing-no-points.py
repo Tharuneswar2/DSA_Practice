@@ -1,3 +1,5 @@
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
+
 def maxWidthOfVerticalArea(points):
     # Sort the points based on their x-coordinates
     points.sort(key=lambda x: x[0])
