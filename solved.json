@@ -332,5 +332,6 @@
     "string-matching-in-an-array",
     "weighted-word-mapping",
     "stone-removal-game",
-    "transform-array-by-parity"
+    "transform-array-by-parity",
+    "find-target-indices-after-sorting-array"
 ]
