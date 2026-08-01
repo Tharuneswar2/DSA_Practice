@@ -1,36 +1,16 @@
-def count_commas_in_range(s, start, end):
-    # Check if the start and end indices are valid
-    if start < 0 or end > len(s) or start > end:
-        return "Invalid range"
-
-    # Slice the string to get the substring in the given range
-    substring = s[start:end+1]
-
-    # Initialize a counter for commas
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
+def countCommasInRange(text, start, end):
+    # Initialize a counter variable to store the count of commas
     comma_count = 0
-
-    # Iterate over each character in the substring
-    for char in substring:
-        # Check if the character is a comma
-        if char == ',':
-            # If it's a comma, increment the counter
-            comma_count += 1
-
+    
+    # Check if the start index is less than or equal to the end index
+    if start <= end:
+        # Iterate over the substring from the start index to the end index
+        for char in text[start:end+1]:
+            # Check if the character is a comma
+            if char == ',':
+                # If the character is a comma, increment the comma count
+                comma_count += 1
+                
     # Return the count of commas
     return comma_count
-
-# Alternatively, you can use the count method of Python strings
-def count_commas_in_range_alternative(s, start, end):
-    # Check if the start and end indices are valid
-    if start < 0 or end > len(s) or start > end:
-        return "Invalid range"
-
-    # Slice the string to get the substring in the given range
-    substring = s[start:end+1]
-
-    # Use the count method to count the commas
-    return substring.count(',')
-
-# Test the functions
-print(count_commas_in_range("hello, world, this, is, a, test", 0, 20))
-print(count_commas_in_range_alternative("hello, world, this, is, a, test", 0, 20))

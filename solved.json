@@ -335,5 +335,6 @@
     "transform-array-by-parity",
     "find-target-indices-after-sorting-array",
     "minimum-operations-to-collect-elements",
-    "sort-even-and-odd-indices-independently"
+    "sort-even-and-odd-indices-independently",
+    "score-validator"
 ]
