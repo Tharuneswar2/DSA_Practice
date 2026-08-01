@@ -319,5 +319,6 @@
     "maximum-number-of-balloons",
     "split-strings-by-separator",
     "find-winner-on-a-tic-tac-toe-game",
-    "limit-occurrences-in-sorted-array"
+    "limit-occurrences-in-sorted-array",
+    "intersection-of-multiple-arrays"
 ]
