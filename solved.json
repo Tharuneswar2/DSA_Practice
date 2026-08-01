@@ -343,5 +343,6 @@
     "widest-vertical-area-between-two-points-containing-no-points",
     "prime-in-diagonal",
     "number-of-arithmetic-triplets",
-    "check-distances-between-same-letters"
+    "check-distances-between-same-letters",
+    "design-neighbor-sum-service"
 ]
