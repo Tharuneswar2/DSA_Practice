@@ -337,5 +337,6 @@
     "minimum-operations-to-collect-elements",
     "sort-even-and-odd-indices-independently",
     "score-validator",
-    "count-commas-in-range"
+    "count-commas-in-range",
+    "valid-word"
 ]
