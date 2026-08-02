@@ -347,5 +347,6 @@
     "design-neighbor-sum-service",
     "minimum-distance-to-the-target-element",
     "remove-palindromic-subsequences",
-    "convert-the-temperature"
+    "convert-the-temperature",
+    "count-tested-devices-after-test-operations"
 ]
