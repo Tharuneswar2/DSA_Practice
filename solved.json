@@ -354,5 +354,6 @@
     "maximize-sum-of-at-most-k-distinct-elements",
     "redistribute-characters-to-make-all-strings-equal",
     "longest-alternating-subarray",
-    "reformat-phone-number"
+    "reformat-phone-number",
+    "add-two-integers"
 ]
