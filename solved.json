@@ -353,5 +353,6 @@
     "total-distance-traveled",
     "maximize-sum-of-at-most-k-distinct-elements",
     "redistribute-characters-to-make-all-strings-equal",
-    "longest-alternating-subarray"
+    "longest-alternating-subarray",
+    "reformat-phone-number"
 ]

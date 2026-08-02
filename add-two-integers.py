@@ -1,33 +1,12 @@
-class ListNode:
-    def __init__(self, x):
-        self.val = x
-        self.next = None
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
 
-def addTwoNumbers(l1, l2):
-    # Create a dummy node to simplify some corner cases such as a list with only one node
-    dummy = ListNode(0)
-    current = dummy
-    carry = 0
-    
-    # While there are still nodes in either list or a carry from the previous addition
-    while l1 or l2 or carry:
-        # Get the values of the current nodes in both lists, default to 0 if the list has ended
-        x = l1.val if l1 else 0
-        y = l2.val if l2 else 0
-        
-        # Calculate the sum of the current nodes and the carry
-        sum = carry + x + y
-        
-        # Update the carry for the next iteration
-        carry = sum // 10
-        
-        # Create a new node with the digit value of the sum
-        current.next = ListNode(sum % 10)
-        
-        # Move to the next node in both lists
-        current = current.next
-        l1 = l1.next if l1 else None
-        l2 = l2.next if l2 else None
-    
-    # Return the next node of the dummy node, which is the start of the result list
-    return dummy.next
+def add_two_integers(a, b):
+    # We don't need to do any error checking here because the problem statement assumes that the inputs are integers
+    # We can simply add the two integers together using the built-in '+' operator
+    # This operation has a time complexity of O(1) because it only involves a single operation
+    return a + b
+
+# Test the function with some example inputs
+print(add_two_integers(1, 2))  # Output: 3
+print(add_two_integers(-1, 1))  # Output: 0
+print(add_two_integers(-1, -1))  # Output: -2
