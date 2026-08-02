@@ -358,5 +358,6 @@
     "add-two-integers",
     "minimum-distance-between-three-equal-elements-i",
     "design-an-ordered-stream",
-    "maximum-ascending-subarray-sum"
+    "maximum-ascending-subarray-sum",
+    "find-first-palindromic-string-in-the-array"
 ]

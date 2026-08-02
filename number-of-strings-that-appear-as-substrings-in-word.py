@@ -1,5 +1,6 @@
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
 def numOfStrings(words, parts):
-    # Initialize count to store the number of strings that appear as substrings
+    # Initialize a counter to store the number of strings that appear as substrings in word
     count = 0
     
     # Iterate over each word in the words list
@@ -8,10 +9,10 @@ def numOfStrings(words, parts):
         for part in parts:
             # Check if the part is a substring of the word
             if part in word:
-                # If it is, increment the count
+                # If the part is a substring, increment the count
                 count += 1
-                # Break the loop as we don't need to check other parts for this word
+                # Break the loop as we don't need to check the rest of the parts
                 break
-    
-    # Return the count
+                
+    # Return the count of strings that appear as substrings in word
     return count
