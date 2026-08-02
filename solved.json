@@ -355,5 +355,6 @@
     "redistribute-characters-to-make-all-strings-equal",
     "longest-alternating-subarray",
     "reformat-phone-number",
-    "add-two-integers"
+    "add-two-integers",
+    "minimum-distance-between-three-equal-elements-i"
 ]
