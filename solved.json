@@ -350,5 +350,6 @@
     "convert-the-temperature",
     "count-tested-devices-after-test-operations",
     "goal-parser-interpretation",
-    "total-distance-traveled"
+    "total-distance-traveled",
+    "maximize-sum-of-at-most-k-distinct-elements"
 ]
