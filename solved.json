@@ -344,5 +344,6 @@
     "prime-in-diagonal",
     "number-of-arithmetic-triplets",
     "check-distances-between-same-letters",
-    "design-neighbor-sum-service"
+    "design-neighbor-sum-service",
+    "minimum-distance-to-the-target-element"
 ]

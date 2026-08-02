@@ -1,31 +1,14 @@
-def remove_palindromic_subsequences(s: str) -> int:
-    # If the string is empty, return 0
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
+def removePalindromeSub(s: str) -> int:
+    # Check if the string is empty
     if not s:
         return 0
     
-    # If the string is a palindrome, return 1
+    # Check if the string is a palindrome
     if s == s[::-1]:
+        # If it's a palindrome, we can remove it in one step
         return 1
     
-    # Initialize two pointers, one at the start and one at the end of the string
-    left, right = 0, len(s) - 1
-    
-    # Initialize a flag to check if the string is a palindrome
-    is_palindrome = True
-    
-    # Compare characters from the start and end of the string
-    while left < right:
-        # If the characters are not equal, the string is not a palindrome
-        if s[left] != s[right]:
-            is_palindrome = False
-            break
-        # Move the pointers towards the center of the string
-        left += 1
-        right -= 1
-    
-    # If the string is a palindrome, return 1
-    if is_palindrome:
-        return 1
-    
-    # If the string is not a palindrome, return 2
+    # If it's not a palindrome, we can remove all 'a's in one step and all 'b's in another step
+    # So, the minimum number of steps is 2
     return 2
