@@ -359,5 +359,6 @@
     "minimum-distance-between-three-equal-elements-i",
     "design-an-ordered-stream",
     "maximum-ascending-subarray-sum",
-    "find-first-palindromic-string-in-the-array"
+    "find-first-palindromic-string-in-the-array",
+    "number-of-strings-that-appear-as-substrings-in-word"
 ]
