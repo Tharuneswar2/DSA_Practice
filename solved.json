@@ -361,5 +361,6 @@
     "maximum-ascending-subarray-sum",
     "find-first-palindromic-string-in-the-array",
     "number-of-strings-that-appear-as-substrings-in-word",
-    "largest-even-number"
+    "largest-even-number",
+    "make-array-zero-by-subtracting-equal-amounts"
 ]
