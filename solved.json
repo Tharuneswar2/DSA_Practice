@@ -356,5 +356,6 @@
     "longest-alternating-subarray",
     "reformat-phone-number",
     "add-two-integers",
-    "minimum-distance-between-three-equal-elements-i"
+    "minimum-distance-between-three-equal-elements-i",
+    "design-an-ordered-stream"
 ]
