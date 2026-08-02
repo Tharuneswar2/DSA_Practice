@@ -348,5 +348,6 @@
     "minimum-distance-to-the-target-element",
     "remove-palindromic-subsequences",
     "convert-the-temperature",
-    "count-tested-devices-after-test-operations"
+    "count-tested-devices-after-test-operations",
+    "goal-parser-interpretation"
 ]
