@@ -1,5 +1,7 @@
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
+
 def getMinDistance(nums, target, start):
-    # Initialize minimum distance to infinity
+    # Initialize the minimum distance to a large value
     min_distance = float('inf')
     
     # Iterate through the list of numbers
@@ -13,9 +15,3 @@ def getMinDistance(nums, target, start):
     
     # Return the minimum distance
     return min_distance
-
-# Test the function
-nums = [1, 2, 3, 4, 5]
-target = 5
-start = 0
-print(getMinDistance(nums, target, start))  # Output: 4
