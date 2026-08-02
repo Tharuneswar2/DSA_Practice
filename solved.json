@@ -349,5 +349,6 @@
     "remove-palindromic-subsequences",
     "convert-the-temperature",
     "count-tested-devices-after-test-operations",
-    "goal-parser-interpretation"
+    "goal-parser-interpretation",
+    "total-distance-traveled"
 ]

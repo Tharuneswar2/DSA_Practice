@@ -1,36 +1,37 @@
-from collections import Counter
-from heapq import *
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
 
 def maximizeSum(nums, k):
-    # Count the frequency of each number
-    count = Counter(nums)
+    # Create a dictionary to store the frequency of each element in the array
+    freq = {}
+    for num in nums:
+        # If the number is already in the dictionary, increment its frequency
+        if num in freq:
+            freq[num] += 1
+        # If the number is not in the dictionary, add it with a frequency of 1
+        else:
+            freq[num] = 1
     
-    # Create a min heap to store the frequency of numbers
-    min_heap = []
-    for num, freq in count.items():
-        heappush(min_heap, (freq, num))
+    # Sort the dictionary items by their frequency in descending order
+    sorted_freq = sorted(freq.items(), key=lambda x: x[1], reverse=True)
     
-    # While the heap size is greater than k, remove the smallest frequency number
-    while len(min_heap) > k:
-        heappop(min_heap)
+    # Initialize variables to store the maximum sum and the number of distinct elements
+    max_sum = 0
+    distinct_count = 0
     
-    # Calculate the sum of the remaining numbers in the heap
-    total_sum = 0
-    for freq, num in min_heap:
-        total_sum += freq * num
+    # Iterate over the sorted dictionary items
+    for num, count in sorted_freq:
+        # If adding the current number's frequency to the sum does not exceed k distinct elements
+        if distinct_count + 1 <= k:
+            # Add the current number's frequency to the sum
+            max_sum += num * count
+            # Increment the distinct count
+            distinct_count += 1
+        # If adding the current number's frequency to the sum exceeds k distinct elements
+        else:
+            # Add the remaining frequency to the sum
+            max_sum += num * (k - distinct_count)
+            # Break the loop as we have reached k distinct elements
+            break
     
-    return total_sum
-
-def maximizeSumAlternative(nums, k):
-    # Count the frequency of each number
-    count = Counter(nums)
-    
-    # Sort the frequency of numbers in descending order
-    sorted_count = sorted(count.items(), key=lambda x: x[1], reverse=True)
-    
-    # Calculate the sum of the k most frequent numbers
-    total_sum = 0
-    for i in range(min(k, len(sorted_count))):
-        total_sum += sorted_count[i][1] * sorted_count[i][0]
-    
-    return total_sum
+    # Return the maximum sum
+    return max_sum
