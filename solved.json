@@ -345,5 +345,6 @@
     "number-of-arithmetic-triplets",
     "check-distances-between-same-letters",
     "design-neighbor-sum-service",
-    "minimum-distance-to-the-target-element"
+    "minimum-distance-to-the-target-element",
+    "remove-palindromic-subsequences"
 ]
