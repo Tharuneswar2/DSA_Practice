@@ -346,5 +346,6 @@
     "check-distances-between-same-letters",
     "design-neighbor-sum-service",
     "minimum-distance-to-the-target-element",
-    "remove-palindromic-subsequences"
+    "remove-palindromic-subsequences",
+    "convert-the-temperature"
 ]
