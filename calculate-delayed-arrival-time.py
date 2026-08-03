@@ -1,25 +1,37 @@
-def calculate_delayed_arrival_time(departure_time, travel_time, delay):
-    # Convert departure time to minutes
-    departure_hours, departure_minutes = map(int, departure_time.split(':'))
-    departure_time_in_minutes = departure_hours * 60 + departure_minutes
-    
-    # Calculate arrival time in minutes
-    arrival_time_in_minutes = departure_time_in_minutes + travel_time
-    
-    # Add delay to arrival time
-    delayed_arrival_time_in_minutes = arrival_time_in_minutes + delay
-    
-    # Convert delayed arrival time back to hours and minutes
-    delayed_arrival_hours = delayed_arrival_time_in_minutes // 60
-    delayed_arrival_minutes = delayed_arrival_time_in_minutes % 60
-    
-    # Format delayed arrival time as a string
-    delayed_arrival_time = f"{delayed_arrival_hours}:{delayed_arrival_minutes:02d}"
-    
-    return delayed_arrival_time
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
 
-# Example usage:
-departure_time = "08:30"
-travel_time = 120  # in minutes
-delay = 15  # in minutes
-print(calculate_delayed_arrival_time(departure_time, travel_time, delay))
+def calculateDelayedArrivalTime(arrivalTime, delay):
+    # Convert the arrival time from string to minutes
+    arrivalTimeInMinutes = convertTimeToMinutes(arrivalTime)
+    
+    # Calculate the delayed arrival time in minutes
+    delayedArrivalTimeInMinutes = arrivalTimeInMinutes + delay
+    
+    # Convert the delayed arrival time from minutes back to hours and minutes
+    delayedArrivalTime = convertMinutesToTime(delayedArrivalTimeInMinutes)
+    
+    return delayedArrivalTime
+
+def convertTimeToMinutes(time):
+    # Split the time into hours and minutes
+    hours, minutes = map(int, time.split(':'))
+    
+    # Calculate the total minutes
+    totalMinutes = hours * 60 + minutes
+    
+    return totalMinutes
+
+def convertMinutesToTime(minutes):
+    # Calculate the hours and minutes
+    hours = minutes // 60
+    mins = minutes % 60
+    
+    # Format the time as a string
+    time = "{:02d}:{:02d}".format(hours, mins)
+    
+    return time
+
+# Test the function
+arrivalTime = "08:30"
+delay = 30
+print(calculateDelayedArrivalTime(arrivalTime, delay))
