@@ -381,5 +381,6 @@
     "count-square-sum-triples",
     "find-the-key-of-the-numbers",
     "build-array-from-permutation",
-    "calculate-delayed-arrival-time"
+    "calculate-delayed-arrival-time",
+    "check-if-grid-satisfies-conditions"
 ]

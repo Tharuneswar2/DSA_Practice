@@ -1,39 +1,24 @@
-def is_rotation(matrix1, matrix2):
-    # Check if the matrices are the same size
-    if len(matrix1) != len(matrix2) or len(matrix1[0]) != len(matrix2[0]):
-        return False
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
 
-    # Check if matrix2 is a rotation of matrix1
-    def is_equal(matrix1, matrix2):
-        return all(all(a == b for a, b in zip(row1, row2)) for row1, row2 in zip(matrix1, matrix2))
-
-    # Check all four possible rotations
-    if is_equal(matrix1, matrix2):
+def findRotation(matrix, target):
+    # First, we check if the target matrix is the same as the original matrix
+    if matrix == target:
         return True
-    if is_equal(matrix1, [list(reversed(x)) for x in zip(*matrix2)]):
-        return True
-    if is_equal(matrix1, [list(reversed(x)) for x in reversed(matrix2)]):
-        return True
-    if is_equal(matrix1, [list(x) for x in reversed(list(zip(*matrix2)))]):
-        return True
-
-    # If none of the rotations match, return False
-    return False
-
-def is_rotation_transpose(matrix1, matrix2):
-    # Check if the matrices are the same size
-    if len(matrix1) != len(matrix2) or len(matrix1[0]) != len(matrix2[0]):
-        return False
-
-    # Check if matrix2 is a rotation of matrix1
-    def rotate(matrix):
-        return [list(reversed(x)) for x in zip(*matrix)]
-
-    # Check all four possible rotations
-    for _ in range(4):
-        if matrix1 == matrix2:
+    
+    # We define the number of rows and columns in the matrix
+    n = len(matrix)
+    
+    # We perform three rotations and check if the target matrix matches the rotated matrix
+    for _ in range(3):
+        # We transpose the matrix (swap rows with columns)
+        matrix = list(zip(*matrix))
+        
+        # We reverse each row in the transposed matrix
+        matrix = [list(reversed(row)) for row in matrix]
+        
+        # We check if the rotated matrix matches the target matrix
+        if matrix == target:
             return True
-        matrix2 = rotate(matrix2)
-
-    # If none of the rotations match, return False
+    
+    # If none of the rotations match the target matrix, we return False
     return False
