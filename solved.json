@@ -384,5 +384,6 @@
     "calculate-delayed-arrival-time",
     "check-if-grid-satisfies-conditions",
     "determine-whether-matrix-can-be-obtained-by-rotation",
-    "find-the-middle-index-in-array"
+    "find-the-middle-index-in-array",
+    "minimum-absolute-difference"
 ]
