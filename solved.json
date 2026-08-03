@@ -375,5 +375,6 @@
     "minimum-right-shifts-to-sort-the-array",
     "mirror-distance-of-an-integer",
     "find-the-array-concatenation-value",
-    "minimum-time-visiting-all-points"
+    "minimum-time-visiting-all-points",
+    "make-three-strings-equal"
 ]
