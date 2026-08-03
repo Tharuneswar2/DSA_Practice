@@ -6,8 +6,8 @@ def buildArray(nums):
     # Iterate over the input list
     for i in range(len(nums)):
         # For each index, append the value at the index specified by the current element
-        # This is because the problem states that the value at index i in the result is the value at index nums[i] in the input list
+        # This is because the problem states that the value at index i is the index of the ith element in the result array
         result.append(nums[nums[i]])
     
-    # Return the resulting list
+    # Return the result array
     return result
