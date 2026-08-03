@@ -388,5 +388,6 @@
     "minimum-absolute-difference",
     "number-of-beautiful-pairs",
     "find-resultant-array-after-removing-anagrams",
-    "how-many-numbers-are-smaller-than-the-current-number"
+    "how-many-numbers-are-smaller-than-the-current-number",
+    "find-indices-of-stable-mountains"
 ]

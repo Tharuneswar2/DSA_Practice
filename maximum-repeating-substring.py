@@ -1,18 +1,23 @@
 # Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
-def maxRepeating(sequence, word):
-    # Initialize a counter to keep track of the maximum repeating substring
+
+def max_repeating_substring(sequence, word):
+    # Initialize count to keep track of the maximum repeating substring
     count = 0
     
-    # Initialize a temporary string to build the repeating substring
-    temp = word
+    # Initialize a variable to store the current count of the word in the sequence
+    current_count = 0
     
-    # Continue building the repeating substring as long as it's a substring of the sequence
-    while temp in sequence:
-        # If the temporary string is a substring of the sequence, increment the counter
-        count += 1
-        
-        # Build the repeating substring by appending the word to the temporary string
-        temp += word
+    # Iterate over the sequence
+    for i in range(len(sequence)):
+        # Check if the current substring matches the word
+        if sequence[i:i+len(word)] == word:
+            # If it matches, increment the current count
+            current_count += 1
+            # Update the maximum count if the current count is greater
+            count = max(count, current_count)
+        else:
+            # If it doesn't match, reset the current count
+            current_count = 0
     
-    # Return the maximum count of the repeating substring
+    # Return the maximum count
     return count
