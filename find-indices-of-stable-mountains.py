@@ -1,19 +1,14 @@
-def find_stable_mountains(peaks):
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
+def findStableMountains(heights):
     # Initialize an empty list to store the indices of stable mountains
     stable_mountains = []
-
-    # Iterate over the peaks list with their indices
-    for i in range(len(peaks)):
-        # Check if the current peak is a mountain (i.e., it's greater than its neighbors)
-        if (i == 0 or peaks[i] > peaks[i-1]) and (i == len(peaks)-1 or peaks[i] > peaks[i+1]):
-            # If the current peak is a mountain, check if it's stable
-            if (i == 0 or peaks[i] >= peaks[i-1]) and (i == len(peaks)-1 or peaks[i] >= peaks[i+1]):
-                # If the current peak is stable, add its index to the stable_mountains list
-                stable_mountains.append(i)
-
+    
+    # Iterate over the list of heights
+    for i in range(len(heights)):
+        # Check if the current height is greater than its neighbors
+        if (i == 0 or heights[i] > heights[i-1]) and (i == len(heights)-1 or heights[i] > heights[i+1]):
+            # If the current height is greater than its neighbors, add its index to the list of stable mountains
+            stable_mountains.append(i)
+    
     # Return the list of indices of stable mountains
     return stable_mountains
-
-# Example usage:
-peaks = [1, 3, 5, 4, 3, 2, 1]
-print(find_stable_mountains(peaks))
