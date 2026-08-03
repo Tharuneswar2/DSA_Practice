@@ -1,49 +1,31 @@
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
+
 def mirror_distance(n):
     # Convert the integer to a string to easily access each digit
     str_n = str(n)
     
-    # Initialize the minimum distance
-    min_distance = float('inf')
+    # Initialize variables to store the mirrored number and the maximum mirrored number
+    mirrored_num = ''
+    max_mirrored_num = ''
     
-    # Iterate over each possible mirror number
-    for i in range(10**len(str_n)):
-        # Convert the current number to a string
-        str_i = str(i).zfill(len(str_n))
+    # Iterate over each digit in the number
+    for digit in str_n:
+        # Calculate the mirrored digit by subtracting the digit from 9
+        mirrored_digit = str(9 - int(digit))
         
-        # Check if the current number is a mirror of the input number
-        if str_i == str_n[::-1]:
-            # Calculate the distance between the current number and the input number
-            distance = abs(n - i)
-            
-            # Update the minimum distance if the current distance is smaller
-            min_distance = min(min_distance, distance)
-    
-    # Return the minimum distance
-    return min_distance
-
-def mirror_distance_optimized(n):
-    # Convert the integer to a string to easily access each digit
-    str_n = str(n)
-    
-    # Initialize the minimum distance
-    min_distance = float('inf')
-    
-    # Iterate over each possible mirror number with the same number of digits
-    for i in range(10**(len(str_n)-1), 10**len(str_n)):
-        # Convert the current number to a string
-        str_i = str(i)
+        # Append the mirrored digit to the mirrored number
+        mirrored_num += mirrored_digit
         
-        # Check if the current number is a mirror of the input number
-        if str_i == str_n[::-1]:
-            # Calculate the distance between the current number and the input number
-            distance = abs(n - i)
-            
-            # Update the minimum distance if the current distance is smaller
-            min_distance = min(min_distance, distance)
+        # If the mirrored digit is greater than the original digit, update the maximum mirrored number
+        if mirrored_digit > digit:
+            max_mirrored_num = mirrored_num
+            break
     
-    # If no mirror number is found, try numbers with one less digit
-    if min_distance == float('inf'):
-        return mirror_distance_optimized(int(str_n[:-1]))
+    # If no mirrored digit is greater than the original digit, the maximum mirrored number is the mirrored number itself
+    if not max_mirrored_num:
+        max_mirrored_num = mirrored_num
     
-    # Return the minimum distance
-    return min_distance
+    # Calculate the distance between the original number and the maximum mirrored number
+    distance = abs(int(max_mirrored_num) - n)
+    
+    return distance
