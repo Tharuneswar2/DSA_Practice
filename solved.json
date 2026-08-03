@@ -367,5 +367,6 @@
     "minimum-number-of-moves-to-seat-everyone",
     "longest-even-odd-subarray-with-threshold",
     "sort-array-by-increasing-frequency",
-    "richest-customer-wealth"
+    "richest-customer-wealth",
+    "count-the-number-of-incremovable-subarrays-i"
 ]

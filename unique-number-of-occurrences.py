@@ -1,25 +1,28 @@
-def unique_occurrences(arr):
-    # Create a dictionary to store the frequency of each number
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
+def uniqueOccurrences(arr):
+    # Create a dictionary to store the frequency of each number in the array
     freq_dict = {}
     
-    # Iterate over the array to count the frequency of each number
+    # Iterate through the array to count the frequency of each number
     for num in arr:
+        # If the number is already in the dictionary, increment its count
         if num in freq_dict:
             freq_dict[num] += 1
+        # If the number is not in the dictionary, add it with a count of 1
         else:
             freq_dict[num] = 1
     
     # Create a set to store the unique frequencies
     unique_freqs = set()
     
-    # Iterate over the frequency dictionary to add frequencies to the set
+    # Iterate through the frequency dictionary
     for freq in freq_dict.values():
-        unique_freqs.add(freq)
+        # If the frequency is already in the set, return False
+        if freq in unique_freqs:
+            return False
+        # If the frequency is not in the set, add it
+        else:
+            unique_freqs.add(freq)
     
-    # If the number of unique frequencies is equal to the number of unique numbers, return True
-    return len(unique_freqs) == len(freq_dict)
-
-# Test the function
-print(unique_occurrences([1, 2, 2, 1, 1, 3]))  # False
-print(unique_occurrences([1, 2]))  # True
-print(unique_occurrences([-3, 0, 1, -3, 1, 1, 1, -3, 3]))  # True
+    # If we've iterated through the entire dictionary without finding any duplicate frequencies, return True
+    return True
