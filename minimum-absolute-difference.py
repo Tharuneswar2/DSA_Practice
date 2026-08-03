@@ -7,7 +7,7 @@ def minimumAbsoluteDifference(arr):
     # Initialize the minimum difference as infinity
     min_diff = float('inf')
     
-    # Iterate over the sorted array from the second element to the last element
+    # Iterate over the sorted array to find the minimum difference
     for i in range(1, len(arr)):
         # Calculate the absolute difference between the current element and the previous element
         diff = abs(arr[i] - arr[i-1])

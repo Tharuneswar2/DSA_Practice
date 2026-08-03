@@ -383,5 +383,6 @@
     "build-array-from-permutation",
     "calculate-delayed-arrival-time",
     "check-if-grid-satisfies-conditions",
-    "determine-whether-matrix-can-be-obtained-by-rotation"
+    "determine-whether-matrix-can-be-obtained-by-rotation",
+    "find-the-middle-index-in-array"
 ]
