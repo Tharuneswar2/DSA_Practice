@@ -362,5 +362,6 @@
     "find-first-palindromic-string-in-the-array",
     "number-of-strings-that-appear-as-substrings-in-word",
     "largest-even-number",
-    "make-array-zero-by-subtracting-equal-amounts"
+    "make-array-zero-by-subtracting-equal-amounts",
+    "largest-local-values-in-a-matrix"
 ]
