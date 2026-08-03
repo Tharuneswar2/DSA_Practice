@@ -366,5 +366,6 @@
     "largest-local-values-in-a-matrix",
     "minimum-number-of-moves-to-seat-everyone",
     "longest-even-odd-subarray-with-threshold",
-    "sort-array-by-increasing-frequency"
+    "sort-array-by-increasing-frequency",
+    "richest-customer-wealth"
 ]
