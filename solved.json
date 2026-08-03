@@ -365,5 +365,6 @@
     "make-array-zero-by-subtracting-equal-amounts",
     "largest-local-values-in-a-matrix",
     "minimum-number-of-moves-to-seat-everyone",
-    "longest-even-odd-subarray-with-threshold"
+    "longest-even-odd-subarray-with-threshold",
+    "sort-array-by-increasing-frequency"
 ]
