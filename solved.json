@@ -373,5 +373,6 @@
     "final-value-of-variable-after-performing-operations",
     "find-nearest-point-that-has-the-same-x-or-y-coordinate",
     "minimum-right-shifts-to-sort-the-array",
-    "mirror-distance-of-an-integer"
+    "mirror-distance-of-an-integer",
+    "find-the-array-concatenation-value"
 ]
