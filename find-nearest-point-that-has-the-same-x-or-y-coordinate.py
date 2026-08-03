@@ -1,17 +1,21 @@
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
+
 def nearestValidPoint(x, y, points):
-    min_distance = float('inf')
-    nearest_point = None
+    # Initialize the minimum distance and the index of the nearest point
+    min_distance = float('inf')  # Initialize with positive infinity
+    nearest_point_index = -1  # Initialize with -1, indicating no nearest point found yet
 
     # Iterate over each point in the list of points
-    for point in points:
-        # Check if the point has the same x or y coordinate as the target point
+    for i, point in enumerate(points):
+        # Check if the x-coordinate or y-coordinate of the current point matches with the given point
         if point[0] == x or point[1] == y:
-            # Calculate the Manhattan distance between the target point and the current point
+            # Calculate the Manhattan distance between the given point and the current point
             distance = abs(point[0] - x) + abs(point[1] - y)
-            # If the distance is less than the current minimum distance, update the minimum distance and the nearest point
+            # Check if the calculated distance is less than the current minimum distance
             if distance < min_distance:
+                # Update the minimum distance and the index of the nearest point
                 min_distance = distance
-                nearest_point = point
+                nearest_point_index = i
 
-    # Return the nearest point, or -1 if no point has the same x or y coordinate
-    return nearest_point if nearest_point else -1
+    # Return the index of the nearest point, or -1 if no nearest point is found
+    return nearest_point_index

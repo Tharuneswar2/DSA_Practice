@@ -369,5 +369,6 @@
     "sort-array-by-increasing-frequency",
     "richest-customer-wealth",
     "count-the-number-of-incremovable-subarrays-i",
-    "unique-number-of-occurrences"
+    "unique-number-of-occurrences",
+    "final-value-of-variable-after-performing-operations"
 ]
