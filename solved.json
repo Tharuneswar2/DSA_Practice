@@ -368,5 +368,6 @@
     "longest-even-odd-subarray-with-threshold",
     "sort-array-by-increasing-frequency",
     "richest-customer-wealth",
-    "count-the-number-of-incremovable-subarrays-i"
+    "count-the-number-of-incremovable-subarrays-i",
+    "unique-number-of-occurrences"
 ]

@@ -1,5 +1,6 @@
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
 def finalValueAfterOperations(operations):
-    # Initialize the variable 'x' to 0
+    # Initialize a variable 'x' to 0, assuming the initial value of the variable is 0
     x = 0
     
     # Iterate over each operation in the list of operations
@@ -13,5 +14,5 @@ def finalValueAfterOperations(operations):
             # If it's a decrement operation, decrement 'x' by 1
             x -= 1
     
-    # Return the final value of 'x'
+    # Return the final value of 'x' after performing all operations
     return x
