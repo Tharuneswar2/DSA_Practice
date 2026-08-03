@@ -1,5 +1,4 @@
 # Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
-
 def makeEqual(s1, s2, s3):
     # Combine all characters from the three strings into one string
     combined = s1 + s2 + s3
@@ -23,7 +22,7 @@ def makeEqual(s1, s2, s3):
     
     # Check if it's possible to distribute the characters evenly among the three strings
     for char, frequency in char_frequency.items():
-        # If the frequency of the character is not divisible by 3, it's impossible to make the strings equal
+        # If the frequency of a character is not divisible by 3, it's impossible to make the strings equal
         if frequency % 3 != 0:
             return False
     

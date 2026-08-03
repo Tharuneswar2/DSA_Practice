@@ -374,5 +374,6 @@
     "find-nearest-point-that-has-the-same-x-or-y-coordinate",
     "minimum-right-shifts-to-sort-the-array",
     "mirror-distance-of-an-integer",
-    "find-the-array-concatenation-value"
+    "find-the-array-concatenation-value",
+    "minimum-time-visiting-all-points"
 ]
