@@ -382,5 +382,6 @@
     "find-the-key-of-the-numbers",
     "build-array-from-permutation",
     "calculate-delayed-arrival-time",
-    "check-if-grid-satisfies-conditions"
+    "check-if-grid-satisfies-conditions",
+    "determine-whether-matrix-can-be-obtained-by-rotation"
 ]

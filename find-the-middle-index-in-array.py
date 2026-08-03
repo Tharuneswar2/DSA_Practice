@@ -1,3 +1,4 @@
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
 def findMiddleIndex(nums):
     # Calculate the total sum of the array
     total_sum = sum(nums)
@@ -7,9 +8,10 @@ def findMiddleIndex(nums):
     
     # Iterate over the array
     for i, num in enumerate(nums):
-        # If the left sum equals the total sum minus the left sum and the current number
+        # If the left sum is equal to the total sum minus the left sum and the current number
         # then we have found the middle index
         if left_sum == total_sum - left_sum - num:
+            # Return the middle index
             return i
         # Otherwise, add the current number to the left sum
         left_sum += num
