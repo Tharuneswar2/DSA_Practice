@@ -1,19 +1,19 @@
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
+
 def findConcatenatedValue(arr):
-    # Initialize an empty list to store concatenated values
+    # Initialize an empty list to store the concatenated values
     concatenated_values = []
     
-    # Iterate over each element in the array
-    for i in range(len(arr)):
-        # Concatenate the current element with the next element
-        # Use modulo to wrap around to the start of the array for the last element
-        concatenated_value = int(str(arr[i]) + str(arr[(i + 1) % len(arr)]))
+    # Iterate over each element in the input array
+    for num in arr:
+        # Convert the number to a string to easily concatenate it with itself
+        str_num = str(num)
         
-        # Append the concatenated value to the list
-        concatenated_values.append(concatenated_value)
+        # Concatenate the string representation of the number with itself
+        concatenated_str = str_num + str_num
+        
+        # Convert the concatenated string back to an integer and append it to the list
+        concatenated_values.append(int(concatenated_str))
     
-    # Return the minimum concatenated value
-    return min(concatenated_values)
-
-# Example usage:
-arr = [1, 2, 3, 4]
-print(findConcatenatedValue(arr))
+    # Return the concatenated values list
+    return concatenated_values

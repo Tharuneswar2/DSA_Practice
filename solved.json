@@ -372,5 +372,6 @@
     "unique-number-of-occurrences",
     "final-value-of-variable-after-performing-operations",
     "find-nearest-point-that-has-the-same-x-or-y-coordinate",
-    "minimum-right-shifts-to-sort-the-array"
+    "minimum-right-shifts-to-sort-the-array",
+    "mirror-distance-of-an-integer"
 ]
