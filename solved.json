@@ -380,5 +380,6 @@
     "earliest-finish-time-for-land-and-water-rides-i",
     "count-square-sum-triples",
     "find-the-key-of-the-numbers",
-    "build-array-from-permutation"
+    "build-array-from-permutation",
+    "calculate-delayed-arrival-time"
 ]
