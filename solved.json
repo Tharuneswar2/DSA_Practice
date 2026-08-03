@@ -364,5 +364,6 @@
     "largest-even-number",
     "make-array-zero-by-subtracting-equal-amounts",
     "largest-local-values-in-a-matrix",
-    "minimum-number-of-moves-to-seat-everyone"
+    "minimum-number-of-moves-to-seat-everyone",
+    "longest-even-odd-subarray-with-threshold"
 ]
