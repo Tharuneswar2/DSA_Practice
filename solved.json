@@ -386,5 +386,6 @@
     "determine-whether-matrix-can-be-obtained-by-rotation",
     "find-the-middle-index-in-array",
     "minimum-absolute-difference",
-    "number-of-beautiful-pairs"
+    "number-of-beautiful-pairs",
+    "find-resultant-array-after-removing-anagrams"
 ]
