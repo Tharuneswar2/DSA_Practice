@@ -363,5 +363,6 @@
     "number-of-strings-that-appear-as-substrings-in-word",
     "largest-even-number",
     "make-array-zero-by-subtracting-equal-amounts",
-    "largest-local-values-in-a-matrix"
+    "largest-local-values-in-a-matrix",
+    "minimum-number-of-moves-to-seat-everyone"
 ]
