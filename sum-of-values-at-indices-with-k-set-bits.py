@@ -1,17 +1,17 @@
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
 def sum_of_indices_with_k_set_bits(nums, k):
-    def count_set_bits(n):
-        # Count the number of set bits in a number
-        count = 0
-        while n:
-            count += n & 1
-            n >>= 1
-        return count
-
+    # Initialize the sum of values at indices with k set bits to 0
     total_sum = 0
+    
+    # Iterate over the list of numbers with their indices
     for i, num in enumerate(nums):
-        # Check if the number of set bits in the index is equal to k
-        if count_set_bits(i) == k:
-            # If true, add the value at the index to the total sum
+        # Convert the number to binary and count the number of set bits
+        set_bits = bin(num).count('1')
+        
+        # Check if the number of set bits is equal to k
+        if set_bits == k:
+            # If true, add the value at the current index to the total sum
             total_sum += num
-
+    
+    # Return the total sum of values at indices with k set bits
     return total_sum
