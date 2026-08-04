@@ -1,10 +1,11 @@
-def countGoodSubstrings(s: str) -> int:
-    # Initialize count of good substrings
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
+def countGoodSubstrings(s):
+    # Initialize count to store the number of substrings of size three with distinct characters
     count = 0
     
-    # Iterate over the string with a sliding window of size 3
+    # Iterate over the string from index 0 to the third last character
     for i in range(len(s) - 2):
-        # Get the current substring
+        # Extract the substring of size three
         substring = s[i:i+3]
         
         # Check if all characters in the substring are distinct
@@ -12,5 +13,5 @@ def countGoodSubstrings(s: str) -> int:
             # If distinct, increment the count
             count += 1
     
-    # Return the count of good substrings
+    # Return the count of substrings of size three with distinct characters
     return count
