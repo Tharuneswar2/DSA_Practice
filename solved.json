@@ -402,5 +402,6 @@
     "minimum-positive-sum-subarray",
     "longer-contiguous-segments-of-ones-than-zeros",
     "number-of-days-between-two-dates",
-    "largest-substring-between-two-equal-characters"
+    "largest-substring-between-two-equal-characters",
+    "count-residue-prefixes"
 ]
