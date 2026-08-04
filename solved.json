@@ -394,5 +394,6 @@
     "count-pairs-of-similar-strings",
     "minimum-cost-to-reach-every-position",
     "maximum-length-substring-with-two-occurrences",
-    "count-common-words-with-one-occurrence"
+    "count-common-words-with-one-occurrence",
+    "substrings-of-size-three-with-distinct-characters"
 ]
