@@ -397,5 +397,6 @@
     "count-common-words-with-one-occurrence",
     "substrings-of-size-three-with-distinct-characters",
     "maximum-units-on-a-truck",
-    "row-with-maximum-ones"
+    "row-with-maximum-ones",
+    "count-the-number-of-vowel-strings-in-range"
 ]
