@@ -392,5 +392,6 @@
     "find-indices-of-stable-mountains",
     "maximum-repeating-substring",
     "count-pairs-of-similar-strings",
-    "minimum-cost-to-reach-every-position"
+    "minimum-cost-to-reach-every-position",
+    "maximum-length-substring-with-two-occurrences"
 ]
