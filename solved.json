@@ -396,5 +396,6 @@
     "maximum-length-substring-with-two-occurrences",
     "count-common-words-with-one-occurrence",
     "substrings-of-size-three-with-distinct-characters",
-    "maximum-units-on-a-truck"
+    "maximum-units-on-a-truck",
+    "row-with-maximum-ones"
 ]
