@@ -391,5 +391,6 @@
     "how-many-numbers-are-smaller-than-the-current-number",
     "find-indices-of-stable-mountains",
     "maximum-repeating-substring",
-    "count-pairs-of-similar-strings"
+    "count-pairs-of-similar-strings",
+    "minimum-cost-to-reach-every-position"
 ]
