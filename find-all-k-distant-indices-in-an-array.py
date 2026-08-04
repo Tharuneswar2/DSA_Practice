@@ -1,25 +1,19 @@
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
+
 def findKDistantIndices(nums, k):
-    # Initialize an empty list to store the indices
-    indices = []
+    # Initialize an empty list to store the indices of elements that are k-distant from the given array
+    result = []
     
-    # Initialize a variable to store the previous index
+    # Initialize a variable to keep track of the previous index
     prev_index = -1
     
-    # Iterate over the list of numbers
-    for i, num in enumerate(nums):
-        # If the current number is 1
-        if num == 1:
-            # If the previous index is -1 or the difference between the current index and the previous index is greater than k
-            if prev_index == -1 or i - prev_index > k:
-                # Add all indices from the previous index + k to the current index to the list of indices
-                indices.extend(range(prev_index + k + 1, i + 1))
-            # Update the previous index
+    # Iterate over the array
+    for i in range(len(nums)):
+        # Check if the current element is k-distant from the previous index
+        if i - prev_index > k:
+            # If it is, update the previous index and add the current index to the result
             prev_index = i
+            result.append(i)
     
-    # If the last number is 1
-    if nums[-1] == 1:
-        # Add all indices from the previous index + k to the end of the list to the list of indices
-        indices.extend(range(prev_index + k + 1, len(nums)))
-    
-    # Return the list of indices
-    return indices
+    # Return the list of k-distant indices
+    return result
