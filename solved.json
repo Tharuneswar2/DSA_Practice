@@ -403,5 +403,6 @@
     "longer-contiguous-segments-of-ones-than-zeros",
     "number-of-days-between-two-dates",
     "largest-substring-between-two-equal-characters",
-    "count-residue-prefixes"
+    "count-residue-prefixes",
+    "maximum-69-number"
 ]
