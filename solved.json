@@ -398,5 +398,6 @@
     "substrings-of-size-three-with-distinct-characters",
     "maximum-units-on-a-truck",
     "row-with-maximum-ones",
-    "count-the-number-of-vowel-strings-in-range"
+    "count-the-number-of-vowel-strings-in-range",
+    "minimum-positive-sum-subarray"
 ]
