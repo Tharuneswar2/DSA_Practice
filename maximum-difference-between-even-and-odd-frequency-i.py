@@ -1,28 +1,32 @@
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
 def max_difference(nums):
-    # Initialize variables to store the maximum and minimum frequencies
-    max_freq = float('-inf')
-    min_freq = float('inf')
-
-    # Initialize variables to store the sum of even and odd frequencies
-    even_sum = 0
-    odd_sum = 0
-
-    # Iterate over the list of numbers
+    # Initialize variables to store the maximum frequency of even and odd numbers
+    max_even_freq = 0
+    max_odd_freq = 0
+    
+    # Initialize variables to store the current frequency of even and odd numbers
+    curr_even_freq = 0
+    curr_odd_freq = 0
+    
+    # Initialize a variable to store the maximum difference between even and odd frequencies
+    max_diff = 0
+    
+    # Iterate over the array
     for num in nums:
-        # Calculate the frequency of the current number
-        freq = nums.count(num)
-
-        # If the frequency is even, add it to the even sum
-        if freq % 2 == 0:
-            even_sum += freq
-        # If the frequency is odd, add it to the odd sum
+        # Check if the number is even
+        if num % 2 == 0:
+            # If the number is even, increment the current even frequency
+            curr_even_freq += 1
+            # Update the maximum even frequency if the current frequency is greater
+            max_even_freq = max(max_even_freq, curr_even_freq)
         else:
-            odd_sum += freq
-
-        # Update the maximum frequency
-        max_freq = max(max_freq, freq)
-        # Update the minimum frequency
-        min_freq = min(min_freq, freq)
-
-    # Return the maximum difference between the even and odd sums
-    return max(abs(even_sum - odd_sum), max_freq - min_freq)
+            # If the number is odd, increment the current odd frequency
+            curr_odd_freq += 1
+            # Update the maximum odd frequency if the current frequency is greater
+            max_odd_freq = max(max_odd_freq, curr_odd_freq)
+        
+        # Update the maximum difference between even and odd frequencies
+        max_diff = max(max_diff, abs(max_even_freq - max_odd_freq))
+    
+    # Return the maximum difference between even and odd frequencies
+    return max_diff

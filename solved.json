@@ -400,5 +400,6 @@
     "row-with-maximum-ones",
     "count-the-number-of-vowel-strings-in-range",
     "minimum-positive-sum-subarray",
-    "longer-contiguous-segments-of-ones-than-zeros"
+    "longer-contiguous-segments-of-ones-than-zeros",
+    "number-of-days-between-two-dates"
 ]
