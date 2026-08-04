@@ -1,27 +1,39 @@
-def k_or(arr, k):
-    # Initialize an empty dictionary to store the frequency of each element
-    freq_dict = {}
-    
-    # Iterate over the array to count the frequency of each element
-    for num in arr:
-        if num in freq_dict:
-            freq_dict[num] += 1
-        else:
-            freq_dict[num] = 1
-    
-    # Initialize an empty list to store the k-or elements
-    k_or_elements = []
-    
-    # Iterate over the frequency dictionary to find the k-or elements
-    for num, freq in freq_dict.items():
-        # If the frequency of the element is greater than or equal to k, add it to the k-or elements list
-        if freq >= k:
-            k_or_elements.append(num)
-    
-    # Return the k-or elements list
-    return k_or_elements
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
 
-# Example usage:
-arr = [1, 2, 2, 3, 3, 3, 4, 4, 4, 4]
-k = 3
-print(k_or(arr, k))  # Output: [3, 4]
+def kth_element_after_removal(nums, k):
+    # Create a copy of the input list to avoid modifying the original list
+    nums_copy = nums.copy()
+    
+    # Sort the copied list in ascending order
+    nums_copy.sort()
+    
+    # Remove the smallest element from the sorted list k times
+    for _ in range(k):
+        # Remove the smallest element (first element in the sorted list)
+        nums_copy.pop(0)
+    
+    # If the list is not empty after removals, return the first element (kth element after removals)
+    if nums_copy:
+        return nums_copy[0]
+    else:
+        # If the list is empty after removals, return None (or any other value to indicate the list is empty)
+        return None
+
+def findKthNumber(nums, k):
+    # Initialize an empty list to store the result
+    result = []
+    
+    # Iterate over each number in the input list
+    for num in nums:
+        # Add the number to the result list
+        result.append(num)
+        
+        # Find the kth element after removals
+        kth_element = kth_element_after_removal(result, k)
+        
+        # If the kth element is not None, return it
+        if kth_element is not None:
+            return kth_element
+    
+    # If no kth element is found after iterating over the entire list, return None
+    return None
