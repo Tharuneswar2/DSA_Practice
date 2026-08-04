@@ -408,5 +408,6 @@
     "split-the-array",
     "number-of-students-unable-to-eat-lunch",
     "find-the-k-or-of-an-array",
-    "find-all-k-distant-indices-in-an-array"
+    "find-all-k-distant-indices-in-an-array",
+    "sum-of-values-at-indices-with-k-set-bits"
 ]
