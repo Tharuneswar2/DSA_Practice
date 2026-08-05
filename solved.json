@@ -412,5 +412,6 @@
     "sum-of-values-at-indices-with-k-set-bits",
     "count-elements-with-maximum-frequency",
     "number-of-changing-keys",
-    "count-equal-and-divisible-pairs-in-an-array"
+    "count-equal-and-divisible-pairs-in-an-array",
+    "decode-xored-array"
 ]
