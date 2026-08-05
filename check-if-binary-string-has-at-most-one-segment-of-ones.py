@@ -1,19 +1,19 @@
-def check_ones_segment(s: str) -> bool:
-    # Initialize a flag to track if we've seen a segment of ones
-    seen_ones = False
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
+def checkOnesSegment(s: str) -> bool:
+    # Initialize a flag to track if we have encountered a segment of ones
+    has_ones_segment = False
     
-    # Iterate over the string
+    # Iterate over the binary string
     for i in range(len(s)):
-        # If we see a '1', check if we've already seen a segment of ones
-        if s[i] == '1':
-            # If we've already seen a segment of ones, return False
-            if seen_ones:
+        # If the current character is '1' and we haven't encountered a segment of ones yet
+        if s[i] == '1' and not has_ones_segment:
+            # Set the flag to True
+            has_ones_segment = True
+        # If the current character is '0' and we have encountered a segment of ones
+        elif s[i] == '0' and has_ones_segment:
+            # If the next character is '1', return False because we have more than one segment of ones
+            if i < len(s) - 1 and s[i + 1] == '1':
                 return False
-            # Otherwise, mark that we've seen a segment of ones
-            seen_ones = True
-        # If we see a '0' after seeing a segment of ones, reset the flag
-        elif seen_ones:
-            seen_ones = False
     
-    # If we've iterated over the entire string without returning False, return True
+    # If we have iterated over the entire string and haven't returned False, return True
     return True
