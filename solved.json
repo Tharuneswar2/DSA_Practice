@@ -425,5 +425,6 @@
     "find-n-unique-integers-sum-up-to-zero",
     "check-if-binary-string-has-at-most-one-segment-of-ones",
     "number-of-different-integers-in-a-string",
-    "find-minimum-log-transportation-cost"
+    "find-minimum-log-transportation-cost",
+    "longest-strictly-increasing-or-strictly-decreasing-subarray"
 ]

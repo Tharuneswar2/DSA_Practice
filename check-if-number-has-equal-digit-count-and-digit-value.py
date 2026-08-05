@@ -1,28 +1,13 @@
-def digit_count(n):
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
+def digitCount(num):
     # Convert the number into a string to easily access each digit
-    str_n = str(n)
-    
-    # Initialize a dictionary to store the count of each digit
-    digit_dict = {}
+    num_str = str(num)
     
     # Iterate over each character (digit) in the string
-    for digit in str_n:
-        # If the digit is already in the dictionary, increment its count
-        if digit in digit_dict:
-            digit_dict[digit] += 1
-        # If the digit is not in the dictionary, add it with a count of 1
-        else:
-            digit_dict[digit] = 1
-    
-    # Iterate over each digit and its count in the dictionary
-    for digit, count in digit_dict.items():
-        # If the count of the digit is not equal to the digit's value, return False
-        if int(digit) != count:
+    for i, digit in enumerate(num_str):
+        # If the digit is not equal to the count of the digit in the rest of the string, return False
+        if int(digit) != num_str.count(str(i)):
             return False
-    
-    # If the function hasn't returned False, all digit counts match their values, so return True
+            
+    # If the loop completes without returning False, the number has equal digit count and digit value
     return True
-
-# Test the function
-print(digit_count(1210))  # False
-print(digit_count(2222))  # True
