@@ -426,5 +426,6 @@
     "check-if-binary-string-has-at-most-one-segment-of-ones",
     "number-of-different-integers-in-a-string",
     "find-minimum-log-transportation-cost",
-    "longest-strictly-increasing-or-strictly-decreasing-subarray"
+    "longest-strictly-increasing-or-strictly-decreasing-subarray",
+    "check-if-number-has-equal-digit-count-and-digit-value"
 ]
