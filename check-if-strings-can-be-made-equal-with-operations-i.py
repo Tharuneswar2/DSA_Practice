@@ -1,44 +1,25 @@
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
+
 def makeEqual(s1, s2):
-    # If the two strings are not of the same length, they cannot be made equal
-    if len(s1) != len(s2):
-        return False
+    # Convert the strings to lists so we can sort them
+    s1_list = list(s1)
+    s2_list = list(s2)
 
-    # Initialize two dictionaries to store the frequency of each character in both strings
-    freq_s1 = {}
-    freq_s2 = {}
+    # Sort the lists so we can compare them
+    s1_list.sort()
+    s2_list.sort()
 
-    # Populate the frequency dictionaries
-    for char in s1:
-        if char in freq_s1:
-            freq_s1[char] += 1
-        else:
-            freq_s1[char] = 1
+    # Initialize two pointers for the two lists
+    i = j = 0
 
-    for char in s2:
-        if char in freq_s2:
-            freq_s2[char] += 1
-        else:
-            freq_s2[char] = 1
+    # Compare the sorted lists
+    while i < len(s1_list) and j < len(s2_list):
+        # If the current characters are different, return False
+        if s1_list[i] != s2_list[j]:
+            return False
+        # If the current characters are the same, move to the next characters
+        i += 1
+        j += 1
 
-    # If the frequency dictionaries are not equal, the strings cannot be made equal
-    if freq_s1 != freq_s2:
-        return False
-
-    # Initialize a variable to store the greatest common divisor (GCD) of the frequencies
-    gcd = 0
-
-    # Calculate the GCD of the frequencies
-    for key in freq_s1:
-        gcd = gcd_helper(gcd, freq_s1[key])
-
-    # If the GCD is 1, the strings can be made equal
-    return gcd == 1
-
-
-def gcd_helper(a, b):
-    # Base case: if b is 0, return a
-    if b == 0:
-        return a
-    # Recursive case: return the GCD of b and the remainder of a divided by b
-    else:
-        return gcd_helper(b, a % b)
+    # If we have checked all characters and haven't returned False, return True
+    return True
