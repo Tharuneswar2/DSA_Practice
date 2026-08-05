@@ -424,5 +424,6 @@
     "maximum-number-of-balls-in-a-box",
     "find-n-unique-integers-sum-up-to-zero",
     "check-if-binary-string-has-at-most-one-segment-of-ones",
-    "number-of-different-integers-in-a-string"
+    "number-of-different-integers-in-a-string",
+    "find-minimum-log-transportation-cost"
 ]
