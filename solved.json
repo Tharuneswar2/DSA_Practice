@@ -423,5 +423,6 @@
     "divide-a-string-into-groups-of-size-k",
     "maximum-number-of-balls-in-a-box",
     "find-n-unique-integers-sum-up-to-zero",
-    "check-if-binary-string-has-at-most-one-segment-of-ones"
+    "check-if-binary-string-has-at-most-one-segment-of-ones",
+    "number-of-different-integers-in-a-string"
 ]

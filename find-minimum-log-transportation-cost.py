@@ -1,32 +1,25 @@
-def minCost(logs, a, b):
-    # Initialize the total cost to 0
-    total_cost = 0
-    
-    # Sort the logs in ascending order
-    logs.sort()
-    
-    # Initialize two pointers, one at the start and one at the end of the logs
-    i, j = 0, len(logs) - 1
-    
-    # Continue the process until the two pointers meet
-    while i < j:
-        # Calculate the cost of transporting the current logs
-        cost = min(a * (logs[j] - logs[i]), b * (j - i + 1))
-        
-        # Add the cost to the total cost
-        total_cost += cost
-        
-        # Move the pointers based on the cost
-        if a * (logs[j] - logs[i]) < b * (j - i + 1):
-            j -= 1
-        else:
-            i += 1
-    
-    # Return the total cost
-    return total_cost
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
 
-# Test the function
-logs = [1, 2, 3, 4, 5]
-a = 2
-b = 3
-print(minCost(logs, a, b))
+def minCost(logs):
+    # Initialize a list to store the prefix sum of logs
+    prefix_sum = [0] * (len(logs) + 1)
+    
+    # Calculate the prefix sum of logs
+    for i in range(len(logs)):
+        # Add the current log to the prefix sum
+        prefix_sum[i + 1] = prefix_sum[i] + logs[i]
+    
+    # Initialize the minimum cost
+    min_cost = float('inf')
+    
+    # Iterate over all possible positions to split the logs
+    for i in range(1, len(logs)):
+        # Calculate the cost of the current split position
+        # The cost is the sum of the absolute difference between the prefix sum and the total sum
+        cost = abs(prefix_sum[i] - (prefix_sum[-1] - prefix_sum[i]))
+        
+        # Update the minimum cost
+        min_cost = min(min_cost, cost)
+    
+    # Return the minimum cost
+    return min_cost
