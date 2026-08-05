@@ -418,5 +418,6 @@
     "find-common-elements-between-two-arrays",
     "minimum-subsequence-in-non-increasing-order",
     "valid-digit-number",
-    "maximum-product-of-two-digits"
+    "maximum-product-of-two-digits",
+    "check-if-strings-can-be-made-equal-with-operations-i"
 ]
