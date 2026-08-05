@@ -419,5 +419,6 @@
     "minimum-subsequence-in-non-increasing-order",
     "valid-digit-number",
     "maximum-product-of-two-digits",
-    "check-if-strings-can-be-made-equal-with-operations-i"
+    "check-if-strings-can-be-made-equal-with-operations-i",
+    "divide-a-string-into-groups-of-size-k"
 ]
