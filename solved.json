@@ -413,5 +413,6 @@
     "count-elements-with-maximum-frequency",
     "number-of-changing-keys",
     "count-equal-and-divisible-pairs-in-an-array",
-    "decode-xored-array"
+    "decode-xored-array",
+    "construct-uniform-parity-array-i"
 ]
