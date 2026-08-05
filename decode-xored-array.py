@@ -1,13 +1,17 @@
-def decode(self, encoded: List[int], first: int) -> List[int]:
-    # Initialize the result array with the first element
-    result = [first]
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
+def decode(self, encoded: List[int]) -> List[int]:
+    # The first element in the original array is the first element in the decoded array
+    decoded = [0] * (len(encoded) + 1)
+    decoded[0] = 0
     
-    # Iterate over the encoded array
-    for i in range(len(encoded)):
-        # XOR the current element in the result array with the current element in the encoded array
-        # This is based on the property of XOR that a ^ a = 0 and a ^ 0 = a
-        # So, if we XOR the current element with the previous element, we get the original element
-        result.append(result[-1] ^ encoded[i])
+    # The first element in the encoded array is the XOR of the first two elements in the original array
+    # So, the second element in the original array is the XOR of the first element in the encoded array and the first element in the decoded array
+    decoded[1] = encoded[0] ^ decoded[0]
     
-    # Return the result array
-    return result
+    # Iterate over the encoded array starting from the second element
+    for i in range(1, len(encoded)):
+        # The (i+1)th element in the original array is the XOR of the (i+1)th element in the encoded array and the ith element in the decoded array
+        decoded[i + 1] = encoded[i] ^ decoded[i]
+    
+    # Return the decoded array
+    return decoded
