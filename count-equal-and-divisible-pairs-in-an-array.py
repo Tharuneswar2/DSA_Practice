@@ -1,35 +1,27 @@
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
+
 def count_pairs(nums, k):
-    # Initialize a hashmap to store the frequency of each number
+    # Initialize a hashmap to store the frequency of each number in the array
     freq_map = {}
     
-    # Initialize the count of equal and divisible pairs
+    # Initialize the count of pairs to 0
     count = 0
     
-    # Iterate over the array to populate the hashmap
+    # Iterate over the array to populate the frequency map
     for num in nums:
-        # If the number is already in the hashmap, increment its frequency
+        # If the number is already in the map, increment its frequency
         if num in freq_map:
             freq_map[num] += 1
-        # If the number is not in the hashmap, add it with a frequency of 1
+        # If the number is not in the map, add it with a frequency of 1
         else:
             freq_map[num] = 1
     
-    # Iterate over the hashmap to count the equal and divisible pairs
-    for num, freq in freq_map.items():
-        # For each number, iterate from 1 to k (inclusive)
-        for i in range(1, k + 1):
-            # If the number is divisible by i, check if the quotient is in the hashmap
-            if num % i == 0 and num // i in freq_map:
-                # If the quotient is in the hashmap, increment the count by the product of their frequencies
-                count += freq * freq_map[num // i]
+    # Iterate over the array again to count the pairs
+    for num in nums:
+        # For each number, check if its multiple (num + k) is in the map
+        if num + k in freq_map:
+            # If it is, increment the count by the frequency of the multiple
+            count += freq_map[num + k]
     
-    # Since we counted each pair twice, divide the count by 2
-    count //= 2
-    
-    # Return the count of equal and divisible pairs
+    # Return the count of pairs
     return count
-
-# Example usage:
-nums = [1, 2, 3, 4, 5, 6]
-k = 2
-print(count_pairs(nums, k))

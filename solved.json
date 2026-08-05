@@ -410,5 +410,6 @@
     "find-the-k-or-of-an-array",
     "find-all-k-distant-indices-in-an-array",
     "sum-of-values-at-indices-with-k-set-bits",
-    "count-elements-with-maximum-frequency"
+    "count-elements-with-maximum-frequency",
+    "number-of-changing-keys"
 ]
