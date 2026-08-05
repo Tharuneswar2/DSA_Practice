@@ -1,30 +1,43 @@
-def isNumber(s: str) -> bool:
-    # Initialize flags for seen e, seen digit, and seen dot
-    seen_e = seen_digit = seen_dot = False
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
 
+def isNumber(s):
+    # Remove leading and trailing whitespaces
+    s = s.strip()
+    
+    # Check if the string is empty after removing whitespaces
+    if not s:
+        return False
+    
+    # Initialize flags to track the presence of digits, exponent, and decimal point
+    has_digit = False
+    has_exponent = False
+    has_decimal = False
+    
     # Iterate over the string
-    for i, c in enumerate(s):
-        # If the character is a digit, set seen_digit to True
-        if c.isdigit():
-            seen_digit = True
-        # If the character is a dot, check if we've seen a dot or an e before
-        elif c == '.':
-            if seen_dot or seen_e:
+    for i, char in enumerate(s):
+        # Check if the character is a digit
+        if char.isdigit():
+            has_digit = True
+        # Check if the character is a decimal point
+        elif char == '.':
+            # If a decimal point is already present or if it's the last character, return False
+            if has_decimal or i == len(s) - 1:
                 return False
-            seen_dot = True
-        # If the character is an e, check if we've seen an e or a digit before
-        elif c.lower() == 'e':
-            if seen_e or not seen_digit:
+            has_decimal = True
+        # Check if the character is an exponent
+        elif char in ['e', 'E']:
+            # If an exponent is already present or if it's the first or last character, return False
+            if has_exponent or i == 0 or i == len(s) - 1:
                 return False
-            seen_e = True
-            seen_digit = False  # Reset seen_digit after seeing an e
-        # If the character is a sign, check if it's at the start or after an e
-        elif c in ['+', '-']:
-            if i > 0 and s[i-1].lower() != 'e':
+            has_exponent = True
+        # Check if the character is a sign
+        elif char in ['+', '-']:
+            # If the sign is not at the start or after an exponent, return False
+            if i != 0 and s[i - 1].lower() != 'e':
                 return False
         # If the character is none of the above, return False
         else:
             return False
-
-    # Return True if we've seen a digit, False otherwise
-    return seen_digit
+    
+    # Return True if the string contains at least one digit
+    return has_digit

@@ -415,5 +415,6 @@
     "count-equal-and-divisible-pairs-in-an-array",
     "decode-xored-array",
     "construct-uniform-parity-array-i",
-    "find-common-elements-between-two-arrays"
+    "find-common-elements-between-two-arrays",
+    "minimum-subsequence-in-non-increasing-order"
 ]
