@@ -1,13 +1,12 @@
-def max_product_of_two_digits(nums):
-    # First, sort the list in descending order to get the largest numbers first
-    nums.sort(reverse=True)
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
+def maximumProduct(nums):
+    # First, we sort the list of numbers in ascending order
+    nums.sort()
     
-    # The maximum product will be the product of the first two numbers in the sorted list
-    # This is because the product of two numbers is maximized when the numbers are as large as possible
-    max_product = nums[0] * nums[1]
+    # The maximum product can be either the product of the two largest numbers or the product of the two smallest numbers
+    # We calculate both products
+    product1 = nums[-1] * nums[-2]  # product of the two largest numbers
+    product2 = nums[0] * nums[1]    # product of the two smallest numbers
     
-    return max_product
-
-# Example usage:
-numbers = [1, 20, 3, -10, 5]
-print(max_product_of_two_digits(numbers))
+    # We return the maximum of the two products
+    return max(product1, product2)
