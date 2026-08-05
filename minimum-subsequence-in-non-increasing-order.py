@@ -1,20 +1,26 @@
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
 def minSubsequence(nums):
-    # Sort the list in descending order
+    # Sort the list in descending order to prioritize larger numbers
     nums.sort(reverse=True)
     
-    # Initialize variables to store the total sum and the result
+    # Initialize variables to store the total sum of the original list and the sum of the subsequence
     total_sum = sum(nums)
-    result = []
-    current_sum = 0
+    subsequence_sum = 0
+    
+    # Initialize an empty list to store the subsequence
+    subsequence = []
     
     # Iterate over the sorted list
     for num in nums:
-        # Add the current number to the result and update the current sum
-        result.append(num)
-        current_sum += num
+        # Add the current number to the subsequence
+        subsequence.append(num)
         
-        # If the current sum is greater than the total sum minus the current sum, break the loop
-        if current_sum > total_sum - current_sum:
+        # Add the current number to the subsequence sum
+        subsequence_sum += num
+        
+        # If the subsequence sum is greater than half of the total sum, break the loop
+        if subsequence_sum > total_sum / 2:
             break
     
-    return result
+    # Return the subsequence
+    return subsequence

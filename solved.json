@@ -414,5 +414,6 @@
     "number-of-changing-keys",
     "count-equal-and-divisible-pairs-in-an-array",
     "decode-xored-array",
-    "construct-uniform-parity-array-i"
+    "construct-uniform-parity-array-i",
+    "find-common-elements-between-two-arrays"
 ]
