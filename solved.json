@@ -441,5 +441,6 @@
     "kth-missing-positive-number",
     "replace-all-s-to-avoid-consecutive-repeating-characters",
     "form-smallest-number-from-two-digit-arrays",
-    "minimum-pair-removal-to-sort-array-i"
+    "minimum-pair-removal-to-sort-array-i",
+    "lexicographically-smallest-string-after-a-swap"
 ]
