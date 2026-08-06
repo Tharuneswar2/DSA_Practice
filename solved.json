@@ -439,5 +439,6 @@
     "number-of-common-factors",
     "check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence",
     "kth-missing-positive-number",
-    "replace-all-s-to-avoid-consecutive-repeating-characters"
+    "replace-all-s-to-avoid-consecutive-repeating-characters",
+    "form-smallest-number-from-two-digit-arrays"
 ]

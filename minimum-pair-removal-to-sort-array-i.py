@@ -1,17 +1,32 @@
-def minPairRemovalToSort(arr):
-    n = len(arr)
-    # Initialize a list to store the longest increasing subsequence (LIS) ending at each position
-    lis = [1] * n
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
 
-    # Compute the LIS ending at each position
-    for i in range(1, n):
-        for j in range(i):
-            if arr[i] > arr[j]:
-                lis[i] = max(lis[i], lis[j] + 1)
+def minimumSwaps(nums):
+    # Initialize variables to store the number of swaps and the length of the array
+    swaps = 0
+    n = len(nums)
 
-    # The minimum number of pairs to remove is the difference between the length of the array and the maximum LIS
-    return n - max(lis)
+    # Create a copy of the array and sort it
+    # This will be used as a reference to determine the correct order of elements
+    sorted_nums = sorted(nums)
 
-# Test the function
-arr = [4, 2, 3, 1]
-print(minPairRemovalToSort(arr))  # Output: 2
+    # Create a dictionary to store the indices of elements in the sorted array
+    index_dict = {val: i for i, val in enumerate(sorted_nums)}
+
+    # Iterate over the array
+    for i in range(n):
+        # If the current element is not in its correct position
+        if nums[i] != sorted_nums[i]:
+            # Get the index of the element that should be at the current position
+            swap_index = index_dict[nums[i]]
+
+            # Swap the current element with the element at the swap index
+            nums[i], nums[swap_index] = nums[swap_index], nums[i]
+
+            # Update the index dictionary
+            index_dict[nums[i]], index_dict[nums[swap_index]] = index_dict[nums[swap_index]], index_dict[nums[i]]
+
+            # Increment the swap count
+            swaps += 1
+
+    # Return the minimum number of swaps required
+    return swaps
