@@ -433,5 +433,6 @@
     "count-asterisks",
     "truncate-sentence",
     "merge-similar-items",
-    "gcd-of-odd-and-even-sums"
+    "gcd-of-odd-and-even-sums",
+    "replace-all-digits-with-characters"
 ]
