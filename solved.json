@@ -448,5 +448,6 @@
     "number-of-steps-to-reduce-a-number-to-zero",
     "sum-of-all-subset-xor-totals",
     "number-of-rectangles-that-can-form-the-largest-square",
-    "kids-with-the-greatest-number-of-candies"
+    "kids-with-the-greatest-number-of-candies",
+    "latest-time-you-can-obtain-after-replacing-characters"
 ]
