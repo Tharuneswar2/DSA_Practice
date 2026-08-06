@@ -447,5 +447,6 @@
     "largest-3-same-digit-number-in-string",
     "number-of-steps-to-reduce-a-number-to-zero",
     "sum-of-all-subset-xor-totals",
-    "number-of-rectangles-that-can-form-the-largest-square"
+    "number-of-rectangles-that-can-form-the-largest-square",
+    "kids-with-the-greatest-number-of-candies"
 ]
