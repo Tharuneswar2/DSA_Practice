@@ -1,5 +1,6 @@
-def lexicographically_smallest_string_after_swap(s):
-    # Convert the string to a list of characters for easier manipulation
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
+def lexicographicallySmallestString(s):
+    # Convert the string into a list of characters for easier manipulation
     s = list(s)
     
     # Initialize variables to store the indices of the characters to be swapped
@@ -25,5 +26,5 @@ def lexicographically_smallest_string_after_swap(s):
     if first != -1:
         s[first], s[second] = s[second], s[first]
     
-    # Convert the list of characters back to a string and return it
+    # Convert the list of characters back into a string and return it
     return ''.join(s)
