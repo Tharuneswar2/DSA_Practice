@@ -445,5 +445,6 @@
     "lexicographically-smallest-string-after-a-swap",
     "find-numbers-with-even-number-of-digits",
     "largest-3-same-digit-number-in-string",
-    "number-of-steps-to-reduce-a-number-to-zero"
+    "number-of-steps-to-reduce-a-number-to-zero",
+    "sum-of-all-subset-xor-totals"
 ]
