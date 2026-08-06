@@ -435,5 +435,6 @@
     "merge-similar-items",
     "gcd-of-odd-and-even-sums",
     "replace-all-digits-with-characters",
-    "time-needed-to-buy-tickets"
+    "time-needed-to-buy-tickets",
+    "number-of-common-factors"
 ]
