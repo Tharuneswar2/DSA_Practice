@@ -1,21 +1,24 @@
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
+
 def subsetXORSum(nums):
-    # Initialize result variable to store the sum of all subset XOR totals
+    # Initialize the result variable to store the sum of all subset XOR totals
     result = 0
     
-    # Calculate the total number of subsets (2^n, where n is the number of elements)
-    total_subsets = 1 << len(nums)
+    # Calculate the total number of subsets (2^n, where n is the number of elements in the array)
+    n = len(nums)
+    total_subsets = 1 << n  # Using bitwise left shift to calculate 2^n
     
-    # Iterate over all possible subsets
-    for i in range(total_subsets):
-        # Initialize XOR total for the current subset
+    # Iterate over all subsets
+    for subset_mask in range(total_subsets):
+        # Initialize the XOR total for the current subset
         xor_total = 0
         
-        # Iterate over the elements in the current subset
-        for j in range(len(nums)):
-            # Check if the jth bit is set in the binary representation of i
-            if (i & (1 << j)):
-                # If the bit is set, include the jth element in the XOR total
-                xor_total ^= nums[j]
+        # Iterate over each element in the array
+        for i in range(n):
+            # Check if the current element is included in the subset (using bitwise AND operation)
+            if (subset_mask & (1 << i)):  # If the ith bit is set in the subset mask
+                # XOR the current element with the XOR total
+                xor_total ^= nums[i]
         
         # Add the XOR total of the current subset to the result
         result += xor_total
