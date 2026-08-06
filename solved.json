@@ -451,5 +451,6 @@
     "kids-with-the-greatest-number-of-candies",
     "latest-time-you-can-obtain-after-replacing-characters",
     "reverse-prefix-of-word",
-    "minimum-deletions-for-at-most-k-distinct-characters"
+    "minimum-deletions-for-at-most-k-distinct-characters",
+    "maximum-value-of-an-ordered-triplet-i"
 ]
