@@ -1,23 +1,25 @@
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
 def maximumProduct(nums):
-    # Initialize the minimum and maximum values with the first three elements of the array
-    min1, min2 = float('inf'), float('inf')
-    max1, max2, max3 = float('-inf'), float('-inf'), float('-inf')
+    # Initialize minimum and maximum values with the first two elements of the array
+    min1 = min2 = float('inf')  
+    # Initialize maximum values with the first three elements of the array
+    max1 = max2 = max3 = float('-inf')  
 
     # Iterate through the array to find the minimum and maximum values
-    for num in nums:
-        # Update the minimum values
-        if num <= min1:
-            min1, min2 = num, min1
-        elif num < min2:
-            min2 = num
+    for n in nums:
+        # Update minimum values
+        if n <= min1:
+            min1, min2 = n, min1
+        elif n < min2:
+            min2 = n
 
-        # Update the maximum values
-        if num >= max1:
-            max1, max2, max3 = num, max1, max2
-        elif num >= max2:
-            max2, max3 = num, max2
-        elif num > max3:
-            max3 = num
+        # Update maximum values
+        if n >= max1:
+            max1, max2, max3 = n, max1, max2
+        elif n >= max2:
+            max2, max3 = n, max2
+        elif n > max3:
+            max3 = n
 
-    # Return the maximum product
+    # Return the maximum product of three numbers
     return max(min1 * min2 * max1, max1 * max2 * max3)

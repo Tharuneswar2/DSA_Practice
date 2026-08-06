@@ -450,5 +450,6 @@
     "number-of-rectangles-that-can-form-the-largest-square",
     "kids-with-the-greatest-number-of-candies",
     "latest-time-you-can-obtain-after-replacing-characters",
-    "reverse-prefix-of-word"
+    "reverse-prefix-of-word",
+    "minimum-deletions-for-at-most-k-distinct-characters"
 ]
