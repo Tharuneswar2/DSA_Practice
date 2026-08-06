@@ -1,27 +1,32 @@
-from collections import Counter
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
 
-def rearrange_characters(s, target):
-    # Count the frequency of characters in the string and the target
-    s_count = Counter(s)
-    target_count = Counter(target)
+def rearrangeCharacters(s, target):
+    # Create a dictionary to store the frequency of characters in the string s
+    freq_s = {}
+    for char in s:
+        if char in freq_s:
+            freq_s[char] += 1
+        else:
+            freq_s[char] = 1
 
-    # Initialize the result string
-    result = ''
+    # Create a dictionary to store the frequency of characters in the target string
+    freq_target = {}
+    for char in target:
+        if char in freq_target:
+            freq_target[char] += 1
+        else:
+            freq_target[char] = 1
+
+    # Initialize a variable to store the minimum number of rearrangements
+    min_rearrangements = float('inf')
 
     # Iterate over the characters in the target string
-    for char, count in target_count.items():
-        # If the character is not in the string or its count is less than the target count, return an empty string
-        if char not in s_count or s_count[char] < count:
-            return ''
+    for char, count in freq_target.items():
+        # If the character is not present in the string s, return -1
+        if char not in freq_s:
+            return -1
+        # Update the minimum number of rearrangements
+        min_rearrangements = min(min_rearrangements, freq_s[char] // count)
 
-        # Add the character to the result string the specified number of times
-        result += char * count
-
-        # Subtract the count from the string's character count
-        s_count[char] -= count
-
-    # Add any remaining characters in the string to the result string
-    for char, count in s_count.items():
-        result += char * count
-
-    return result
+    # Return the minimum number of rearrangements
+    return min_rearrangements
