@@ -431,5 +431,6 @@
     "number-of-senior-citizens",
     "rearrange-characters-to-make-target-string",
     "count-asterisks",
-    "truncate-sentence"
+    "truncate-sentence",
+    "merge-similar-items"
 ]
