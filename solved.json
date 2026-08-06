@@ -442,5 +442,6 @@
     "replace-all-s-to-avoid-consecutive-repeating-characters",
     "form-smallest-number-from-two-digit-arrays",
     "minimum-pair-removal-to-sort-array-i",
-    "lexicographically-smallest-string-after-a-swap"
+    "lexicographically-smallest-string-after-a-swap",
+    "find-numbers-with-even-number-of-digits"
 ]
