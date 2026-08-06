@@ -1,49 +1,37 @@
-def replace_question_marks(s):
-    # Initialize an empty string to store the result
-    result = ""
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
 
-    # Iterate over the input string
+def modifyString(s):
+    # Convert the string into a list of characters for easier manipulation
+    s = list(s)
+    
+    # Iterate over each character in the string
     for i in range(len(s)):
         # If the character is a question mark
         if s[i] == '?':
-            # If it's the first character or the previous character is not the same as the next character
-            if i == 0 or (i < len(s) - 1 and s[i-1] != s[i+1]):
-                # Replace the question mark with 'a'
-                result += 'a'
-            else:
-                # Replace the question mark with 'b'
-                result += 'b'
-        else:
-            # If the character is not a question mark, just append it to the result
-            result += s[i]
-
-    return result
-
-def replace_question_marks_alternative(s):
-    # Initialize an empty string to store the result
-    result = ""
-
-    # Initialize the previous character
-    prev_char = ''
-
-    # Iterate over the input string
-    for char in s:
-        # If the character is a question mark
-        if char == '?':
-            # If the previous character is 'a', replace the question mark with 'b'
-            if prev_char == 'a':
-                result += 'b'
-            # If the previous character is 'b', replace the question mark with 'a'
-            elif prev_char == 'b':
-                result += 'a'
-            # If the previous character is not 'a' or 'b', replace the question mark with 'a'
-            else:
-                result += 'a'
-        else:
-            # If the character is not a question mark, just append it to the result
-            result += char
-
-        # Update the previous character
-        prev_char = result[-1]
-
-    return result
+            # Initialize a set to store the characters that cannot be used
+            cannot_use = set()
+            
+            # If the previous character exists and is not a question mark, add it to the set
+            if i > 0 and s[i-1] != '?':
+                cannot_use.add(s[i-1])
+            
+            # If the next character exists and is not a question mark, add it to the set
+            if i < len(s) - 1 and s[i+1] != '?':
+                cannot_use.add(s[i+1])
+            
+            # Initialize a variable to store the character that can be used
+            can_use = None
+            
+            # Iterate over all lowercase English letters
+            for char in 'abcdefghijklmnopqrstuvwxyz':
+                # If the character is not in the set of characters that cannot be used
+                if char not in cannot_use:
+                    # Store the character and break the loop
+                    can_use = char
+                    break
+            
+            # Replace the question mark with the character that can be used
+            s[i] = can_use
+    
+    # Join the list of characters back into a string and return it
+    return ''.join(s)

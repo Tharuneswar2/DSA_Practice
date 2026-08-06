@@ -437,5 +437,6 @@
     "replace-all-digits-with-characters",
     "time-needed-to-buy-tickets",
     "number-of-common-factors",
-    "check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence"
+    "check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence",
+    "kth-missing-positive-number"
 ]
