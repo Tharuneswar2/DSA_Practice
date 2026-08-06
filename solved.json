@@ -432,5 +432,6 @@
     "rearrange-characters-to-make-target-string",
     "count-asterisks",
     "truncate-sentence",
-    "merge-similar-items"
+    "merge-similar-items",
+    "gcd-of-odd-and-even-sums"
 ]
