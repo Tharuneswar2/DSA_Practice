@@ -429,5 +429,6 @@
     "longest-strictly-increasing-or-strictly-decreasing-subarray",
     "check-if-number-has-equal-digit-count-and-digit-value",
     "number-of-senior-citizens",
-    "rearrange-characters-to-make-target-string"
+    "rearrange-characters-to-make-target-string",
+    "count-asterisks"
 ]
