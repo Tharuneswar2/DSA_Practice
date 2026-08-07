@@ -463,5 +463,6 @@
     "distance-between-bus-stops",
     "decrypt-string-from-alphabet-to-integer-mapping",
     "check-if-every-row-and-column-contains-all-numbers",
-    "score-of-a-string"
+    "score-of-a-string",
+    "count-special-quadruplets"
 ]
