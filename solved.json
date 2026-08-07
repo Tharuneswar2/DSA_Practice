@@ -468,5 +468,6 @@
     "number-of-employees-who-met-the-target",
     "bitwise-or-of-even-numbers-in-an-array",
     "maximum-subarray-with-equal-products",
-    "substring-matching-pattern"
+    "substring-matching-pattern",
+    "find-the-number-of-winning-players"
 ]
