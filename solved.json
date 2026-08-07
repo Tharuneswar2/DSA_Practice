@@ -460,5 +460,6 @@
     "smallest-absent-positive-greater-than-average",
     "detect-pattern-of-length-m-repeated-k-or-more-times",
     "check-if-it-is-a-straight-line",
-    "distance-between-bus-stops"
+    "distance-between-bus-stops",
+    "decrypt-string-from-alphabet-to-integer-mapping"
 ]

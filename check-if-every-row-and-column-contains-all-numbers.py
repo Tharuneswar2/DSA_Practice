@@ -1,41 +1,12 @@
-def check_valid(matrix):
-    n = len(matrix)
-    
-    # Check rows
-    for row in matrix:
-        # Create a set of numbers from 1 to n
-        nums = set(range(1, n + 1))
-        
-        # Remove numbers present in the row from the set
-        for num in row:
-            if num in nums:
-                nums.remove(num)
-        
-        # If the set is not empty, it means some numbers are missing in the row
-        if nums:
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
+def checkValid(matrix):
+    n = len(matrix)  # Get the size of the matrix
+    for i in range(n):  # Iterate over each row
+        row = set()  # Initialize a set to store unique elements in the row
+        col = set()  # Initialize a set to store unique elements in the column
+        for j in range(n):  # Iterate over each column
+            row.add(matrix[i][j])  # Add the element to the row set
+            col.add(matrix[j][i])  # Add the element to the column set
+        if len(row) != n or len(col) != n:  # If the length of the set is not equal to n, return False
             return False
-    
-    # Check columns
-    for col in range(n):
-        # Create a set of numbers from 1 to n
-        nums = set(range(1, n + 1))
-        
-        # Remove numbers present in the column from the set
-        for row in matrix:
-            if row[col] in nums:
-                nums.remove(row[col])
-        
-        # If the set is not empty, it means some numbers are missing in the column
-        if nums:
-            return False
-    
-    # If no missing numbers are found in rows and columns, return True
-    return True
-
-# Example usage:
-matrix = [
-    [1, 2, 3],
-    [3, 1, 2],
-    [2, 3, 1]
-]
-print(check_valid(matrix))  # Output: True
+    return True  # If all rows and columns contain all numbers, return True
