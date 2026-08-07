@@ -1,3 +1,4 @@
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
 def minCostToMoveChips(position):
     # Initialize variables to store the count of chips at odd and even positions
     odd_count = 0
