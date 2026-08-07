@@ -1,30 +1,24 @@
 # Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
 
-def smallestAbsentPositiveGreaterThanAverage(nums):
+def smallestAbsentPositiveGreaterAverage(nums):
     # Calculate the average of the given list of numbers
     average = sum(nums) / len(nums)
     
-    # Filter out numbers that are less than or equal to the average
-    nums = [num for num in nums if num > average]
+    # Initialize a set to store the positive numbers from the list
+    positive_nums = set()
     
-    # If no numbers are greater than the average, return 1
-    if not nums:
-        return 1
-    
-    # Sort the filtered list of numbers in ascending order
-    nums.sort()
-    
-    # Initialize the smallest absent positive number to 1
-    smallest_absent_positive = 1
-    
-    # Iterate over the sorted list of numbers
+    # Iterate over the list to add positive numbers to the set
     for num in nums:
-        # If the current number is greater than the smallest absent positive number, return the smallest absent positive number
-        if num > smallest_absent_positive:
-            return smallest_absent_positive
-        # If the current number is equal to the smallest absent positive number, increment the smallest absent positive number
-        elif num == smallest_absent_positive:
-            smallest_absent_positive += 1
+        if num > 0:
+            positive_nums.add(num)
     
-    # If the loop completes without finding an absent positive number, return the smallest absent positive number
-    return smallest_absent_positive
+    # Initialize a variable to store the smallest absent positive number greater than average
+    smallest_absent = int(average) + 1
+    
+    # Iterate from the smallest possible positive number greater than average
+    while True:
+        # If the current number is not in the set, it's the smallest absent positive number
+        if smallest_absent not in positive_nums:
+            return smallest_absent
+        # Otherwise, increment the number and continue the loop
+        smallest_absent += 1
