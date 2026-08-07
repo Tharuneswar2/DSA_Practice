@@ -1,23 +1,25 @@
 # Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
 
 def diagonalSum(mat):
-    # Get the size of the matrix
+    # Get the size of the matrix (assuming it's a square matrix)
     n = len(mat)
     
-    # Initialize variables to store the sum of primary and secondary diagonals
+    # Initialize variables to store the sums of the diagonals
     primary_diagonal_sum = 0
     secondary_diagonal_sum = 0
     
     # Iterate over the matrix
     for i in range(n):
-        # For the primary diagonal, the row index is equal to the column index
+        # For each row, add the element at the current row and column to the primary diagonal sum
         primary_diagonal_sum += mat[i][i]
         
-        # For the secondary diagonal, the row index is equal to the difference between the size of the matrix and the column index minus one
+        # For each row, add the element at the current row and the column mirrored across the center to the secondary diagonal sum
         secondary_diagonal_sum += mat[i][n - i - 1]
     
-    # If the size of the matrix is odd, the middle element is counted twice, so we subtract it once
+    # If the matrix has an odd size, the middle element is counted twice, so subtract it once
     if n % 2 == 1:
-        return primary_diagonal_sum + secondary_diagonal_sum - mat[n // 2][n // 2]
+        middle_element = mat[n // 2][n // 2]
+        return primary_diagonal_sum + secondary_diagonal_sum - middle_element
     else:
+        # If the matrix has an even size, return the sum of the diagonals
         return primary_diagonal_sum + secondary_diagonal_sum

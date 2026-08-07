@@ -454,5 +454,6 @@
     "minimum-deletions-for-at-most-k-distinct-characters",
     "maximum-value-of-an-ordered-triplet-i",
     "minimum-cost-to-move-chips-to-the-same-position",
-    "counting-words-with-a-given-prefix"
+    "counting-words-with-a-given-prefix",
+    "reformat-the-string"
 ]
