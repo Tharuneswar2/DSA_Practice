@@ -457,5 +457,6 @@
     "counting-words-with-a-given-prefix",
     "reformat-the-string",
     "matrix-diagonal-sum",
-    "smallest-absent-positive-greater-than-average"
+    "smallest-absent-positive-greater-than-average",
+    "detect-pattern-of-length-m-repeated-k-or-more-times"
 ]
