@@ -458,5 +458,6 @@
     "reformat-the-string",
     "matrix-diagonal-sum",
     "smallest-absent-positive-greater-than-average",
-    "detect-pattern-of-length-m-repeated-k-or-more-times"
+    "detect-pattern-of-length-m-repeated-k-or-more-times",
+    "check-if-it-is-a-straight-line"
 ]

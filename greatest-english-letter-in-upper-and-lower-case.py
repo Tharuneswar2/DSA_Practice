@@ -21,5 +21,6 @@ def greatestLetter(s: str) -> str:
                 greatest_letter = char.upper()
                 # Break the loop as we have found the greatest English letter
                 break
+    
     # Return the greatest English letter
     return greatest_letter
