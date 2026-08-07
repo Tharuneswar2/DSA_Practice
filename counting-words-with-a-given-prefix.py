@@ -1,48 +1,20 @@
-class TrieNode:
-    def __init__(self):
-        # Initialize a TrieNode with an empty dictionary to store children and a count to store the number of words
-        self.children = {}
-        self.count = 0
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
 
-class Trie:
-    def __init__(self):
-        # Initialize a Trie with a root node
-        self.root = TrieNode()
-
-    def insert(self, word):
-        # Insert a word into the Trie
-        node = self.root
-        for char in word:
-            if char not in node.children:
-                node.children[char] = TrieNode()
-            node = node.children[char]
-        node.count += 1
-
-    def count_words_with_prefix(self, prefix):
-        # Count the number of words with a given prefix
-        node = self.root
-        for char in prefix:
-            if char not in node.children:
-                return 0
-            node = node.children[char]
-        return self._count_words(node)
-
-    def _count_words(self, node):
-        # Helper function to count the number of words in a subtree
-        count = node.count
-        for child in node.children.values():
-            count += self._count_words(child)
-        return count
-
-def count_words_with_prefix(words, prefix):
-    # Create a Trie and insert all words
-    trie = Trie()
+def countWordsWithPrefix(words, prefix):
+    # Initialize a counter variable to store the count of words with the given prefix
+    count = 0
+    
+    # Iterate over each word in the list of words
     for word in words:
-        trie.insert(word)
+        # Check if the word starts with the given prefix
+        if word.startswith(prefix):
+            # If the word starts with the prefix, increment the counter
+            count += 1
+    
     # Return the count of words with the given prefix
-    return trie.count_words_with_prefix(prefix)
+    return count
 
-# Example usage
-words = ["apple", "app", "application", "banana", "banter"]
-prefix = "app"
-print(count_words_with_prefix(words, prefix))  # Output: 3
+def countWordsWithPrefixEfficient(words, prefix):
+    # Use list comprehension to filter words that start with the given prefix
+    # and return the length of the resulting list
+    return len([word for word in words if word.startswith(prefix)])
