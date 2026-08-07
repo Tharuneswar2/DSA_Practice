@@ -469,5 +469,6 @@
     "bitwise-or-of-even-numbers-in-an-array",
     "maximum-subarray-with-equal-products",
     "substring-matching-pattern",
-    "find-the-number-of-winning-players"
+    "find-the-number-of-winning-players",
+    "count-integers-with-even-digit-sum"
 ]
