@@ -1,3 +1,4 @@
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
 def distanceBetweenBusStops(distance, start, destination):
     # Calculate the total distance of the circular route
     total_distance = sum(distance)
