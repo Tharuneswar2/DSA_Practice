@@ -466,5 +466,6 @@
     "score-of-a-string",
     "count-special-quadruplets",
     "number-of-employees-who-met-the-target",
-    "bitwise-or-of-even-numbers-in-an-array"
+    "bitwise-or-of-even-numbers-in-an-array",
+    "maximum-subarray-with-equal-products"
 ]
