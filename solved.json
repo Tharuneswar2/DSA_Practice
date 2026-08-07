@@ -471,5 +471,6 @@
     "substring-matching-pattern",
     "find-the-number-of-winning-players",
     "count-integers-with-even-digit-sum",
-    "calculate-amount-paid-in-taxes"
+    "calculate-amount-paid-in-taxes",
+    "transformed-array"
 ]
