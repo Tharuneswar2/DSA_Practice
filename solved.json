@@ -464,5 +464,6 @@
     "decrypt-string-from-alphabet-to-integer-mapping",
     "check-if-every-row-and-column-contains-all-numbers",
     "score-of-a-string",
-    "count-special-quadruplets"
+    "count-special-quadruplets",
+    "number-of-employees-who-met-the-target"
 ]
