@@ -461,5 +461,6 @@
     "detect-pattern-of-length-m-repeated-k-or-more-times",
     "check-if-it-is-a-straight-line",
     "distance-between-bus-stops",
-    "decrypt-string-from-alphabet-to-integer-mapping"
+    "decrypt-string-from-alphabet-to-integer-mapping",
+    "check-if-every-row-and-column-contains-all-numbers"
 ]
