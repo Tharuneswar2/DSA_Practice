@@ -474,5 +474,6 @@
     "calculate-amount-paid-in-taxes",
     "transformed-array",
     "minimum-sum-of-four-digit-number-after-splitting-digits",
-    "sign-of-the-product-of-an-array"
+    "sign-of-the-product-of-an-array",
+    "sum-of-all-odd-length-subarrays"
 ]
