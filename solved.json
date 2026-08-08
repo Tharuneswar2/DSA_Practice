@@ -488,5 +488,6 @@
     "make-the-string-great",
     "count-symmetric-integers",
     "last-visited-integers",
-    "minimum-string-length-after-removing-substrings"
+    "minimum-string-length-after-removing-substrings",
+    "count-of-matches-in-tournament"
 ]
