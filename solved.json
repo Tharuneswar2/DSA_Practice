@@ -477,5 +477,6 @@
     "sign-of-the-product-of-an-array",
     "sum-of-all-odd-length-subarrays",
     "make-array-elements-equal-to-zero",
-    "smallest-index-with-digit-sum-equal-to-index"
+    "smallest-index-with-digit-sum-equal-to-index",
+    "find-minimum-operations-to-make-all-elements-divisible-by-three"
 ]
