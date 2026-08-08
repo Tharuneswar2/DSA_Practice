@@ -480,5 +480,6 @@
     "smallest-index-with-digit-sum-equal-to-index",
     "find-minimum-operations-to-make-all-elements-divisible-by-three",
     "longest-subsequence-with-limited-sum",
-    "find-missing-and-repeated-values"
+    "find-missing-and-repeated-values",
+    "maximize-expression-of-three-elements"
 ]
