@@ -473,5 +473,6 @@
     "count-integers-with-even-digit-sum",
     "calculate-amount-paid-in-taxes",
     "transformed-array",
-    "minimum-sum-of-four-digit-number-after-splitting-digits"
+    "minimum-sum-of-four-digit-number-after-splitting-digits",
+    "sign-of-the-product-of-an-array"
 ]
