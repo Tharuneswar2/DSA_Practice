@@ -1,26 +1,33 @@
-def find_missing_repeated(arr):
-    # Create a frequency array to store the frequency of each element
-    freq = [0] * len(arr)
-    
-    # Traverse the array and update the frequency array
-    for num in arr:
-        freq[abs(num) - 1] += 1
-    
-    # Initialize variables to store the missing and repeated numbers
-    missing = None
-    repeated = None
-    
-    # Traverse the frequency array to find the missing and repeated numbers
-    for i in range(len(freq)):
-        if freq[i] == 0:
-            missing = i + 1
-        elif freq[i] > 1:
-            repeated = i + 1
-    
-    return missing, repeated
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
 
-# Example usage:
-arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 1]
-missing, repeated = find_missing_repeated(arr)
-print("Missing number:", missing)
-print("Repeated number:", repeated)
+def find_missing_repeated(nums):
+    # Create a set to store the numbers we've seen so far
+    seen = set()
+    # Create a list to store the duplicates
+    duplicates = []
+    # Create a list to store the missing numbers
+    missing = []
+    
+    # Iterate over the range from 1 to the length of the input list + 1
+    for num in range(1, len(nums) + 1):
+        # If the number is not in the input list, add it to the missing list
+        if num not in nums:
+            missing.append(num)
+    
+    # Iterate over the input list
+    for num in nums:
+        # If the number is already in the seen set, it's a duplicate
+        if num in seen:
+            duplicates.append(num)
+        # Otherwise, add it to the seen set
+        else:
+            seen.add(num)
+    
+    # Return the missing and duplicate numbers
+    return missing, duplicates
+
+# Test the function
+nums = [4, 3, 2, 7, 8, 2, 3, 1]
+missing, duplicates = find_missing_repeated(nums)
+print("Missing numbers:", missing)
+print("Duplicate numbers:", duplicates)
