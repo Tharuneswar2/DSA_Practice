@@ -475,5 +475,6 @@
     "transformed-array",
     "minimum-sum-of-four-digit-number-after-splitting-digits",
     "sign-of-the-product-of-an-array",
-    "sum-of-all-odd-length-subarrays"
+    "sum-of-all-odd-length-subarrays",
+    "make-array-elements-equal-to-zero"
 ]
