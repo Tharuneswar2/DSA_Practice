@@ -1,29 +1,18 @@
 # Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
 
 def minimumLength(s):
-    # Initialize two pointers, one at the start and one at the end of the string
-    left, right = 0, len(s) - 1
+    # Initialize a stack to store characters from the string
+    stack = []
     
-    # Continue the process until the two pointers meet
-    while left < right:
-        # If the characters at the left and right pointers are the same
-        if s[left] == s[right]:
-            # If the string has at least 2 characters
-            if right - left > 1:
-                # If the characters at the left and right pointers are the same as the next characters
-                if s[left] == s[left + 1] and s[right] == s[right - 1]:
-                    # Move the left pointer to the right and the right pointer to the left
-                    left += 1
-                    right -= 1
-                else:
-                    # Move the left pointer to the right
-                    left += 1
-            else:
-                # Move the left pointer to the right
-                left += 1
+    # Iterate over each character in the string
+    for char in s:
+        # If the stack is not empty and the top of the stack is equal to the current character
+        if stack and stack[-1] == char:
+            # Remove the top element from the stack (simulate removal of substring)
+            stack.pop()
         else:
-            # If the characters at the left and right pointers are different, break the loop
-            break
+            # Otherwise, add the character to the stack
+            stack.append(char)
     
-    # Return the length of the remaining string
-    return right - left + 1
+    # The minimum length of the string after removing substrings is the size of the stack
+    return len(stack)

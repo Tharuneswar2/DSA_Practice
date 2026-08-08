@@ -486,5 +486,6 @@
     "check-if-word-equals-summation-of-two-words",
     "k-items-with-the-maximum-sum",
     "make-the-string-great",
-    "count-symmetric-integers"
+    "count-symmetric-integers",
+    "last-visited-integers"
 ]
