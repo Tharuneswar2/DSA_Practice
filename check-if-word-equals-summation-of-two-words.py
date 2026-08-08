@@ -1,14 +1,24 @@
-def is_sum_equal(first_word, second_word, target_word):
-    # Convert words to numbers by mapping each letter to its corresponding number (a=1, b=2, ..., z=26)
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
+def isSumEqual(firstWord, secondWord, targetWord):
+    # Define a helper function to convert a word to a number
     def word_to_num(word):
-        return sum(ord(char) - 96 for char in word)
+        # Initialize the result to 0
+        num = 0
+        # Iterate over each character in the word
+        for char in word:
+            # Convert the character to its corresponding digit (a=0, b=1, ..., j=9)
+            digit = ord(char) - ord('a')
+            # Append the digit to the result
+            num = num * 10 + digit
+        # Return the result
+        return num
 
-    # Calculate the sum of the first two words
-    sum_of_first_two_words = word_to_num(first_word) + word_to_num(second_word)
+    # Convert the first word to a number
+    first_num = word_to_num(firstWord)
+    # Convert the second word to a number
+    second_num = word_to_num(secondWord)
+    # Convert the target word to a number
+    target_num = word_to_num(targetWord)
 
-    # Check if the sum equals the target word
-    return sum_of_first_two_words == word_to_num(target_word)
-
-# Test the function
-print(is_sum_equal("aaa", "a", "aab"))  # True
-print(is_sum_equal("aaa", "a", "aaaa"))  # False
+    # Check if the sum of the first two numbers equals the target number
+    return first_num + second_num == target_num
