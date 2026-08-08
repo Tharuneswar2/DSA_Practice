@@ -1,15 +1,17 @@
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
 def makeGood(s: str) -> str:
+    # Initialize an empty stack to store characters
     stack = []
     
     # Iterate over each character in the string
     for char in s:
-        # If the stack is not empty and the last character in the stack is the same as the current character but with different case
+        # If the stack is not empty and the current character is the opposite case of the top of the stack
         if stack and stack[-1].lower() == char.lower() and stack[-1] != char:
-            # Remove the last character from the stack
+            # Remove the top of the stack (pop operation)
             stack.pop()
         else:
-            # Add the current character to the stack
+            # Otherwise, push the current character onto the stack
             stack.append(char)
     
-    # Join all characters in the stack into a string and return it
+    # Join all characters in the stack into a string and return the result
     return ''.join(stack)
