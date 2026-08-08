@@ -1,16 +1,19 @@
-def kItemsWithMaximumSum(k, prices):
-    # Sort the prices in descending order to get the maximum sum
-    prices.sort(reverse=True)
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
+
+def kItemsWithMaximumSum(k, a, target):
+    # Sort the array in descending order to prioritize larger numbers
+    a.sort(reverse=True)
     
-    # Initialize the sum with 0
+    # Initialize a variable to store the sum of the selected items
     total_sum = 0
     
-    # Iterate over the first k prices and add them to the sum
+    # Iterate over the sorted array
     for i in range(k):
-        total_sum += prices[i]
+        # If adding the current item exceeds the target, break the loop
+        if total_sum + a[i] > target:
+            break
+        # Otherwise, add the current item to the total sum
+        total_sum += a[i]
     
-    # Return the total sum
+    # Return the total sum of the selected items
     return total_sum
-
-# Test the function
-print(kItemsWithMaximumSum(3, [1, 2, 3, 4, 5]))  # Output: 12

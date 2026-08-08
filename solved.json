@@ -482,5 +482,6 @@
     "longest-subsequence-with-limited-sum",
     "find-missing-and-repeated-values",
     "maximize-expression-of-three-elements",
-    "two-out-of-three"
+    "two-out-of-three",
+    "check-if-word-equals-summation-of-two-words"
 ]
