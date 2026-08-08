@@ -1,19 +1,27 @@
-def count_symmetric_integers(matrix):
-    # Initialize count of symmetric integers
-    count = 0
-    
-    # Iterate over the rows of the matrix
-    for i in range(len(matrix)):
-        # Iterate over the columns of the matrix
-        for j in range(len(matrix[0])):
-            # Check if the element is symmetric
-            if matrix[i][j] == matrix[j][i]:
-                # If the element is symmetric, increment the count
-                count += 1
-                
-    # Return the count of symmetric integers
-    return count
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
 
-# Example usage:
-matrix = [[1, 2, 3], [2, 1, 4], [3, 4, 5]]
-print(count_symmetric_integers(matrix))
+def count_symmetric_integers(nums):
+    # Create a dictionary to store the frequency of each integer
+    freq_dict = {}
+    
+    # Iterate over the list of integers
+    for num in nums:
+        # If the integer is already in the dictionary, increment its frequency
+        if num in freq_dict:
+            freq_dict[num] += 1
+        # If the integer is not in the dictionary, add it with a frequency of 1
+        else:
+            freq_dict[num] = 1
+    
+    # Initialize a variable to store the count of symmetric integers
+    symmetric_count = 0
+    
+    # Iterate over the dictionary items
+    for num, freq in freq_dict.items():
+        # Check if the negative of the current integer is also in the dictionary
+        if -num in freq_dict:
+            # If it is, increment the symmetric count by the minimum frequency of the two integers
+            symmetric_count += min(freq, freq_dict[-num])
+    
+    # Return the count of symmetric integers
+    return symmetric_count

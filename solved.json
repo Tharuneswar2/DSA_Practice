@@ -484,5 +484,6 @@
     "maximize-expression-of-three-elements",
     "two-out-of-three",
     "check-if-word-equals-summation-of-two-words",
-    "k-items-with-the-maximum-sum"
+    "k-items-with-the-maximum-sum",
+    "make-the-string-great"
 ]
