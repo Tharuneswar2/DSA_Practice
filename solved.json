@@ -479,5 +479,6 @@
     "make-array-elements-equal-to-zero",
     "smallest-index-with-digit-sum-equal-to-index",
     "find-minimum-operations-to-make-all-elements-divisible-by-three",
-    "longest-subsequence-with-limited-sum"
+    "longest-subsequence-with-limited-sum",
+    "find-missing-and-repeated-values"
 ]
