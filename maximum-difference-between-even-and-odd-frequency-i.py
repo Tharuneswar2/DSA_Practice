@@ -1,22 +1,28 @@
 # Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
-def maxEvenOdd(arr):
-    # Initialize variables to store the maximum difference and the frequency of even and odd numbers
+def maxEvenOdd(nums):
+    # Initialize variables to store the maximum difference and the current difference
     max_diff = 0
-    even_freq = 0
-    odd_freq = 0
+    curr_diff = 0
     
-    # Iterate over the array to count the frequency of even and odd numbers
-    for num in arr:
+    # Initialize variables to store the count of even and odd numbers
+    even_count = 0
+    odd_count = 0
+    
+    # Iterate over the array
+    for num in nums:
         # Check if the number is even
         if num % 2 == 0:
-            # Increment the even frequency
-            even_freq += 1
+            # If the number is even, increment the even count
+            even_count += 1
         else:
-            # Increment the odd frequency
-            odd_freq += 1
-    
-    # Calculate the maximum difference between even and odd frequencies
-    max_diff = abs(even_freq - odd_freq)
+            # If the number is odd, increment the odd count
+            odd_count += 1
+        
+        # Update the current difference
+        curr_diff = even_count - odd_count
+        
+        # Update the maximum difference if the current difference is greater
+        max_diff = max(max_diff, curr_diff)
     
     # Return the maximum difference
     return max_diff
