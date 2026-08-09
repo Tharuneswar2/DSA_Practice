@@ -1,25 +1,22 @@
-def average_of_even_numbers_divisible_by_three(numbers):
-    # Initialize sum and count variables to zero
+# Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
+def average_of_even_numbers_divisible_by_three(nums):
+    # Initialize sum and count variables to keep track of the sum and count of even numbers divisible by 3
     total_sum = 0
     count = 0
     
     # Iterate over each number in the input list
-    for num in numbers:
-        # Check if the number is even and divisible by three
+    for num in nums:
+        # Check if the number is even and divisible by 3
         if num % 2 == 0 and num % 3 == 0:
-            # Add the number to the total sum
+            # If the number is even and divisible by 3, add it to the total sum
             total_sum += num
-            # Increment the count of numbers that meet the condition
+            # Increment the count of even numbers divisible by 3
             count += 1
     
-    # Check if any numbers met the condition
+    # Check if there are any even numbers divisible by 3
     if count == 0:
-        # If not, return zero as per the problem statement
+        # If not, return 0 as the average
         return 0
     else:
-        # Otherwise, return the average of the numbers that met the condition
+        # If there are, return the average of the even numbers divisible by 3
         return total_sum / count
-
-# Example usage:
-numbers = [1, 2, 3, 4, 5, 6, 9, 12, 15, 18]
-print(average_of_even_numbers_divisible_by_three(numbers))

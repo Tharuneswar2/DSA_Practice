@@ -491,5 +491,6 @@
     "minimum-string-length-after-removing-substrings",
     "count-of-matches-in-tournament",
     "finding-3-digit-even-numbers",
-    "greatest-english-letter-in-upper-and-lower-case"
+    "greatest-english-letter-in-upper-and-lower-case",
+    "find-valid-pair-of-adjacent-digits-in-string"
 ]
