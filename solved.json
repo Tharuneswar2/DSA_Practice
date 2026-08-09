@@ -494,5 +494,6 @@
     "greatest-english-letter-in-upper-and-lower-case",
     "find-valid-pair-of-adjacent-digits-in-string",
     "average-value-of-even-numbers-that-are-divisible-by-three",
-    "count-indices-with-opposite-parity"
+    "count-indices-with-opposite-parity",
+    "button-with-longest-push-time"
 ]
