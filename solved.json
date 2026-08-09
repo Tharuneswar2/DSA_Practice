@@ -492,5 +492,6 @@
     "count-of-matches-in-tournament",
     "finding-3-digit-even-numbers",
     "greatest-english-letter-in-upper-and-lower-case",
-    "find-valid-pair-of-adjacent-digits-in-string"
+    "find-valid-pair-of-adjacent-digits-in-string",
+    "average-value-of-even-numbers-that-are-divisible-by-three"
 ]
