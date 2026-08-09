@@ -1,23 +1,18 @@
 # Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
-
-def longest_push_time(buttons):
-    # Initialize variables to store the maximum time and the corresponding button
+def findLongestPushTime(buttons):
+    # Initialize a variable to store the maximum time
     max_time = 0
-    max_button = -1
     
     # Iterate over each button
-    for i in range(len(buttons)):
-        # Initialize variables to store the start and end time of the current button
-        start_time = buttons[i][0]
-        end_time = buttons[i][1]
+    for button in buttons:
+        # Initialize variables to store the start and end time of the button
+        start, end = button
         
         # Calculate the time for the current button
-        time = end_time - start_time
+        time = end - start
         
-        # If the time for the current button is greater than the maximum time found so far, update the maximum time and the corresponding button
-        if time > max_time:
-            max_time = time
-            max_button = i
+        # Update the maximum time if the current time is greater
+        max_time = max(max_time, time)
     
-    # Return the button with the longest push time
-    return max_button
+    # Return the maximum time
+    return max_time
