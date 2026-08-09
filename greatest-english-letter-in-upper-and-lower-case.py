@@ -1,26 +1,23 @@
 # Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
 def greatestLetter(s: str) -> str:
-    # Create a set of unique characters in the string for efficient lookups
-    unique_chars = set(s)
+    # Create a set of the string to remove duplicate characters and have O(1) lookup time
+    s_set = set(s)
     
-    # Initialize an empty string to store the greatest English letter
-    greatest_letter = ""
+    # Initialize the result as an empty string
+    result = ""
     
-    # Iterate over the unique characters in descending order
-    for char in sorted(unique_chars, reverse=True):
-        # Check if the character is an English letter
-        if char.isalpha():
-            # Check if both the upper case and lower case versions of the character exist in the string
-            if char.isupper() and char.lower() in unique_chars:
-                # Update the greatest letter
-                greatest_letter = char
-                # Break the loop as we have found the greatest English letter
-                break
-            elif char.islower() and char.upper() in unique_chars:
-                # Update the greatest letter
-                greatest_letter = char.upper()
-                # Break the loop as we have found the greatest English letter
-                break
+    # Iterate over the set in reverse order to find the greatest letter
+    for char in sorted(s_set, reverse=True):
+        # Check if the character is in both lower and upper case
+        if char.isupper() and char.lower() in s_set:
+            # If it is, update the result and break the loop
+            result = char
+            break
+        # If the character is in lower case, check if its upper case counterpart is in the set
+        elif char.islower() and char.upper() in s_set:
+            # If it is, update the result and break the loop
+            result = char.upper()
+            break
     
-    # Return the greatest English letter
-    return greatest_letter
+    # Return the result
+    return result

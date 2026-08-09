@@ -489,5 +489,6 @@
     "count-symmetric-integers",
     "last-visited-integers",
     "minimum-string-length-after-removing-substrings",
-    "count-of-matches-in-tournament"
+    "count-of-matches-in-tournament",
+    "finding-3-digit-even-numbers"
 ]
