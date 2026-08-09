@@ -496,5 +496,6 @@
     "average-value-of-even-numbers-that-are-divisible-by-three",
     "count-indices-with-opposite-parity",
     "button-with-longest-push-time",
-    "shortest-distance-to-target-string-in-a-circular-array"
+    "shortest-distance-to-target-string-in-a-circular-array",
+    "longest-nice-substring"
 ]
