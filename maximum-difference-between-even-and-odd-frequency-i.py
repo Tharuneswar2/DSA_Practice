@@ -1,26 +1,28 @@
 # Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
-def max_difference(nums):
-    # Initialize variables to store the maximum and minimum frequency of even and odd numbers
-    max_even = float('-inf')  # Initialize max_even as negative infinity
-    min_odd = float('inf')  # Initialize min_odd as positive infinity
-
-    # Initialize variables to store the frequency of even and odd numbers
-    even_freq = 0
-    odd_freq = 0
-
-    # Iterate through the list of numbers
-    for num in nums:
+def maxEvenOdd(arr):
+    # Initialize variables to store the maximum difference and the current difference
+    max_diff = 0
+    curr_diff = 0
+    
+    # Initialize variables to store the count of even and odd numbers
+    even_count = 0
+    odd_count = 0
+    
+    # Iterate over the array to count the even and odd numbers
+    for num in arr:
         # Check if the number is even
         if num % 2 == 0:
-            # Increment the frequency of even numbers
-            even_freq += 1
-            # Update max_even if the current frequency is higher
-            max_even = max(max_even, even_freq)
+            # Increment the even count
+            even_count += 1
         else:
-            # Increment the frequency of odd numbers
-            odd_freq += 1
-            # Update min_odd if the current frequency is lower
-            min_odd = min(min_odd, odd_freq)
-
-    # Return the maximum difference between the frequency of even and odd numbers
-    return max_even - min_odd
+            # Increment the odd count
+            odd_count += 1
+        
+        # Update the current difference
+        curr_diff = even_count - odd_count
+        
+        # Update the maximum difference if the current difference is greater
+        max_diff = max(max_diff, curr_diff)
+    
+    # Return the maximum difference
+    return max_diff
