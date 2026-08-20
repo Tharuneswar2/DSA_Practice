@@ -9,43 +9,25 @@ def max_difference(nums):
     curr_even_freq = 0
     curr_odd_freq = 0
     
-    # Initialize variables to store the previous number and its parity
-    prev_num = None
-    prev_is_even = None
+    # Initialize variables to store the maximum difference between even and odd frequencies
+    max_diff = 0
     
-    # Iterate over the list of numbers
+    # Iterate over the array
     for num in nums:
-        # Check if the current number is even or odd
-        is_even = num % 2 == 0
-        
-        # If the current number has the same parity as the previous number, increment its frequency
-        if prev_num is not None and is_even == prev_is_even:
-            if is_even:
-                curr_even_freq += 1
-            else:
-                curr_odd_freq += 1
-        # If the current number has a different parity than the previous number, update the maximum frequency and reset the current frequency
+        # Check if the number is even
+        if num % 2 == 0:
+            # Increment the current even frequency
+            curr_even_freq += 1
+            # Update the maximum even frequency if necessary
+            max_even_freq = max(max_even_freq, curr_even_freq)
         else:
-            if prev_num is not None:
-                if prev_is_even:
-                    max_even_freq = max(max_even_freq, curr_even_freq)
-                else:
-                    max_odd_freq = max(max_odd_freq, curr_odd_freq)
-            # Reset the current frequency
-            if is_even:
-                curr_even_freq = 1
-            else:
-                curr_odd_freq = 1
+            # Increment the current odd frequency
+            curr_odd_freq += 1
+            # Update the maximum odd frequency if necessary
+            max_odd_freq = max(max_odd_freq, curr_odd_freq)
         
-        # Update the previous number and its parity
-        prev_num = num
-        prev_is_even = is_even
+        # Update the maximum difference between even and odd frequencies
+        max_diff = max(max_diff, abs(max_even_freq - max_odd_freq))
     
-    # Update the maximum frequency one last time
-    if prev_is_even:
-        max_even_freq = max(max_even_freq, curr_even_freq)
-    else:
-        max_odd_freq = max(max_odd_freq, curr_odd_freq)
-    
-    # Return the maximum difference between the maximum even and odd frequencies
-    return max_even_freq - max_odd_freq
+    # Return the maximum difference between even and odd frequencies
+    return max_diff
