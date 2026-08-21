@@ -1,33 +1,26 @@
 # Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
-
 def max_difference(nums):
-    # Initialize variables to store the maximum frequency of even and odd numbers
-    max_even_freq = 0
-    max_odd_freq = 0
-    
-    # Initialize variables to store the current frequency of even and odd numbers
-    curr_even_freq = 0
-    curr_odd_freq = 0
-    
-    # Initialize variables to store the maximum difference between even and odd frequencies
-    max_diff = 0
-    
-    # Iterate over the array
+    # Initialize variables to store the maximum and minimum frequencies of even and odd numbers
+    max_even = float('-inf')  # Initialize max_even as negative infinity
+    min_odd = float('inf')  # Initialize min_odd as positive infinity
+
+    # Initialize variables to store the frequency of even and odd numbers
+    even_freq = 0
+    odd_freq = 0
+
+    # Iterate through the list of numbers
     for num in nums:
         # Check if the number is even
         if num % 2 == 0:
-            # Increment the current even frequency
-            curr_even_freq += 1
-            # Update the maximum even frequency if necessary
-            max_even_freq = max(max_even_freq, curr_even_freq)
+            # Increment the frequency of even numbers
+            even_freq += 1
+            # Update max_even if the current frequency is higher
+            max_even = max(max_even, even_freq)
         else:
-            # Increment the current odd frequency
-            curr_odd_freq += 1
-            # Update the maximum odd frequency if necessary
-            max_odd_freq = max(max_odd_freq, curr_odd_freq)
-        
-        # Update the maximum difference between even and odd frequencies
-        max_diff = max(max_diff, abs(max_even_freq - max_odd_freq))
-    
-    # Return the maximum difference between even and odd frequencies
-    return max_diff
+            # Increment the frequency of odd numbers
+            odd_freq += 1
+            # Update min_odd if the current frequency is lower
+            min_odd = min(min_odd, odd_freq)
+
+    # Return the maximum difference between the maximum frequency of even numbers and the minimum frequency of odd numbers
+    return max_even - min_odd
