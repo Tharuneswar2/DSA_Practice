@@ -1,29 +1,30 @@
 # Solution approach 2 - provide an efficient python solution with detailed inline comments explaining each step
-
-def maxEvenOdd(arr):
-    # Initialize variables to store the maximum difference and the current difference
-    max_diff = 0
-    curr_diff = 0
+def maxEvenOdd(nums):
+    # Initialize variables to store the maximum even and odd frequencies
+    max_even = 0
+    max_odd = 0
     
-    # Initialize variables to store the count of even and odd numbers
-    even_count = 0
-    odd_count = 0
+    # Initialize variables to store the current even and odd frequencies
+    curr_even = 0
+    curr_odd = 0
     
-    # Iterate over the array to count the even and odd numbers
-    for num in arr:
-        # Check if the number is even
+    # Iterate over the input array
+    for num in nums:
+        # Check if the current number is even
         if num % 2 == 0:
-            # Increment the even count
-            even_count += 1
+            # If the current number is even, increment the current even frequency
+            curr_even += 1
+            # Update the maximum even frequency if the current even frequency is greater
+            max_even = max(max_even, curr_even)
+            # Reset the current odd frequency
+            curr_odd = 0
         else:
-            # Increment the odd count
-            odd_count += 1
-        
-        # Update the current difference
-        curr_diff = even_count - odd_count
-        
-        # Update the maximum difference if the current difference is greater
-        max_diff = max(max_diff, curr_diff)
+            # If the current number is odd, increment the current odd frequency
+            curr_odd += 1
+            # Update the maximum odd frequency if the current odd frequency is greater
+            max_odd = max(max_odd, curr_odd)
+            # Reset the current even frequency
+            curr_even = 0
     
-    # Return the maximum difference
-    return max_diff
+    # Return the maximum difference between the maximum even and odd frequencies
+    return max(max_even, max_odd)
