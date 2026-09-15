@@ -2,17 +2,97 @@ name: Daily DSA Practice Bot
 
 on:
   schedule:
-    # Run at multiple times throughout the day (IST-friendly)
-    - cron: '30 0 * * *'    # 6:00 AM IST
-    - cron: '30 6 * * *'    # 12:00 PM IST (optional midday run)
+    - cron: '30 0 * * *'    # 6:00 AM IST - Morning burst
+    - cron: '30 6 * * *'    # 12:00 PM IST - Midday burst
+    - cron: '30 9 * * *'    # 3:00 PM IST - Afternoon burst
+    - cron: '30 12 * * *'   # 6:00 PM IST - Evening burst
+    - cron: '30 15 * * *'   # 9:00 PM IST - Night burst
   workflow_dispatch:
 
 jobs:
-  run-dsa-bot:
+  streak-burst:
     runs-on: ubuntu-latest
-
     permissions:
       contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Configure Git
+        run: |
+          git config user.name "Tharuneswar"
+          git config user.email "dtharuneswar@aditya.ac.in"
+
+      - name: Pull latest
+        run: |
+          for i in 1 2 3; do
+            git pull --rebase origin master && break || sleep 5
+          done
+
+      - name: Run streak burst
+        run: |
+          set -e
+          TODAY=$(date -u +"%Y-%m-%d")
+          TODAY_COUNT=$(git log --since="midnight UTC" --oneline 2>/dev/null | wc -l)
+
+          echo "Today's existing commits: $TODAY_COUNT"
+
+          # Skip if already at or above 20
+          if [ "$TODAY_COUNT" -ge 20 ]; then
+            echo "Already have $TODAY_COUNT commits today. Skipping."
+            exit 0
+          fi
+
+          # Calculate target: aim for 14-16 total per day
+          TARGET=15
+          NEEDED=$((TARGET - TODAY_COUNT))
+          if [ "$NEEDED" -le 0 ]; then
+            echo "Already met target. Skipping."
+            exit 0
+          fi
+
+          # Make 3-6 commits per workflow run (5 runs x 3-6 = 15-30)
+          MIN=3
+          MAX=6
+          NUM=$((RANDOM % (MAX - MIN + 1) + MIN))
+          if [ "$NUM" -gt "$NEEDED" ]; then
+            NUM=$NEEDED
+          fi
+
+          echo "Making $NUM commits..."
+
+          for i in $(seq 1 "$NUM"); do
+            TIMESTAMP=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+            echo "$TIMESTAMP - Daily streak maintained" >> streak_log.txt
+            git add streak_log.txt
+            git commit -m "Daily streak check - $TODAY" || true
+            sleep $((RANDOM % 5 + 2))
+          done
+
+          echo "Done making $NUM commits."
+
+      - name: Push with retry
+        run: |
+          for i in 1 2 3 4 5; do
+            git pull --rebase origin master 2>/dev/null || true
+            if git push origin master 2>/dev/null; then
+              echo "Push succeeded on attempt $i"
+              exit 0
+            fi
+            echo "Push attempt $i failed, retrying in $((i * 10))s..."
+            sleep $((i * 10))
+          done
+          echo "Push failed after 5 attempts"
+          exit 1
+
+  dsa-bot:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    needs: streak-burst
 
     steps:
       - name: Checkout repository
@@ -30,27 +110,30 @@ jobs:
 
       - name: Configure Git
         run: |
-          git config --global user.name "Tharuneswar"
-          git config --global user.email "dtharuneswar@aditya.ac.in"
+          git config user.name "Tharuneswar"
+          git config user.email "dtharuneswar@aditya.ac.in"
 
-      - name: Pull latest changes
-        run: git pull --rebase origin main || git pull --rebase origin master || true
+      - name: Pull latest
+        run: |
+          for i in 1 2 3; do
+            git pull --rebase origin master && break || sleep 5
+          done
 
       - name: Run DSA Bot
         env:
           NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
-        run: python dsa_b.py
+        run: python dsa_b.py || echo "DSA bot failed, streak is safe from previous job"
 
-      - name: Ensure daily commit (fallback)
+      - name: Push with retry
         run: |
-          # If the bot didn't make any commits (e.g., API failure),
-          # create a minimal commit to maintain the streak
-          if git diff --cached --quiet && git diff --quiet; then
-            echo "$(date -u +%Y-%m-%dT%H:%M:%SZ) - Daily streak maintained" >> streak_log.txt
-            git add streak_log.txt
-            git commit -m "Daily streak check - $(date -u +%Y-%m-%d)" || true
-          fi
-
-      - name: Push changes
-        run: |
-          git push || git pull --rebase && git push
+          for i in 1 2 3 4 5; do
+            git pull --rebase origin master 2>/dev/null || true
+            if git push origin master 2>/dev/null; then
+              echo "Push succeeded on attempt $i"
+              exit 0
+            fi
+            echo "Push attempt $i failed, retrying in $((i * 10))s..."
+            sleep $((i * 10))
+          done
+          echo "Push failed after 5 attempts"
+          exit 1
